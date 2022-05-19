@@ -1,0 +1,14 @@
+{
+  "data": {
+    "attributes": {
+      "name": "GoodDemo data source",
+      "type": "SNOWFLAKE",
+      "url": "jdbc:snowflake://xjtztmi-wf97506.snowflakecomputing.com?warehouse=TEST_WAREHOUSE&db=TEST",
+      "schema": "gooddemo",
+      "username": "thuantran",
+      "password": ""
+    },
+    "id": "gdc_ds_gooddemo",
+    "type": "dataSource"
+  }
+}
