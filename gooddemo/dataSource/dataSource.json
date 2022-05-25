@@ -6,7 +6,7 @@
       "url": "jdbc:snowflake://xjtztmi-wf97506.snowflakecomputing.com?warehouse=TEST_WAREHOUSE&db=TEST",
       "schema": "gooddemo",
       "username": "thuantran",
-      "password": ""
+      "password": "1d36281d0f32470b6d033e1d"
     },
     "id": "gdc_ds_gooddemo",
     "type": "dataSource"
