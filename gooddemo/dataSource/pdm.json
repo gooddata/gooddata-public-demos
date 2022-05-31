@@ -38,7 +38,7 @@
         ],
         "id": "campaign_channels",
         "path": [
-          "gooddemo",
+          "schema_demo",
           "campaign_channels"
         ],
         "type": "TABLE"
@@ -58,7 +58,7 @@
         ],
         "id": "campaigns",
         "path": [
-          "gooddemo",
+          "schema_demo",
           "campaigns"
         ],
         "type": "TABLE"
@@ -168,7 +168,7 @@
         ],
         "id": "countries",
         "path": [
-          "gooddemo",
+          "schema_demo",
           "countries"
         ],
         "type": "TABLE"
@@ -218,7 +218,7 @@
         ],
         "id": "countries_geo_coordinates",
         "path": [
-          "gooddemo",
+          "schema_demo",
           "countries_geo_coordinates"
         ],
         "type": "TABLE"
@@ -248,7 +248,7 @@
         ],
         "id": "customers",
         "path": [
-          "gooddemo",
+          "schema_demo",
           "customers"
         ],
         "type": "TABLE"
@@ -309,7 +309,7 @@
         ],
         "id": "order_lines",
         "path": [
-          "gooddemo",
+          "schema_demo",
           "order_lines"
         ],
         "type": "TABLE"
@@ -334,7 +334,7 @@
         ],
         "id": "products",
         "path": [
-          "gooddemo",
+          "schema_demo",
           "products"
         ],
         "type": "TABLE"
