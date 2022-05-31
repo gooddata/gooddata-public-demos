@@ -6,7 +6,7 @@
       "url": "jdbc:snowflake://gooddata.snowflakecomputing.com?warehouse=PANTHER_DEMO&db=PANTHER_SAMPLE_STAGING",
       "schema": "schema_demo",
       "username": "pantherdemo",
-      "password": "7a112c2a37170a3c4131454b58111115"
+      "password": "020f383e3f541f0a453c4a483664291d3a26250c45085b1d"
     },
     "id": "gdc_ds_gooddemo",
     "type": "dataSource"
