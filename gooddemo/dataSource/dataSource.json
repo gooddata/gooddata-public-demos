@@ -3,10 +3,10 @@
     "attributes": {
       "name": "GoodDemo data source",
       "type": "SNOWFLAKE",
-      "url": "jdbc:snowflake://xjtztmi-wf97506.snowflakecomputing.com?warehouse=TEST_WAREHOUSE&db=TEST",
-      "schema": "gooddemo",
-      "username": "thuantran",
-      "password": "1d36281d0f32470b6d033e1d"
+      "url": "jdbc:snowflake://gooddata.snowflakecomputing.com?warehouse=PANTHER_DEMO&db=PANTHER_SAMPLE_STAGING",
+      "schema": "schema_demo",
+      "username": "pantherdemo",
+      "password": "7a112c2a37170a3c4131454b58111115"
     },
     "id": "gdc_ds_gooddemo",
     "type": "dataSource"
