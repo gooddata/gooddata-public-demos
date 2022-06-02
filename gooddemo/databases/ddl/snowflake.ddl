@@ -4,14 +4,16 @@ create table "products"
     "product_name" varchar(128),
     "category"     varchar(128),
     constraint pk_products primary key ("product_id")
-);
+)
+;
 
 create table "campaigns"
 (
     "campaign_id"   integer,
     "campaign_name" varchar(128),
     constraint pk_campaigns primary key ("campaign_id")
-);
+)
+;
 
 create table "customers"
 (
@@ -20,7 +22,8 @@ create table "customers"
     "state"         varchar(64),
     "region"        varchar(64),
     constraint pk_customers primary key ("customer_id")
-);
+)
+;
 
 create table "campaign_channels"
 (
@@ -32,7 +35,8 @@ create table "campaign_channels"
     "campaign_id"         integer,
     constraint pk_campaign_channels primary key ("campaign_channel_id"),
     constraint fk_campaign_channels_campaign foreign key ("campaign_id") references "campaigns" ("campaign_id")
-);
+)
+;
 
 create table "order_lines"
 (
@@ -49,4 +53,5 @@ create table "order_lines"
     constraint fk_order_lines_campaign foreign key ("campaign_id") references "campaigns" ("campaign_id"),
     constraint fk_customer foreign key ("customer_id") references "customers" ("customer_id"),
     constraint fk_product foreign key ("product_id") references "products" ("product_id")
-);
+)
+;
