@@ -21,6 +21,7 @@ create table "customers"
     "customer_name" varchar(128),
     "state"         varchar(64),
     "region"        varchar(64),
+    "geo__state__location" varchar(64),
     constraint pk_customers primary key ("customer_id")
 )
 ;
@@ -49,6 +50,8 @@ create table "order_lines"
     "product_id"    integer,
     "price"         decimal(15, 2),
     "quantity"      decimal(15, 2),
+    "wdf__state"    varchar(64),
+    "wdf__region"   varchar(128),
     constraint pk_order_lines primary key ("order_line_id"),
     constraint fk_order_lines_campaign foreign key ("campaign_id") references "campaigns" ("campaign_id"),
     constraint fk_customer foreign key ("customer_id") references "customers" ("customer_id"),
