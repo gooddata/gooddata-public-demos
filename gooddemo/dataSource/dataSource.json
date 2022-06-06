@@ -1,7 +1,7 @@
 {
   "data": {
     "attributes": {
-      "name": "GoodDemo data source",
+      "name": "[test] GoodDemo data source",
       "type": "SNOWFLAKE",
       "url": "jdbc:snowflake://gooddata.snowflakecomputing.com?warehouse=PANTHER_DEMO&db=PANTHER_SAMPLE_STAGING",
       "schema": "SCHEMA_DEMO",
