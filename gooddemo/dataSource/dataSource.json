@@ -3,7 +3,7 @@
     "attributes": {
       "name": "[test] GoodDemo data source",
       "type": "SNOWFLAKE",
-      "url": "jdbc://gooddata.snowflakecomputing.com?warehouse=PANTHER_DEMO&db=PANTHER_SAMPLE_STAGING",
+      "url": "jdbc:snowflake://gooddata.snowflakecomputing.com?warehouse=PANTHER_DEMO&db=PANTHER_SAMPLE_STAGING",
       "schema": "SCHEMA_DEMO",
       "username": "pantherdemo",
       "password": "020f383e3f541f0a453c4a483664291d3a26250c45085b1d"
