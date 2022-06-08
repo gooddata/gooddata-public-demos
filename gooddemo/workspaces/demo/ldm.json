@@ -16,6 +16,7 @@
           {
             "description": "Category",
             "id": "campaign_channels.category",
+            "labels": [],
             "tags": [
               "Campaign channels"
             ],
