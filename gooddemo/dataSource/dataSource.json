@@ -1,11 +1,11 @@
 {
   "data": {
     "attributes": {
-      "name": "GoodDemo data source",
+      "name": "GoodData Snowflake demo",
       "type": "SNOWFLAKE",
-      "url": "jdbc:snowflake://gooddata.snowflakecomputing.com?warehouse=PANTHER_DEMO&db=PANTHER_SAMPLE_STAGING",
-      "schema": "SCHEMA_DEMO",
-      "username": "pantherdemo",
+      "url": "jdbc:snowflake://gooddata.snowflakecomputing.com?warehouse=GOODDATA_DEMO_WAREHOUSE&db=GOODDATA_DEMO_DATABASE",
+      "schema": "GOODDATA_DEMO_SCHEMA",
+      "username": "gooddata_demo",
       "password": "020f383e3f541f0a453c4a483664291d3a26250c45085b1d"
     },
     "id": "gdc_ds_gooddemo",
