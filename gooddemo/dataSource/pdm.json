@@ -76,6 +76,11 @@
             "name": "customer_name"
           },
           {
+            "dataType" : "STRING",
+            "isPrimaryKey" : false,
+            "name" : "geo__state__location"
+          },
+          {
             "dataType": "STRING",
             "isPrimaryKey": false,
             "name": "region"
@@ -145,6 +150,15 @@
             "dataType": "NUMERIC",
             "isPrimaryKey": false,
             "name": "quantity"
+          },
+          {
+            "dataType" : "STRING",
+            "isPrimaryKey" : false,
+            "name" : "wdf__region"
+          }, {
+            "dataType" : "STRING",
+            "isPrimaryKey" : false,
+            "name" : "wdf__state"
           }
         ],
         "id": "order_lines",
