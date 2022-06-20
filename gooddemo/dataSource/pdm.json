@@ -38,7 +38,7 @@
         ],
         "id": "campaign_channels",
         "path": [
-          "SCHEMA_DEMO",
+          "GOODDATA_DEMO_SCHEMA",
           "campaign_channels"
         ],
         "type": "TABLE"
@@ -58,7 +58,7 @@
         ],
         "id": "campaigns",
         "path": [
-          "SCHEMA_DEMO",
+          "GOODDATA_DEMO_SCHEMA",
           "campaigns"
         ],
         "type": "TABLE"
@@ -93,7 +93,7 @@
         ],
         "id": "customers",
         "path": [
-          "SCHEMA_DEMO",
+          "GOODDATA_DEMO_SCHEMA",
           "customers"
         ],
         "type": "TABLE"
@@ -163,7 +163,7 @@
         ],
         "id": "order_lines",
         "path": [
-          "SCHEMA_DEMO",
+          "GOODDATA_DEMO_SCHEMA",
           "order_lines"
         ],
         "type": "TABLE"
@@ -188,7 +188,7 @@
         ],
         "id": "products",
         "path": [
-          "SCHEMA_DEMO",
+          "GOODDATA_DEMO_SCHEMA",
           "products"
         ],
         "type": "TABLE"
