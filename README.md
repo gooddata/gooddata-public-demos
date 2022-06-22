@@ -1,4 +1,4 @@
-# gdc-public-demos
+# gooddata-public-demos
 Public Repository for GoodData Demos and Packages
 
 # How to deploy sample data for a new demo workspace
@@ -11,7 +11,7 @@ This is an example of using gooddemo sample data
 * You can ignore this step if you just want to use the existing sample data source of gooddata (already defined in gooddemo sample data)
 3. Setting the environment variables (replace the GDC_API_TOKEN and ENDPOINT value by yours) by command 
    1. Contact support team to get the GDC_API_TOKEN (refer "https://docs-dev.anywhere.gooddata.com/1.7/administration/auth/").
-   2. At the moment, we are testing on endpoint "https://qa.stg11.intgdc.com".
+   2. At the moment, we are testing on endpoint "https://qa.latest.stg11.panther.intgdc.com".
 ```
 GDC_API_TOKEN="<TOKEN>"
 ENDPOINT="<endpoint url>"
@@ -30,10 +30,10 @@ curl --request POST \
       "data": {
         "attributes": {
           "name": "GDC Good Demo Data source",
-          "url": "jdbc:snowflake://xjtztmi-wf97506.snowflakecomputing.com?warehouse=TEST_WAREHOUSE&db=TEST",
-          "schema": "gooddemo",
+          "url": "jdbc:snowflake://gooddata.snowflakecomputing.com?warehouse=GOODDATA_DEMO_WAREHOUSE&db=GOODDATA_DEMO_DATABASE",
+          "schema": "GOODDATA_DEMO_SCHEMA",
           "type": "SNOWFLAKE",
-          "username": "thuantran",
+          "username": "gooddata_demo",
           "password": "<your password>"
         },
         "id": "gdc_ds_gooddemo",
@@ -64,7 +64,7 @@ curl --request POST \
   --data '{
   "data": {
     "attributes": {
-      "name": "Demo"
+      "name": "Demo analytics"
     },
     "id": "demo",
     "type": "workspace"
