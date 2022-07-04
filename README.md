@@ -97,3 +97,11 @@ curl --request PUT \
   --header 'Content-Type: application/json' \
   --data '@./gooddemo/workspaces/demo/ldm.json' $ENDPOINT/api/layout/workspaces/<workspaceId>
 ```
+
+## License
+
+Copyright (c) 2022, GoodData Corporation
+
+This project is not intended for production usage. It’s meant to provide users exploring GoodData products with initial data and analytical objects for their evaluation or learning.
+
+That being said, the usage of the project is not restricted beyond the requirements of the BSD 3-Clause License; please see the [LICENSE](LICENSE) for more information.
