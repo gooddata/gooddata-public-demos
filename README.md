@@ -10,8 +10,8 @@ This is an example of using gooddemo sample data
    2. Loading [sample data](gooddemo/databases/data) in .csv files into your snowflake data source if this is created in 2.1
 * You can ignore this step if you just want to use the existing sample data source of gooddata (already defined in gooddemo sample data)
 3. Setting the environment variables (replace the GDC_API_TOKEN and ENDPOINT value by yours) by command 
-   1. Contact support team to get the GDC_API_TOKEN (refer "https://docs-dev.anywhere.gooddata.com/1.7/administration/auth/").
-   2. At the moment, we are testing on endpoint "https://qa.latest.stg11.panther.intgdc.com".
+   1. You can generate API token according to the instructions in our documentation: [Use an API Token for Authentication](https://www.gooddata.com/developers/cloud-native/doc/hosted/manage-deployment/set-up-authentication/user-token/)
+   2. For endpoint please use the full host name of your organization, e.g.: https://trial-demo-data.cloud.gooddata.com
 ```
 GDC_API_TOKEN="<TOKEN>"
 ENDPOINT="<endpoint url>"
