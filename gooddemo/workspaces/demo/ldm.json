@@ -371,10 +371,16 @@
       {
         "granularities": [
           "DAY",
+          "WEEK",
           "MONTH",
           "QUARTER",
-          "WEEK",
-          "YEAR"
+          "YEAR",
+          "DAY_OF_WEEK",
+          "DAY_OF_MONTH",
+          "DAY_OF_YEAR",
+          "WEEK_OF_YEAR",
+          "MONTH_OF_YEAR",
+          "QUARTER_OF_YEAR"
         ],
         "granularitiesFormatting": {
           "titleBase": "",
