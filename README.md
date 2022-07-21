@@ -9,11 +9,11 @@ This is an example of using gooddemo sample data
    1. Connect to your snowflake data source, run the [snowflake.ddl](gooddemo/databases/ddl/snowflake.ddl) to create your demo data source
    2. Loading [sample data](gooddemo/databases/data) in .csv files into your snowflake data source if this is created in 2.1
 * You can ignore this step if you just want to use the existing sample data source of gooddata (already defined in gooddemo sample data)
-3. Setting the environment variables (replace the GDC_API_TOKEN and ENDPOINT value by yours) by command 
+3. Setting the environment variables (replace the API_TOKEN and ENDPOINT value by yours) by command 
    1. You can generate API token according to the instructions in our documentation: [Use an API Token for Authentication](https://www.gooddata.com/developers/cloud-native/doc/hosted/manage-deployment/set-up-authentication/user-token/)
    2. For endpoint please use the full host name of your organization, e.g.: https://trial-demo-data.cloud.gooddata.com
 ```
-GDC_API_TOKEN="<TOKEN>"
+API_TOKEN="<TOKEN>"
 ENDPOINT="<endpoint url>"
 ```
 
@@ -24,7 +24,7 @@ You can also change the url, username and password if you have an existing one o
 For example:
 ```
 curl --request POST \
-  --header "Authorization: Bearer $GDC_API_TOKEN" \
+  --header "Authorization: Bearer $API_TOKEN" \
   --header 'Content-Type: application/vnd.gooddata.api+json' \
   --data '{
       "data": {
@@ -48,7 +48,7 @@ Using content body in this file, just replace the <dataSourceId> by id in Step 1
 For example:
 ```
 curl --request PUT \
-  --header "Authorization: Bearer $GDC_API_TOKEN" \
+  --header "Authorization: Bearer $API_TOKEN" \
   --header 'Content-Type: application/json' \
   --data '@./gooddemo/dataSource/pdm.json' $ENDPOINT/api/layout/dataSources/<dataSourceId>/physicalModel
 ```
@@ -59,7 +59,7 @@ Using content body in this file, you can change the name and the id of your work
 For example:
 ```
 curl --request POST \
-  --header "Authorization: Bearer $GDC_API_TOKEN" \
+  --header "Authorization: Bearer $API_TOKEN" \
   --header 'Content-Type: application/vnd.gooddata.api+json' \
   --data '{
   "data": {
@@ -78,7 +78,7 @@ Replace the <workspaceId> by id in Step 3, in this example, it is: demo
 And then perform the API call as below (replace model of ldm and analytics by the appropriate content from above files)
 ```
 curl --request PUT \
-  --header "Authorization: Bearer $GDC_API_TOKEN" \
+  --header "Authorization: Bearer $API_TOKEN" \
   --header 'Content-Type: application/json' \
   --data '{
         "ldm": {...},
@@ -93,7 +93,7 @@ Using content body in this file, just replace the <workspaceId> by id in Step 3,
 For example:
 ```
 curl --request PUT \
-  --header "Authorization: Bearer $GDC_API_TOKEN" \
+  --header "Authorization: Bearer $API_TOKEN" \
   --header 'Content-Type: application/json' \
   --data '@./gooddemo/workspaces/demo/ldm.json' $ENDPOINT/api/layout/workspaces/<workspaceId>
 ```
