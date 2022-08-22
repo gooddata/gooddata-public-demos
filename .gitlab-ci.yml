@@ -1,0 +1,30 @@
+# (C) 2022 GoodData Corporation
+# This file is used to produce GoodData Public Demo artifact for the usage in GoodData Anywhere / Tiger.
+#
+# Repository is registered on GitLab using the "CI/CD for external repo" so after the successful merge or PRs in Github,
+# this pipeline definition is executed. It's not in any way blocking the existing delivery and deployment with internal CI / CD process.
+#
+# Delivery is managed by the CI / CD pipeline in gooddata/gdc-nas repository.
+---
+default:
+  image: registry.gitlab.com/gooddata/infra/tools:$BUILD_IMAGE_VERSION
+
+variables:
+  BUILD_IMAGE_VERSION: '3.0.2'
+
+stages:
+  - generate-update
+
+### Job templates
+.post-merge: &post-merge
+  # trigger on push to master, release or hotfix/(tiger|panther) branch
+  if: '$CI_COMMIT_BRANCH =~ /^(master|release|hotfix\/(tiger|panther))$/
+        && $CI_PIPELINE_SOURCE == "push"'
+
+generate-update:
+  stage: generate-update
+  script:
+    - /scripts/update-ext-image-version.rb demo-resources
+  dependencies: []
+  rules:
+    - <<: *post-merge
