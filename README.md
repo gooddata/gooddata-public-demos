@@ -3,6 +3,7 @@ Public Repository for GoodData Demos and Packages
 
 # How to deploy sample data for a new demo workspace
 This is an example of using gooddemo sample data
+
 ## Before you start
 1. There is an existing user in adminGroup
 2. Prepare the data source for demo
