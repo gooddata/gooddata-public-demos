@@ -19,7 +19,7 @@ stages:
 .post-merge: &post-merge
   # trigger on push to master, release or hotfix/(tiger|panther) branch
   if: '$CI_COMMIT_BRANCH =~ /^(master|release|hotfix\/(tiger|panther))$/
-        && $CI_PIPELINE_SOURCE == "push"'
+        && ($CI_PIPELINE_SOURCE == "push" || $CI_PIPELINE_SOURCE == "web")'
 
 generate-update:
   stage: generate-update
