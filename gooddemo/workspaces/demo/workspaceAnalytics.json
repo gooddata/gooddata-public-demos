@@ -1523,7 +1523,7 @@
       {
         "content": {
           "format": "$#,##0",
-          "maql": "SELECT {metric/order_amount} WHERE NOT ({label/order_status} IN (\"null\", \"Returned\", \"Canceled\"))"
+          "maql": "SELECT {metric/order_amount} WHERE {label/order_status} = \"Delivered\""
         },
         "description": "",
         "id": "revenue",
