@@ -1424,7 +1424,7 @@
       {
         "content": {
           "format": "#,##0.00",
-          "maql": "SELECT {metric/amount_of_orders} WHERE NOT ({label/order_status} IN (\"null\", \"Returned\", \"Canceled\"))"
+          "maql": "SELECT {metric/amount_of_orders} WHERE {label/order_status} = \"Delivered\""
         },
         "description": "",
         "id": "amount_of_valid_orders",
@@ -1523,7 +1523,7 @@
       {
         "content": {
           "format": "$#,##0",
-          "maql": "SELECT {metric/order_amount} WHERE NOT ({label/order_status} IN (\"null\", \"Returned\", \"Canceled\"))"
+          "maql": "SELECT {metric/order_amount} WHERE {label/order_status} = \"Delivered\""
         },
         "description": "",
         "id": "revenue",
