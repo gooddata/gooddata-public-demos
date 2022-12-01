@@ -74,7 +74,7 @@ curl --request POST \
 ```
 
 ## Step 4: Create analytics and logical data model for new workspace
-Copy the content data of demo workspace [logical data model](gooddemo/workspaces/demo/ldm.json) and [analytics](gooddemo/workspaces/demo/analytics.json) into one model\
+Copy the content data of demo workspace [logical data model](gooddemo/workspaces/demo/ldm.json) and [analytics](gooddemo/workspaces/demo/workspaceAnalytics.json) into one model\
 Replace the <workspaceId> by id in Step 3, in this example, it is: demo
 And then perform the API call as below (replace model of ldm and analytics by the appropriate content from above files)
 ```
