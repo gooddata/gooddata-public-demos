@@ -40,7 +40,7 @@ curl --request POST \
         "id": "gdc_ds_gooddemo",
         "type": "dataSource"
       }
-}' $ENDPOINT/api/entities/dataSources
+}' $ENDPOINT/api/v1/entities/dataSources
 ```
 
 ## Step 2: Create physical data model
@@ -51,7 +51,7 @@ For example:
 curl --request PUT \
   --header "Authorization: Bearer $API_TOKEN" \
   --header 'Content-Type: application/json' \
-  --data '@./gooddemo/dataSource/pdm.json' $ENDPOINT/api/layout/dataSources/<dataSourceId>/physicalModel
+  --data '@./gooddemo/dataSource/pdm.json' $ENDPOINT/api/v1/layout/dataSources/<dataSourceId>/physicalModel
 ```
 
 ## Step 3: Create workspace
@@ -70,7 +70,7 @@ curl --request POST \
     "id": "demo",
     "type": "workspace"
   }
-}' $ENDPOINT/api/entities/workspaces
+}' $ENDPOINT/api/v1/entities/workspaces
 ```
 
 ## Step 4: Create analytics and logical data model for new workspace
@@ -84,7 +84,7 @@ curl --request PUT \
   --data '{
         "ldm": {...},
         "analytics": {...}
-}' $ENDPOINT/api/layout/workspaces/<workspaceId>
+}' $ENDPOINT/api/v1/layout/workspaces/<workspaceId>
 ```
 
 ## Additional options
@@ -96,7 +96,7 @@ For example:
 curl --request PUT \
   --header "Authorization: Bearer $API_TOKEN" \
   --header 'Content-Type: application/json' \
-  --data '@./gooddemo/workspaces/demo/ldm.json' $ENDPOINT/api/layout/workspaces/<workspaceId>
+  --data '@./gooddemo/workspaces/demo/ldm.json' $ENDPOINT/api/v1/layout/workspaces/<workspaceId>
 ```
 
 ## License
