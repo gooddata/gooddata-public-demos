@@ -1,0 +1,41 @@
+### Create data source
+PUT {{ENDPOINT}}/api/v1/entities/dataSources/gdc_ds_gooddemo
+Authorization: Bearer {{API_TOKEN}}
+Content-Type: application/vnd.gooddata.api+json
+
+< ./dataSource/dataSource.json
+
+### Define PDM
+PUT {{ENDPOINT}}/api/v1/layout/dataSources/gdc_ds_gooddemo/physicalModel
+Authorization: Bearer {{API_TOKEN}}
+Content-Type: application/json
+
+< ./dataSource/pdm.json
+
+### Create workspace
+POST {{ENDPOINT}}/api/v1/entities/workspaces
+Authorization: Bearer {{API_TOKEN}}
+Content-Type: application/vnd.gooddata.api+json
+
+< ./workspaces/demo/workspace.json
+
+### LDM
+PUT {{ENDPOINT}}/api/v1/layout/workspaces/demo/logicalModel
+Authorization: Bearer {{API_TOKEN}}
+Content-Type: application/json
+
+< ./workspaces/demo/ldm.json
+
+### Analytical model
+PUT {{ENDPOINT}}/api/v1/layout/workspaces/demo/analyticsModel
+Authorization: Bearer {{API_TOKEN}}
+Content-Type: application/json
+
+< ./workspaces/demo/workspaceAnalytics.json
+
+### Data filters
+PUT {{ENDPOINT}}/api/v1/layout/workspaceDataFilters
+Authorization: Bearer {{API_TOKEN}}
+Content-Type: application/json
+
+< ./workspaces/demo/workspaceDataFilters.json
