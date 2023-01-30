@@ -5368,8 +5368,8 @@
           "visualizationUrl": "local:donut"
         },
         "description": "",
-        "id": "product_categories_pie_chart",
-        "title": "Product Categories Pie Chart"
+        "id": "product_categories_donut_chart",
+        "title": "Product Categories Donut Chart"
       },
       {
         "content": {
