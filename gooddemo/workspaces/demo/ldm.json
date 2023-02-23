@@ -14,13 +14,13 @@
             "sourceColumn": "campaign_channel_id"
           },
           {
-            "description": "Category",
+            "description": "Campaign channel category",
             "id": "campaign_channels.category",
             "labels": [],
             "tags": [
               "Campaign channels"
             ],
-            "title": "Category",
+            "title": "Campaign channel category",
             "sourceColumn": "category"
           },
           {
@@ -336,13 +336,13 @@
             "sourceColumn": "product_name"
           },
           {
-            "description": "Category",
+            "description": "Product category",
             "id": "products.category",
             "labels": [],
             "tags": [
               "Products"
             ],
-            "title": "Category",
+            "title": "Product category",
             "sourceColumn": "category"
           }
         ],

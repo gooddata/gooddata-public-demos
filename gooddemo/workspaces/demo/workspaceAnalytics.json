@@ -145,7 +145,7 @@
                           },
                           "target": {
                             "identifier": {
-                              "id": "3428a1f1-617c-422c-8c35-831c49f3d70f",
+                              "id": "dashboard_products",
                               "type": "analyticalDashboard"
                             }
                           }
@@ -185,7 +185,7 @@
                           },
                           "target": {
                             "identifier": {
-                              "id": "3428a1f1-617c-422c-8c35-831c49f3d70f",
+                              "id": "dashboard_products",
                               "type": "analyticalDashboard"
                             }
                           }
@@ -231,7 +231,7 @@
                           },
                           "target": {
                             "identifier": {
-                              "id": "0e436c43-e51b-4292-93ac-9261ef96dad3",
+                              "id": "dashboard_customers",
                               "type": "analyticalDashboard"
                             }
                           }
@@ -277,7 +277,7 @@
                           },
                           "target": {
                             "identifier": {
-                              "id": "0e436c43-e51b-4292-93ac-9261ef96dad3",
+                              "id": "dashboard_customers",
                               "type": "analyticalDashboard"
                             }
                           }
@@ -445,7 +445,7 @@
           "version": "2"
         },
         "description": "",
-        "id": "0d9af187-ac18-4b11-8f74-b5acec32aa85",
+        "id": "dashboard_overview",
         "title": "1. Overview"
       },
       {
@@ -792,7 +792,7 @@
           "version": "2"
         },
         "description": "",
-        "id": "0e436c43-e51b-4292-93ac-9261ef96dad3",
+        "id": "dashboard_customers",
         "title": "2. Customers"
       },
       {
@@ -1170,7 +1170,7 @@
           "version": "2"
         },
         "description": "",
-        "id": "3428a1f1-617c-422c-8c35-831c49f3d70f",
+        "id": "dashboard_products",
         "title": "3. Products"
       }
     ],
@@ -5368,8 +5368,8 @@
           "visualizationUrl": "local:donut"
         },
         "description": "",
-        "id": "product_categories_pie_chart",
-        "title": "Product Categories Pie Chart"
+        "id": "product_categories_donut_chart",
+        "title": "Product Categories Donut Chart"
       },
       {
         "content": {
