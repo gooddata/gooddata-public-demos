@@ -1,0 +1,16 @@
+name: Deploy metadata to the Public proxy service
+
+on:
+  workflow_dispatch:
+
+jobs:
+  Deploy demo data:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+      - name: Deploy Gooddemo to Public proxy instance
+        run: node ./scripts/deploy-demo.js gooddemo
+        env:
+          PANTHER_DEMO_HOST: ${{ secrets.PANTHER_DEMO_HOST }}
+          PANTHER_DEMO_TOKEN: ${{ secrets.PANTHER_DEMO_TOKEN }}
