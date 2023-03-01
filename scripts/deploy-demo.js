@@ -4,6 +4,7 @@ const path = require('node:path');
 const DEMO_NAME = process.argv[2];
 const PANTHER_DEMO_HOST = process.env.PANTHER_DEMO_HOST;
 const PANTHER_DEMO_TOKEN = process.env.PANTHER_DEMO_TOKEN;
+const DS_PWD = process.env.DS_PWD;
 
 assert(DEMO_NAME, 'Missing demo name CLI argument');
 assert(PANTHER_DEMO_HOST, 'PANTHER_DEMO_HOST env variable is required.');
@@ -30,6 +31,11 @@ const main = async () => {
 
 const deployDataSource = async (dataSource, pdm) => {
     const id = dataSource.data.id;
+
+    // Patch data source credentials
+    if (DS_PWD) {
+        dataSource.data.attributes.password = DS_PWD;
+    }
 
     await upsertEntity('/dataSources', id, dataSource);
     await upsertLayout(`/dataSources/${id}/physicalModel`, pdm);

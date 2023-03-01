@@ -14,3 +14,4 @@ jobs:
         env:
           PANTHER_DEMO_HOST: ${{ secrets.PANTHER_DEMO_HOST }}
           PANTHER_DEMO_TOKEN: ${{ secrets.PANTHER_DEMO_TOKEN }}
+          DS_PWD: ${{ secrets.GOODDEMO_DS_PWD }}
