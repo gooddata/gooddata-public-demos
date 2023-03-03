@@ -5,6 +5,7 @@ const DEMO_NAME = process.argv[2];
 const PANTHER_DEMO_HOST = process.env.PANTHER_DEMO_HOST;
 const PANTHER_DEMO_TOKEN = process.env.PANTHER_DEMO_TOKEN;
 const DS_PWD = process.env.DS_PWD;
+const USER_GROUP = 'public-proxy-user-group';
 
 assert(DEMO_NAME, 'Missing demo name CLI argument');
 assert(PANTHER_DEMO_HOST, 'PANTHER_DEMO_HOST env variable is required.');
@@ -45,6 +46,15 @@ const deployWorkspace = async (workspace, ldm, analytics) => {
     const id = workspace.data.id;
 
     await upsertEntity('/workspaces', id, workspace);
+    await upsertLayout(`/workspaces/${id}/permissions`, {
+        permissions: [{
+            assignee: {
+                id: USER_GROUP,
+                type: 'userGroup',
+            },
+            name: 'VIEW',
+        }],
+    });
     await upsertLayout(`/workspaces/${id}/logicalModel`, ldm);
     await upsertLayout(`/workspaces/${id}/analyticsModel`, analytics);
 };
