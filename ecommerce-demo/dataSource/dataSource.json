@@ -1,0 +1,14 @@
+{
+  "data": {
+    "attributes": {
+      "name": "GoodData Snowflake demo",
+      "type": "SNOWFLAKE",
+      "url": "jdbc:snowflake://gooddata.snowflakecomputing.com?warehouse=GOODDATA_DEMO_WAREHOUSE&db=GOODDATA_DEMO_DATABASE",
+      "schema": "ECOMMERCE_DEMO_SCHEMA",
+      "username": "gooddata_demo",
+      "password": ""
+    },
+    "id": "gdc_ds_ecommerce_demo",
+    "type": "dataSource"
+  }
+}
