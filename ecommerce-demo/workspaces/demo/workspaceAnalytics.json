@@ -1,0 +1,5338 @@
+{
+  "analytics": {
+    "analyticalDashboardExtensions": [],
+    "analyticalDashboards": [
+      {
+        "content": {
+          "filterContextRef": {
+            "identifier": {
+              "id": "a4283267-0531-4b78-8faf-77faa5288811",
+              "type": "filterContext"
+            }
+          },
+          "layout": {
+            "type": "IDashboardLayout",
+            "sections": [
+              {
+                "type": "IDashboardLayoutSection",
+                "items": [
+                  {
+                    "type": "IDashboardLayoutItem",
+                    "size": {
+                      "xl": {
+                        "gridWidth": 3
+                      }
+                    },
+                    "widget": {
+                      "type": "insight",
+                      "title": "Net Sales",
+                      "description": "",
+                      "ignoreDashboardFilters": [],
+                      "dateDataSet": {
+                        "identifier": {
+                          "id": "date",
+                          "type": "dataset"
+                        }
+                      },
+                      "insight": {
+                        "identifier": {
+                          "id": "700d732d-67e1-4658-a6e0-c6b8edbb6d49",
+                          "type": "visualizationObject"
+                        }
+                      },
+                      "drills": [
+                        {
+                          "type": "drillToInsight",
+                          "origin": {
+                            "type": "drillFromMeasure",
+                            "measure": {
+                              "localIdentifier": "759c22e84d114c55aa40707b16d79d1d"
+                            }
+                          },
+                          "transition": "pop-up",
+                          "target": {
+                            "identifier": {
+                              "id": "469e8936-ca67-4987-8c70-0e35be24be4d",
+                              "type": "visualizationObject"
+                            }
+                          }
+                        }
+                      ],
+                      "properties": {}
+                    }
+                  },
+                  {
+                    "type": "IDashboardLayoutItem",
+                    "size": {
+                      "xl": {
+                        "gridWidth": 3
+                      }
+                    },
+                    "widget": {
+                      "type": "insight",
+                      "title": "Orders",
+                      "description": "",
+                      "ignoreDashboardFilters": [],
+                      "dateDataSet": {
+                        "identifier": {
+                          "id": "date",
+                          "type": "dataset"
+                        }
+                      },
+                      "insight": {
+                        "identifier": {
+                          "id": "3ac5e106-b43e-4c87-9ef0-9315e02282bd",
+                          "type": "visualizationObject"
+                        }
+                      },
+                      "drills": [
+                        {
+                          "type": "drillToInsight",
+                          "origin": {
+                            "type": "drillFromMeasure",
+                            "measure": {
+                              "localIdentifier": "eb334cab51954b9f83184eead11308bc"
+                            }
+                          },
+                          "transition": "pop-up",
+                          "target": {
+                            "identifier": {
+                              "id": "1b9ce816-a4f9-4301-bdfd-d36c6a7a71b6",
+                              "type": "visualizationObject"
+                            }
+                          }
+                        }
+                      ],
+                      "properties": {}
+                    }
+                  },
+                  {
+                    "type": "IDashboardLayoutItem",
+                    "size": {
+                      "xl": {
+                        "gridWidth": 3
+                      }
+                    },
+                    "widget": {
+                      "type": "insight",
+                      "title": "Active Customers",
+                      "description": "",
+                      "ignoreDashboardFilters": [],
+                      "dateDataSet": {
+                        "identifier": {
+                          "id": "date",
+                          "type": "dataset"
+                        }
+                      },
+                      "insight": {
+                        "identifier": {
+                          "id": "dc8575f5-27e5-44be-a2dc-23d54b7777e7",
+                          "type": "visualizationObject"
+                        }
+                      },
+                      "drills": [
+                        {
+                          "type": "drillToInsight",
+                          "origin": {
+                            "type": "drillFromMeasure",
+                            "measure": {
+                              "localIdentifier": "872407ef1c864d6cb82ece8c58edb20b"
+                            }
+                          },
+                          "transition": "pop-up",
+                          "target": {
+                            "identifier": {
+                              "id": "543cadbb-10b4-4153-b810-52586df7aa0e",
+                              "type": "visualizationObject"
+                            }
+                          }
+                        }
+                      ],
+                      "properties": {}
+                    }
+                  },
+                  {
+                    "type": "IDashboardLayoutItem",
+                    "size": {
+                      "xl": {
+                        "gridWidth": 3
+                      }
+                    },
+                    "widget": {
+                      "type": "insight",
+                      "title": "Gross Profit Margin",
+                      "description": "",
+                      "ignoreDashboardFilters": [],
+                      "dateDataSet": {
+                        "identifier": {
+                          "id": "date",
+                          "type": "dataset"
+                        }
+                      },
+                      "insight": {
+                        "identifier": {
+                          "id": "03b89e08-ee06-4e1f-88d8-bbd805c691cc",
+                          "type": "visualizationObject"
+                        }
+                      },
+                      "drills": [
+                        {
+                          "type": "drillToInsight",
+                          "origin": {
+                            "type": "drillFromMeasure",
+                            "measure": {
+                              "localIdentifier": "93158c3fdd71488ca07277d10f29b202"
+                            }
+                          },
+                          "transition": "pop-up",
+                          "target": {
+                            "identifier": {
+                              "id": "5297352c-7fd3-4e7e-90ad-026e470f55bd",
+                              "type": "visualizationObject"
+                            }
+                          }
+                        }
+                      ],
+                      "properties": {}
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "IDashboardLayoutSection",
+                "items": [
+                  {
+                    "type": "IDashboardLayoutItem",
+                    "size": {
+                      "xl": {
+                        "gridWidth": 6
+                      }
+                    },
+                    "widget": {
+                      "type": "insight",
+                      "title": "Revenue Trend",
+                      "description": "",
+                      "ignoreDashboardFilters": [],
+                      "dateDataSet": {
+                        "identifier": {
+                          "id": "date",
+                          "type": "dataset"
+                        }
+                      },
+                      "insight": {
+                        "identifier": {
+                          "id": "3e16ebe3-7753-40c6-abc1-f549e7bf4d6c",
+                          "type": "visualizationObject"
+                        }
+                      },
+                      "drills": [],
+                      "properties": {}
+                    }
+                  },
+                  {
+                    "type": "IDashboardLayoutItem",
+                    "size": {
+                      "xl": {
+                        "gridWidth": 6
+                      }
+                    },
+                    "widget": {
+                      "type": "insight",
+                      "title": "Total Sales Trend",
+                      "description": "",
+                      "ignoreDashboardFilters": [],
+                      "dateDataSet": {
+                        "identifier": {
+                          "id": "date",
+                          "type": "dataset"
+                        }
+                      },
+                      "insight": {
+                        "identifier": {
+                          "id": "a178265c-53ba-4c15-8c1f-d7e168506c92",
+                          "type": "visualizationObject"
+                        }
+                      },
+                      "drills": [
+                        {
+                          "type": "drillToInsight",
+                          "origin": {
+                            "type": "drillFromMeasure",
+                            "measure": {
+                              "localIdentifier": "6d5038a81a1741d4be183f354e02a1b1"
+                            }
+                          },
+                          "transition": "pop-up",
+                          "target": {
+                            "identifier": {
+                              "id": "643699f3-f980-44f6-b618-4b3d3f3f560e",
+                              "type": "visualizationObject"
+                            }
+                          }
+                        },
+                        {
+                          "type": "drillToInsight",
+                          "origin": {
+                            "type": "drillFromMeasure",
+                            "measure": {
+                              "localIdentifier": "0889348d4f9d46cba15587119c91e00d"
+                            }
+                          },
+                          "transition": "pop-up",
+                          "target": {
+                            "identifier": {
+                              "id": "643699f3-f980-44f6-b618-4b3d3f3f560e",
+                              "type": "visualizationObject"
+                            }
+                          }
+                        },
+                        {
+                          "type": "drillToInsight",
+                          "origin": {
+                            "type": "drillFromMeasure",
+                            "measure": {
+                              "localIdentifier": "5f7d89b4aa2f4eb5ae5aeda29c8644d7"
+                            }
+                          },
+                          "transition": "pop-up",
+                          "target": {
+                            "identifier": {
+                              "id": "643699f3-f980-44f6-b618-4b3d3f3f560e",
+                              "type": "visualizationObject"
+                            }
+                          }
+                        }
+                      ],
+                      "properties": {}
+                    }
+                  }
+                ],
+                "header": {
+                  "title": "Trending",
+                  "description": ""
+                }
+              },
+              {
+                "type": "IDashboardLayoutSection",
+                "items": [
+                  {
+                    "type": "IDashboardLayoutItem",
+                    "size": {
+                      "xl": {
+                        "gridWidth": 12,
+                        "gridHeight": 12
+                      }
+                    },
+                    "widget": {
+                      "type": "insight",
+                      "title": "Net Sales by Product Category",
+                      "description": "",
+                      "ignoreDashboardFilters": [],
+                      "dateDataSet": {
+                        "identifier": {
+                          "id": "date",
+                          "type": "dataset"
+                        }
+                      },
+                      "insight": {
+                        "identifier": {
+                          "id": "e32644ad-1921-4b89-a7d2-79f31826e5cf",
+                          "type": "visualizationObject"
+                        }
+                      },
+                      "drills": [
+                        {
+                          "type": "drillToDashboard",
+                          "transition": "in-place",
+                          "origin": {
+                            "type": "drillFromMeasure",
+                            "measure": {
+                              "localIdentifier": "100691d163aa4d53be0fc7e1a048190b"
+                            }
+                          },
+                          "target": {
+                            "identifier": {
+                              "id": "c1d67cd4-94ad-40aa-91a5-cdf4143f778a",
+                              "type": "analyticalDashboard"
+                            }
+                          }
+                        }
+                      ],
+                      "properties": {}
+                    }
+                  },
+                  {
+                    "type": "IDashboardLayoutItem",
+                    "size": {
+                      "xl": {
+                        "gridWidth": 6
+                      }
+                    },
+                    "widget": {
+                      "type": "insight",
+                      "title": "Net Sales vs Orders",
+                      "description": "",
+                      "ignoreDashboardFilters": [],
+                      "dateDataSet": {
+                        "identifier": {
+                          "id": "date",
+                          "type": "dataset"
+                        }
+                      },
+                      "insight": {
+                        "identifier": {
+                          "id": "2da13424-2a6b-4ed4-916c-9bbc002fdd1b",
+                          "type": "visualizationObject"
+                        }
+                      },
+                      "drills": [
+                        {
+                          "type": "drillToDashboard",
+                          "transition": "in-place",
+                          "origin": {
+                            "type": "drillFromMeasure",
+                            "measure": {
+                              "localIdentifier": "62f0f79a45b04db8bb2933cd5e877917"
+                            }
+                          },
+                          "target": {
+                            "identifier": {
+                              "id": "c1d67cd4-94ad-40aa-91a5-cdf4143f778a",
+                              "type": "analyticalDashboard"
+                            }
+                          }
+                        },
+                        {
+                          "type": "drillToDashboard",
+                          "transition": "in-place",
+                          "origin": {
+                            "type": "drillFromMeasure",
+                            "measure": {
+                              "localIdentifier": "59dfdd9221b9422d8b0b20863eaa2d7c"
+                            }
+                          },
+                          "target": {
+                            "identifier": {
+                              "id": "c1d67cd4-94ad-40aa-91a5-cdf4143f778a",
+                              "type": "analyticalDashboard"
+                            }
+                          }
+                        }
+                      ],
+                      "properties": {}
+                    }
+                  },
+                  {
+                    "type": "IDashboardLayoutItem",
+                    "size": {
+                      "xl": {
+                        "gridWidth": 6
+                      }
+                    },
+                    "widget": {
+                      "type": "insight",
+                      "title": "Gross Profit vs Avg Price of Product",
+                      "description": "",
+                      "ignoreDashboardFilters": [],
+                      "dateDataSet": {
+                        "identifier": {
+                          "id": "date",
+                          "type": "dataset"
+                        }
+                      },
+                      "insight": {
+                        "identifier": {
+                          "id": "405034d6-ab9c-462a-a88e-3172598adc65",
+                          "type": "visualizationObject"
+                        }
+                      },
+                      "drills": [
+                        {
+                          "type": "drillToDashboard",
+                          "transition": "in-place",
+                          "origin": {
+                            "type": "drillFromMeasure",
+                            "measure": {
+                              "localIdentifier": "7e4fe02cd17d4da38ec6d464646bbbb1"
+                            }
+                          },
+                          "target": {
+                            "identifier": {
+                              "id": "c1d67cd4-94ad-40aa-91a5-cdf4143f778a",
+                              "type": "analyticalDashboard"
+                            }
+                          }
+                        }
+                      ],
+                      "properties": {}
+                    }
+                  }
+                ],
+                "header": {
+                  "title": "Product breakdown",
+                  "description": ""
+                }
+              },
+              {
+                "type": "IDashboardLayoutSection",
+                "items": [
+                  {
+                    "type": "IDashboardLayoutItem",
+                    "size": {
+                      "xl": {
+                        "gridWidth": 12,
+                        "gridHeight": 25
+                      }
+                    },
+                    "widget": {
+                      "type": "insight",
+                      "title": "Customers by Country and State",
+                      "description": "",
+                      "ignoreDashboardFilters": [],
+                      "dateDataSet": {
+                        "identifier": {
+                          "id": "date",
+                          "type": "dataset"
+                        }
+                      },
+                      "insight": {
+                        "identifier": {
+                          "id": "2f12ace7-e626-47f1-953d-5ae957ca108e",
+                          "type": "visualizationObject"
+                        }
+                      },
+                      "drills": [
+                        {
+                          "type": "drillToDashboard",
+                          "transition": "in-place",
+                          "origin": {
+                            "type": "drillFromMeasure",
+                            "measure": {
+                              "localIdentifier": "c9c1a6a146a244f695ad1b52733b283f"
+                            }
+                          },
+                          "target": {
+                            "identifier": {
+                              "id": "370ec88c-2235-4e65-bb7c-5318280069a1",
+                              "type": "analyticalDashboard"
+                            }
+                          }
+                        }
+                      ],
+                      "properties": {},
+                      "configuration": {
+                        "hideTitle": true
+                      }
+                    }
+                  }
+                ],
+                "header": {
+                  "title": "Customer breakdown"
+                }
+              }
+            ]
+          },
+          "version": "2"
+        },
+        "description": "",
+        "id": "092929af-375a-4e9c-964f-2add8cdbd259",
+        "title": "1. Overview"
+      },
+      {
+        "content": {
+          "filterContextRef": {
+            "identifier": {
+              "id": "6aacab95-c3da-4e87-8f8c-ca3b6ebfb8b2",
+              "type": "filterContext"
+            }
+          },
+          "layout": {
+            "type": "IDashboardLayout",
+            "sections": [
+              {
+                "type": "IDashboardLayoutSection",
+                "items": [
+                  {
+                    "type": "IDashboardLayoutItem",
+                    "size": {
+                      "xl": {
+                        "gridWidth": 3
+                      }
+                    },
+                    "widget": {
+                      "type": "insight",
+                      "title": "Active Customers",
+                      "description": "",
+                      "ignoreDashboardFilters": [],
+                      "dateDataSet": {
+                        "identifier": {
+                          "id": "date",
+                          "type": "dataset"
+                        }
+                      },
+                      "insight": {
+                        "identifier": {
+                          "id": "dc8575f5-27e5-44be-a2dc-23d54b7777e7",
+                          "type": "visualizationObject"
+                        }
+                      },
+                      "drills": [],
+                      "properties": {}
+                    }
+                  },
+                  {
+                    "type": "IDashboardLayoutItem",
+                    "size": {
+                      "xl": {
+                        "gridWidth": 3
+                      }
+                    },
+                    "widget": {
+                      "type": "insight",
+                      "title": "New Customers",
+                      "description": "",
+                      "ignoreDashboardFilters": [],
+                      "dateDataSet": {
+                        "identifier": {
+                          "id": "customer_created_date",
+                          "type": "dataset"
+                        }
+                      },
+                      "insight": {
+                        "identifier": {
+                          "id": "a347814a-a893-4354-915d-29699b92a6d7",
+                          "type": "visualizationObject"
+                        }
+                      },
+                      "drills": [],
+                      "properties": {}
+                    }
+                  },
+                  {
+                    "type": "IDashboardLayoutItem",
+                    "size": {
+                      "xl": {
+                        "gridWidth": 3
+                      }
+                    },
+                    "widget": {
+                      "type": "insight",
+                      "title": "Return Customers",
+                      "description": "",
+                      "ignoreDashboardFilters": [],
+                      "dateDataSet": {
+                        "identifier": {
+                          "id": "date",
+                          "type": "dataset"
+                        }
+                      },
+                      "insight": {
+                        "identifier": {
+                          "id": "4cea4177-37c5-4196-8aab-c6bf60dc1f22",
+                          "type": "visualizationObject"
+                        }
+                      },
+                      "drills": [],
+                      "properties": {}
+                    }
+                  },
+                  {
+                    "type": "IDashboardLayoutItem",
+                    "size": {
+                      "xl": {
+                        "gridWidth": 3
+                      }
+                    },
+                    "widget": {
+                      "type": "insight",
+                      "title": "Sales per Customer",
+                      "description": "",
+                      "ignoreDashboardFilters": [],
+                      "dateDataSet": {
+                        "identifier": {
+                          "id": "date",
+                          "type": "dataset"
+                        }
+                      },
+                      "insight": {
+                        "identifier": {
+                          "id": "0c7ac154-1766-4d54-ba2b-b6f6913a59dd",
+                          "type": "visualizationObject"
+                        }
+                      },
+                      "drills": [],
+                      "properties": {}
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "IDashboardLayoutSection",
+                "items": [
+                  {
+                    "type": "IDashboardLayoutItem",
+                    "size": {
+                      "xl": {
+                        "gridWidth": 4
+                      }
+                    },
+                    "widget": {
+                      "type": "insight",
+                      "title": "Active Customers Breakdown",
+                      "description": "",
+                      "ignoreDashboardFilters": [],
+                      "dateDataSet": {
+                        "identifier": {
+                          "id": "date",
+                          "type": "dataset"
+                        }
+                      },
+                      "insight": {
+                        "identifier": {
+                          "id": "7de6202d-2e52-4bed-9e80-6c3ce8cedaaa",
+                          "type": "visualizationObject"
+                        }
+                      },
+                      "drills": [],
+                      "properties": {}
+                    }
+                  },
+                  {
+                    "type": "IDashboardLayoutItem",
+                    "size": {
+                      "xl": {
+                        "gridWidth": 8
+                      }
+                    },
+                    "widget": {
+                      "type": "insight",
+                      "title": "New vs Returning",
+                      "description": "",
+                      "ignoreDashboardFilters": [],
+                      "dateDataSet": {
+                        "identifier": {
+                          "id": "date",
+                          "type": "dataset"
+                        }
+                      },
+                      "insight": {
+                        "identifier": {
+                          "id": "48000537-4586-4a1e-a9a5-8eda7f8151a8",
+                          "type": "visualizationObject"
+                        }
+                      },
+                      "drills": [],
+                      "properties": {}
+                    }
+                  }
+                ],
+                "header": {
+                  "title": "New vs Returning"
+                }
+              },
+              {
+                "type": "IDashboardLayoutSection",
+                "items": [
+                  {
+                    "type": "IDashboardLayoutItem",
+                    "size": {
+                      "xl": {
+                        "gridWidth": 6
+                      }
+                    },
+                    "widget": {
+                      "type": "insight",
+                      "title": "Top 10 Spenders",
+                      "description": "",
+                      "ignoreDashboardFilters": [],
+                      "dateDataSet": {
+                        "identifier": {
+                          "id": "date",
+                          "type": "dataset"
+                        }
+                      },
+                      "insight": {
+                        "identifier": {
+                          "id": "607e9724-37ed-44f6-9fb4-55676d58df6e",
+                          "type": "visualizationObject"
+                        }
+                      },
+                      "drills": [],
+                      "properties": {}
+                    }
+                  },
+                  {
+                    "type": "IDashboardLayoutItem",
+                    "size": {
+                      "xl": {
+                        "gridWidth": 6
+                      }
+                    },
+                    "widget": {
+                      "type": "insight",
+                      "title": "Top 10 Buyers",
+                      "description": "",
+                      "ignoreDashboardFilters": [],
+                      "dateDataSet": {
+                        "identifier": {
+                          "id": "date",
+                          "type": "dataset"
+                        }
+                      },
+                      "insight": {
+                        "identifier": {
+                          "id": "8e8f236e-1bb2-48b3-828e-48706c684629",
+                          "type": "visualizationObject"
+                        }
+                      },
+                      "drills": [],
+                      "properties": {}
+                    }
+                  }
+                ],
+                "header": {
+                  "title": "Ranking"
+                }
+              },
+              {
+                "type": "IDashboardLayoutSection",
+                "items": [
+                  {
+                    "type": "IDashboardLayoutItem",
+                    "size": {
+                      "xl": {
+                        "gridWidth": 12
+                      }
+                    },
+                    "widget": {
+                      "type": "insight",
+                      "title": "Customers by Country and State",
+                      "description": "",
+                      "ignoreDashboardFilters": [],
+                      "dateDataSet": {
+                        "identifier": {
+                          "id": "date",
+                          "type": "dataset"
+                        }
+                      },
+                      "insight": {
+                        "identifier": {
+                          "id": "2f12ace7-e626-47f1-953d-5ae957ca108e",
+                          "type": "visualizationObject"
+                        }
+                      },
+                      "drills": [],
+                      "properties": {},
+                      "configuration": {
+                        "hideTitle": true
+                      }
+                    }
+                  }
+                ],
+                "header": {
+                  "title": "Customers by Country and State"
+                }
+              }
+            ]
+          },
+          "version": "2"
+        },
+        "description": "",
+        "id": "370ec88c-2235-4e65-bb7c-5318280069a1",
+        "title": "3. Customers"
+      },
+      {
+        "content": {
+          "filterContextRef": {
+            "identifier": {
+              "id": "b30e53f4-1a67-41cc-b705-31e3b619acf0",
+              "type": "filterContext"
+            }
+          },
+          "layout": {
+            "type": "IDashboardLayout",
+            "sections": [
+              {
+                "type": "IDashboardLayoutSection",
+                "items": [
+                  {
+                    "type": "IDashboardLayoutItem",
+                    "size": {
+                      "xl": {
+                        "gridWidth": 3
+                      }
+                    },
+                    "widget": {
+                      "type": "insight",
+                      "title": "Total Sales",
+                      "description": "",
+                      "ignoreDashboardFilters": [],
+                      "dateDataSet": {
+                        "identifier": {
+                          "id": "date",
+                          "type": "dataset"
+                        }
+                      },
+                      "insight": {
+                        "identifier": {
+                          "id": "adf2b786-32bd-4864-b251-7e2cfe9a006f",
+                          "type": "visualizationObject"
+                        }
+                      },
+                      "drills": [],
+                      "properties": {}
+                    }
+                  },
+                  {
+                    "type": "IDashboardLayoutItem",
+                    "size": {
+                      "xl": {
+                        "gridWidth": 3
+                      }
+                    },
+                    "widget": {
+                      "type": "insight",
+                      "title": "Net Sales",
+                      "description": "",
+                      "ignoreDashboardFilters": [],
+                      "dateDataSet": {
+                        "identifier": {
+                          "id": "date",
+                          "type": "dataset"
+                        }
+                      },
+                      "insight": {
+                        "identifier": {
+                          "id": "700d732d-67e1-4658-a6e0-c6b8edbb6d49",
+                          "type": "visualizationObject"
+                        }
+                      },
+                      "drills": [],
+                      "properties": {}
+                    }
+                  },
+                  {
+                    "type": "IDashboardLayoutItem",
+                    "size": {
+                      "xl": {
+                        "gridWidth": 3
+                      }
+                    },
+                    "widget": {
+                      "type": "insight",
+                      "title": "Gross Profit",
+                      "description": "",
+                      "ignoreDashboardFilters": [],
+                      "dateDataSet": {
+                        "identifier": {
+                          "id": "date",
+                          "type": "dataset"
+                        }
+                      },
+                      "insight": {
+                        "identifier": {
+                          "id": "b666412b-3c13-4e80-9b3f-7787558aa3ce",
+                          "type": "visualizationObject"
+                        }
+                      },
+                      "drills": [],
+                      "properties": {}
+                    }
+                  },
+                  {
+                    "type": "IDashboardLayoutItem",
+                    "size": {
+                      "xl": {
+                        "gridWidth": 3
+                      }
+                    },
+                    "widget": {
+                      "type": "insight",
+                      "title": "Orders Paid",
+                      "description": "",
+                      "ignoreDashboardFilters": [],
+                      "dateDataSet": {
+                        "identifier": {
+                          "id": "date",
+                          "type": "dataset"
+                        }
+                      },
+                      "insight": {
+                        "identifier": {
+                          "id": "3ac5e106-b43e-4c87-9ef0-9315e02282bd",
+                          "type": "visualizationObject"
+                        }
+                      },
+                      "drills": [],
+                      "properties": {}
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "IDashboardLayoutSection",
+                "items": [
+                  {
+                    "type": "IDashboardLayoutItem",
+                    "size": {
+                      "xl": {
+                        "gridWidth": 12,
+                        "gridHeight": 12
+                      }
+                    },
+                    "widget": {
+                      "type": "insight",
+                      "title": "Sales Goal",
+                      "description": "",
+                      "ignoreDashboardFilters": [],
+                      "dateDataSet": {
+                        "identifier": {
+                          "id": "date",
+                          "type": "dataset"
+                        }
+                      },
+                      "insight": {
+                        "identifier": {
+                          "id": "68ddf963-edce-4f88-a8d5-09bf3825b124",
+                          "type": "visualizationObject"
+                        }
+                      },
+                      "drills": [],
+                      "properties": {},
+                      "configuration": {
+                        "hideTitle": true
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "IDashboardLayoutSection",
+                "items": [
+                  {
+                    "type": "IDashboardLayoutItem",
+                    "size": {
+                      "xl": {
+                        "gridWidth": 4,
+                        "gridHeight": 18
+                      }
+                    },
+                    "widget": {
+                      "type": "insight",
+                      "title": "Total sales breakdown",
+                      "description": "",
+                      "ignoreDashboardFilters": [],
+                      "dateDataSet": {
+                        "identifier": {
+                          "id": "date",
+                          "type": "dataset"
+                        }
+                      },
+                      "insight": {
+                        "identifier": {
+                          "id": "41a8d4c3-1ab6-4bab-b531-5893912e9b93",
+                          "type": "visualizationObject"
+                        }
+                      },
+                      "drills": [],
+                      "properties": {}
+                    }
+                  },
+                  {
+                    "type": "IDashboardLayoutItem",
+                    "size": {
+                      "xl": {
+                        "gridWidth": 8
+                      }
+                    },
+                    "widget": {
+                      "type": "insight",
+                      "title": "Net sales over time",
+                      "description": "",
+                      "ignoreDashboardFilters": [],
+                      "dateDataSet": {
+                        "identifier": {
+                          "id": "date",
+                          "type": "dataset"
+                        }
+                      },
+                      "insight": {
+                        "identifier": {
+                          "id": "60dd3592-1322-4260-aaad-bd51cdcb1343",
+                          "type": "visualizationObject"
+                        }
+                      },
+                      "drills": [],
+                      "properties": {}
+                    }
+                  }
+                ],
+                "header": {
+                  "title": "Sales breakdown"
+                }
+              },
+              {
+                "type": "IDashboardLayoutSection",
+                "items": [
+                  {
+                    "type": "IDashboardLayoutItem",
+                    "size": {
+                      "xl": {
+                        "gridWidth": 4
+                      }
+                    },
+                    "widget": {
+                      "type": "insight",
+                      "title": "Order breakdown",
+                      "description": "",
+                      "ignoreDashboardFilters": [],
+                      "dateDataSet": {
+                        "identifier": {
+                          "id": "date",
+                          "type": "dataset"
+                        }
+                      },
+                      "insight": {
+                        "identifier": {
+                          "id": "b4497110-8d8a-4ab3-9cd5-471b60d8e561",
+                          "type": "visualizationObject"
+                        }
+                      },
+                      "drills": [],
+                      "properties": {}
+                    }
+                  },
+                  {
+                    "type": "IDashboardLayoutItem",
+                    "size": {
+                      "xl": {
+                        "gridWidth": 8
+                      }
+                    },
+                    "widget": {
+                      "type": "insight",
+                      "title": "Orders over time",
+                      "description": "",
+                      "ignoreDashboardFilters": [],
+                      "dateDataSet": {
+                        "identifier": {
+                          "id": "date",
+                          "type": "dataset"
+                        }
+                      },
+                      "insight": {
+                        "identifier": {
+                          "id": "a2b50fff-c7eb-444c-95e6-67037d2544d6",
+                          "type": "visualizationObject"
+                        }
+                      },
+                      "drills": [],
+                      "properties": {}
+                    }
+                  }
+                ],
+                "header": {
+                  "title": "Orders breakdown"
+                }
+              },
+              {
+                "type": "IDashboardLayoutSection",
+                "items": [
+                  {
+                    "type": "IDashboardLayoutItem",
+                    "size": {
+                      "xl": {
+                        "gridWidth": 5,
+                        "gridHeight": 27
+                      }
+                    },
+                    "widget": {
+                      "type": "insight",
+                      "title": "Activity by Hour",
+                      "description": "",
+                      "ignoreDashboardFilters": [],
+                      "dateDataSet": {
+                        "identifier": {
+                          "id": "date",
+                          "type": "dataset"
+                        }
+                      },
+                      "insight": {
+                        "identifier": {
+                          "id": "f1027458-1123-4f4d-af20-0e21b1d5e009",
+                          "type": "visualizationObject"
+                        }
+                      },
+                      "drills": [],
+                      "properties": {}
+                    }
+                  },
+                  {
+                    "type": "IDashboardLayoutItem",
+                    "size": {
+                      "xl": {
+                        "gridWidth": 7,
+                        "gridHeight": 27
+                      }
+                    },
+                    "widget": {
+                      "type": "insight",
+                      "title": "Net Sales by Product Category - Seasonality",
+                      "description": "",
+                      "ignoreDashboardFilters": [],
+                      "insight": {
+                        "identifier": {
+                          "id": "09a05f3f-d0cd-423a-8844-eba4ba7ca0c4",
+                          "type": "visualizationObject"
+                        }
+                      },
+                      "drills": [
+                        {
+                          "type": "drillToDashboard",
+                          "transition": "in-place",
+                          "origin": {
+                            "type": "drillFromMeasure",
+                            "measure": {
+                              "localIdentifier": "026ea78496f142d2b5037a6f066156e7"
+                            }
+                          },
+                          "target": {
+                            "identifier": {
+                              "id": "c1d67cd4-94ad-40aa-91a5-cdf4143f778a",
+                              "type": "analyticalDashboard"
+                            }
+                          }
+                        }
+                      ],
+                      "properties": {}
+                    }
+                  }
+                ],
+                "header": {
+                  "title": "Seasonality",
+                  "description": "Are customers more active in certain times of day or months of a year?"
+                }
+              }
+            ]
+          },
+          "version": "2"
+        },
+        "description": "",
+        "id": "bf439696-d6c6-4d41-a102-dd98e2f3da35",
+        "title": "2. Sales"
+      },
+      {
+        "content": {
+          "filterContextRef": {
+            "identifier": {
+              "id": "3046e84f-b7bf-4c4b-bb31-f3fa9591b477",
+              "type": "filterContext"
+            }
+          },
+          "layout": {
+            "type": "IDashboardLayout",
+            "sections": [
+              {
+                "type": "IDashboardLayoutSection",
+                "items": [
+                  {
+                    "type": "IDashboardLayoutItem",
+                    "size": {
+                      "xl": {
+                        "gridWidth": 3
+                      }
+                    },
+                    "widget": {
+                      "type": "insight",
+                      "title": "Net Sales",
+                      "description": "",
+                      "ignoreDashboardFilters": [],
+                      "dateDataSet": {
+                        "identifier": {
+                          "id": "date",
+                          "type": "dataset"
+                        }
+                      },
+                      "insight": {
+                        "identifier": {
+                          "id": "700d732d-67e1-4658-a6e0-c6b8edbb6d49",
+                          "type": "visualizationObject"
+                        }
+                      },
+                      "drills": [],
+                      "properties": {}
+                    }
+                  },
+                  {
+                    "type": "IDashboardLayoutItem",
+                    "size": {
+                      "xl": {
+                        "gridWidth": 3
+                      }
+                    },
+                    "widget": {
+                      "type": "insight",
+                      "title": "Net Orders",
+                      "description": "",
+                      "ignoreDashboardFilters": [],
+                      "dateDataSet": {
+                        "identifier": {
+                          "id": "date",
+                          "type": "dataset"
+                        }
+                      },
+                      "insight": {
+                        "identifier": {
+                          "id": "3ac5e106-b43e-4c87-9ef0-9315e02282bd",
+                          "type": "visualizationObject"
+                        }
+                      },
+                      "drills": [],
+                      "properties": {}
+                    }
+                  },
+                  {
+                    "type": "IDashboardLayoutItem",
+                    "size": {
+                      "xl": {
+                        "gridWidth": 3
+                      }
+                    },
+                    "widget": {
+                      "type": "insight",
+                      "title": "Active Customers",
+                      "description": "",
+                      "ignoreDashboardFilters": [],
+                      "dateDataSet": {
+                        "identifier": {
+                          "id": "date",
+                          "type": "dataset"
+                        }
+                      },
+                      "insight": {
+                        "identifier": {
+                          "id": "dc8575f5-27e5-44be-a2dc-23d54b7777e7",
+                          "type": "visualizationObject"
+                        }
+                      },
+                      "drills": [],
+                      "properties": {}
+                    }
+                  },
+                  {
+                    "type": "IDashboardLayoutItem",
+                    "size": {
+                      "xl": {
+                        "gridWidth": 3
+                      }
+                    },
+                    "widget": {
+                      "type": "insight",
+                      "title": "Sales per Customer",
+                      "description": "",
+                      "ignoreDashboardFilters": [],
+                      "dateDataSet": {
+                        "identifier": {
+                          "id": "date",
+                          "type": "dataset"
+                        }
+                      },
+                      "insight": {
+                        "identifier": {
+                          "id": "0c7ac154-1766-4d54-ba2b-b6f6913a59dd",
+                          "type": "visualizationObject"
+                        }
+                      },
+                      "drills": [],
+                      "properties": {}
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "IDashboardLayoutSection",
+                "items": [
+                  {
+                    "type": "IDashboardLayoutItem",
+                    "size": {
+                      "xl": {
+                        "gridWidth": 6
+                      }
+                    },
+                    "widget": {
+                      "type": "insight",
+                      "title": "Top Sellers",
+                      "description": "",
+                      "ignoreDashboardFilters": [],
+                      "dateDataSet": {
+                        "identifier": {
+                          "id": "date",
+                          "type": "dataset"
+                        }
+                      },
+                      "insight": {
+                        "identifier": {
+                          "id": "603bbd58-ea50-4607-ad20-418bd95c06c8",
+                          "type": "visualizationObject"
+                        }
+                      },
+                      "drills": [],
+                      "properties": {}
+                    }
+                  },
+                  {
+                    "type": "IDashboardLayoutItem",
+                    "size": {
+                      "xl": {
+                        "gridWidth": 6
+                      }
+                    },
+                    "widget": {
+                      "type": "insight",
+                      "title": "Money Makers",
+                      "description": "",
+                      "ignoreDashboardFilters": [],
+                      "dateDataSet": {
+                        "identifier": {
+                          "id": "date",
+                          "type": "dataset"
+                        }
+                      },
+                      "insight": {
+                        "identifier": {
+                          "id": "7b49dbdb-f9ab-41dd-9cb4-cd13627d67c3",
+                          "type": "visualizationObject"
+                        }
+                      },
+                      "drills": [],
+                      "properties": {}
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "IDashboardLayoutSection",
+                "items": [
+                  {
+                    "type": "IDashboardLayoutItem",
+                    "size": {
+                      "xl": {
+                        "gridWidth": 12,
+                        "gridHeight": 35
+                      }
+                    },
+                    "widget": {
+                      "type": "insight",
+                      "title": "Product detail",
+                      "description": "",
+                      "ignoreDashboardFilters": [],
+                      "dateDataSet": {
+                        "identifier": {
+                          "id": "date",
+                          "type": "dataset"
+                        }
+                      },
+                      "insight": {
+                        "identifier": {
+                          "id": "65120fa4-2805-4f70-b576-01d138117cf4",
+                          "type": "visualizationObject"
+                        }
+                      },
+                      "drills": [],
+                      "properties": {}
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "version": "2"
+        },
+        "description": "",
+        "id": "c1d67cd4-94ad-40aa-91a5-cdf4143f778a",
+        "title": "4. Products"
+      }
+    ],
+    "dashboardPlugins": [],
+    "filterContexts": [
+      {
+        "content": {
+          "filters": [
+            {
+              "dateFilter": {
+                "from": "-1",
+                "to": "-1",
+                "granularity": "GDC.time.month",
+                "type": "relative"
+              }
+            },
+            {
+              "attributeFilter": {
+                "displayForm": {
+                  "identifier": {
+                    "id": "product_category",
+                    "type": "label"
+                  }
+                },
+                "negativeSelection": true,
+                "attributeElements": {
+                  "uris": []
+                },
+                "localIdentifier": "a020410283be4559b5d0dc9e1d788156",
+                "filterElementsBy": []
+              }
+            },
+            {
+              "attributeFilter": {
+                "displayForm": {
+                  "identifier": {
+                    "id": "product_brand",
+                    "type": "label"
+                  }
+                },
+                "negativeSelection": true,
+                "attributeElements": {
+                  "uris": []
+                },
+                "localIdentifier": "a93733fc196c4960888467dd7850dea9",
+                "filterElementsBy": []
+              }
+            },
+            {
+              "attributeFilter": {
+                "displayForm": {
+                  "identifier": {
+                    "id": "product_rating",
+                    "type": "label"
+                  }
+                },
+                "negativeSelection": true,
+                "attributeElements": {
+                  "uris": []
+                },
+                "localIdentifier": "2c4cd1bff9e54c9e99e79e8e7b086c28",
+                "filterElementsBy": []
+              }
+            }
+          ],
+          "version": "2"
+        },
+        "description": "",
+        "id": "3046e84f-b7bf-4c4b-bb31-f3fa9591b477",
+        "title": "filterContext"
+      },
+      {
+        "content": {
+          "filters": [
+            {
+              "dateFilter": {
+                "from": "-1",
+                "to": "-1",
+                "granularity": "GDC.time.month",
+                "type": "relative"
+              }
+            },
+            {
+              "attributeFilter": {
+                "displayForm": {
+                  "identifier": {
+                    "id": "customer_country",
+                    "type": "label"
+                  }
+                },
+                "negativeSelection": true,
+                "attributeElements": {
+                  "uris": []
+                },
+                "localIdentifier": "23d599c44d83404d8b20747759d3a72c",
+                "filterElementsBy": []
+              }
+            },
+            {
+              "attributeFilter": {
+                "displayForm": {
+                  "identifier": {
+                    "id": "customer_age",
+                    "type": "label"
+                  }
+                },
+                "negativeSelection": true,
+                "attributeElements": {
+                  "uris": []
+                },
+                "localIdentifier": "8b158c16213545f6972a20048d5be2ff",
+                "filterElementsBy": []
+              }
+            }
+          ],
+          "version": "2"
+        },
+        "description": "",
+        "id": "6aacab95-c3da-4e87-8f8c-ca3b6ebfb8b2",
+        "title": "filterContext"
+      },
+      {
+        "content": {
+          "filters": [
+            {
+              "dateFilter": {
+                "from": "-1",
+                "to": "-1",
+                "granularity": "GDC.time.month",
+                "type": "relative"
+              }
+            },
+            {
+              "attributeFilter": {
+                "displayForm": {
+                  "identifier": {
+                    "id": "customer_country",
+                    "type": "label"
+                  }
+                },
+                "negativeSelection": true,
+                "attributeElements": {
+                  "uris": []
+                },
+                "localIdentifier": "c47fea61aa7247cca2bab2096ce6e297",
+                "filterElementsBy": []
+              }
+            },
+            {
+              "attributeFilter": {
+                "displayForm": {
+                  "identifier": {
+                    "id": "product_category",
+                    "type": "label"
+                  }
+                },
+                "negativeSelection": true,
+                "attributeElements": {
+                  "uris": []
+                },
+                "localIdentifier": "1b0255ea4bfd4f11a832a8649abd73b2",
+                "filterElementsBy": []
+              }
+            }
+          ],
+          "version": "2"
+        },
+        "description": "",
+        "id": "a4283267-0531-4b78-8faf-77faa5288811",
+        "title": "filterContext"
+      },
+      {
+        "content": {
+          "filters": [
+            {
+              "dateFilter": {
+                "from": "-89",
+                "to": "0",
+                "granularity": "GDC.time.date",
+                "type": "relative"
+              }
+            }
+          ],
+          "version": "2"
+        },
+        "description": "",
+        "id": "b30e53f4-1a67-41cc-b705-31e3b619acf0",
+        "title": "filterContext"
+      }
+    ],
+    "metrics": [
+      {
+        "content": {
+          "format": "#,##0",
+          "maql": "SELECT IFNULL(COUNT({label/customer_id}, {label/order_line_id}),0)"
+        },
+        "description": "Number of customers that transacted",
+        "id": "active_customers",
+        "title": "Active Customers"
+      },
+      {
+        "content": {
+          "format": "[>=1000000000000]$#,,,,.0 T;\n[>=1000000000]$#,,,.0 B;\n[>=1000000]$#,,.0 M;\n[>=1000]$#,.0 K;\n[>=0]$#,##0;\n[<=-1000000000000]-$#,,,,.0 T;\n[<=-1000000000]-$#,,,.0 B;\n[<=-1000000]-$#,,.0 M;\n[<=-1000]-$#,.0 K;\n[<0]-$#,##0",
+          "maql": "SELECT {metric/net_sales}/{metric/active_customers}"
+        },
+        "description": "Average revenue per user",
+        "id": "arpu",
+        "title": "ARPU"
+      },
+      {
+        "content": {
+          "format": "$#,##0.00",
+          "maql": "SELECT AVG({fact/order_unit_price})"
+        },
+        "description": "",
+        "id": "average_price_of_products",
+        "title": "Average Price of Products"
+      },
+      {
+        "content": {
+          "format": "$#,##0.00",
+          "maql": "SELECT AVG({fact/order_unit_cost})"
+        },
+        "description": "",
+        "id": "average_product_cost",
+        "title": "Average Product Cost"
+      },
+      {
+        "content": {
+          "format": "$#,##0.00",
+          "maql": "SELECT AVG({fact/order_unit_price})"
+        },
+        "description": "",
+        "id": "average_product_list_price",
+        "title": "Average Product List Price"
+      },
+      {
+        "content": {
+          "format": "#,##0",
+          "maql": "SELECT  IFNULL({metric/cogs_orders},0) - IFNULL({metric/cogs_returns},0)"
+        },
+        "description": "",
+        "id": "cogs",
+        "title": "COGS"
+      },
+      {
+        "content": {
+          "format": "$#,##0.00",
+          "maql": "SELECT SUM({fact/order_unit_cost}*{fact/order_unit_quantity}) WHERE {label/order_status} = \"Processed\""
+        },
+        "description": "Cost of goods sold",
+        "id": "cogs_orders",
+        "title": "COGS [Orders]"
+      },
+      {
+        "content": {
+          "format": "$#,##0.00",
+          "maql": "SELECT SUM({fact/return_unit_cost}*{fact/return_unit_quantity})"
+        },
+        "description": "Cost of goods returned",
+        "id": "cogs_returns",
+        "title": "COGS [Returns]"
+      },
+      {
+        "content": {
+          "format": "#,##0",
+          "maql": "SELECT {metric/active_customers} WHERE {label/order_status} = \"Processed\""
+        },
+        "description": "Number of customers that transacted",
+        "id": "customers_w_processed_orders",
+        "title": "Customers w/ Processed Orders"
+      },
+      {
+        "content": {
+          "format": "[>=1000000000000]$#,,,,.0 T;\n[>=1000000000]$#,,,.0 B;\n[>=1000000]$#,,.0 M;\n[>=1000]$#,.0 K;\n[>=0]$#,##0;\n[<=-1000000000000]-$#,,,,.0 T;\n[<=-1000000000]-$#,,,.0 B;\n[<=-1000000]-$#,,.0 M;\n[<=-1000]-$#,.0 K;\n[<0]-$#,##0",
+          "maql": "SELECT {metric/net_sales} - {metric/cogs}"
+        },
+        "description": "Net sales adjusted by the cost of goods sold",
+        "id": "gross_profit",
+        "title": "Gross Profit"
+      },
+      {
+        "content": {
+          "format": "#,##0%",
+          "maql": "SELECT {metric/gross_profit}/{metric/net_sales}"
+        },
+        "description": "How much of each $1 of sales is left over for other things after accounting for the costs of the products",
+        "id": "gross_profit_margin",
+        "title": "Gross Profit Margin"
+      },
+      {
+        "content": {
+          "format": "#,##0",
+          "maql": "SELECT {metric/of_orders} WHERE {label/order_status} = \"Processed\""
+        },
+        "description": "Total number of orders that have been processed",
+        "id": "net_orders",
+        "title": "Net Orders"
+      },
+      {
+        "content": {
+          "format": "[>=1000000000000]$#,,,,.0 T;\n[>=1000000000]$#,,,.0 B;\n[>=1000000]$#,,.0 M;\n[>=1000]$#,.0 K;\n[>=0]$#,##0;\n[<=-1000000000000]-$#,,,,.0 T;\n[<=-1000000000]-$#,,,.0 B;\n[<=-1000000]-$#,,.0 M;\n[<=-1000]-$#,.0 K;\n[<0]-$#,##0",
+          "maql": "SELECT {metric/total_sales} - IFNULL({metric/total_discounts}, 0) - IFNULL({metric/total_returns},0)"
+        },
+        "description": "The sum of all transacted orders adjusted by discounts and returns",
+        "id": "net_sales",
+        "title": "Net Sales"
+      },
+      {
+        "content": {
+          "format": "[>=1000000000000]$#,,,,.0 T;\n[>=1000000000]$#,,,.0 B;\n[>=1000000]$#,,.0 M;\n[>=1000]$#,.0 K;\n[>=0]$#,##0;\n[<=-1000000000000]-$#,,,,.0 T;\n[<=-1000000000]-$#,,,.0 B;\n[<=-1000000]-$#,,.0 M;\n[<=-1000]-$#,.0 K;\n[<0]-$#,##0",
+          "maql": "SELECT (SELECT {metric/net_sales} FOR PreviousPeriod({label/date.day})) * 1.1"
+        },
+        "description": "",
+        "id": "net_sales_goal",
+        "title": "Net Sales Goal"
+      },
+      {
+        "content": {
+          "format": "#,##0",
+          "maql": "SELECT {metric/active_customers} WHERE \n(SELECT COUNT({label/order_id}) BY {label/customer_id} WHERE {label/order_date.day} = {label/customer_created_date.day}) > 0"
+        },
+        "description": "Customers that placed their first order within the selected time period. Assumption is that all customers place their first order on the date their account is created.",
+        "id": "new_customers",
+        "title": "New Customers"
+      },
+      {
+        "content": {
+          "format": "#,##0",
+          "maql": "SELECT {metric/active_customers} - {metric/return_customers_monthly}"
+        },
+        "description": "Number of new customers. Needs to be broken down by date Month/Year",
+        "id": "new_customers_monthly",
+        "title": "New Customers Monthly"
+      },
+      {
+        "content": {
+          "format": "#,##0.0%",
+          "maql": "SELECT {metric/net_sales} / (SELECT {metric/net_sales} BY ALL OTHER WITHOUT PF)"
+        },
+        "description": "",
+        "id": "of_net_sales",
+        "title": "% of Net Sales"
+      },
+      {
+        "content": {
+          "format": "#,##0",
+          "maql": "SELECT COUNT({label/order_id},{label/order_line_id})"
+        },
+        "description": "Total number of orders in any status",
+        "id": "of_orders",
+        "title": "# of Orders"
+      },
+      {
+        "content": {
+          "format": "[>=1000000000000]$#,,,,.0 T;\n[>=1000000000]$#,,,.0 B;\n[>=1000000]$#,,.0 M;\n[>=1000]$#,.0 K;\n[>=0]$#,##0;\n[<=-1000000000000]-$#,,,,.0 T;\n[<=-1000000000]-$#,,,.0 B;\n[<=-1000000]-$#,,.0 M;\n[<=-1000]-$#,.0 K;\n[<0]-$#,##0",
+          "maql": "SELECT SUM({fact/order_unit_quantity}*{fact/order_unit_price})"
+        },
+        "description": "Total order amount irrespective of order status",
+        "id": "order_amount",
+        "title": "Order Amount"
+      },
+      {
+        "content": {
+          "format": "#,##0",
+          "maql": "SELECT {metric/of_orders} without pf"
+        },
+        "description": "",
+        "id": "orders_all_time",
+        "title": "Orders all time"
+      },
+      {
+        "content": {
+          "format": "#,##0.0",
+          "maql": "SELECT AVG({fact/rating})"
+        },
+        "description": "",
+        "id": "product_rating",
+        "title": "Product Rating"
+      },
+      {
+        "content": {
+          "format": "#,##0",
+          "maql": "SELECT {metric/active_customers} - IFNULL({metric/new_customers},0)"
+        },
+        "description": "",
+        "id": "return_customers",
+        "title": "Return Customers"
+      },
+      {
+        "content": {
+          "format": "#,##0",
+          "maql": "SELECT COUNT({label/customer_id}, {label/order_line_id}) \nWHERE {label/customer_created_date.month} < {label/date.month}"
+        },
+        "description": "Customers that registered in one of the previous months. Needs to be broken down by date Month/Year.",
+        "id": "return_customers_monthly",
+        "title": "Return Customers Monthly"
+      },
+      {
+        "content": {
+          "format": "#,##0",
+          "maql": "select COUNT({label/order_id},{label/return_id})"
+        },
+        "description": "",
+        "id": "returns",
+        "title": "Returns"
+      },
+      {
+        "content": {
+          "format": "#,##0%",
+          "maql": "SELECT SUM({fact/order_unit_quantity}) / (SUM({fact/order_unit_quantity})+SUM({fact/monthly_quantity_bom}))"
+        },
+        "description": "",
+        "id": "sell_through",
+        "title": "% Sell Through"
+      },
+      {
+        "content": {
+          "format": "#,##0",
+          "maql": "SELECT COUNT({label/customer_id})"
+        },
+        "description": "Total number of customers in the system",
+        "id": "total_customers",
+        "title": "Total Customers"
+      },
+      {
+        "content": {
+          "format": "$#,##0.00",
+          "maql": "SELECT SUM({fact/order_unit_discount}) WHERE {label/order_status}= \"Processed\""
+        },
+        "description": "The sum of all discounts",
+        "id": "total_discounts",
+        "title": "Total Discounts"
+      },
+      {
+        "content": {
+          "format": "#,##0",
+          "maql": "SELECT COUNT({label/product_id},{label/order_line_id})"
+        },
+        "description": "",
+        "id": "total_listings",
+        "title": "Total Listings"
+      },
+      {
+        "content": {
+          "format": "$#,##0.00",
+          "maql": "SELECT SUM({fact/return_unit_paid_amount}*{fact/return_unit_quantity})"
+        },
+        "description": "The sum of all returned orders",
+        "id": "total_returns",
+        "title": "Total Returns"
+      },
+      {
+        "content": {
+          "format": "[>=1000000000000]$#,,,,.0 T;\n[>=1000000000]$#,,,.0 B;\n[>=1000000]$#,,.0 M;\n[>=1000]$#,.0 K;\n[>=0]$#,##0;\n[<=-1000000000000]-$#,,,,.0 T;\n[<=-1000000000]-$#,,,.0 B;\n[<=-1000000]-$#,,.0 M;\n[<=-1000]-$#,.0 K;\n[<0]-$#,##0",
+          "maql": "SELECT {metric/order_amount} WHERE {label/order_status} = \"Processed\""
+        },
+        "description": "The sum of all transacted orders",
+        "id": "total_sales",
+        "title": "Total Sales"
+      }
+    ],
+    "visualizationObjects": [
+      {
+        "content": {
+          "buckets": [
+            {
+              "items": [
+                {
+                  "measure": {
+                    "localIdentifier": "93158c3fdd71488ca07277d10f29b202",
+                    "definition": {
+                      "measureDefinition": {
+                        "item": {
+                          "identifier": {
+                            "id": "gross_profit_margin",
+                            "type": "metric"
+                          }
+                        },
+                        "filters": []
+                      }
+                    },
+                    "title": "Gross Profit Margin"
+                  }
+                }
+              ],
+              "localIdentifier": "measures"
+            },
+            {
+              "items": [
+                {
+                  "measure": {
+                    "localIdentifier": "93158c3fdd71488ca07277d10f29b202_previous_period",
+                    "definition": {
+                      "previousPeriodMeasure": {
+                        "measureIdentifier": "93158c3fdd71488ca07277d10f29b202",
+                        "dateDataSets": [
+                          {
+                            "dataSet": {
+                              "identifier": {
+                                "id": "date",
+                                "type": "dataset"
+                              }
+                            },
+                            "periodsAgo": 1
+                          }
+                        ]
+                      }
+                    },
+                    "alias": "Previous period"
+                  }
+                }
+              ],
+              "localIdentifier": "secondary_measures"
+            }
+          ],
+          "filters": [
+            {
+              "relativeDateFilter": {
+                "dataSet": {
+                  "identifier": {
+                    "id": "date",
+                    "type": "dataset"
+                  }
+                },
+                "granularity": "GDC.time.month",
+                "from": 0,
+                "to": 0
+              }
+            }
+          ],
+          "sorts": [],
+          "properties": {},
+          "visualizationUrl": "local:headline",
+          "version": "2"
+        },
+        "description": "Gross Profit Margin",
+        "id": "03b89e08-ee06-4e1f-88d8-bbd805c691cc",
+        "title": "Gross Profit Margin"
+      },
+      {
+        "content": {
+          "buckets": [
+            {
+              "items": [
+                {
+                  "measure": {
+                    "localIdentifier": "026ea78496f142d2b5037a6f066156e7",
+                    "definition": {
+                      "measureDefinition": {
+                        "item": {
+                          "identifier": {
+                            "id": "net_sales",
+                            "type": "metric"
+                          }
+                        },
+                        "filters": []
+                      }
+                    },
+                    "title": "Net Sales"
+                  }
+                }
+              ],
+              "localIdentifier": "measures"
+            },
+            {
+              "items": [
+                {
+                  "attribute": {
+                    "localIdentifier": "4aec3042fbc2497ca400a0b3ab1f8a0b",
+                    "displayForm": {
+                      "identifier": {
+                        "id": "product_category",
+                        "type": "label"
+                      }
+                    }
+                  }
+                }
+              ],
+              "localIdentifier": "view"
+            },
+            {
+              "items": [
+                {
+                  "attribute": {
+                    "localIdentifier": "32a5035c52194cf59413f3b18feef281",
+                    "displayForm": {
+                      "identifier": {
+                        "id": "date.monthOfYear",
+                        "type": "label"
+                      }
+                    },
+                    "alias": "Month of Year"
+                  }
+                }
+              ],
+              "localIdentifier": "stack"
+            }
+          ],
+          "filters": [
+            {
+              "relativeDateFilter": {
+                "dataSet": {
+                  "identifier": {
+                    "id": "date",
+                    "type": "dataset"
+                  }
+                },
+                "granularity": "GDC.time.year",
+                "from": -1,
+                "to": -1
+              }
+            }
+          ],
+          "sorts": [],
+          "properties": {},
+          "visualizationUrl": "local:heatmap",
+          "version": "2"
+        },
+        "description": "Net Sales by Product Category Seasonality",
+        "id": "09a05f3f-d0cd-423a-8844-eba4ba7ca0c4",
+        "title": "Net Sales by Product Category Seasonality"
+      },
+      {
+        "content": {
+          "buckets": [
+            {
+              "items": [
+                {
+                  "measure": {
+                    "localIdentifier": "5d0ce2b953c9471199c8293770cc19db",
+                    "definition": {
+                      "measureDefinition": {
+                        "item": {
+                          "identifier": {
+                            "id": "arpu",
+                            "type": "metric"
+                          }
+                        },
+                        "filters": []
+                      }
+                    },
+                    "title": "ARPU",
+                    "alias": "Sales per customer"
+                  }
+                }
+              ],
+              "localIdentifier": "measures"
+            },
+            {
+              "items": [
+                {
+                  "measure": {
+                    "localIdentifier": "5d0ce2b953c9471199c8293770cc19db_previous_period",
+                    "definition": {
+                      "previousPeriodMeasure": {
+                        "measureIdentifier": "5d0ce2b953c9471199c8293770cc19db",
+                        "dateDataSets": [
+                          {
+                            "dataSet": {
+                              "identifier": {
+                                "id": "date",
+                                "type": "dataset"
+                              }
+                            },
+                            "periodsAgo": 1
+                          }
+                        ]
+                      }
+                    },
+                    "alias": "Previous period"
+                  }
+                }
+              ],
+              "localIdentifier": "secondary_measures"
+            }
+          ],
+          "filters": [
+            {
+              "relativeDateFilter": {
+                "dataSet": {
+                  "identifier": {
+                    "id": "date",
+                    "type": "dataset"
+                  }
+                },
+                "granularity": "GDC.time.month",
+                "from": 0,
+                "to": 0
+              }
+            }
+          ],
+          "sorts": [],
+          "properties": {},
+          "visualizationUrl": "local:headline",
+          "version": "2"
+        },
+        "description": "Sales per Customer",
+        "id": "0c7ac154-1766-4d54-ba2b-b6f6913a59dd",
+        "title": "Sales per Customer"
+      },
+      {
+        "content": {
+          "buckets": [
+            {
+              "items": [
+                {
+                  "measure": {
+                    "localIdentifier": "467a516bc9b14c0598a77281b7576809",
+                    "definition": {
+                      "measureDefinition": {
+                        "item": {
+                          "identifier": {
+                            "id": "order_unit_quantity",
+                            "type": "fact"
+                          }
+                        },
+                        "aggregation": "sum",
+                        "filters": []
+                      }
+                    },
+                    "title": "Sum of Order unit quantity",
+                    "alias": "# of Units",
+                    "format": "#,##0.00"
+                  }
+                },
+                {
+                  "measure": {
+                    "localIdentifier": "73d90f0963f947b5b625bce12838092e",
+                    "definition": {
+                      "measureDefinition": {
+                        "item": {
+                          "identifier": {
+                            "id": "order_unit_price",
+                            "type": "fact"
+                          }
+                        },
+                        "aggregation": "sum",
+                        "filters": []
+                      }
+                    },
+                    "title": "Sum of Order unit price",
+                    "alias": "Per unit price",
+                    "format": "#,##0.00"
+                  }
+                }
+              ],
+              "localIdentifier": "measures"
+            },
+            {
+              "items": [
+                {
+                  "attribute": {
+                    "localIdentifier": "c2cec2a421094d98aacdd2dcdd249b79",
+                    "displayForm": {
+                      "identifier": {
+                        "id": "order_id",
+                        "type": "label"
+                      }
+                    }
+                  }
+                },
+                {
+                  "attribute": {
+                    "localIdentifier": "2b0cc07c4b48482189b8f0af4693714a",
+                    "displayForm": {
+                      "identifier": {
+                        "id": "order_line_id",
+                        "type": "label"
+                      }
+                    }
+                  }
+                },
+                {
+                  "attribute": {
+                    "localIdentifier": "094b21053a194b8f92e0be5ee9b6d43e",
+                    "displayForm": {
+                      "identifier": {
+                        "id": "order_status",
+                        "type": "label"
+                      }
+                    }
+                  }
+                },
+                {
+                  "attribute": {
+                    "localIdentifier": "37d54a9da27d4038a1a7178820ce1a69",
+                    "displayForm": {
+                      "identifier": {
+                        "id": "product_name",
+                        "type": "label"
+                      }
+                    }
+                  }
+                }
+              ],
+              "localIdentifier": "attribute"
+            }
+          ],
+          "filters": [],
+          "sorts": [
+            {
+              "attributeSortItem": {
+                "attributeIdentifier": "c2cec2a421094d98aacdd2dcdd249b79",
+                "direction": "asc"
+              }
+            }
+          ],
+          "properties": {},
+          "visualizationUrl": "local:table",
+          "version": "2"
+        },
+        "description": "Order details",
+        "id": "1b9ce816-a4f9-4301-bdfd-d36c6a7a71b6",
+        "title": "Order details"
+      },
+      {
+        "content": {
+          "buckets": [
+            {
+              "items": [
+                {
+                  "measure": {
+                    "localIdentifier": "43d47ba6d22c4447ab42f0c6dd779531",
+                    "definition": {
+                      "measureDefinition": {
+                        "item": {
+                          "identifier": {
+                            "id": "gross_profit",
+                            "type": "metric"
+                          }
+                        },
+                        "filters": []
+                      }
+                    },
+                    "title": "Gross Profit"
+                  }
+                },
+                {
+                  "measure": {
+                    "localIdentifier": "68d98accca8341409b32d7cb867997d4",
+                    "definition": {
+                      "measureDefinition": {
+                        "item": {
+                          "identifier": {
+                            "id": "total_discounts",
+                            "type": "metric"
+                          }
+                        },
+                        "filters": []
+                      }
+                    },
+                    "title": "Total Discounts"
+                  }
+                },
+                {
+                  "measure": {
+                    "localIdentifier": "85fc5c81563548dda143affb4a4fd1bd",
+                    "definition": {
+                      "measureDefinition": {
+                        "item": {
+                          "identifier": {
+                            "id": "total_returns",
+                            "type": "metric"
+                          }
+                        },
+                        "filters": []
+                      }
+                    },
+                    "title": "Total Returns"
+                  }
+                },
+                {
+                  "measure": {
+                    "localIdentifier": "e35dbadd507744e98c0219fc53ff3887",
+                    "definition": {
+                      "measureDefinition": {
+                        "item": {
+                          "identifier": {
+                            "id": "cogs",
+                            "type": "metric"
+                          }
+                        },
+                        "filters": []
+                      }
+                    },
+                    "title": "COGS"
+                  }
+                }
+              ],
+              "localIdentifier": "measures"
+            },
+            {
+              "items": [
+                {
+                  "attribute": {
+                    "localIdentifier": "47169ff5ce3b4193922b4f9b41199a2a",
+                    "displayForm": {
+                      "identifier": {
+                        "id": "date.month",
+                        "type": "label"
+                      }
+                    }
+                  }
+                }
+              ],
+              "localIdentifier": "view"
+            }
+          ],
+          "filters": [],
+          "sorts": [],
+          "properties": {
+            "controls": {
+              "colorMapping": [
+                {
+                  "color": {
+                    "type": "guid",
+                    "value": "2"
+                  },
+                  "id": "43d47ba6d22c4447ab42f0c6dd779531"
+                },
+                {
+                  "color": {
+                    "type": "guid",
+                    "value": "1"
+                  },
+                  "id": "68d98accca8341409b32d7cb867997d4"
+                },
+                {
+                  "color": {
+                    "type": "guid",
+                    "value": "4"
+                  },
+                  "id": "85fc5c81563548dda143affb4a4fd1bd"
+                },
+                {
+                  "color": {
+                    "type": "guid",
+                    "value": "3"
+                  },
+                  "id": "e35dbadd507744e98c0219fc53ff3887"
+                }
+              ],
+              "stackMeasures": true
+            }
+          },
+          "visualizationUrl": "local:column",
+          "version": "2"
+        },
+        "description": "Total sales over time",
+        "id": "25bdccd8-ef39-40a5-a224-6031d0ab470c",
+        "title": "Total sales over time"
+      },
+      {
+        "content": {
+          "buckets": [
+            {
+              "items": [
+                {
+                  "measure": {
+                    "localIdentifier": "62f0f79a45b04db8bb2933cd5e877917",
+                    "definition": {
+                      "measureDefinition": {
+                        "item": {
+                          "identifier": {
+                            "id": "net_orders",
+                            "type": "metric"
+                          }
+                        },
+                        "filters": []
+                      }
+                    },
+                    "title": "Net Orders"
+                  }
+                }
+              ],
+              "localIdentifier": "measures"
+            },
+            {
+              "items": [
+                {
+                  "measure": {
+                    "localIdentifier": "59dfdd9221b9422d8b0b20863eaa2d7c",
+                    "definition": {
+                      "measureDefinition": {
+                        "item": {
+                          "identifier": {
+                            "id": "net_sales",
+                            "type": "metric"
+                          }
+                        },
+                        "filters": []
+                      }
+                    },
+                    "title": "Net Sales"
+                  }
+                }
+              ],
+              "localIdentifier": "secondary_measures"
+            },
+            {
+              "items": [
+                {
+                  "attribute": {
+                    "localIdentifier": "1c237b9ea2464dc2aa360658e9595d42",
+                    "displayForm": {
+                      "identifier": {
+                        "id": "product_brand",
+                        "type": "label"
+                      }
+                    }
+                  }
+                }
+              ],
+              "localIdentifier": "attribute"
+            }
+          ],
+          "filters": [],
+          "sorts": [],
+          "properties": {
+            "controls": {
+              "dataLabels": {
+                "visible": false
+              }
+            }
+          },
+          "visualizationUrl": "local:scatter",
+          "version": "2"
+        },
+        "description": "Net Sales vs Orders",
+        "id": "2da13424-2a6b-4ed4-916c-9bbc002fdd1b",
+        "title": "Net Sales vs Orders"
+      },
+      {
+        "content": {
+          "buckets": [
+            {
+              "items": [
+                {
+                  "measure": {
+                    "localIdentifier": "c9c1a6a146a244f695ad1b52733b283f",
+                    "definition": {
+                      "measureDefinition": {
+                        "item": {
+                          "identifier": {
+                            "id": "active_customers",
+                            "type": "metric"
+                          }
+                        },
+                        "filters": []
+                      }
+                    },
+                    "title": "Active Customers"
+                  }
+                }
+              ],
+              "localIdentifier": "measures"
+            },
+            {
+              "items": [
+                {
+                  "attribute": {
+                    "localIdentifier": "71434542913b4ad9b9bebc04b91dc155",
+                    "displayForm": {
+                      "identifier": {
+                        "id": "customer_country",
+                        "type": "label"
+                      }
+                    }
+                  }
+                }
+              ],
+              "localIdentifier": "view"
+            },
+            {
+              "items": [
+                {
+                  "attribute": {
+                    "localIdentifier": "ad12d182065d4fd3aba4aff5bfff1ee4",
+                    "displayForm": {
+                      "identifier": {
+                        "id": "customer_state",
+                        "type": "label"
+                      }
+                    }
+                  }
+                }
+              ],
+              "localIdentifier": "segment"
+            }
+          ],
+          "filters": [],
+          "sorts": [],
+          "properties": {
+            "controls": {
+              "legend": {
+                "enabled": false
+              }
+            }
+          },
+          "visualizationUrl": "local:treemap",
+          "version": "2"
+        },
+        "description": "Customers by Country and State",
+        "id": "2f12ace7-e626-47f1-953d-5ae957ca108e",
+        "title": "Customers by Country and State"
+      },
+      {
+        "content": {
+          "buckets": [
+            {
+              "items": [
+                {
+                  "measure": {
+                    "localIdentifier": "eb334cab51954b9f83184eead11308bc",
+                    "definition": {
+                      "measureDefinition": {
+                        "item": {
+                          "identifier": {
+                            "id": "net_orders",
+                            "type": "metric"
+                          }
+                        },
+                        "filters": []
+                      }
+                    },
+                    "title": "Net Orders"
+                  }
+                }
+              ],
+              "localIdentifier": "measures"
+            },
+            {
+              "items": [
+                {
+                  "measure": {
+                    "localIdentifier": "eb334cab51954b9f83184eead11308bc_previous_period",
+                    "definition": {
+                      "previousPeriodMeasure": {
+                        "measureIdentifier": "eb334cab51954b9f83184eead11308bc",
+                        "dateDataSets": [
+                          {
+                            "dataSet": {
+                              "identifier": {
+                                "id": "date",
+                                "type": "dataset"
+                              }
+                            },
+                            "periodsAgo": 1
+                          }
+                        ]
+                      }
+                    },
+                    "alias": "Previous period"
+                  }
+                }
+              ],
+              "localIdentifier": "secondary_measures"
+            }
+          ],
+          "filters": [
+            {
+              "relativeDateFilter": {
+                "dataSet": {
+                  "identifier": {
+                    "id": "date",
+                    "type": "dataset"
+                  }
+                },
+                "granularity": "GDC.time.month",
+                "from": 0,
+                "to": 0
+              }
+            }
+          ],
+          "sorts": [],
+          "properties": {},
+          "visualizationUrl": "local:headline",
+          "version": "2"
+        },
+        "description": "Orders Paid",
+        "id": "3ac5e106-b43e-4c87-9ef0-9315e02282bd",
+        "title": "Orders Paid"
+      },
+      {
+        "content": {
+          "buckets": [
+            {
+              "items": [
+                {
+                  "measure": {
+                    "localIdentifier": "199da0fab746448798f8fcc58448bc8b",
+                    "definition": {
+                      "measureDefinition": {
+                        "item": {
+                          "identifier": {
+                            "id": "net_sales",
+                            "type": "metric"
+                          }
+                        },
+                        "computeRatio": false,
+                        "filters": []
+                      }
+                    },
+                    "title": "Net Sales"
+                  }
+                }
+              ],
+              "localIdentifier": "measures"
+            },
+            {
+              "items": [
+                {
+                  "measure": {
+                    "localIdentifier": "455307b5590a49b28fafa89999446b15",
+                    "definition": {
+                      "measureDefinition": {
+                        "item": {
+                          "identifier": {
+                            "id": "net_orders",
+                            "type": "metric"
+                          }
+                        },
+                        "computeRatio": false,
+                        "filters": []
+                      }
+                    },
+                    "title": "Net Orders"
+                  }
+                }
+              ],
+              "localIdentifier": "secondary_measures"
+            },
+            {
+              "items": [
+                {
+                  "attribute": {
+                    "localIdentifier": "f37382df24334dd5ae7756dbd9cc9137",
+                    "displayForm": {
+                      "identifier": {
+                        "id": "date.day",
+                        "type": "label"
+                      }
+                    },
+                    "alias": "Date"
+                  }
+                }
+              ],
+              "localIdentifier": "view"
+            }
+          ],
+          "filters": [],
+          "sorts": [],
+          "properties": {
+            "controls": {
+              "dualAxis": true,
+              "legend": {
+                "position": "top"
+              },
+              "primaryChartType": "column",
+              "secondaryChartType": "line",
+              "secondary_yaxis": {
+                "measures": [
+                  "455307b5590a49b28fafa89999446b15"
+                ]
+              }
+            }
+          },
+          "visualizationUrl": "local:combo2",
+          "version": "2"
+        },
+        "description": "Revenue Trend",
+        "id": "3e16ebe3-7753-40c6-abc1-f549e7bf4d6c",
+        "title": "Revenue Trend"
+      },
+      {
+        "content": {
+          "buckets": [
+            {
+              "items": [
+                {
+                  "measure": {
+                    "localIdentifier": "0f489725fe26493fb5fdc3d2367c21ed",
+                    "definition": {
+                      "measureDefinition": {
+                        "item": {
+                          "identifier": {
+                            "id": "average_price_of_products",
+                            "type": "metric"
+                          }
+                        },
+                        "filters": []
+                      }
+                    },
+                    "title": "Average Price of Products"
+                  }
+                }
+              ],
+              "localIdentifier": "measures"
+            },
+            {
+              "items": [
+                {
+                  "measure": {
+                    "localIdentifier": "a279058ddf724659b6b7cad14bd63404",
+                    "definition": {
+                      "measureDefinition": {
+                        "item": {
+                          "identifier": {
+                            "id": "gross_profit",
+                            "type": "metric"
+                          }
+                        },
+                        "filters": []
+                      }
+                    },
+                    "title": "Gross Profit"
+                  }
+                }
+              ],
+              "localIdentifier": "secondary_measures"
+            },
+            {
+              "items": [
+                {
+                  "measure": {
+                    "localIdentifier": "7e4fe02cd17d4da38ec6d464646bbbb1",
+                    "definition": {
+                      "measureDefinition": {
+                        "item": {
+                          "identifier": {
+                            "id": "order_amount",
+                            "type": "metric"
+                          }
+                        },
+                        "filters": []
+                      }
+                    },
+                    "title": "Order Amount"
+                  }
+                }
+              ],
+              "localIdentifier": "tertiary_measures"
+            },
+            {
+              "items": [
+                {
+                  "attribute": {
+                    "localIdentifier": "458f2a55e1ca457883ff36141c84dc48",
+                    "displayForm": {
+                      "identifier": {
+                        "id": "product_brand",
+                        "type": "label"
+                      }
+                    }
+                  }
+                }
+              ],
+              "localIdentifier": "view"
+            }
+          ],
+          "filters": [],
+          "sorts": [],
+          "properties": {
+            "controls": {
+              "dataLabels": {
+                "visible": false
+              },
+              "legend": {
+                "enabled": false,
+                "position": "right"
+              }
+            }
+          },
+          "visualizationUrl": "local:bubble",
+          "version": "2"
+        },
+        "description": "Brands by Gross Profit and Avg Price of Product",
+        "id": "405034d6-ab9c-462a-a88e-3172598adc65",
+        "title": "Brands by Gross Profit and Avg Price of Product"
+      },
+      {
+        "content": {
+          "buckets": [
+            {
+              "items": [
+                {
+                  "measure": {
+                    "localIdentifier": "ec39060b8362444e9fe4bacb7c6e4c2b",
+                    "definition": {
+                      "measureDefinition": {
+                        "item": {
+                          "identifier": {
+                            "id": "total_discounts",
+                            "type": "metric"
+                          }
+                        },
+                        "filters": []
+                      }
+                    },
+                    "title": "Total Discounts",
+                    "format": "[>=1000000000000]$#,,,,.0 T;\n[>=1000000000]$#,,,.0 B;\n[>=1000000]$#,,.0 M;\n[>=1000]$#,.0 K;\n[>=0]$#,##0;\n[<=-1000000000000]-$#,,,,.0 T;\n[<=-1000000000]-$#,,,.0 B;\n[<=-1000000]-$#,,.0 M;\n[<=-1000]-$#,.0 K;\n[<0]-$#,##0"
+                  }
+                },
+                {
+                  "measure": {
+                    "localIdentifier": "50fe87b2aed5402c83560cec490b184d",
+                    "definition": {
+                      "measureDefinition": {
+                        "item": {
+                          "identifier": {
+                            "id": "total_returns",
+                            "type": "metric"
+                          }
+                        },
+                        "filters": []
+                      }
+                    },
+                    "title": "Total Returns",
+                    "format": "[>=1000000000000]$#,,,,.0 T;\n[>=1000000000]$#,,,.0 B;\n[>=1000000]$#,,.0 M;\n[>=1000]$#,.0 K;\n[>=0]$#,##0;\n[<=-1000000000000]-$#,,,,.0 T;\n[<=-1000000000]-$#,,,.0 B;\n[<=-1000000]-$#,,.0 M;\n[<=-1000]-$#,.0 K;\n[<0]-$#,##0"
+                  }
+                },
+                {
+                  "measure": {
+                    "localIdentifier": "85c76738129d4167bd339128e9f83100",
+                    "definition": {
+                      "measureDefinition": {
+                        "item": {
+                          "identifier": {
+                            "id": "cogs",
+                            "type": "metric"
+                          }
+                        },
+                        "filters": []
+                      }
+                    },
+                    "title": "COGS",
+                    "format": "[>=1000000000000]$#,,,,.0 T;\n[>=1000000000]$#,,,.0 B;\n[>=1000000]$#,,.0 M;\n[>=1000]$#,.0 K;\n[>=0]$#,##0;\n[<=-1000000000000]-$#,,,,.0 T;\n[<=-1000000000]-$#,,,.0 B;\n[<=-1000000]-$#,,.0 M;\n[<=-1000]-$#,.0 K;\n[<0]-$#,##0"
+                  }
+                },
+                {
+                  "measure": {
+                    "localIdentifier": "dc5f7ccc7b274b2cb02d2923b791b366",
+                    "definition": {
+                      "measureDefinition": {
+                        "item": {
+                          "identifier": {
+                            "id": "gross_profit",
+                            "type": "metric"
+                          }
+                        },
+                        "filters": []
+                      }
+                    },
+                    "title": "Gross Profit"
+                  }
+                }
+              ],
+              "localIdentifier": "measures"
+            }
+          ],
+          "filters": [],
+          "sorts": [],
+          "properties": {
+            "controls": {
+              "colorMapping": [
+                {
+                  "color": {
+                    "type": "guid",
+                    "value": "2"
+                  },
+                  "id": "dc5f7ccc7b274b2cb02d2923b791b366"
+                },
+                {
+                  "color": {
+                    "type": "guid",
+                    "value": "4"
+                  },
+                  "id": "50fe87b2aed5402c83560cec490b184d"
+                },
+                {
+                  "color": {
+                    "type": "guid",
+                    "value": "6"
+                  },
+                  "id": "ec39060b8362444e9fe4bacb7c6e4c2b"
+                }
+              ],
+              "dataLabels": {
+                "visible": "auto"
+              },
+              "legend": {
+                "enabled": true,
+                "position": "right"
+              }
+            }
+          },
+          "visualizationUrl": "local:donut",
+          "version": "2"
+        },
+        "description": "Total sales breakdown",
+        "id": "41a8d4c3-1ab6-4bab-b531-5893912e9b93",
+        "title": "Total sales breakdown"
+      },
+      {
+        "content": {
+          "buckets": [
+            {
+              "items": [
+                {
+                  "measure": {
+                    "localIdentifier": "d612ec37e5a04727bb20def0935e4fab",
+                    "definition": {
+                      "measureDefinition": {
+                        "item": {
+                          "identifier": {
+                            "id": "net_sales",
+                            "type": "metric"
+                          }
+                        },
+                        "filters": []
+                      }
+                    },
+                    "title": "Net Sales"
+                  }
+                },
+                {
+                  "measure": {
+                    "localIdentifier": "ff456d9200d34b0aa1e2bd5e8bff6b99",
+                    "definition": {
+                      "measureDefinition": {
+                        "item": {
+                          "identifier": {
+                            "id": "gross_profit",
+                            "type": "metric"
+                          }
+                        },
+                        "filters": []
+                      }
+                    },
+                    "title": "Gross Profit"
+                  }
+                },
+                {
+                  "measure": {
+                    "localIdentifier": "28cee096bf4141a29ffe0bc41806e4c3",
+                    "definition": {
+                      "measureDefinition": {
+                        "item": {
+                          "identifier": {
+                            "id": "gross_profit_margin",
+                            "type": "metric"
+                          }
+                        },
+                        "filters": []
+                      }
+                    },
+                    "title": "Gross Profit Margin"
+                  }
+                }
+              ],
+              "localIdentifier": "measures"
+            },
+            {
+              "items": [
+                {
+                  "attribute": {
+                    "localIdentifier": "525c659241bb4d6fbe2ab74aa37150f1",
+                    "displayForm": {
+                      "identifier": {
+                        "id": "customer_country",
+                        "type": "label"
+                      }
+                    }
+                  }
+                },
+                {
+                  "attribute": {
+                    "localIdentifier": "a6b19dd405cb4c1da462426af2f298ba",
+                    "displayForm": {
+                      "identifier": {
+                        "id": "product_category",
+                        "type": "label"
+                      }
+                    }
+                  }
+                }
+              ],
+              "localIdentifier": "attribute",
+              "totals": [
+                {
+                  "type": "sum",
+                  "measureIdentifier": "d612ec37e5a04727bb20def0935e4fab",
+                  "attributeIdentifier": "a6b19dd405cb4c1da462426af2f298ba"
+                },
+                {
+                  "type": "sum",
+                  "measureIdentifier": "ff456d9200d34b0aa1e2bd5e8bff6b99",
+                  "attributeIdentifier": "a6b19dd405cb4c1da462426af2f298ba"
+                }
+              ]
+            }
+          ],
+          "filters": [],
+          "sorts": [
+            {
+              "attributeSortItem": {
+                "attributeIdentifier": "525c659241bb4d6fbe2ab74aa37150f1",
+                "direction": "asc"
+              }
+            }
+          ],
+          "properties": {},
+          "visualizationUrl": "local:table",
+          "version": "2"
+        },
+        "description": "Sales detail",
+        "id": "469e8936-ca67-4987-8c70-0e35be24be4d",
+        "title": "Sales detail"
+      },
+      {
+        "content": {
+          "buckets": [
+            {
+              "items": [
+                {
+                  "measure": {
+                    "localIdentifier": "2f2234037eed4600bcf6a670cbf2207d",
+                    "definition": {
+                      "measureDefinition": {
+                        "item": {
+                          "identifier": {
+                            "id": "new_customers_monthly",
+                            "type": "metric"
+                          }
+                        },
+                        "filters": []
+                      }
+                    },
+                    "title": "New Customers Monthly"
+                  }
+                },
+                {
+                  "measure": {
+                    "localIdentifier": "df3a860eabea47c88092c543d4fa551a",
+                    "definition": {
+                      "measureDefinition": {
+                        "item": {
+                          "identifier": {
+                            "id": "return_customers_monthly",
+                            "type": "metric"
+                          }
+                        },
+                        "filters": []
+                      }
+                    },
+                    "title": "Return Customers Monthly"
+                  }
+                }
+              ],
+              "localIdentifier": "measures"
+            },
+            {
+              "items": [
+                {
+                  "attribute": {
+                    "localIdentifier": "eebed04fe2054d109c35bc4c34609a56",
+                    "displayForm": {
+                      "identifier": {
+                        "id": "date.day",
+                        "type": "label"
+                      }
+                    },
+                    "alias": "Date"
+                  }
+                }
+              ],
+              "localIdentifier": "view"
+            }
+          ],
+          "filters": [],
+          "sorts": [],
+          "properties": {
+            "controls": {
+              "stackMeasures": true
+            }
+          },
+          "visualizationUrl": "local:column",
+          "version": "2"
+        },
+        "description": "New vs Returning Trend",
+        "id": "48000537-4586-4a1e-a9a5-8eda7f8151a8",
+        "title": "New vs Returning Trend"
+      },
+      {
+        "content": {
+          "buckets": [
+            {
+              "items": [
+                {
+                  "measure": {
+                    "localIdentifier": "1df9a9af3c734b5da9f719b62d1b06c3",
+                    "definition": {
+                      "measureDefinition": {
+                        "item": {
+                          "identifier": {
+                            "id": "return_customers",
+                            "type": "metric"
+                          }
+                        },
+                        "filters": []
+                      }
+                    },
+                    "title": "Return Customers"
+                  }
+                }
+              ],
+              "localIdentifier": "measures"
+            },
+            {
+              "items": [
+                {
+                  "measure": {
+                    "localIdentifier": "1df9a9af3c734b5da9f719b62d1b06c3_previous_period",
+                    "definition": {
+                      "previousPeriodMeasure": {
+                        "measureIdentifier": "1df9a9af3c734b5da9f719b62d1b06c3",
+                        "dateDataSets": [
+                          {
+                            "dataSet": {
+                              "identifier": {
+                                "id": "date",
+                                "type": "dataset"
+                              }
+                            },
+                            "periodsAgo": 1
+                          }
+                        ]
+                      }
+                    },
+                    "alias": "Previous period"
+                  }
+                }
+              ],
+              "localIdentifier": "secondary_measures"
+            }
+          ],
+          "filters": [
+            {
+              "relativeDateFilter": {
+                "dataSet": {
+                  "identifier": {
+                    "id": "date",
+                    "type": "dataset"
+                  }
+                },
+                "granularity": "GDC.time.month",
+                "from": 0,
+                "to": 0
+              }
+            }
+          ],
+          "sorts": [],
+          "properties": {},
+          "visualizationUrl": "local:headline",
+          "version": "2"
+        },
+        "description": "Return Customers",
+        "id": "4cea4177-37c5-4196-8aab-c6bf60dc1f22",
+        "title": "Return Customers"
+      },
+      {
+        "content": {
+          "buckets": [
+            {
+              "items": [
+                {
+                  "measure": {
+                    "localIdentifier": "a42c7fae73a54765b89e23f0ebc83678",
+                    "definition": {
+                      "measureDefinition": {
+                        "item": {
+                          "identifier": {
+                            "id": "gross_profit_margin",
+                            "type": "metric"
+                          }
+                        },
+                        "filters": []
+                      }
+                    },
+                    "title": "Gross Profit Margin"
+                  }
+                },
+                {
+                  "measure": {
+                    "localIdentifier": "7e148773a5e94c28a367eb18f4b3d206",
+                    "definition": {
+                      "measureDefinition": {
+                        "item": {
+                          "identifier": {
+                            "id": "gross_profit",
+                            "type": "metric"
+                          }
+                        },
+                        "filters": []
+                      }
+                    },
+                    "title": "Gross Profit"
+                  }
+                }
+              ],
+              "localIdentifier": "measures"
+            },
+            {
+              "items": [
+                {
+                  "attribute": {
+                    "localIdentifier": "deb150afe30946e989f6a54bb3a6d4e7",
+                    "displayForm": {
+                      "identifier": {
+                        "id": "product_category",
+                        "type": "label"
+                      }
+                    }
+                  }
+                },
+                {
+                  "attribute": {
+                    "localIdentifier": "644c713693514146b8c2b0f788313960",
+                    "displayForm": {
+                      "identifier": {
+                        "id": "product_name",
+                        "type": "label"
+                      }
+                    }
+                  }
+                }
+              ],
+              "localIdentifier": "attribute",
+              "totals": [
+                {
+                  "type": "sum",
+                  "measureIdentifier": "7e148773a5e94c28a367eb18f4b3d206",
+                  "attributeIdentifier": "644c713693514146b8c2b0f788313960"
+                }
+              ]
+            }
+          ],
+          "filters": [],
+          "sorts": [
+            {
+              "attributeSortItem": {
+                "attributeIdentifier": "deb150afe30946e989f6a54bb3a6d4e7",
+                "direction": "asc"
+              }
+            }
+          ],
+          "properties": {
+            "controls": {
+              "columnWidths": [
+                {
+                  "attributeColumnWidthItem": {
+                    "attributeIdentifier": "644c713693514146b8c2b0f788313960",
+                    "width": {
+                      "value": 500
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "visualizationUrl": "local:table",
+          "version": "2"
+        },
+        "description": "Gross Profit Margin Detail",
+        "id": "5297352c-7fd3-4e7e-90ad-026e470f55bd",
+        "title": "Gross Profit Margin Detail"
+      },
+      {
+        "content": {
+          "buckets": [
+            {
+              "items": [
+                {
+                  "measure": {
+                    "localIdentifier": "74047aaaa1904be3a0f08d6cf46606b2",
+                    "definition": {
+                      "measureDefinition": {
+                        "item": {
+                          "identifier": {
+                            "id": "of_orders",
+                            "type": "metric"
+                          }
+                        },
+                        "filters": []
+                      }
+                    },
+                    "title": "# of Orders"
+                  }
+                },
+                {
+                  "measure": {
+                    "localIdentifier": "0442893010af41168bebbd2b18dd1b30",
+                    "definition": {
+                      "measureDefinition": {
+                        "item": {
+                          "identifier": {
+                            "id": "order_amount",
+                            "type": "metric"
+                          }
+                        },
+                        "filters": []
+                      }
+                    },
+                    "title": "Order Amount"
+                  }
+                }
+              ],
+              "localIdentifier": "measures"
+            },
+            {
+              "items": [
+                {
+                  "attribute": {
+                    "localIdentifier": "b6e6b9cd507a433997f3da4dd929cb2e",
+                    "displayForm": {
+                      "identifier": {
+                        "id": "customer_country",
+                        "type": "label"
+                      }
+                    }
+                  }
+                },
+                {
+                  "attribute": {
+                    "localIdentifier": "619a8767a0624c9da9411cbdc73cd239",
+                    "displayForm": {
+                      "identifier": {
+                        "id": "customer_state",
+                        "type": "label"
+                      }
+                    }
+                  }
+                },
+                {
+                  "attribute": {
+                    "localIdentifier": "a3521bb3c9584e9491cd70c0f99e4886",
+                    "displayForm": {
+                      "identifier": {
+                        "id": "customer_city",
+                        "type": "label"
+                      }
+                    }
+                  }
+                },
+                {
+                  "attribute": {
+                    "localIdentifier": "f8f9f6b624cc4abeac89a060667159c2",
+                    "displayForm": {
+                      "identifier": {
+                        "id": "customer_name",
+                        "type": "label"
+                      }
+                    },
+                    "alias": "Customer"
+                  }
+                }
+              ],
+              "localIdentifier": "attribute"
+            }
+          ],
+          "filters": [],
+          "sorts": [
+            {
+              "attributeSortItem": {
+                "attributeIdentifier": "b6e6b9cd507a433997f3da4dd929cb2e",
+                "direction": "asc"
+              }
+            }
+          ],
+          "properties": {},
+          "visualizationUrl": "local:table",
+          "version": "2"
+        },
+        "description": "Customer Detail",
+        "id": "543cadbb-10b4-4153-b810-52586df7aa0e",
+        "title": "Customer Detail"
+      },
+      {
+        "content": {
+          "buckets": [
+            {
+              "items": [
+                {
+                  "measure": {
+                    "localIdentifier": "c9c1a6a146a244f695ad1b52733b283f",
+                    "definition": {
+                      "measureDefinition": {
+                        "item": {
+                          "identifier": {
+                            "id": "active_customers",
+                            "type": "metric"
+                          }
+                        },
+                        "computeRatio": false,
+                        "filters": []
+                      }
+                    },
+                    "title": "Active Customers"
+                  }
+                }
+              ],
+              "localIdentifier": "measures"
+            },
+            {
+              "items": [
+                {
+                  "attribute": {
+                    "localIdentifier": "ad12d182065d4fd3aba4aff5bfff1ee4",
+                    "displayForm": {
+                      "identifier": {
+                        "id": "customer_state",
+                        "type": "label"
+                      }
+                    }
+                  }
+                }
+              ],
+              "localIdentifier": "view"
+            }
+          ],
+          "filters": [],
+          "sorts": [],
+          "properties": {
+            "controls": {
+              "legend": {
+                "enabled": false
+              }
+            }
+          },
+          "visualizationUrl": "local:treemap",
+          "version": "2"
+        },
+        "description": "Customers by State",
+        "id": "544ee04b-7fcc-41a3-8323-852de0613815",
+        "title": "Customers by State"
+      },
+      {
+        "content": {
+          "buckets": [
+            {
+              "items": [
+                {
+                  "measure": {
+                    "localIdentifier": "aff217f5be79438aa7053d7e15c7a3a7",
+                    "definition": {
+                      "measureDefinition": {
+                        "item": {
+                          "identifier": {
+                            "id": "net_orders",
+                            "type": "metric"
+                          }
+                        },
+                        "filters": []
+                      }
+                    },
+                    "title": "Net Orders"
+                  }
+                }
+              ],
+              "localIdentifier": "measures"
+            },
+            {
+              "items": [
+                {
+                  "attribute": {
+                    "localIdentifier": "f8b013634b8d4d56b68031bcd8ce7b63",
+                    "displayForm": {
+                      "identifier": {
+                        "id": "product_name",
+                        "type": "label"
+                      }
+                    }
+                  }
+                }
+              ],
+              "localIdentifier": "view"
+            }
+          ],
+          "filters": [
+            {
+              "rankingFilter": {
+                "measure": {
+                  "localIdentifier": "aff217f5be79438aa7053d7e15c7a3a7"
+                },
+                "operator": "TOP",
+                "value": 10
+              }
+            }
+          ],
+          "sorts": [],
+          "properties": {},
+          "visualizationUrl": "local:bar",
+          "version": "2"
+        },
+        "description": "Top 10 Sellers",
+        "id": "603bbd58-ea50-4607-ad20-418bd95c06c8",
+        "title": "Top 10 Sellers"
+      },
+      {
+        "content": {
+          "buckets": [
+            {
+              "items": [
+                {
+                  "measure": {
+                    "localIdentifier": "09d1a954b824448dabccc750d223c519",
+                    "definition": {
+                      "measureDefinition": {
+                        "item": {
+                          "identifier": {
+                            "id": "net_sales",
+                            "type": "metric"
+                          }
+                        },
+                        "filters": []
+                      }
+                    },
+                    "title": "Net Sales"
+                  }
+                }
+              ],
+              "localIdentifier": "measures"
+            },
+            {
+              "items": [
+                {
+                  "attribute": {
+                    "localIdentifier": "0b6cc41384054a5496ab4d40962a62fb",
+                    "displayForm": {
+                      "identifier": {
+                        "id": "customer_name",
+                        "type": "label"
+                      }
+                    },
+                    "alias": "Customer"
+                  }
+                }
+              ],
+              "localIdentifier": "view"
+            }
+          ],
+          "filters": [
+            {
+              "negativeAttributeFilter": {
+                "displayForm": {
+                  "identifier": {
+                    "id": "customer_id",
+                    "type": "label"
+                  }
+                },
+                "notIn": {
+                  "uris": []
+                }
+              }
+            },
+            {
+              "rankingFilter": {
+                "measure": {
+                  "localIdentifier": "09d1a954b824448dabccc750d223c519"
+                },
+                "operator": "TOP",
+                "value": 10
+              }
+            }
+          ],
+          "sorts": [],
+          "properties": {},
+          "visualizationUrl": "local:bar",
+          "version": "2"
+        },
+        "description": "Top 10 Spenders",
+        "id": "607e9724-37ed-44f6-9fb4-55676d58df6e",
+        "title": "Top 10 Spenders"
+      },
+      {
+        "content": {
+          "buckets": [
+            {
+              "items": [
+                {
+                  "measure": {
+                    "localIdentifier": "442792c638df4c0283af94d95a1d3612_pop",
+                    "definition": {
+                      "popMeasureDefinition": {
+                        "measureIdentifier": "442792c638df4c0283af94d95a1d3612",
+                        "popAttribute": {
+                          "identifier": {
+                            "id": "date.year",
+                            "type": "attribute"
+                          }
+                        }
+                      }
+                    },
+                    "alias": "Net Sales - year ago"
+                  }
+                },
+                {
+                  "measure": {
+                    "localIdentifier": "442792c638df4c0283af94d95a1d3612",
+                    "definition": {
+                      "measureDefinition": {
+                        "item": {
+                          "identifier": {
+                            "id": "net_sales",
+                            "type": "metric"
+                          }
+                        },
+                        "computeRatio": false,
+                        "filters": []
+                      }
+                    },
+                    "title": "Net Sales"
+                  }
+                }
+              ],
+              "localIdentifier": "measures"
+            },
+            {
+              "items": [
+                {
+                  "attribute": {
+                    "localIdentifier": "1b9548824b3d4ade9666659cf8cda074",
+                    "displayForm": {
+                      "identifier": {
+                        "id": "date.day",
+                        "type": "label"
+                      }
+                    },
+                    "alias": "Date"
+                  }
+                }
+              ],
+              "localIdentifier": "view"
+            }
+          ],
+          "filters": [
+            {
+              "relativeDateFilter": {
+                "dataSet": {
+                  "identifier": {
+                    "id": "date",
+                    "type": "dataset"
+                  }
+                },
+                "granularity": "GDC.time.month",
+                "from": -11,
+                "to": 0
+              }
+            }
+          ],
+          "sorts": [],
+          "properties": {
+            "controls": {
+              "dataLabels": {
+                "totalsVisible": "auto",
+                "visible": "auto"
+              },
+              "grid": {
+                "enabled": true
+              },
+              "legend": {
+                "enabled": true
+              },
+              "xaxis": {
+                "labelsEnabled": true,
+                "rotation": "auto",
+                "visible": true
+              }
+            }
+          },
+          "visualizationUrl": "local:column",
+          "version": "2"
+        },
+        "description": "Net sales over time",
+        "id": "60dd3592-1322-4260-aaad-bd51cdcb1343",
+        "title": "Net sales over time"
+      },
+      {
+        "content": {
+          "buckets": [
+            {
+              "items": [
+                {
+                  "measure": {
+                    "localIdentifier": "5f460be07cfc47a5a4a369917469f333",
+                    "definition": {
+                      "measureDefinition": {
+                        "item": {
+                          "identifier": {
+                            "id": "net_sales",
+                            "type": "metric"
+                          }
+                        },
+                        "filters": []
+                      }
+                    },
+                    "title": "Net Sales"
+                  }
+                },
+                {
+                  "measure": {
+                    "localIdentifier": "3c910f1183e247beada046e18fd055a8",
+                    "definition": {
+                      "measureDefinition": {
+                        "item": {
+                          "identifier": {
+                            "id": "total_returns",
+                            "type": "metric"
+                          }
+                        },
+                        "filters": []
+                      }
+                    },
+                    "title": "Total Returns"
+                  }
+                },
+                {
+                  "measure": {
+                    "localIdentifier": "e5480401e2ca457589a8448589fa136c",
+                    "definition": {
+                      "measureDefinition": {
+                        "item": {
+                          "identifier": {
+                            "id": "total_discounts",
+                            "type": "metric"
+                          }
+                        },
+                        "filters": []
+                      }
+                    },
+                    "title": "Total Discounts"
+                  }
+                }
+              ],
+              "localIdentifier": "measures"
+            }
+          ],
+          "filters": [],
+          "sorts": [],
+          "properties": {},
+          "visualizationUrl": "local:donut",
+          "version": "2"
+        },
+        "description": "Net Sales Breakdown",
+        "id": "643699f3-f980-44f6-b618-4b3d3f3f560e",
+        "title": "Net Sales Breakdown"
+      },
+      {
+        "content": {
+          "buckets": [
+            {
+              "items": [
+                {
+                  "measure": {
+                    "localIdentifier": "f7c65b77a50a4f999aee269b8e6ee40d",
+                    "definition": {
+                      "measureDefinition": {
+                        "item": {
+                          "identifier": {
+                            "id": "net_sales",
+                            "type": "metric"
+                          }
+                        },
+                        "filters": []
+                      }
+                    },
+                    "title": "Net Sales"
+                  }
+                },
+                {
+                  "measure": {
+                    "localIdentifier": "9bbd3123e2a84bc094fc581ac91ec0a8",
+                    "definition": {
+                      "measureDefinition": {
+                        "item": {
+                          "identifier": {
+                            "id": "total_returns",
+                            "type": "metric"
+                          }
+                        },
+                        "filters": []
+                      }
+                    },
+                    "title": "Total Returns"
+                  }
+                },
+                {
+                  "measure": {
+                    "localIdentifier": "182783e3b51249d1b54c56cddf7e0a2f",
+                    "definition": {
+                      "measureDefinition": {
+                        "item": {
+                          "identifier": {
+                            "id": "total_discounts",
+                            "type": "metric"
+                          }
+                        },
+                        "filters": []
+                      }
+                    },
+                    "title": "Total Discounts"
+                  }
+                }
+              ],
+              "localIdentifier": "measures"
+            },
+            {
+              "items": [
+                {
+                  "attribute": {
+                    "localIdentifier": "e992628ae16340ac865d1ed7caa996a3",
+                    "displayForm": {
+                      "identifier": {
+                        "id": "product_id",
+                        "type": "label"
+                      }
+                    }
+                  }
+                },
+                {
+                  "attribute": {
+                    "localIdentifier": "73d5f54c4e3844adb8b6109118c30dca",
+                    "displayForm": {
+                      "identifier": {
+                        "id": "product_name",
+                        "type": "label"
+                      }
+                    },
+                    "alias": "Product Name"
+                  }
+                },
+                {
+                  "attribute": {
+                    "localIdentifier": "f845d4e1be6e4888910dac662eaf1a72",
+                    "displayForm": {
+                      "identifier": {
+                        "id": "product_rating",
+                        "type": "label"
+                      }
+                    }
+                  }
+                }
+              ],
+              "localIdentifier": "attribute"
+            }
+          ],
+          "filters": [],
+          "sorts": [
+            {
+              "attributeSortItem": {
+                "attributeIdentifier": "e992628ae16340ac865d1ed7caa996a3",
+                "direction": "asc"
+              }
+            }
+          ],
+          "properties": {},
+          "visualizationUrl": "local:table",
+          "version": "2"
+        },
+        "description": "Product detail",
+        "id": "65120fa4-2805-4f70-b576-01d138117cf4",
+        "title": "Product detail"
+      },
+      {
+        "content": {
+          "buckets": [
+            {
+              "items": [
+                {
+                  "measure": {
+                    "localIdentifier": "7d80d30b6bd64fd69d975ad8e234f6d0",
+                    "definition": {
+                      "measureDefinition": {
+                        "item": {
+                          "identifier": {
+                            "id": "net_sales",
+                            "type": "metric"
+                          }
+                        },
+                        "filters": []
+                      }
+                    },
+                    "title": "Net Sales"
+                  }
+                }
+              ],
+              "localIdentifier": "measures"
+            },
+            {
+              "items": [
+                {
+                  "measure": {
+                    "localIdentifier": "3b80e29c47d04facae0f9cf2584559bb",
+                    "definition": {
+                      "measureDefinition": {
+                        "item": {
+                          "identifier": {
+                            "id": "net_sales_goal",
+                            "type": "metric"
+                          }
+                        },
+                        "filters": []
+                      }
+                    },
+                    "title": "Net Sales Goal"
+                  }
+                }
+              ],
+              "localIdentifier": "secondary_measures"
+            }
+          ],
+          "filters": [],
+          "sorts": [],
+          "properties": {
+            "controls": {
+              "legend": {
+                "position": "top"
+              },
+              "xaxis": {
+                "format": "inherit",
+                "rotation": "90",
+                "visible": false
+              }
+            }
+          },
+          "visualizationUrl": "local:bullet",
+          "version": "2"
+        },
+        "description": "Sales Goal",
+        "id": "68ddf963-edce-4f88-a8d5-09bf3825b124",
+        "title": "Sales Goal"
+      },
+      {
+        "content": {
+          "buckets": [
+            {
+              "items": [
+                {
+                  "measure": {
+                    "localIdentifier": "100691d163aa4d53be0fc7e1a048190b",
+                    "definition": {
+                      "measureDefinition": {
+                        "item": {
+                          "identifier": {
+                            "id": "net_sales",
+                            "type": "metric"
+                          }
+                        },
+                        "computeRatio": true,
+                        "filters": []
+                      }
+                    },
+                    "title": "% Net Sales",
+                    "format": "#,##0.00%"
+                  }
+                }
+              ],
+              "localIdentifier": "measures"
+            },
+            {
+              "items": [
+                {
+                  "attribute": {
+                    "localIdentifier": "e9a530f404de422a960d646baa0a5a7f",
+                    "displayForm": {
+                      "identifier": {
+                        "id": "product_category",
+                        "type": "label"
+                      }
+                    }
+                  }
+                }
+              ],
+              "localIdentifier": "view"
+            }
+          ],
+          "filters": [],
+          "sorts": [],
+          "properties": {
+            "controls": {
+              "dataLabels": {
+                "visible": "auto"
+              },
+              "legend": {
+                "position": "right"
+              }
+            }
+          },
+          "visualizationUrl": "local:donut",
+          "version": "2"
+        },
+        "description": "Net Sales by Product Category",
+        "id": "6e336114-d0b6-4287-acc4-be6e39e13e30",
+        "title": "Net Sales by Product Category"
+      },
+      {
+        "content": {
+          "buckets": [
+            {
+              "items": [
+                {
+                  "measure": {
+                    "localIdentifier": "759c22e84d114c55aa40707b16d79d1d",
+                    "definition": {
+                      "measureDefinition": {
+                        "item": {
+                          "identifier": {
+                            "id": "net_sales",
+                            "type": "metric"
+                          }
+                        },
+                        "filters": []
+                      }
+                    },
+                    "title": "Net Sales"
+                  }
+                }
+              ],
+              "localIdentifier": "measures"
+            },
+            {
+              "items": [
+                {
+                  "measure": {
+                    "localIdentifier": "759c22e84d114c55aa40707b16d79d1d_previous_period",
+                    "definition": {
+                      "previousPeriodMeasure": {
+                        "measureIdentifier": "759c22e84d114c55aa40707b16d79d1d",
+                        "dateDataSets": [
+                          {
+                            "dataSet": {
+                              "identifier": {
+                                "id": "date",
+                                "type": "dataset"
+                              }
+                            },
+                            "periodsAgo": 1
+                          }
+                        ]
+                      }
+                    },
+                    "alias": "Previous period"
+                  }
+                }
+              ],
+              "localIdentifier": "secondary_measures"
+            }
+          ],
+          "filters": [
+            {
+              "relativeDateFilter": {
+                "dataSet": {
+                  "identifier": {
+                    "id": "date",
+                    "type": "dataset"
+                  }
+                },
+                "granularity": "GDC.time.month",
+                "from": 0,
+                "to": 0
+              }
+            }
+          ],
+          "sorts": [],
+          "properties": {},
+          "visualizationUrl": "local:headline",
+          "version": "2"
+        },
+        "description": "Net Sales",
+        "id": "700d732d-67e1-4658-a6e0-c6b8edbb6d49",
+        "title": "Net Sales"
+      },
+      {
+        "content": {
+          "buckets": [
+            {
+              "items": [
+                {
+                  "measure": {
+                    "localIdentifier": "c877604979b64cd09c3840b36469e227",
+                    "definition": {
+                      "measureDefinition": {
+                        "item": {
+                          "identifier": {
+                            "id": "gross_profit",
+                            "type": "metric"
+                          }
+                        },
+                        "filters": []
+                      }
+                    },
+                    "title": "Gross Profit"
+                  }
+                }
+              ],
+              "localIdentifier": "measures"
+            },
+            {
+              "items": [
+                {
+                  "attribute": {
+                    "localIdentifier": "8ed871e5a6f1464c82e21213aa900afe",
+                    "displayForm": {
+                      "identifier": {
+                        "id": "product_name",
+                        "type": "label"
+                      }
+                    }
+                  }
+                }
+              ],
+              "localIdentifier": "view"
+            }
+          ],
+          "filters": [
+            {
+              "rankingFilter": {
+                "measure": {
+                  "localIdentifier": "c877604979b64cd09c3840b36469e227"
+                },
+                "operator": "TOP",
+                "value": 10
+              }
+            }
+          ],
+          "sorts": [],
+          "properties": {},
+          "visualizationUrl": "local:bar",
+          "version": "2"
+        },
+        "description": "Top 10 Money Makers",
+        "id": "7b49dbdb-f9ab-41dd-9cb4-cd13627d67c3",
+        "title": "Top 10 Money Makers"
+      },
+      {
+        "content": {
+          "buckets": [
+            {
+              "items": [
+                {
+                  "measure": {
+                    "localIdentifier": "a7600faa872a4558ab5645951cad7ac4",
+                    "definition": {
+                      "measureDefinition": {
+                        "item": {
+                          "identifier": {
+                            "id": "return_customers",
+                            "type": "metric"
+                          }
+                        },
+                        "filters": []
+                      }
+                    },
+                    "title": "Return Customers"
+                  }
+                },
+                {
+                  "measure": {
+                    "localIdentifier": "87a21aa137a14a44bf8f3e5352fc44f4",
+                    "definition": {
+                      "measureDefinition": {
+                        "item": {
+                          "identifier": {
+                            "id": "new_customers",
+                            "type": "metric"
+                          }
+                        },
+                        "filters": []
+                      }
+                    },
+                    "title": "New Customers"
+                  }
+                }
+              ],
+              "localIdentifier": "measures"
+            }
+          ],
+          "filters": [],
+          "sorts": [],
+          "properties": {
+            "controls": {
+              "dataLabels": {
+                "visible": true
+              }
+            }
+          },
+          "visualizationUrl": "local:donut",
+          "version": "2"
+        },
+        "description": "Active Customers Breakdown",
+        "id": "7de6202d-2e52-4bed-9e80-6c3ce8cedaaa",
+        "title": "Active Customers Breakdown"
+      },
+      {
+        "content": {
+          "buckets": [
+            {
+              "items": [
+                {
+                  "measure": {
+                    "localIdentifier": "fc431fb642e34ede94d6042beb42921e",
+                    "definition": {
+                      "measureDefinition": {
+                        "item": {
+                          "identifier": {
+                            "id": "total_sales",
+                            "type": "metric"
+                          }
+                        },
+                        "filters": []
+                      }
+                    },
+                    "title": "Total Sales"
+                  }
+                }
+              ],
+              "localIdentifier": "measures"
+            },
+            {
+              "items": [
+                {
+                  "measure": {
+                    "localIdentifier": "21387dd75d2f4331a2cb18e1de6e391d",
+                    "definition": {
+                      "measureDefinition": {
+                        "item": {
+                          "identifier": {
+                            "id": "total_sales",
+                            "type": "metric"
+                          }
+                        },
+                        "filters": [
+                          {
+                            "relativeDateFilter": {
+                              "dataSet": {
+                                "identifier": {
+                                  "id": "order_date",
+                                  "type": "dataset"
+                                }
+                              },
+                              "granularity": "GDC.time.month",
+                              "from": -1,
+                              "to": -1
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    "title": "Total Sales, Order date: Last month"
+                  }
+                }
+              ],
+              "localIdentifier": "secondary_measures"
+            }
+          ],
+          "filters": [],
+          "sorts": [],
+          "properties": {},
+          "visualizationUrl": "local:headline",
+          "version": "2"
+        },
+        "description": "Total Sales",
+        "id": "86193049-01b6-438d-bd13-070b71459147",
+        "title": "Total Sales"
+      },
+      {
+        "content": {
+          "buckets": [
+            {
+              "items": [
+                {
+                  "measure": {
+                    "localIdentifier": "74113481eb294ad5af3b9088e8917d9d",
+                    "definition": {
+                      "measureDefinition": {
+                        "item": {
+                          "identifier": {
+                            "id": "net_orders",
+                            "type": "metric"
+                          }
+                        },
+                        "filters": []
+                      }
+                    },
+                    "title": "Net Orders"
+                  }
+                }
+              ],
+              "localIdentifier": "measures"
+            },
+            {
+              "items": [
+                {
+                  "attribute": {
+                    "localIdentifier": "0b6cc41384054a5496ab4d40962a62fb",
+                    "displayForm": {
+                      "identifier": {
+                        "id": "customer_name",
+                        "type": "label"
+                      }
+                    },
+                    "alias": "Customer"
+                  }
+                }
+              ],
+              "localIdentifier": "view"
+            }
+          ],
+          "filters": [
+            {
+              "negativeAttributeFilter": {
+                "displayForm": {
+                  "identifier": {
+                    "id": "customer_id",
+                    "type": "label"
+                  }
+                },
+                "notIn": {
+                  "uris": []
+                }
+              }
+            },
+            {
+              "rankingFilter": {
+                "measure": {
+                  "localIdentifier": "74113481eb294ad5af3b9088e8917d9d"
+                },
+                "operator": "TOP",
+                "value": 10
+              }
+            }
+          ],
+          "sorts": [],
+          "properties": {},
+          "visualizationUrl": "local:bar",
+          "version": "2"
+        },
+        "description": "Top 10 Buyers",
+        "id": "8e8f236e-1bb2-48b3-828e-48706c684629",
+        "title": "Top 10 Buyers"
+      },
+      {
+        "content": {
+          "buckets": [
+            {
+              "items": [
+                {
+                  "measure": {
+                    "localIdentifier": "157e5232d0014c65ad3be170c2fea0e6",
+                    "definition": {
+                      "measureDefinition": {
+                        "item": {
+                          "identifier": {
+                            "id": "gross_profit",
+                            "type": "metric"
+                          }
+                        },
+                        "filters": []
+                      }
+                    },
+                    "title": "Gross Profit"
+                  }
+                }
+              ],
+              "localIdentifier": "measures"
+            },
+            {
+              "items": [
+                {
+                  "attribute": {
+                    "localIdentifier": "e5d6cafa6615451e87a42133eef8050f",
+                    "displayForm": {
+                      "identifier": {
+                        "id": "date.day",
+                        "type": "label"
+                      }
+                    },
+                    "alias": "Date"
+                  }
+                }
+              ],
+              "localIdentifier": "trend"
+            }
+          ],
+          "filters": [
+            {
+              "relativeDateFilter": {
+                "dataSet": {
+                  "identifier": {
+                    "id": "date",
+                    "type": "dataset"
+                  }
+                },
+                "granularity": "GDC.time.month",
+                "from": -1,
+                "to": -1
+              }
+            }
+          ],
+          "sorts": [],
+          "properties": {
+            "controls": {
+              "dataPoints": {
+                "visible": false
+              }
+            }
+          },
+          "visualizationUrl": "local:line",
+          "version": "2"
+        },
+        "description": "Gross Profit Trend",
+        "id": "9570eab0-b451-48be-9e24-3c106fe898a2",
+        "title": "Gross Profit Trend"
+      },
+      {
+        "content": {
+          "buckets": [
+            {
+              "items": [
+                {
+                  "measure": {
+                    "localIdentifier": "c9c1a6a146a244f695ad1b52733b283f",
+                    "definition": {
+                      "measureDefinition": {
+                        "item": {
+                          "identifier": {
+                            "id": "active_customers",
+                            "type": "metric"
+                          }
+                        },
+                        "computeRatio": false,
+                        "filters": []
+                      }
+                    },
+                    "title": "Active Customers"
+                  }
+                }
+              ],
+              "localIdentifier": "measures"
+            },
+            {
+              "items": [
+                {
+                  "attribute": {
+                    "localIdentifier": "ad12d182065d4fd3aba4aff5bfff1ee4",
+                    "displayForm": {
+                      "identifier": {
+                        "id": "customer_state",
+                        "type": "label"
+                      }
+                    }
+                  }
+                }
+              ],
+              "localIdentifier": "view"
+            }
+          ],
+          "filters": [],
+          "sorts": [],
+          "properties": {
+            "controls": {
+              "dataLabels": {
+                "visible": "auto"
+              },
+              "legend": {
+                "enabled": false
+              }
+            }
+          },
+          "visualizationUrl": "local:treemap",
+          "version": "2"
+        },
+        "description": "Customers by State (on Overview)",
+        "id": "996ccc2e-8f9e-4525-be61-2f3152ff8ce9",
+        "title": "Customers by State (on Overview)"
+      },
+      {
+        "content": {
+          "buckets": [
+            {
+              "items": [
+                {
+                  "measure": {
+                    "localIdentifier": "3f6b57f22b034a088ac2f174eff9773f",
+                    "definition": {
+                      "measureDefinition": {
+                        "item": {
+                          "identifier": {
+                            "id": "total_customers",
+                            "type": "metric"
+                          }
+                        },
+                        "filters": []
+                      }
+                    },
+                    "title": "Total Customers"
+                  }
+                }
+              ],
+              "localIdentifier": "measures"
+            }
+          ],
+          "filters": [
+            {
+              "relativeDateFilter": {
+                "dataSet": {
+                  "identifier": {
+                    "id": "customer_created_date",
+                    "type": "dataset"
+                  }
+                },
+                "granularity": "GDC.time.year"
+              }
+            }
+          ],
+          "sorts": [],
+          "properties": {},
+          "visualizationUrl": "local:headline",
+          "version": "2"
+        },
+        "description": "Total customers",
+        "id": "9f2a657a-22e1-4791-8216-7a354bb8de5d",
+        "title": "Total customers"
+      },
+      {
+        "content": {
+          "buckets": [
+            {
+              "items": [
+                {
+                  "measure": {
+                    "localIdentifier": "6d5038a81a1741d4be183f354e02a1b1",
+                    "definition": {
+                      "measureDefinition": {
+                        "item": {
+                          "identifier": {
+                            "id": "net_sales",
+                            "type": "metric"
+                          }
+                        },
+                        "filters": []
+                      }
+                    },
+                    "title": "Net Sales"
+                  }
+                },
+                {
+                  "measure": {
+                    "localIdentifier": "0889348d4f9d46cba15587119c91e00d",
+                    "definition": {
+                      "measureDefinition": {
+                        "item": {
+                          "identifier": {
+                            "id": "total_returns",
+                            "type": "metric"
+                          }
+                        },
+                        "filters": []
+                      }
+                    },
+                    "title": "Total Returns"
+                  }
+                },
+                {
+                  "measure": {
+                    "localIdentifier": "5f7d89b4aa2f4eb5ae5aeda29c8644d7",
+                    "definition": {
+                      "measureDefinition": {
+                        "item": {
+                          "identifier": {
+                            "id": "total_discounts",
+                            "type": "metric"
+                          }
+                        },
+                        "filters": []
+                      }
+                    },
+                    "title": "Total Discounts"
+                  }
+                }
+              ],
+              "localIdentifier": "measures"
+            },
+            {
+              "items": [
+                {
+                  "attribute": {
+                    "localIdentifier": "5cd3eba36f034ba3846383e53988641c",
+                    "displayForm": {
+                      "identifier": {
+                        "id": "date.day",
+                        "type": "label"
+                      }
+                    },
+                    "alias": "Date"
+                  }
+                }
+              ],
+              "localIdentifier": "view"
+            }
+          ],
+          "filters": [],
+          "sorts": [],
+          "properties": {
+            "controls": {
+              "legend": {
+                "position": "top"
+              }
+            }
+          },
+          "visualizationUrl": "local:area",
+          "version": "2"
+        },
+        "description": "Total Sales Trend",
+        "id": "a178265c-53ba-4c15-8c1f-d7e168506c92",
+        "title": "Total Sales Trend"
+      },
+      {
+        "content": {
+          "buckets": [
+            {
+              "items": [
+                {
+                  "measure": {
+                    "localIdentifier": "ce1c1dc6197f41f9b79ac375cdd23fab",
+                    "definition": {
+                      "measureDefinition": {
+                        "item": {
+                          "identifier": {
+                            "id": "of_orders",
+                            "type": "metric"
+                          }
+                        },
+                        "filters": []
+                      }
+                    },
+                    "title": "# of Orders"
+                  }
+                }
+              ],
+              "localIdentifier": "measures"
+            },
+            {
+              "items": [
+                {
+                  "attribute": {
+                    "localIdentifier": "b1936567b60e422d8d4aa387d04b233d",
+                    "displayForm": {
+                      "identifier": {
+                        "id": "date.day",
+                        "type": "label"
+                      }
+                    },
+                    "alias": "Date"
+                  }
+                }
+              ],
+              "localIdentifier": "view"
+            },
+            {
+              "items": [
+                {
+                  "attribute": {
+                    "localIdentifier": "c199d26e0fbd4049b3d332d1dc46386e",
+                    "displayForm": {
+                      "identifier": {
+                        "id": "order_status",
+                        "type": "label"
+                      }
+                    }
+                  }
+                }
+              ],
+              "localIdentifier": "stack"
+            }
+          ],
+          "filters": [],
+          "sorts": [],
+          "properties": {
+            "controls": {
+              "colorMapping": [
+                {
+                  "color": {
+                    "type": "guid",
+                    "value": "2"
+                  },
+                  "id": "Processed"
+                },
+                {
+                  "color": {
+                    "type": "guid",
+                    "value": "6"
+                  },
+                  "id": "In Cart"
+                },
+                {
+                  "color": {
+                    "type": "guid",
+                    "value": "3"
+                  },
+                  "id": "Cancelled"
+                }
+              ],
+              "legend": {
+                "position": "top"
+              }
+            }
+          },
+          "visualizationUrl": "local:column",
+          "version": "2"
+        },
+        "description": "Orders over time",
+        "id": "a2b50fff-c7eb-444c-95e6-67037d2544d6",
+        "title": "Orders over time"
+      },
+      {
+        "content": {
+          "buckets": [
+            {
+              "items": [
+                {
+                  "measure": {
+                    "localIdentifier": "13f2358c2d2040fe8849757b2a5ddddf",
+                    "definition": {
+                      "measureDefinition": {
+                        "item": {
+                          "identifier": {
+                            "id": "active_customers",
+                            "type": "metric"
+                          }
+                        },
+                        "filters": []
+                      }
+                    },
+                    "title": "Active Customers",
+                    "format": "[=null]0;\n[>=0]#,#0;\n[<0]-#,#0"
+                  }
+                }
+              ],
+              "localIdentifier": "measures"
+            },
+            {
+              "items": [
+                {
+                  "measure": {
+                    "localIdentifier": "13f2358c2d2040fe8849757b2a5ddddf_previous_period",
+                    "definition": {
+                      "previousPeriodMeasure": {
+                        "measureIdentifier": "13f2358c2d2040fe8849757b2a5ddddf",
+                        "dateDataSets": [
+                          {
+                            "dataSet": {
+                              "identifier": {
+                                "id": "customer_created_date",
+                                "type": "dataset"
+                              }
+                            },
+                            "periodsAgo": 1
+                          }
+                        ]
+                      }
+                    },
+                    "alias": "Previous period"
+                  }
+                }
+              ],
+              "localIdentifier": "secondary_measures"
+            }
+          ],
+          "filters": [
+            {
+              "relativeDateFilter": {
+                "dataSet": {
+                  "identifier": {
+                    "id": "customer_created_date",
+                    "type": "dataset"
+                  }
+                },
+                "granularity": "GDC.time.month",
+                "from": 0,
+                "to": 0
+              }
+            }
+          ],
+          "sorts": [],
+          "properties": {},
+          "visualizationUrl": "local:headline",
+          "version": "2"
+        },
+        "description": "New Customers",
+        "id": "a347814a-a893-4354-915d-29699b92a6d7",
+        "title": "New Customers"
+      },
+      {
+        "content": {
+          "buckets": [
+            {
+              "items": [
+                {
+                  "measure": {
+                    "localIdentifier": "0c6dbb7da7c84aabb1b2ae868ca93d08",
+                    "definition": {
+                      "measureDefinition": {
+                        "item": {
+                          "identifier": {
+                            "id": "total_sales",
+                            "type": "metric"
+                          }
+                        },
+                        "filters": []
+                      }
+                    },
+                    "title": "Total Sales"
+                  }
+                }
+              ],
+              "localIdentifier": "measures"
+            },
+            {
+              "items": [
+                {
+                  "measure": {
+                    "localIdentifier": "0c6dbb7da7c84aabb1b2ae868ca93d08_previous_period",
+                    "definition": {
+                      "previousPeriodMeasure": {
+                        "measureIdentifier": "0c6dbb7da7c84aabb1b2ae868ca93d08",
+                        "dateDataSets": [
+                          {
+                            "dataSet": {
+                              "identifier": {
+                                "id": "date",
+                                "type": "dataset"
+                              }
+                            },
+                            "periodsAgo": 1
+                          }
+                        ]
+                      }
+                    },
+                    "alias": "Previous period"
+                  }
+                }
+              ],
+              "localIdentifier": "secondary_measures"
+            }
+          ],
+          "filters": [
+            {
+              "relativeDateFilter": {
+                "dataSet": {
+                  "identifier": {
+                    "id": "date",
+                    "type": "dataset"
+                  }
+                },
+                "granularity": "GDC.time.month",
+                "from": 0,
+                "to": 0
+              }
+            }
+          ],
+          "sorts": [],
+          "properties": {},
+          "visualizationUrl": "local:headline",
+          "version": "2"
+        },
+        "description": "Total Sales",
+        "id": "adf2b786-32bd-4864-b251-7e2cfe9a006f",
+        "title": "Total Sales"
+      },
+      {
+        "content": {
+          "buckets": [
+            {
+              "items": [
+                {
+                  "measure": {
+                    "localIdentifier": "8c7d1a1164ab4bdb870e49e26bbfd72d",
+                    "definition": {
+                      "measureDefinition": {
+                        "item": {
+                          "identifier": {
+                            "id": "of_orders",
+                            "type": "metric"
+                          }
+                        },
+                        "computeRatio": false,
+                        "filters": []
+                      }
+                    },
+                    "title": "# of Orders"
+                  }
+                }
+              ],
+              "localIdentifier": "measures"
+            },
+            {
+              "items": [
+                {
+                  "attribute": {
+                    "localIdentifier": "8a4e80f8663d44d7b09e6b5dfb60c86f",
+                    "displayForm": {
+                      "identifier": {
+                        "id": "order_status",
+                        "type": "label"
+                      }
+                    }
+                  }
+                }
+              ],
+              "localIdentifier": "view"
+            }
+          ],
+          "filters": [],
+          "sorts": [],
+          "properties": {
+            "controls": {
+              "colorMapping": [
+                {
+                  "color": {
+                    "type": "guid",
+                    "value": "3"
+                  },
+                  "id": "Cancelled"
+                },
+                {
+                  "color": {
+                    "type": "guid",
+                    "value": "2"
+                  },
+                  "id": "Processed"
+                },
+                {
+                  "color": {
+                    "type": "guid",
+                    "value": "6"
+                  },
+                  "id": "In Cart"
+                }
+              ],
+              "dataLabels": {
+                "visible": "auto"
+              },
+              "legend": {
+                "position": "right"
+              }
+            }
+          },
+          "visualizationUrl": "local:donut",
+          "version": "2"
+        },
+        "description": "Order breakdown",
+        "id": "b4497110-8d8a-4ab3-9cd5-471b60d8e561",
+        "title": "Order breakdown"
+      },
+      {
+        "content": {
+          "buckets": [
+            {
+              "items": [
+                {
+                  "measure": {
+                    "localIdentifier": "e406fb1d6f5c472687b65b28eac4a4cb",
+                    "definition": {
+                      "measureDefinition": {
+                        "item": {
+                          "identifier": {
+                            "id": "gross_profit",
+                            "type": "metric"
+                          }
+                        },
+                        "filters": []
+                      }
+                    },
+                    "title": "Gross Profit"
+                  }
+                }
+              ],
+              "localIdentifier": "measures"
+            },
+            {
+              "items": [
+                {
+                  "measure": {
+                    "localIdentifier": "e406fb1d6f5c472687b65b28eac4a4cb_previous_period",
+                    "definition": {
+                      "previousPeriodMeasure": {
+                        "measureIdentifier": "e406fb1d6f5c472687b65b28eac4a4cb",
+                        "dateDataSets": [
+                          {
+                            "dataSet": {
+                              "identifier": {
+                                "id": "date",
+                                "type": "dataset"
+                              }
+                            },
+                            "periodsAgo": 1
+                          }
+                        ]
+                      }
+                    },
+                    "alias": "Previous period"
+                  }
+                }
+              ],
+              "localIdentifier": "secondary_measures"
+            }
+          ],
+          "filters": [
+            {
+              "relativeDateFilter": {
+                "dataSet": {
+                  "identifier": {
+                    "id": "date",
+                    "type": "dataset"
+                  }
+                },
+                "granularity": "GDC.time.month",
+                "from": 0,
+                "to": 0
+              }
+            }
+          ],
+          "sorts": [],
+          "properties": {},
+          "visualizationUrl": "local:headline",
+          "version": "2"
+        },
+        "description": "Gross Profit",
+        "id": "b666412b-3c13-4e80-9b3f-7787558aa3ce",
+        "title": "Gross Profit"
+      },
+      {
+        "content": {
+          "buckets": [
+            {
+              "items": [
+                {
+                  "measure": {
+                    "localIdentifier": "872407ef1c864d6cb82ece8c58edb20b",
+                    "definition": {
+                      "measureDefinition": {
+                        "item": {
+                          "identifier": {
+                            "id": "active_customers",
+                            "type": "metric"
+                          }
+                        },
+                        "filters": []
+                      }
+                    },
+                    "title": "Active Customers"
+                  }
+                }
+              ],
+              "localIdentifier": "measures"
+            },
+            {
+              "items": [
+                {
+                  "measure": {
+                    "localIdentifier": "872407ef1c864d6cb82ece8c58edb20b_previous_period",
+                    "definition": {
+                      "previousPeriodMeasure": {
+                        "measureIdentifier": "872407ef1c864d6cb82ece8c58edb20b",
+                        "dateDataSets": [
+                          {
+                            "dataSet": {
+                              "identifier": {
+                                "id": "date",
+                                "type": "dataset"
+                              }
+                            },
+                            "periodsAgo": 1
+                          }
+                        ]
+                      }
+                    },
+                    "alias": "Previous period"
+                  }
+                }
+              ],
+              "localIdentifier": "secondary_measures"
+            }
+          ],
+          "filters": [
+            {
+              "relativeDateFilter": {
+                "dataSet": {
+                  "identifier": {
+                    "id": "date",
+                    "type": "dataset"
+                  }
+                },
+                "granularity": "GDC.time.month",
+                "from": 0,
+                "to": 0
+              }
+            }
+          ],
+          "sorts": [],
+          "properties": {},
+          "visualizationUrl": "local:headline",
+          "version": "2"
+        },
+        "description": "Active Customers",
+        "id": "dc8575f5-27e5-44be-a2dc-23d54b7777e7",
+        "title": "Active Customers"
+      },
+      {
+        "content": {
+          "buckets": [
+            {
+              "items": [
+                {
+                  "measure": {
+                    "localIdentifier": "100691d163aa4d53be0fc7e1a048190b",
+                    "definition": {
+                      "measureDefinition": {
+                        "item": {
+                          "identifier": {
+                            "id": "net_sales",
+                            "type": "metric"
+                          }
+                        },
+                        "filters": []
+                      }
+                    },
+                    "title": "Net Sales"
+                  }
+                }
+              ],
+              "localIdentifier": "measures"
+            },
+            {
+              "items": [
+                {
+                  "attribute": {
+                    "localIdentifier": "e9a530f404de422a960d646baa0a5a7f",
+                    "displayForm": {
+                      "identifier": {
+                        "id": "product_category",
+                        "type": "label"
+                      }
+                    }
+                  }
+                }
+              ],
+              "localIdentifier": "stack"
+            }
+          ],
+          "filters": [],
+          "sorts": [],
+          "properties": {
+            "controls": {
+              "dataLabels": {
+                "visible": "auto"
+              },
+              "grid": {
+                "enabled": false
+              },
+              "legend": {
+                "position": "top"
+              },
+              "stackMeasuresToPercent": true,
+              "xaxis": {
+                "labelsEnabled": false,
+                "name": {
+                  "visible": false
+                }
+              }
+            }
+          },
+          "visualizationUrl": "local:bar",
+          "version": "2"
+        },
+        "description": "Net Sales by Product Category (v2)",
+        "id": "e32644ad-1921-4b89-a7d2-79f31826e5cf",
+        "title": "Net Sales by Product Category (v2)"
+      },
+      {
+        "content": {
+          "buckets": [
+            {
+              "items": [
+                {
+                  "measure": {
+                    "localIdentifier": "329aa3cc4dab4b24acbd667bdc622e54",
+                    "definition": {
+                      "measureDefinition": {
+                        "item": {
+                          "identifier": {
+                            "id": "of_orders",
+                            "type": "metric"
+                          }
+                        },
+                        "computeRatio": false,
+                        "filters": []
+                      }
+                    },
+                    "title": "# of Orders"
+                  }
+                }
+              ],
+              "localIdentifier": "measures"
+            },
+            {
+              "items": [
+                {
+                  "attribute": {
+                    "localIdentifier": "212835194328458fae55274e2b7606d4",
+                    "displayForm": {
+                      "identifier": {
+                        "id": "date.hourOfDay",
+                        "type": "label"
+                      }
+                    },
+                    "alias": "Hour of Day"
+                  }
+                }
+              ],
+              "localIdentifier": "view"
+            }
+          ],
+          "filters": [],
+          "sorts": [],
+          "properties": {},
+          "visualizationUrl": "local:column",
+          "version": "2"
+        },
+        "description": "Activity by Hour",
+        "id": "f1027458-1123-4f4d-af20-0e21b1d5e009",
+        "title": "Activity by Hour"
+      },
+      {
+        "content": {
+          "buckets": [
+            {
+              "items": [
+                {
+                  "measure": {
+                    "localIdentifier": "9909faa5cd394d7f836c91adbee6c40d",
+                    "definition": {
+                      "measureDefinition": {
+                        "item": {
+                          "identifier": {
+                            "id": "customer_city",
+                            "type": "attribute"
+                          }
+                        },
+                        "aggregation": "count",
+                        "filters": []
+                      }
+                    },
+                    "title": "Count of Customer city",
+                    "format": "#,##0"
+                  }
+                }
+              ],
+              "localIdentifier": "measures"
+            }
+          ],
+          "filters": [],
+          "sorts": [],
+          "properties": {},
+          "visualizationUrl": "local:table",
+          "version": "2"
+        },
+        "description": "Test",
+        "id": "ffd46c19-7009-43ef-9d5f-90eee91965a4",
+        "title": "Test"
+      }
+    ]
+  }
+}
