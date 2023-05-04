@@ -1,0 +1,340 @@
+{
+  "pdm": {
+    "tables": [
+      {
+        "columns": [
+          {
+            "dataType": "STRING",
+            "isPrimaryKey": false,
+            "name": "customer_city"
+          },
+          {
+            "dataType": "STRING",
+            "isPrimaryKey": false,
+            "name": "customer_country"
+          },
+          {
+            "dataType": "DATE",
+            "isPrimaryKey": false,
+            "name": "customer_created_date"
+          },
+          {
+            "dataType": "STRING",
+            "isPrimaryKey": false,
+            "name": "customer_email"
+          },
+          {
+            "dataType": "STRING",
+            "isPrimaryKey": true,
+            "name": "customer_id"
+          },
+          {
+            "dataType": "STRING",
+            "isPrimaryKey": false,
+            "name": "customer_state"
+          },
+          {
+            "dataType": "STRING",
+            "isPrimaryKey": false,
+            "name": "geo__customer_city__city_pushpin_latitude"
+          },
+          {
+            "dataType": "STRING",
+            "isPrimaryKey": false,
+            "name": "geo__customer_city__city_pushpin_longitude"
+          },
+          {
+            "dataType": "STRING",
+            "isPrimaryKey": false,
+            "name": "ls__customer_id__customer_name"
+          },
+          {
+            "dataType": "STRING",
+            "isPrimaryKey": false,
+            "name": "wdf__client_id"
+          }
+        ],
+        "id": "customer",
+        "path": [
+          "ECOMMERCE_DEMO_SCHEMA",
+          "customer"
+        ],
+        "type": "TABLE"
+      },
+      {
+        "columns": [
+          {
+            "dataType": "TIMESTAMP",
+            "isPrimaryKey": false,
+            "name": "date"
+          },
+          {
+            "dataType": "DATE",
+            "isPrimaryKey": false,
+            "name": "imventory_month"
+          },
+          {
+            "dataType": "STRING",
+            "isPrimaryKey": true,
+            "name": "monthly_inventory_id"
+          },
+          {
+            "dataType": "NUMERIC",
+            "isPrimaryKey": false,
+            "name": "monthly_quantity_bom"
+          },
+          {
+            "dataType": "NUMERIC",
+            "isPrimaryKey": false,
+            "name": "monthly_quantity_eom"
+          },
+          {
+            "dataType": "STRING",
+            "isPrimaryKey": false,
+            "name": "product__product_id",
+            "referencedTableColumn": "product_id",
+            "referencedTableId": "product"
+          },
+          {
+            "dataType": "STRING",
+            "isPrimaryKey": false,
+            "name": "wdf__client_id"
+          }
+        ],
+        "id": "monthlyinventory",
+        "path": [
+          "ECOMMERCE_DEMO_SCHEMA",
+          "monthlyinventory"
+        ],
+        "type": "TABLE"
+      },
+      {
+        "columns": [
+          {
+            "dataType": "STRING",
+            "isPrimaryKey": false,
+            "name": "customer__customer_id",
+            "referencedTableColumn": "customer_id",
+            "referencedTableId": "customer"
+          },
+          {
+            "dataType": "STRING",
+            "isPrimaryKey": false,
+            "name": "customer_age"
+          },
+          {
+            "dataType": "TIMESTAMP",
+            "isPrimaryKey": false,
+            "name": "date"
+          },
+          {
+            "dataType": "STRING",
+            "isPrimaryKey": false,
+            "name": "order__order_id",
+            "referencedTableColumn": "order_id",
+            "referencedTableId": "orders"
+          },
+          {
+            "dataType": "TIMESTAMP",
+            "isPrimaryKey": false,
+            "name": "order_date"
+          },
+          {
+            "dataType": "STRING",
+            "isPrimaryKey": true,
+            "name": "order_line_id"
+          },
+          {
+            "dataType": "NUMERIC",
+            "isPrimaryKey": false,
+            "name": "order_unit_cost"
+          },
+          {
+            "dataType": "NUMERIC",
+            "isPrimaryKey": false,
+            "name": "order_unit_discount"
+          },
+          {
+            "dataType": "NUMERIC",
+            "isPrimaryKey": false,
+            "name": "order_unit_price"
+          },
+          {
+            "dataType": "NUMERIC",
+            "isPrimaryKey": false,
+            "name": "order_unit_quantity"
+          },
+          {
+            "dataType": "STRING",
+            "isPrimaryKey": false,
+            "name": "product__product_id",
+            "referencedTableColumn": "product_id",
+            "referencedTableId": "product"
+          },
+          {
+            "dataType": "STRING",
+            "isPrimaryKey": false,
+            "name": "wdf__client_id"
+          }
+        ],
+        "id": "order_lines",
+        "path": [
+          "ECOMMERCE_DEMO_SCHEMA",
+          "order_lines"
+        ],
+        "type": "TABLE"
+      },
+      {
+        "columns": [
+          {
+            "dataType": "STRING",
+            "isPrimaryKey": true,
+            "name": "order_id"
+          },
+          {
+            "dataType": "STRING",
+            "isPrimaryKey": false,
+            "name": "order_status"
+          },
+          {
+            "dataType": "STRING",
+            "isPrimaryKey": false,
+            "name": "wdf__client_id"
+          }
+        ],
+        "id": "orders",
+        "path": [
+          "ECOMMERCE_DEMO_SCHEMA",
+          "orders"
+        ],
+        "type": "TABLE"
+      },
+      {
+        "columns": [
+          {
+            "dataType": "STRING",
+            "isPrimaryKey": false,
+            "name": "ls__product_id__product_id_image_web"
+          },
+          {
+            "dataType": "STRING",
+            "isPrimaryKey": false,
+            "name": "ls__product_id__product_name"
+          },
+          {
+            "dataType": "STRING",
+            "isPrimaryKey": false,
+            "name": "ls__product_image__product_image_web"
+          },
+          {
+            "dataType": "STRING",
+            "isPrimaryKey": false,
+            "name": "product_brand"
+          },
+          {
+            "dataType": "STRING",
+            "isPrimaryKey": false,
+            "name": "product_category"
+          },
+          {
+            "dataType": "STRING",
+            "isPrimaryKey": true,
+            "name": "product_id"
+          },
+          {
+            "dataType": "STRING",
+            "isPrimaryKey": false,
+            "name": "product_image"
+          },
+          {
+            "dataType": "STRING",
+            "isPrimaryKey": false,
+            "name": "product_rating"
+          },
+          {
+            "dataType": "NUMERIC",
+            "isPrimaryKey": false,
+            "name": "rating"
+          },
+          {
+            "dataType": "STRING",
+            "isPrimaryKey": false,
+            "name": "wdf__product_category"
+          }
+        ],
+        "id": "product",
+        "path": [
+          "ECOMMERCE_DEMO_SCHEMA",
+          "product"
+        ],
+        "type": "TABLE"
+      },
+      {
+        "columns": [
+          {
+            "dataType": "STRING",
+            "isPrimaryKey": false,
+            "name": "customer__customer_id",
+            "referencedTableColumn": "customer_id",
+            "referencedTableId": "customer"
+          },
+          {
+            "dataType": "TIMESTAMP",
+            "isPrimaryKey": false,
+            "name": "date"
+          },
+          {
+            "dataType": "STRING",
+            "isPrimaryKey": false,
+            "name": "order__order_id",
+            "referencedTableColumn": "order_id",
+            "referencedTableId": "orders"
+          },
+          {
+            "dataType": "STRING",
+            "isPrimaryKey": false,
+            "name": "product__product_id",
+            "referencedTableColumn": "product_id",
+            "referencedTableId": "product"
+          },
+          {
+            "dataType": "TIMESTAMP",
+            "isPrimaryKey": false,
+            "name": "return_date"
+          },
+          {
+            "dataType": "STRING",
+            "isPrimaryKey": true,
+            "name": "return_id"
+          },
+          {
+            "dataType": "NUMERIC",
+            "isPrimaryKey": false,
+            "name": "return_unit_cost"
+          },
+          {
+            "dataType": "NUMERIC",
+            "isPrimaryKey": false,
+            "name": "return_unit_paid_amount"
+          },
+          {
+            "dataType": "NUMERIC",
+            "isPrimaryKey": false,
+            "name": "return_unit_quantity"
+          },
+          {
+            "dataType": "STRING",
+            "isPrimaryKey": false,
+            "name": "wdf__client_id"
+          }
+        ],
+        "id": "returns",
+        "path": [
+          "ECOMMERCE_DEMO_SCHEMA",
+          "returns"
+        ],
+        "type": "TABLE"
+      }
+    ]
+  }
+}
