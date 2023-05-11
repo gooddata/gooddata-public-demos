@@ -205,7 +205,8 @@
                     "type": "IDashboardLayoutItem",
                     "size": {
                       "xl": {
-                        "gridWidth": 6
+                        "gridWidth": 6,
+                        "gridHeight": 22
                       }
                     },
                     "widget": {
@@ -225,7 +226,40 @@
                           "type": "visualizationObject"
                         }
                       },
-                      "drills": [],
+                      "drills": [
+                        {
+                          "transition": "pop-up",
+                          "origin": {
+                            "type": "drillFromMeasure",
+                            "measure": {
+                              "localIdentifier": "199da0fab746448798f8fcc58448bc8b"
+                            }
+                          },
+                          "type": "drillToInsight",
+                          "target": {
+                            "identifier": {
+                              "id": "ddc4be59-1ea8-4b9d-86a2-6f389ae217b9",
+                              "type": "visualizationObject"
+                            }
+                          }
+                        },
+                        {
+                          "transition": "pop-up",
+                          "origin": {
+                            "type": "drillFromMeasure",
+                            "measure": {
+                              "localIdentifier": "455307b5590a49b28fafa89999446b15"
+                            }
+                          },
+                          "type": "drillToInsight",
+                          "target": {
+                            "identifier": {
+                              "id": "ddc4be59-1ea8-4b9d-86a2-6f389ae217b9",
+                              "type": "visualizationObject"
+                            }
+                          }
+                        }
+                      ],
                       "properties": {}
                     }
                   },
@@ -233,7 +267,8 @@
                     "type": "IDashboardLayoutItem",
                     "size": {
                       "xl": {
-                        "gridWidth": 6
+                        "gridWidth": 6,
+                        "gridHeight": 22
                       }
                     },
                     "widget": {
@@ -673,7 +708,8 @@
                     "type": "IDashboardLayoutItem",
                     "size": {
                       "xl": {
-                        "gridWidth": 4
+                        "gridWidth": 4,
+                        "gridHeight": 12
                       }
                     },
                     "widget": {
@@ -1078,7 +1114,8 @@
                     "type": "IDashboardLayoutItem",
                     "size": {
                       "xl": {
-                        "gridWidth": 4
+                        "gridWidth": 4,
+                        "gridHeight": 23
                       }
                     },
                     "widget": {
@@ -1106,7 +1143,8 @@
                     "type": "IDashboardLayoutItem",
                     "size": {
                       "xl": {
-                        "gridWidth": 8
+                        "gridWidth": 8,
+                        "gridHeight": 23
                       }
                     },
                     "widget": {
@@ -2712,9 +2750,19 @@
               "primaryChartType": "column",
               "secondaryChartType": "line",
               "secondary_yaxis": {
+                "format": "inherit",
                 "measures": [
                   "455307b5590a49b28fafa89999446b15"
-                ]
+                ],
+                "name": {
+                  "visible": false
+                }
+              },
+              "yaxis": {
+                "format": "inherit",
+                "name": {
+                  "visible": false
+                }
               }
             }
           },
@@ -4242,6 +4290,22 @@
           "sorts": [],
           "properties": {
             "controls": {
+              "colorMapping": [
+                {
+                  "color": {
+                    "type": "guid",
+                    "value": "2"
+                  },
+                  "id": "a7600faa872a4558ab5645951cad7ac4"
+                },
+                {
+                  "color": {
+                    "type": "guid",
+                    "value": "1"
+                  },
+                  "id": "87a21aa137a14a44bf8f3e5352fc44f4"
+                }
+              ],
               "dataLabels": {
                 "visible": true
               }
@@ -4668,6 +4732,9 @@
             "controls": {
               "legend": {
                 "position": "top"
+              },
+              "yaxis": {
+                "format": "inherit"
               }
             }
           },
@@ -4761,7 +4828,7 @@
                     "type": "guid",
                     "value": "3"
                   },
-                  "id": "Cancelled"
+                  "id": "Canceled"
                 }
               ],
               "legend": {
@@ -4982,16 +5049,16 @@
                 {
                   "color": {
                     "type": "guid",
-                    "value": "3"
+                    "value": "2"
                   },
-                  "id": "Cancelled"
+                  "id": "Processed"
                 },
                 {
                   "color": {
                     "type": "guid",
-                    "value": "2"
+                    "value": "3"
                   },
-                  "id": "Processed"
+                  "id": "Canceled"
                 },
                 {
                   "color": {
@@ -5169,6 +5236,116 @@
         "description": "Active Customers",
         "id": "dc8575f5-27e5-44be-a2dc-23d54b7777e7",
         "title": "Active Customers"
+      },
+      {
+        "content": {
+          "buckets": [
+            {
+              "items": [
+                {
+                  "measure": {
+                    "localIdentifier": "e9e9de69c09e4905940392828545c8dd",
+                    "definition": {
+                      "measureDefinition": {
+                        "item": {
+                          "identifier": {
+                            "id": "net_sales",
+                            "type": "metric"
+                          }
+                        },
+                        "filters": []
+                      }
+                    },
+                    "title": "Net Sales"
+                  }
+                },
+                {
+                  "measure": {
+                    "localIdentifier": "a9ad19d6e5e946bf81e75eaffcd92a36",
+                    "definition": {
+                      "measureDefinition": {
+                        "item": {
+                          "identifier": {
+                            "id": "net_orders",
+                            "type": "metric"
+                          }
+                        },
+                        "filters": []
+                      }
+                    },
+                    "title": "Net Orders"
+                  }
+                }
+              ],
+              "localIdentifier": "measures"
+            },
+            {
+              "items": [
+                {
+                  "attribute": {
+                    "localIdentifier": "acbc5974a2844148b6026b3db51e001e",
+                    "displayForm": {
+                      "identifier": {
+                        "id": "date.day",
+                        "type": "label"
+                      }
+                    }
+                  }
+                },
+                {
+                  "attribute": {
+                    "localIdentifier": "eb1469d315af48868f538f2c2005ee06",
+                    "displayForm": {
+                      "identifier": {
+                        "id": "customer_country",
+                        "type": "label"
+                      }
+                    }
+                  }
+                },
+                {
+                  "attribute": {
+                    "localIdentifier": "4199c955c96c407dae71e103bef4bbe9",
+                    "displayForm": {
+                      "identifier": {
+                        "id": "product_category",
+                        "type": "label"
+                      }
+                    }
+                  }
+                }
+              ],
+              "localIdentifier": "attribute",
+              "totals": [
+                {
+                  "type": "sum",
+                  "measureIdentifier": "e9e9de69c09e4905940392828545c8dd",
+                  "attributeIdentifier": "4199c955c96c407dae71e103bef4bbe9"
+                },
+                {
+                  "type": "sum",
+                  "measureIdentifier": "a9ad19d6e5e946bf81e75eaffcd92a36",
+                  "attributeIdentifier": "4199c955c96c407dae71e103bef4bbe9"
+                }
+              ]
+            }
+          ],
+          "filters": [],
+          "sorts": [
+            {
+              "attributeSortItem": {
+                "attributeIdentifier": "acbc5974a2844148b6026b3db51e001e",
+                "direction": "asc"
+              }
+            }
+          ],
+          "properties": {},
+          "visualizationUrl": "local:table",
+          "version": "2"
+        },
+        "description": "",
+        "id": "ddc4be59-1ea8-4b9d-86a2-6f389ae217b9",
+        "title": "Revenue Trend Detail"
       },
       {
         "content": {
