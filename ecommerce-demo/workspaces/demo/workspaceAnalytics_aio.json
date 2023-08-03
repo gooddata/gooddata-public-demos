@@ -408,63 +408,9 @@
                 "items": [
                   {
                     "type": "IDashboardLayoutItem",
-                    "widget": {
-                      "type": "insight",
-                      "insight": {
-                        "identifier": {
-                          "id": "71d6d37b-77d6-4225-af37-d24760200874",
-                          "type": "visualizationObject"
-                        }
-                      },
-                      "ignoreDashboardFilters": [],
-                      "drills": [
-                        {
-                          "transition": "pop-up",
-                          "origin": {
-                            "type": "drillFromMeasure",
-                            "measure": {
-                              "localIdentifier": "2b7ab1a2bf774b8e9a3bcf777bd6fad7"
-                            }
-                          },
-                          "type": "drillToInsight",
-                          "target": {
-                            "identifier": {
-                              "id": "543cadbb-10b4-4153-b810-52586df7aa0e",
-                              "type": "visualizationObject"
-                            }
-                          }
-                        }
-                      ],
-                      "title": "Map",
-                      "description": "Geo charts show data points as bubbles using the coordinates from the location attribute.\n\nYou can change the description in the visualization configuration.",
-                      "dateDataSet": {
-                        "identifier": {
-                          "id": "customer_created_date",
-                          "type": "dataset"
-                        }
-                      },
-                      "configuration": {
-                        "hideTitle": true,
-                        "description": {
-                          "includeMetrics": false,
-                          "visible": true,
-                          "source": "widget"
-                        }
-                      },
-                      "properties": {}
-                    },
                     "size": {
                       "xl": {
-                        "gridHeight": 32,
-                        "gridWidth": 6
-                      }
-                    }
-                  },
-                  {
-                    "type": "IDashboardLayoutItem",
-                    "size": {
-                      "xl": {
-                        "gridWidth": 6,
+                        "gridWidth": 12,
                         "gridHeight": 32
                       }
                     },
