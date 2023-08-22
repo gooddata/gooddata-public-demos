@@ -2543,9 +2543,9 @@
           "filters": [
             {
               "dateFilter": {
-                "from": "-1",
-                "to": "-1",
-                "granularity": "GDC.time.month",
+                "from": "-6",
+                "to": "0",
+                "granularity": "GDC.time.date",
                 "type": "relative"
               }
             },
@@ -2610,8 +2610,8 @@
             {
               "dateFilter": {
                 "type": "relative",
-                "granularity": "GDC.time.month",
-                "from": 0,
+                "granularity": "GDC.time.date",
+                "from": -6,
                 "to": 0
               }
             }
@@ -2627,9 +2627,9 @@
           "filters": [
             {
               "dateFilter": {
-                "from": "-1",
-                "to": "-1",
-                "granularity": "GDC.time.month",
+                "from": "-6",
+                "to": "0",
+                "granularity": "GDC.time.date",
                 "type": "relative"
               }
             },
@@ -2677,9 +2677,9 @@
           "filters": [
             {
               "dateFilter": {
-                "from": "-1",
-                "to": "-1",
-                "granularity": "GDC.time.month",
+                "from": "-6",
+                "to": "0",
+                "granularity": "GDC.time.date",
                 "type": "relative"
               }
             },
