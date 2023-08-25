@@ -11,8 +11,7 @@
               "Campaign channels"
             ],
             "title": "Campaign channel id",
-            "sourceColumn": "campaign_channel_id",
-            "sourceColumnDataType": "STRING"
+            "sourceColumn": "campaign_channel_id"
           },
           {
             "description": "Campaign channel category",
@@ -22,8 +21,7 @@
               "Campaign channels"
             ],
             "title": "Campaign channel category",
-            "sourceColumn": "category",
-            "sourceColumnDataType": "STRING"
+            "sourceColumn": "category"
           },
           {
             "description": "Type",
@@ -33,17 +31,12 @@
               "Campaign channels"
             ],
             "title": "Type",
-            "sourceColumn": "type",
-            "sourceColumnDataType": "STRING"
+            "sourceColumn": "type"
           }
         ],
         "dataSourceTableId": {
           "dataSourceId": "gdc_ds_gooddemo",
           "id": "campaign_channels",
-          "path": [
-            "GOODDATA_DEMO_SCHEMA",
-            "campaign_channels"
-          ],
           "type": "dataSource"
         },
         "description": "Campaign channels",
@@ -52,7 +45,6 @@
             "description": "Budget",
             "id": "budget",
             "sourceColumn": "budget",
-            "sourceColumnDataType": "NUMERIC",
             "tags": [
               "Campaign channels"
             ],
@@ -62,7 +54,6 @@
             "description": "Spend",
             "id": "spend",
             "sourceColumn": "spend",
-            "sourceColumnDataType": "NUMERIC",
             "tags": [
               "Campaign channels"
             ],
@@ -85,9 +76,6 @@
             "multivalue": false,
             "sourceColumns": [
               "campaign_id"
-            ],
-            "sourceColumnDataTypes": [
-              "INT"
             ]
           }
         ],
@@ -106,8 +94,7 @@
               "Campaigns"
             ],
             "title": "Campaign id",
-            "sourceColumn": "campaign_id",
-            "sourceColumnDataType": "INT"
+            "sourceColumn": "campaign_id"
           },
           {
             "description": "Campaign name",
@@ -117,17 +104,12 @@
               "Campaigns"
             ],
             "title": "Campaign name",
-            "sourceColumn": "campaign_name",
-            "sourceColumnDataType": "STRING"
+            "sourceColumn": "campaign_name"
           }
         ],
         "dataSourceTableId": {
           "dataSourceId": "gdc_ds_gooddemo",
           "id": "campaigns",
-          "path": [
-            "GOODDATA_DEMO_SCHEMA",
-            "campaigns"
-          ],
           "type": "dataSource"
         },
         "description": "Campaigns",
@@ -155,8 +137,7 @@
               "Customers"
             ],
             "title": "Customer id",
-            "sourceColumn": "customer_id",
-            "sourceColumnDataType": "INT"
+            "sourceColumn": "customer_id"
           },
           {
             "description": "Customer name",
@@ -166,8 +147,7 @@
               "Customers"
             ],
             "title": "Customer name",
-            "sourceColumn": "customer_name",
-            "sourceColumnDataType": "STRING"
+            "sourceColumn": "customer_name"
           },
           {
             "description": "Region",
@@ -177,8 +157,7 @@
               "Customers"
             ],
             "title": "Region",
-            "sourceColumn": "region",
-            "sourceColumnDataType": "STRING"
+            "sourceColumn": "region"
           },
           {
             "description": "State",
@@ -188,7 +167,6 @@
                 "description": "Location",
                 "id": "geo__state__location",
                 "sourceColumn": "geo__state__location",
-                "sourceColumnDataType": "STRING",
                 "tags": [
                   "Customers"
                 ],
@@ -199,17 +177,12 @@
               "Customers"
             ],
             "title": "State",
-            "sourceColumn": "state",
-            "sourceColumnDataType": "STRING"
+            "sourceColumn": "state"
           }
         ],
         "dataSourceTableId": {
           "dataSourceId": "gdc_ds_gooddemo",
           "id": "customers",
-          "path": [
-            "GOODDATA_DEMO_SCHEMA",
-            "customers"
-          ],
           "type": "dataSource"
         },
         "description": "Customers",
@@ -237,8 +210,7 @@
               "Order lines"
             ],
             "title": "Order id",
-            "sourceColumn": "order_id",
-            "sourceColumnDataType": "STRING"
+            "sourceColumn": "order_id"
           },
           {
             "description": "Order line id",
@@ -248,8 +220,7 @@
               "Order lines"
             ],
             "title": "Order line id",
-            "sourceColumn": "order_line_id",
-            "sourceColumnDataType": "STRING"
+            "sourceColumn": "order_line_id"
           },
           {
             "description": "Order status",
@@ -259,17 +230,12 @@
               "Order lines"
             ],
             "title": "Order status",
-            "sourceColumn": "order_status",
-            "sourceColumnDataType": "STRING"
+            "sourceColumn": "order_status"
           }
         ],
         "dataSourceTableId": {
           "dataSourceId": "gdc_ds_gooddemo",
           "id": "order_lines",
-          "path": [
-            "GOODDATA_DEMO_SCHEMA",
-            "order_lines"
-          ],
           "type": "dataSource"
         },
         "description": "Order lines",
@@ -278,7 +244,6 @@
             "description": "Price",
             "id": "price",
             "sourceColumn": "price",
-            "sourceColumnDataType": "NUMERIC",
             "tags": [
               "Order lines"
             ],
@@ -288,7 +253,6 @@
             "description": "Quantity",
             "id": "quantity",
             "sourceColumn": "quantity",
-            "sourceColumnDataType": "NUMERIC",
             "tags": [
               "Order lines"
             ],
@@ -311,9 +275,6 @@
             "multivalue": false,
             "sourceColumns": [
               "campaign_id"
-            ],
-            "sourceColumnDataTypes": [
-              "INT"
             ]
           },
           {
@@ -324,9 +285,6 @@
             "multivalue": false,
             "sourceColumns": [
               "customer_id"
-            ],
-            "sourceColumnDataTypes": [
-              "INT"
             ]
           },
           {
@@ -337,9 +295,6 @@
             "multivalue": false,
             "sourceColumns": [
               "date"
-            ],
-            "sourceColumnDataTypes": [
-              "DATE"
             ]
           },
           {
@@ -350,36 +305,13 @@
             "multivalue": false,
             "sourceColumns": [
               "product_id"
-            ],
-            "sourceColumnDataTypes": [
-              "INT"
             ]
           }
         ],
         "tags": [
           "Order lines"
         ],
-        "title": "Order lines",
-        "workspaceDataFilterColumns": [
-          {
-            "dataType": "STRING",
-            "name": "wdf__region"
-          },
-          {
-            "dataType": "STRING",
-            "name": "wdf__state"
-          }
-        ],
-        "workspaceDataFilterReferences": [
-          {
-            "filterColumn": "wdf__region",
-            "filterColumnDataType": "STRING",
-            "filterId": {
-              "id": "wdf__region",
-              "type": "workspaceDataFilter"
-            }
-          }
-        ]
+        "title": "Order lines"
       },
       {
         "attributes": [
@@ -391,8 +323,7 @@
               "Products"
             ],
             "title": "Product id",
-            "sourceColumn": "product_id",
-            "sourceColumnDataType": "INT"
+            "sourceColumn": "product_id"
           },
           {
             "description": "Product name",
@@ -402,8 +333,7 @@
               "Products"
             ],
             "title": "Product name",
-            "sourceColumn": "product_name",
-            "sourceColumnDataType": "STRING"
+            "sourceColumn": "product_name"
           },
           {
             "description": "Product category",
@@ -413,17 +343,12 @@
               "Products"
             ],
             "title": "Product category",
-            "sourceColumn": "category",
-            "sourceColumnDataType": "STRING"
+            "sourceColumn": "category"
           }
         ],
         "dataSourceTableId": {
           "dataSourceId": "gdc_ds_gooddemo",
           "id": "products",
-          "path": [
-            "GOODDATA_DEMO_SCHEMA",
-            "products"
-          ],
           "type": "dataSource"
         },
         "description": "Products",
