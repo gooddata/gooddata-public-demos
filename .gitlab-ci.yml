@@ -7,24 +7,25 @@
 # Delivery is managed by the CI / CD pipeline in gooddata/gdc-nas repository.
 ---
 default:
-  image: registry.gitlab.com/gooddata/infra/tools:$BUILD_IMAGE_VERSION
+  image: $AWS_ECR_URL/infra/tools:$BUILD_IMAGE_VERSION
 
 variables:
-  BUILD_IMAGE_VERSION: '3.0.2'
+  AWS_ECR_URL: '441851189095.dkr.ecr.eu-central-1.amazonaws.com'
+  BUILD_IMAGE_VERSION: '3.5.0'
 
 stages:
   - generate-update
 
 ### Job templates
 .post-merge: &post-merge
-  # trigger on push to master, release or hotfix/(tiger|panther) branch
-  if: '$CI_COMMIT_BRANCH =~ /^(master|release|hotfix\/(tiger|panther))$/
+  # trigger on push to master, release, hotfix/(tiger|panther) or fast_track branch
+  if: '$CI_COMMIT_BRANCH =~ /^(master|release|hotfix\/(tiger|panther)|fast_track)$/
         && $CI_PIPELINE_SOURCE == "push"'
 
 generate-update:
   stage: generate-update
   script:
-    - /scripts/update-ext-image-version.rb demo-resources
+    - /scripts/update_ext_image_version.py demo-resources
   dependencies: []
   rules:
     - <<: *post-merge
