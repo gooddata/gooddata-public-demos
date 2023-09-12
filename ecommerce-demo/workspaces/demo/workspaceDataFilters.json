@@ -1,3 +1,24 @@
 {
-  "workspaceDataFilters": []
+  "workspaceDataFilters": [
+    {
+      "data": {
+        "type": "workspaceDataFilter",
+        "id": "WDF__CLIENT_ID",
+        "attributes": {
+          "columnName": "wdf__client_id",
+          "title": "Client id"
+        }
+      }
+    },
+    {
+      "data": {
+        "type": "workspaceDataFilter",
+        "id": "WDF__PRODUCT_CATEGORY",
+        "attributes": {
+          "columnName": "wdf__product_category",
+          "title": "Product category"
+        }
+      }
+    }
+  ]
 }

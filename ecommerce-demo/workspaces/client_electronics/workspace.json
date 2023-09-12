@@ -1,0 +1,17 @@
+{
+  "data": {
+    "attributes": {
+      "name": "4. Demo Workspace / Customer C (Child)"
+    },
+    "id": "demo_ecommerce_merchant_electronics",
+    "type": "workspace",
+    "relationships": {
+      "parent": {
+        "data": {
+          "id": "demo",
+          "type": "workspace"
+        }
+      }
+    }
+  }
+}

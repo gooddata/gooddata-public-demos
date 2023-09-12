@@ -119,6 +119,16 @@
         "tags": [
           "Customer"
         ],
+        "workspaceDataFilterReferences": [
+          {
+            "filterId": {
+              "id": "WDF__CLIENT_ID",
+              "type": "workspaceDataFilter"
+            },
+            "filterColumn": "wdf__client_id",
+            "filterColumnDataType": "STRING"
+          }
+        ],
         "dataSourceTableId": {
           "id": "customer",
           "dataSourceId": "gdc_ds_ecommerce_demo",
@@ -223,6 +233,16 @@
         ],
         "tags": [
           "Monthlyinventory"
+        ],
+        "workspaceDataFilterReferences": [
+          {
+            "filterId": {
+              "id": "WDF__CLIENT_ID",
+              "type": "workspaceDataFilter"
+            },
+            "filterColumn": "wdf__client_id",
+            "filterColumnDataType": "STRING"
+          }
         ],
         "dataSourceTableId": {
           "id": "monthlyinventory",
@@ -386,6 +406,16 @@
         "tags": [
           "Order lines"
         ],
+        "workspaceDataFilterReferences": [
+          {
+            "filterId": {
+              "id": "WDF__CLIENT_ID",
+              "type": "workspaceDataFilter"
+            },
+            "filterColumn": "wdf__client_id",
+            "filterColumnDataType": "STRING"
+          }
+        ],
         "dataSourceTableId": {
           "id": "order_lines",
           "dataSourceId": "gdc_ds_ecommerce_demo",
@@ -440,6 +470,16 @@
         "references": [],
         "tags": [
           "Orders"
+        ],
+        "workspaceDataFilterReferences": [
+          {
+            "filterId": {
+              "id": "WDF__CLIENT_ID",
+              "type": "workspaceDataFilter"
+            },
+            "filterColumn": "wdf__client_id",
+            "filterColumnDataType": "STRING"
+          }
         ],
         "dataSourceTableId": {
           "id": "orders",
@@ -571,6 +611,16 @@
         "references": [],
         "tags": [
           "Product"
+        ],
+        "workspaceDataFilterReferences": [
+          {
+            "filterId": {
+              "id": "WDF__PRODUCT_CATEGORY",
+              "type": "workspaceDataFilter"
+            },
+            "filterColumn": "wdf__product_category",
+            "filterColumnDataType": "STRING"
+          }
         ],
         "dataSourceTableId": {
           "id": "product",
@@ -712,6 +762,16 @@
         ],
         "tags": [
           "Returns"
+        ],
+        "workspaceDataFilterReferences": [
+          {
+            "filterId": {
+              "id": "WDF__CLIENT_ID",
+              "type": "workspaceDataFilter"
+            },
+            "filterColumn": "wdf__client_id",
+            "filterColumnDataType": "STRING"
+          }
         ],
         "dataSourceTableId": {
           "id": "returns",

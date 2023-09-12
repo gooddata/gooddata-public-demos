@@ -1,0 +1,45 @@
+{
+  "workspaceDataFilterSettings": [
+    {
+      "data": {
+        "type": "workspaceDataFilterSetting",
+        "id": "demo_wdfSettings_ecommerce_merchant_electronics",
+        "attributes": {
+          "title": "ecommerce merchant electronics",
+          "filterValues": [
+            "merchant__electronics"
+          ]
+        },
+        "relationships": {
+          "workspaceDataFilter": {
+            "data": {
+              "id": "WDF__CLIENT_ID",
+              "type": "workspaceDataFilter"
+            }
+          }
+        }
+      }
+    },
+    {
+      "data": {
+        "type": "workspaceDataFilterSetting",
+        "id": "demo_wdfSettings_ecommerce_merchant_electronics_cat",
+        "attributes": {
+          "title": "ecommerce merchant electronics cat",
+          "filterValues": [
+            "Computers & Accessories",
+            "Audio & Video Accessories"
+          ]
+        },
+        "relationships": {
+          "workspaceDataFilter": {
+            "data": {
+              "id": "WDF__PRODUCT_CATEGORY",
+              "type": "workspaceDataFilter"
+            }
+          }
+        }
+      }
+    }
+  ]
+}
