@@ -101,6 +101,127 @@ curl --request PUT \
   --header 'Content-Type: application/json' \
   --data '@./gooddemo/workspaces/demo/ldm.json' $ENDPOINT/api/v1/layout/workspaces/<workspaceId>
 ```
+### Customize Theme for Organization and Workspace
+To customize theme for organization or workspace we need create a theme object for organization 
+##Step 1: Create a theme object
+``` 
+   curl --request POST \
+  --header "Authorization: Bearer $API_TOKEN" \
+  --header 'Content-Type: application/json' \
+  --data '{
+   "data": {
+   "attributes": {
+   "content": { 
+      <content>
+   },
+   "name": "<some_name>"
+   },
+   "id": "<some_id>",
+   "type": "theme"
+   }
+}' $ENDPOINT/api/v1/entities/themes
+```
+content can found in [theme.json](ecommerce-demo/organization/themes.json) in content of each object 
+##Step 2: Create a theme object for organization or workspace
+For Organization use
+``` 
+   curl --request POST \
+  --header "Authorization: Bearer $API_TOKEN" \
+  --header 'Content-Type: application/json' \
+  --data '{
+    "data": {
+        "type": "organizationSetting",
+        "id": "<setting_theme_id>",
+        "attributes": {
+            "content": {
+                "id": "<themeId>",
+                "type": "theme"
+            },
+            "type": "ACTIVE_THEME"
+        }
+    }
+}' $ENDPOINT/api/v1/entities/organizationSettings/<setting_theme_id>
+```
+For Workspace use
+``` 
+   curl --request POST \
+  --header "Authorization: Bearer $API_TOKEN" \
+  --header 'Content-Type: application/json' \
+  --data '{
+    "data": {
+        "type": "workspaceSetting",
+        "id": "{settingsId}",
+        "attributes": {
+            "content": {
+                "id": "{themeId}",
+                "type": "theme"
+            },
+            "type": "ACTIVE_THEME"
+        }
+    }
+}' $ENDPOINT/api/v1/entities/workspaces/{workspaceId}/workspaceSettings
+```
+
+### Customize ColorPalette for Organization and Workspace
+To customize colorPalette for organization or workspace we need create a theme object for organization
+##Step 1: Create a colorPalette object
+``` 
+   curl --request POST \
+  --header "Authorization: Bearer $API_TOKEN" \
+  --header 'Content-Type: application/json' \
+  --data '{
+   "data": {
+   "attributes": {
+   "content": { 
+      <content>
+   },
+   "name": "<some_name>"
+   },
+   "id": "<some_id>",
+   "type": "colorPalette"
+   }
+}' $ENDPOINT/api/v1/entities/colorPalette
+```
+content can found in [colorPalettes.json](ecommerce-demo/organization/colorPalettes.json) in attributes of each object
+##Step 2: Create a colorPalette for organization or workspace
+For Organization use
+``` 
+   curl --request POST \
+  --header "Authorization: Bearer $API_TOKEN" \
+  --header 'Content-Type: application/json' \
+  --data '{
+    "data": {
+        "type": "organizationSetting",
+        "id": "<setting_color_palette_id>",
+        "attributes": {
+            "content": {
+                "id": "<colorPaletteId>",
+                "type": "colorPalette"
+            },
+            "type": "ACTIVE_COLOR_PALETTE"
+        }
+    }
+}' $ENDPOINT/api/v1/entities/organizationSettings/<setting_color_palette_id>
+```
+For Workspace use
+``` 
+   curl --request POST \
+  --header "Authorization: Bearer $API_TOKEN" \
+  --header 'Content-Type: application/json' \
+  --data '{
+    "data": {
+        "type": "workspaceSetting",
+        "id": "{someId}",
+        "attributes": {
+            "content": {
+                "id": "{colorPaletteId}}",
+                "type": "colorPalette"
+            },
+            "type": "ACTIVE_COLOR_PALETTE"
+        }
+    }
+}' $ENDPOINT/api/v1/entities/workspaces/{workspaceId}/workspaceSettings
+```
 
 ## License
 
