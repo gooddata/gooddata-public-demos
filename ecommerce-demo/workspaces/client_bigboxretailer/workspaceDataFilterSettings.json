@@ -1,0 +1,46 @@
+{
+  "workspaceDataFilterSettings": [
+    {
+      "data": {
+        "type": "workspaceDataFilterSetting",
+        "id": "demo_wdfSettings_ecommerce_merchant_bigboxretailer",
+        "attributes": {
+          "title": "ecommerce merchant bigboxretailer",
+          "filterValues": [
+            "merchant__bigboxretailer"
+          ]
+        },
+        "relationships": {
+          "workspaceDataFilter": {
+            "data": {
+              "id": "WDF__CLIENT_ID",
+              "type": "workspaceDataFilter"
+            }
+          }
+        }
+      }
+    },
+    {
+      "data": {
+        "type": "workspaceDataFilterSetting",
+        "id": "demo_wdfSettings_ecommerce_merchant_bigboxretailer_cat",
+        "attributes": {
+          "title": "ecommerce merchant bigboxretailer cat",
+          "filterValues": [
+            "Home Goods",
+            "Furniture",
+            "Computers & Accessories"
+          ]
+        },
+        "relationships": {
+          "workspaceDataFilter": {
+            "data": {
+              "id": "WDF__PRODUCT_CATEGORY",
+              "type": "workspaceDataFilter"
+            }
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "data": {
+    "attributes": {
+      "name": "2. Demo Workspace / Customer A (Child)"
+    },
+    "id": "demo_ecommerce_merchant_bigboxretailer",
+    "type": "workspace",
+    "relationships": {
+      "parent": {
+        "data": {
+          "id": "demo",
+          "type": "workspace"
+        }
+      }
+    }
+  }
+}

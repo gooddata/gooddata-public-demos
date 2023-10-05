@@ -1,0 +1,46 @@
+{
+  "workspaceDataFilterSettings": [
+    {
+      "data": {
+        "type": "workspaceDataFilterSetting",
+        "id": "demo_wdfSettings_ecommerce_merchant_clothing",
+        "attributes": {
+          "title": "ecommerce merchant clothing",
+          "filterValues": [
+            "merchant__clothing"
+          ]
+        },
+        "relationships": {
+          "workspaceDataFilter": {
+            "data": {
+              "id": "WDF__CLIENT_ID",
+              "type": "workspaceDataFilter"
+            }
+          }
+        }
+      }
+    },
+    {
+      "data": {
+        "type": "workspaceDataFilterSetting",
+        "id": "demo_wdfSettings_ecommerce_merchant_clothing_cat",
+        "attributes": {
+          "title": "ecommerce merchant clothing cat",
+          "filterValues": [
+            "Home Goods",
+            "Audio & Video Accessories",
+            "Clothing"
+          ]
+        },
+        "relationships": {
+          "workspaceDataFilter": {
+            "data": {
+              "id": "WDF__PRODUCT_CATEGORY",
+              "type": "workspaceDataFilter"
+            }
+          }
+        }
+      }
+    }
+  ]
+}
