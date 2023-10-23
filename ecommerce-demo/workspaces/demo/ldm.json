@@ -25,7 +25,8 @@
                 "sourceColumnDataType": "STRING",
                 "tags": [
                   "Customer"
-                ]
+                ],
+                "valueType": "GEO_LATITUDE"
               },
               {
                 "id": "geo__customer_city__city_pushpin_longitude",
@@ -35,7 +36,8 @@
                 "sourceColumnDataType": "STRING",
                 "tags": [
                   "Customer"
-                ]
+                ],
+                "valueType": "GEO_LONGITUDE"
               }
             ],
             "tags": [
