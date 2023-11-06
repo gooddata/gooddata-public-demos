@@ -43,7 +43,7 @@ create or replace TABLE "monthlyinventory"
 (
 	"monthly_inventory_id" VARCHAR(128) NOT NULL,
 	"product__product_id" VARCHAR(128),
-	"imventory_month" DATE,
+	"inventory_month" DATE,
 	"monthly_quantity_eom" NUMBER(12,2),
     "wdf__client_id" VARCHAR(128),
 	"monthly_quantity_bom" NUMBER(12,2),

@@ -43,7 +43,7 @@ create table "monthlyinventory"
 (
 	"monthly_inventory_id" varchar(128) not null,
 	"product__product_id" varchar(128),
-	"imventory_month" date,
+	"inventory_month" date,
 	"monthly_quantity_eom" decimal(12,2),
 	"wdf__client_id" varchar(128),
 	"monthly_quantity_bom" decimal(12,2),

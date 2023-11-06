@@ -71,7 +71,7 @@
           {
             "dataType": "DATE",
             "isPrimaryKey": false,
-            "name": "imventory_month"
+            "name": "inventory_month"
           },
           {
             "dataType": "STRING",
