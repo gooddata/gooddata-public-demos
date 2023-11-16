@@ -130,7 +130,7 @@
             "labels": [],
             "sourceColumn": "monthly_inventory_id",
             "tags": [
-              "Monthlyinventory"
+              "Monthly inventory"
             ],
             "title": "Monthly inventory id"
           }
@@ -140,14 +140,14 @@
           "id": "monthlyinventory",
           "type": "dataSource"
         },
-        "description": "Monthlyinventory",
+        "description": "Monthly inventory",
         "facts": [
           {
             "description": "Monthly quantity bom",
             "id": "monthly_quantity_bom",
             "sourceColumn": "monthly_quantity_bom",
             "tags": [
-              "Monthlyinventory"
+              "Monthly inventory"
             ],
             "title": "Monthly quantity bom"
           },
@@ -156,7 +156,7 @@
             "id": "monthly_quantity_eom",
             "sourceColumn": "monthly_quantity_eom",
             "tags": [
-              "Monthlyinventory"
+              "Monthly inventory"
             ],
             "title": "Monthly quantity eom"
           }
@@ -181,12 +181,12 @@
           },
           {
             "identifier": {
-              "id": "imventory_month",
+              "id": "inventory_month",
               "type": "dataset"
             },
             "multivalue": false,
             "sourceColumns": [
-              "imventory_month"
+              "inventory_month"
             ]
           },
           {
@@ -201,9 +201,9 @@
           }
         ],
         "tags": [
-          "Monthlyinventory"
+          "Monthly inventory"
         ],
-        "title": "Monthlyinventory",
+        "title": "Monthly inventory",
         "workspaceDataFilterColumns": [
           {
             "dataType": "STRING",
@@ -716,11 +716,11 @@
           "titleBase": "",
           "titlePattern": "%titleBase - %granularityTitle"
         },
-        "id": "imventory_month",
+        "id": "inventory_month",
         "tags": [
-          "Imventory month"
+          "Inventory month"
         ],
-        "title": "Imventory month"
+        "title": "Inventory month"
       },
       {
         "description": "",

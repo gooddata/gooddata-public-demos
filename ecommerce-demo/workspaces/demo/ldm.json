@@ -149,8 +149,8 @@
       },
       {
         "id": "monthlyinventory",
-        "title": "Monthlyinventory",
-        "description": "Monthlyinventory",
+        "title": "Monthly inventory",
+        "description": "Monthly inventory",
         "grain": [
           {
             "id": "monthly_inventory_id",
@@ -164,7 +164,7 @@
             "description": "Monthly inventory id",
             "labels": [],
             "tags": [
-              "Monthlyinventory"
+              "Monthly inventory"
             ],
             "sourceColumn": "monthly_inventory_id",
             "sourceColumnDataType": "STRING"
@@ -178,7 +178,7 @@
             "sourceColumn": "monthly_quantity_bom",
             "sourceColumnDataType": "NUMERIC",
             "tags": [
-              "Monthlyinventory"
+              "Monthly inventory"
             ]
           },
           {
@@ -188,7 +188,7 @@
             "sourceColumn": "monthly_quantity_eom",
             "sourceColumnDataType": "NUMERIC",
             "tags": [
-              "Monthlyinventory"
+              "Monthly inventory"
             ]
           }
         ],
@@ -208,12 +208,12 @@
           },
           {
             "identifier": {
-              "id": "imventory_month",
+              "id": "inventory_month",
               "type": "dataset"
             },
             "multivalue": false,
             "sourceColumns": [
-              "imventory_month"
+              "inventory_month"
             ],
             "sourceColumnDataTypes": [
               "DATE"
@@ -234,7 +234,7 @@
           }
         ],
         "tags": [
-          "Monthlyinventory"
+          "Monthly inventory"
         ],
         "workspaceDataFilterReferences": [
           {
@@ -852,8 +852,8 @@
         ]
       },
       {
-        "id": "imventory_month",
-        "title": "Imventory month",
+        "id": "inventory_month",
+        "title": "Inventory month",
         "description": "",
         "granularities": [
           "MINUTE",
@@ -877,7 +877,7 @@
           "titlePattern": "%titleBase - %granularityTitle"
         },
         "tags": [
-          "Imventory month"
+          "Inventory month"
         ]
       },
       {
@@ -1016,7 +1016,7 @@
       },
       {
         "identifier": {
-          "id": "imventory_month",
+          "id": "inventory_month",
           "type": "templateDataset"
         },
         "collapse": true,

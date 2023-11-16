@@ -412,6 +412,39 @@
                       "type": "insight",
                       "insight": {
                         "identifier": {
+                          "id": "098740ee-ad7c-4b27-8ff0-4ae8531a8100",
+                          "type": "visualizationObject"
+                        }
+                      },
+                      "ignoreDashboardFilters": [],
+                      "drills": [],
+                      "title": "Gross Profit forecast_prediction_plugin_",
+                      "description": "",
+                      "dateDataSet": {
+                        "identifier": {
+                          "id": "customer_created_date",
+                          "type": "dataset"
+                        }
+                      }
+                    },
+                    "size": {
+                      "xl": {
+                        "gridHeight": 22,
+                        "gridWidth": 12
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "IDashboardLayoutSection",
+                "items": [
+                  {
+                    "type": "IDashboardLayoutItem",
+                    "widget": {
+                      "type": "insight",
+                      "insight": {
+                        "identifier": {
                           "id": "71d6d37b-77d6-4225-af37-d24760200874",
                           "type": "visualizationObject"
                         }
@@ -799,6 +832,17 @@
               }
             ]
           },
+          "plugins": [
+            {
+              "plugin": {
+                "identifier": {
+                  "id": "41fc62b6-2dbe-4dfb-bf82-e2eb329a1779",
+                  "type": "dashboardPlugin"
+                }
+              },
+              "version": "2"
+            }
+          ],
           "version": "2"
         },
         "description": "",
@@ -2590,7 +2634,17 @@
         "title": "4. Products"
       }
     ],
-    "dashboardPlugins": [],
+    "dashboardPlugins": [
+      {
+        "content": {
+          "url": "https://demo-dashboard-plugins.gooddata.com/gd_forecasting/dp_gd_deepar.mjs",
+          "version": "2"
+        },
+        "description": "",
+        "id": "41fc62b6-2dbe-4dfb-bf82-e2eb329a1779",
+        "title": "gd_deepar"
+      }
+    ],
     "filterContexts": [
       {
         "content": {
@@ -3274,6 +3328,79 @@
         "description": "",
         "id": "06f23fe2-edcf-4b6c-9163-8fa26c8ef45f",
         "title": "Product Category Rating"
+      },
+      {
+        "content": {
+          "buckets": [
+            {
+              "items": [
+                {
+                  "measure": {
+                    "localIdentifier": "157e5232d0014c65ad3be170c2fea0e6",
+                    "definition": {
+                      "measureDefinition": {
+                        "item": {
+                          "identifier": {
+                            "id": "gross_profit",
+                            "type": "metric"
+                          }
+                        },
+                        "computeRatio": false,
+                        "filters": []
+                      }
+                    },
+                    "title": "Gross Profit"
+                  }
+                }
+              ],
+              "localIdentifier": "measures"
+            },
+            {
+              "items": [
+                {
+                  "attribute": {
+                    "localIdentifier": "e5d6cafa6615451e87a42133eef8050f",
+                    "displayForm": {
+                      "identifier": {
+                        "id": "customer_created_date.day",
+                        "type": "label"
+                      }
+                    },
+                    "alias": "Date"
+                  }
+                }
+              ],
+              "localIdentifier": "trend"
+            }
+          ],
+          "filters": [
+            {
+              "absoluteDateFilter": {
+                "dataSet": {
+                  "identifier": {
+                    "id": "customer_created_date",
+                    "type": "dataset"
+                  }
+                },
+                "from": "2021-01-01 00:00",
+                "to": "2023-09-30 23:59"
+              }
+            }
+          ],
+          "sorts": [],
+          "properties": {
+            "controls": {
+              "dataPoints": {
+                "visible": false
+              }
+            }
+          },
+          "visualizationUrl": "local:line",
+          "version": "2"
+        },
+        "description": "Gross Profit Trend",
+        "id": "098740ee-ad7c-4b27-8ff0-4ae8531a8100",
+        "title": "Gross Profit forecast_prediction_plugin_"
       },
       {
         "content": {
@@ -7966,7 +8093,7 @@
             "sourceColumn": "monthly_inventory_id",
             "sourceColumnDataType": "STRING",
             "tags": [
-              "Monthlyinventory"
+              "Monthly inventory"
             ],
             "title": "Monthly inventory id"
           }
@@ -7980,7 +8107,7 @@
           ],
           "type": "dataSource"
         },
-        "description": "Monthlyinventory",
+        "description": "Monthly inventory",
         "facts": [
           {
             "description": "Monthly quantity bom",
@@ -7988,7 +8115,7 @@
             "sourceColumn": "monthly_quantity_bom",
             "sourceColumnDataType": "NUMERIC",
             "tags": [
-              "Monthlyinventory"
+              "Monthly inventory"
             ],
             "title": "Monthly quantity bom"
           },
@@ -7998,7 +8125,7 @@
             "sourceColumn": "monthly_quantity_eom",
             "sourceColumnDataType": "NUMERIC",
             "tags": [
-              "Monthlyinventory"
+              "Monthly inventory"
             ],
             "title": "Monthly quantity eom"
           }
@@ -8026,7 +8153,7 @@
           },
           {
             "identifier": {
-              "id": "imventory_month",
+              "id": "inventory_month",
               "type": "dataset"
             },
             "multivalue": false,
@@ -8034,7 +8161,7 @@
               "DATE"
             ],
             "sourceColumns": [
-              "imventory_month"
+              "inventory_month"
             ]
           },
           {
@@ -8052,9 +8179,9 @@
           }
         ],
         "tags": [
-          "Monthlyinventory"
+          "Monthly inventory"
         ],
-        "title": "Monthlyinventory",
+        "title": "Monthly inventory",
         "workspaceDataFilterColumns": [
           {
             "dataType": "STRING",
@@ -8634,11 +8761,11 @@
           "titleBase": "",
           "titlePattern": "%titleBase - %granularityTitle"
         },
-        "id": "imventory_month",
+        "id": "inventory_month",
         "tags": [
-          "Imventory month"
+          "Inventory month"
         ],
-        "title": "Imventory month"
+        "title": "Inventory month"
       },
       {
         "description": "",
