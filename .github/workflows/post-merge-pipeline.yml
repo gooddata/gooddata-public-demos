@@ -1,0 +1,37 @@
+---
+# (C) 2024 GoodData Corporation
+name: Update Tiger ext image
+"on":
+  push:
+    branches: ["master", "release", "hotfix/tiger", "hotfix/panther", "fast_track"]
+
+jobs:
+  get-parameters:
+    runs-on: [infra1-small]
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - name: Get the commit SHA
+        run: |
+          echo "GITHUB_SHORT_SHA=$(echo $GITHUB_SHA | cut -c 1-8)" >> $GITHUB_ENV
+    outputs:
+      github_short_sha: ${{ env.GITHUB_SHORT_SHA }}
+
+  generate-update:
+    needs: [get-parameters]
+    runs-on: [infra1-small]
+    steps:
+      - name: Repository Dispatch
+        uses: peter-evans/repository-dispatch@v3
+        with:
+          token: ${{ secrets.TOKEN_GITHUB_YENKINS_ADMIN }}
+          repository: gooddata/github-actions
+          event-type: public-ext-update
+          client-payload: |
+            {
+                "component": "demo-resources",
+                "branch": "${{ github.ref_name }}",
+                "github_short_sha": "${{ needs.get-parameters.outputs.github_short_sha }}"
+            }
