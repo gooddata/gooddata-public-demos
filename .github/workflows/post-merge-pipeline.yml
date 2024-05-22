@@ -7,7 +7,9 @@ name: Update Tiger ext image
 
 jobs:
   get-parameters:
-    runs-on: [infra1-small]
+    runs-on:
+      group: infra1-runners-arc
+      labels: runners-small
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
@@ -21,7 +23,9 @@ jobs:
 
   generate-update:
     needs: [get-parameters]
-    runs-on: [infra1-small]
+    runs-on:
+      group: infra1-runners-arc
+      labels: runners-small
     steps:
       - name: Repository Dispatch
         uses: peter-evans/repository-dispatch@v3
