@@ -7914,7 +7914,7 @@
           }
         ],
         "dataSourceTableId": {
-          "dataSourceId": "172cf9a6-6005-4e77-a6aa-95dc2fe5c1dd",
+          "dataSourceId": "gdc_demo_9fb818c2-dbb4-4026-aba9-8af5e89d955d",
           "id": "customer",
           "path": [
             "ECOMMERCE_DEMO_SCHEMA",
@@ -7972,7 +7972,7 @@
           }
         ],
         "dataSourceTableId": {
-          "dataSourceId": "172cf9a6-6005-4e77-a6aa-95dc2fe5c1dd",
+          "dataSourceId": "gdc_demo_9fb818c2-dbb4-4026-aba9-8af5e89d955d",
           "id": "monthlyinventory",
           "path": [
             "ECOMMERCE_DEMO_SCHEMA",
@@ -8088,7 +8088,7 @@
           }
         ],
         "dataSourceTableId": {
-          "dataSourceId": "172cf9a6-6005-4e77-a6aa-95dc2fe5c1dd",
+          "dataSourceId": "gdc_demo_9fb818c2-dbb4-4026-aba9-8af5e89d955d",
           "id": "order_lines",
           "path": [
             "ECOMMERCE_DEMO_SCHEMA",
@@ -8250,7 +8250,7 @@
           }
         ],
         "dataSourceTableId": {
-          "dataSourceId": "172cf9a6-6005-4e77-a6aa-95dc2fe5c1dd",
+          "dataSourceId": "gdc_demo_9fb818c2-dbb4-4026-aba9-8af5e89d955d",
           "id": "orders",
           "path": [
             "ECOMMERCE_DEMO_SCHEMA",
@@ -8370,7 +8370,7 @@
           }
         ],
         "dataSourceTableId": {
-          "dataSourceId": "172cf9a6-6005-4e77-a6aa-95dc2fe5c1dd",
+          "dataSourceId": "gdc_demo_9fb818c2-dbb4-4026-aba9-8af5e89d955d",
           "id": "product",
           "path": [
             "ECOMMERCE_DEMO_SCHEMA",
@@ -8425,7 +8425,7 @@
           }
         ],
         "dataSourceTableId": {
-          "dataSourceId": "172cf9a6-6005-4e77-a6aa-95dc2fe5c1dd",
+          "dataSourceId": "gdc_demo_9fb818c2-dbb4-4026-aba9-8af5e89d955d",
           "id": "returns",
           "path": [
             "ECOMMERCE_DEMO_SCHEMA",
