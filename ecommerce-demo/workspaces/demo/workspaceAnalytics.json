@@ -412,39 +412,6 @@
                       "type": "insight",
                       "insight": {
                         "identifier": {
-                          "id": "098740ee-ad7c-4b27-8ff0-4ae8531a8100",
-                          "type": "visualizationObject"
-                        }
-                      },
-                      "ignoreDashboardFilters": [],
-                      "drills": [],
-                      "title": "Gross Profit forecast_prediction_plugin_",
-                      "description": "",
-                      "dateDataSet": {
-                        "identifier": {
-                          "id": "customer_created_date",
-                          "type": "dataset"
-                        }
-                      }
-                    },
-                    "size": {
-                      "xl": {
-                        "gridHeight": 22,
-                        "gridWidth": 12
-                      }
-                    }
-                  }
-                ]
-              },
-              {
-                "type": "IDashboardLayoutSection",
-                "items": [
-                  {
-                    "type": "IDashboardLayoutItem",
-                    "widget": {
-                      "type": "insight",
-                      "insight": {
-                        "identifier": {
                           "id": "71d6d37b-77d6-4225-af37-d24760200874",
                           "type": "visualizationObject"
                         }
@@ -832,17 +799,6 @@
               }
             ]
           },
-          "plugins": [
-            {
-              "plugin": {
-                "identifier": {
-                  "id": "41fc62b6-2dbe-4dfb-bf82-e2eb329a1779",
-                  "type": "dashboardPlugin"
-                }
-              },
-              "version": "2"
-            }
-          ],
           "version": "2"
         },
         "description": "",
@@ -2634,17 +2590,7 @@
         "title": "4. Products"
       }
     ],
-    "dashboardPlugins": [
-      {
-        "content": {
-          "url": "https://demo-dashboard-plugins.gooddata.com/gd_forecasting/dp_gd_deepar.mjs",
-          "version": "2"
-        },
-        "description": "",
-        "id": "41fc62b6-2dbe-4dfb-bf82-e2eb329a1779",
-        "title": "gd_deepar"
-      }
-    ],
+    "dashboardPlugins": [],
     "filterContexts": [
       {
         "content": {
@@ -3328,79 +3274,6 @@
         "description": "",
         "id": "06f23fe2-edcf-4b6c-9163-8fa26c8ef45f",
         "title": "Product Category Rating"
-      },
-      {
-        "content": {
-          "buckets": [
-            {
-              "items": [
-                {
-                  "measure": {
-                    "localIdentifier": "157e5232d0014c65ad3be170c2fea0e6",
-                    "definition": {
-                      "measureDefinition": {
-                        "item": {
-                          "identifier": {
-                            "id": "gross_profit",
-                            "type": "metric"
-                          }
-                        },
-                        "computeRatio": false,
-                        "filters": []
-                      }
-                    },
-                    "title": "Gross Profit"
-                  }
-                }
-              ],
-              "localIdentifier": "measures"
-            },
-            {
-              "items": [
-                {
-                  "attribute": {
-                    "localIdentifier": "e5d6cafa6615451e87a42133eef8050f",
-                    "displayForm": {
-                      "identifier": {
-                        "id": "customer_created_date.day",
-                        "type": "label"
-                      }
-                    },
-                    "alias": "Date"
-                  }
-                }
-              ],
-              "localIdentifier": "trend"
-            }
-          ],
-          "filters": [
-            {
-              "absoluteDateFilter": {
-                "dataSet": {
-                  "identifier": {
-                    "id": "customer_created_date",
-                    "type": "dataset"
-                  }
-                },
-                "from": "2021-01-01 00:00",
-                "to": "2023-09-30 23:59"
-              }
-            }
-          ],
-          "sorts": [],
-          "properties": {
-            "controls": {
-              "dataPoints": {
-                "visible": false
-              }
-            }
-          },
-          "visualizationUrl": "local:line",
-          "version": "2"
-        },
-        "description": "Gross Profit Trend",
-        "id": "098740ee-ad7c-4b27-8ff0-4ae8531a8100",
-        "title": "Gross Profit forecast_prediction_plugin_"
       },
       {
         "content": {
@@ -8041,7 +7914,7 @@
           }
         ],
         "dataSourceTableId": {
-          "dataSourceId": "gdc_demo_9fb818c2-dbb4-4026-aba9-8af5e89d955d",
+          "dataSourceId": "172cf9a6-6005-4e77-a6aa-95dc2fe5c1dd",
           "id": "customer",
           "path": [
             "ECOMMERCE_DEMO_SCHEMA",
@@ -8099,7 +7972,7 @@
           }
         ],
         "dataSourceTableId": {
-          "dataSourceId": "gdc_demo_9fb818c2-dbb4-4026-aba9-8af5e89d955d",
+          "dataSourceId": "172cf9a6-6005-4e77-a6aa-95dc2fe5c1dd",
           "id": "monthlyinventory",
           "path": [
             "ECOMMERCE_DEMO_SCHEMA",
@@ -8215,7 +8088,7 @@
           }
         ],
         "dataSourceTableId": {
-          "dataSourceId": "gdc_demo_9fb818c2-dbb4-4026-aba9-8af5e89d955d",
+          "dataSourceId": "172cf9a6-6005-4e77-a6aa-95dc2fe5c1dd",
           "id": "order_lines",
           "path": [
             "ECOMMERCE_DEMO_SCHEMA",
@@ -8377,7 +8250,7 @@
           }
         ],
         "dataSourceTableId": {
-          "dataSourceId": "gdc_demo_9fb818c2-dbb4-4026-aba9-8af5e89d955d",
+          "dataSourceId": "172cf9a6-6005-4e77-a6aa-95dc2fe5c1dd",
           "id": "orders",
           "path": [
             "ECOMMERCE_DEMO_SCHEMA",
@@ -8497,7 +8370,7 @@
           }
         ],
         "dataSourceTableId": {
-          "dataSourceId": "gdc_demo_9fb818c2-dbb4-4026-aba9-8af5e89d955d",
+          "dataSourceId": "172cf9a6-6005-4e77-a6aa-95dc2fe5c1dd",
           "id": "product",
           "path": [
             "ECOMMERCE_DEMO_SCHEMA",
@@ -8552,7 +8425,7 @@
           }
         ],
         "dataSourceTableId": {
-          "dataSourceId": "gdc_demo_9fb818c2-dbb4-4026-aba9-8af5e89d955d",
+          "dataSourceId": "172cf9a6-6005-4e77-a6aa-95dc2fe5c1dd",
           "id": "returns",
           "path": [
             "ECOMMERCE_DEMO_SCHEMA",
