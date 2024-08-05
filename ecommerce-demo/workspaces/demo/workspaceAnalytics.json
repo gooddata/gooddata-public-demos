@@ -25,6 +25,7 @@
                       }
                     },
                     "widget": {
+                      "localIdentifier": "f8a10155-ca77-4756-8da1-00ab3fad7d41",
                       "type": "insight",
                       "title": "Net Sales",
                       "description": "Headlines can display a single number or compare two numbers.\n\nYou can change the description in the visualization configuration.",
@@ -79,6 +80,7 @@
                       }
                     },
                     "widget": {
+                      "localIdentifier": "97fc723d-c688-4f06-8de8-eebd5ee71b8f",
                       "type": "insight",
                       "title": "Orders",
                       "description": "Headlines can display a single number or compare two numbers.\n\nYou can change the description in the visualization configuration.",
@@ -133,6 +135,7 @@
                       }
                     },
                     "widget": {
+                      "localIdentifier": "da56bbee-02fa-4468-9f4a-a4e369d16366",
                       "type": "insight",
                       "title": "Active Customers",
                       "description": "Headlines can display a single number or compare two numbers.\n\nYou can change the description in the visualization configuration.",
@@ -187,6 +190,7 @@
                       }
                     },
                     "widget": {
+                      "localIdentifier": "22d8283d-978d-40e1-a2a9-8f7a37d969cd",
                       "type": "insight",
                       "title": "Gross Profit Margin",
                       "description": "Headlines can display a single number or compare two numbers.\n\nYou can change the description in the visualization configuration.",
@@ -246,6 +250,7 @@
                       }
                     },
                     "widget": {
+                      "localIdentifier": "4213669b-1959-418d-b4ba-a7c019ba3bed",
                       "type": "insight",
                       "title": "Revenue Trend (click & drag to zoom in)",
                       "description": "Combo charts combine two types of charts - column, area, or line - into a single visualization.\n\nYou can change the description in the visualization configuration.",
@@ -314,6 +319,7 @@
                   {
                     "type": "IDashboardLayoutItem",
                     "widget": {
+                      "localIdentifier": "336112b6-2ba0-4d71-bb81-72b82ad268da",
                       "type": "insight",
                       "insight": {
                         "identifier": {
@@ -409,6 +415,7 @@
                   {
                     "type": "IDashboardLayoutItem",
                     "widget": {
+                      "localIdentifier": "c71bd857-8ec4-4cd9-8d54-2e02af2080fd",
                       "type": "insight",
                       "insight": {
                         "identifier": {
@@ -469,6 +476,7 @@
                       }
                     },
                     "widget": {
+                      "localIdentifier": "a1dfefbf-6035-499a-876b-688494e012f0",
                       "type": "insight",
                       "title": "Customers by Country and State",
                       "description": "Treemaps display data hierarchically as nested rectangles.\n\nYou can change the description in the visualization configuration.",
@@ -536,6 +544,7 @@
                       }
                     },
                     "widget": {
+                      "localIdentifier": "391439de-99c6-4fc7-b398-a81742fef193",
                       "type": "insight",
                       "title": "Net Sales by Product Category",
                       "description": "Bar charts are horizontal visual representations that are commonly used to illustrate trends, comparisons, and distributions.\n\nYou can change the description in the visualization configuration.",
@@ -584,6 +593,7 @@
                   {
                     "type": "IDashboardLayoutItem",
                     "widget": {
+                      "localIdentifier": "55deb0f2-f049-45bc-910e-4b3883d5da6d",
                       "type": "insight",
                       "insight": {
                         "identifier": {
@@ -638,6 +648,7 @@
                   {
                     "type": "IDashboardLayoutItem",
                     "widget": {
+                      "localIdentifier": "669a19fb-22eb-43a6-8608-08c67954d0dd",
                       "type": "insight",
                       "insight": {
                         "identifier": {
@@ -730,6 +741,7 @@
                       }
                     },
                     "widget": {
+                      "localIdentifier": "38048486-265c-423a-8936-1648fe02213d",
                       "type": "insight",
                       "title": "Net Sales vs Orders",
                       "description": "Scatter plots show data as points using Cartesian coordinates.\n\nYou can change the description in the visualization configuration.",
@@ -827,6 +839,7 @@
                       }
                     },
                     "widget": {
+                      "localIdentifier": "95f14a54-1137-46d8-83ad-9e2f8d537168",
                       "type": "insight",
                       "title": "Active Customers",
                       "description": "Headlines can display a single number or compare two numbers.\n\nYou can change the description in the visualization configuration.",
@@ -880,6 +893,7 @@
                       }
                     },
                     "widget": {
+                      "localIdentifier": "6eefd934-7bb4-46bd-b3be-bf299e8d556a",
                       "type": "insight",
                       "title": "New Customers",
                       "description": "Headlines can display a single number or compare two numbers.\n\nYou can change the description in the visualization configuration.",
@@ -933,6 +947,7 @@
                       }
                     },
                     "widget": {
+                      "localIdentifier": "b3014588-2579-42dd-9cde-d919085ed3a8",
                       "type": "insight",
                       "title": "Return Customers",
                       "description": "Headlines can display a single number or compare two numbers.\n\nYou can change the description in the visualization configuration.",
@@ -986,6 +1001,7 @@
                       }
                     },
                     "widget": {
+                      "localIdentifier": "b04a192f-15a8-4a12-8b8e-d66a270f0df6",
                       "type": "insight",
                       "title": "Sales per Customer",
                       "description": "Headlines can display a single number or compare two numbers.\n\nYou can change the description in the visualization configuration.",
@@ -1045,6 +1061,7 @@
                       }
                     },
                     "widget": {
+                      "localIdentifier": "779168ee-f425-4085-a85a-6e8d8fac96c2",
                       "type": "insight",
                       "title": "Active Customers Breakdown",
                       "description": "Donut charts show data as proportional segments of a disc with a hollowed out center.\n\nYou can change the description in the visualization configuration.",
@@ -1115,6 +1132,7 @@
                       }
                     },
                     "widget": {
+                      "localIdentifier": "dacf187e-6d6c-4add-bffb-c967113a44c0",
                       "type": "insight",
                       "title": "New vs Returning",
                       "description": "Column charts are used to compare and display categorical data or quantitative values across different categories in the form of vertical bars.\n\nYou can change the description in the visualization configuration.",
@@ -1176,6 +1194,7 @@
                       }
                     },
                     "widget": {
+                      "localIdentifier": "535ac877-79a2-4961-9c8e-049171520f60",
                       "type": "insight",
                       "title": "Top 10 Spenders",
                       "description": "Bar charts are horizontal visual representations that are commonly used to illustrate trends, comparisons, and distributions.\n\nYou can change the description in the visualization configuration.",
@@ -1233,6 +1252,7 @@
                       }
                     },
                     "widget": {
+                      "localIdentifier": "b422071d-e328-4216-b880-ac5a56ebd3b7",
                       "type": "insight",
                       "title": "Top 10 Buyers",
                       "description": "Bar charts are horizontal visual representations that are commonly used to illustrate trends, comparisons, and distributions.\n\nYou can change the description in the visualization configuration.",
@@ -1298,6 +1318,7 @@
                       }
                     },
                     "widget": {
+                      "localIdentifier": "80db4089-1830-4aa1-aefc-1da342636390",
                       "type": "insight",
                       "title": "Customers by Country and State",
                       "description": "Treemaps display data hierarchically as nested rectangles.\n\nYou can change the description in the visualization configuration.",
@@ -1382,6 +1403,7 @@
                       }
                     },
                     "widget": {
+                      "localIdentifier": "c9544e2f-7ae6-4ca3-9b09-38cb3de5b8bd",
                       "type": "insight",
                       "title": "Total Sales",
                       "description": "Headlines can display a single number or compare two numbers.\n\nYou can change the description in the visualization configuration.",
@@ -1435,6 +1457,7 @@
                       }
                     },
                     "widget": {
+                      "localIdentifier": "6b90d2d8-04c7-47f7-87bf-6c781a5a6480",
                       "type": "insight",
                       "title": "Net Sales",
                       "description": "Headlines can display a single number or compare two numbers.\n\nYou can change the description in the visualization configuration.",
@@ -1488,6 +1511,7 @@
                       }
                     },
                     "widget": {
+                      "localIdentifier": "9ce862c6-f345-43ea-b480-c22cffee3769",
                       "type": "insight",
                       "title": "Gross Profit",
                       "description": "Headlines can display a single number or compare two numbers.\n\nYou can change the description in the visualization configuration.",
@@ -1541,6 +1565,7 @@
                       }
                     },
                     "widget": {
+                      "localIdentifier": "eea910b2-754b-4dda-a7c7-fefb156f3282",
                       "type": "insight",
                       "title": "Orders Paid",
                       "description": "Headlines can display a single number or compare two numbers.\n\nYou can change the description in the visualization configuration.",
@@ -1589,6 +1614,7 @@
                   {
                     "type": "IDashboardLayoutItem",
                     "widget": {
+                      "localIdentifier": "dae7fb17-aff1-40b1-9b05-a2303608cdcb",
                       "type": "insight",
                       "insight": {
                         "identifier": {
@@ -1658,6 +1684,7 @@
                       }
                     },
                     "widget": {
+                      "localIdentifier": "d4a9e93b-fd2c-4533-8854-bd4dc4857f2f",
                       "type": "insight",
                       "title": "Total sales breakdown",
                       "description": "Donut charts show data as proportional segments of a disc with a hollowed out center.\n\nYou can change the description in the visualization configuration.",
@@ -1759,6 +1786,7 @@
                       }
                     },
                     "widget": {
+                      "localIdentifier": "9c2cbd3a-1fa3-4b86-8a5b-bba0548c75bd",
                       "type": "insight",
                       "title": "Net sales over time",
                       "description": "Column charts are used to compare and display categorical data or quantitative values across different categories in the form of vertical bars.\n\nYou can change the description in the visualization configuration.",
@@ -1825,6 +1853,7 @@
                       }
                     },
                     "widget": {
+                      "localIdentifier": "75d6b79d-9c9d-419f-891e-826a2a7ea56a",
                       "type": "insight",
                       "title": "Order breakdown",
                       "description": "Donut charts show data as proportional segments of a disc with a hollowed out center.\n\nYou can change the description in the visualization configuration.",
@@ -1879,6 +1908,7 @@
                       }
                     },
                     "widget": {
+                      "localIdentifier": "a86d7f5f-c747-47fe-9c31-072e7e3be2cb",
                       "type": "insight",
                       "title": "Orders over time",
                       "description": "Column charts are used to compare and display categorical data or quantitative values across different categories in the form of vertical bars.\n\nYou can change the description in the visualization configuration.",
@@ -1945,6 +1975,7 @@
                       }
                     },
                     "widget": {
+                      "localIdentifier": "3708991a-ca5f-47a1-872e-bb9ac95859cb",
                       "type": "insight",
                       "title": "Activity by Hour",
                       "description": "Column charts are used to compare and display categorical data or quantitative values across different categories in the form of vertical bars.\n\nYou can change the description in the visualization configuration.",
@@ -2003,6 +2034,7 @@
                       }
                     },
                     "widget": {
+                      "localIdentifier": "196c5c9a-f95b-45d9-bea8-d38388df6664",
                       "type": "insight",
                       "title": "Net Sales by Product Category - Seasonality",
                       "description": "Heatmaps display data as a matrix where individual values, or the magnitude or density of data are represented using color gradients.\n\nYou can change the description in the visualization configuration.",
@@ -2082,6 +2114,7 @@
                       }
                     },
                     "widget": {
+                      "localIdentifier": "4bd79255-271c-4558-81f6-64319689aae0",
                       "type": "insight",
                       "title": "Net Sales",
                       "description": "Headlines can display a single number or compare two numbers.\n\nYou can change the description in the visualization configuration.",
@@ -2135,6 +2168,7 @@
                       }
                     },
                     "widget": {
+                      "localIdentifier": "015dbe83-778c-42dc-9caf-cceac1bf79f4",
                       "type": "insight",
                       "title": "Net Orders",
                       "description": "Headlines can display a single number or compare two numbers.\n\nYou can change the description in the visualization configuration.",
@@ -2188,6 +2222,7 @@
                       }
                     },
                     "widget": {
+                      "localIdentifier": "f9d1e784-3496-45f1-936e-38bacca6e47b",
                       "type": "insight",
                       "title": "Active Customers",
                       "description": "Headlines can display a single number or compare two numbers.\n\nYou can change the description in the visualization configuration.",
@@ -2241,6 +2276,7 @@
                       }
                     },
                     "widget": {
+                      "localIdentifier": "7472e989-81a1-4350-83e1-3081bef4e063",
                       "type": "insight",
                       "title": "Sales per Customer",
                       "description": "Headlines can display a single number or compare two numbers.\n\nYou can change the description in the visualization configuration.",
@@ -2294,6 +2330,7 @@
                   {
                     "type": "IDashboardLayoutItem",
                     "widget": {
+                      "localIdentifier": "8d19341d-be2f-43b6-84a3-67a8464e9bfb",
                       "type": "insight",
                       "insight": {
                         "identifier": {
@@ -2352,6 +2389,7 @@
                   {
                     "type": "IDashboardLayoutItem",
                     "widget": {
+                      "localIdentifier": "6072a1ff-3628-4ff3-8ab7-56785df866a1",
                       "type": "insight",
                       "insight": {
                         "identifier": {
@@ -2419,6 +2457,7 @@
                       }
                     },
                     "widget": {
+                      "localIdentifier": "959fe208-07bc-4c48-8647-adae34801273",
                       "type": "insight",
                       "title": "Top Sellers",
                       "description": "Bar charts are horizontal visual representations that are commonly used to illustrate trends, comparisons, and distributions.\n\nYou can change the description in the visualization configuration.",
@@ -2476,6 +2515,7 @@
                       }
                     },
                     "widget": {
+                      "localIdentifier": "e8d2c4c7-7ed1-472a-97fc-c8e5529780ac",
                       "type": "insight",
                       "title": "Money Makers",
                       "description": "Bar charts are horizontal visual representations that are commonly used to illustrate trends, comparisons, and distributions.\n\nYou can change the description in the visualization configuration.",
@@ -2528,6 +2568,7 @@
                   {
                     "type": "IDashboardLayoutItem",
                     "widget": {
+                      "localIdentifier": "42921478-1697-42d1-87db-5d3fadfe196b",
                       "type": "insight",
                       "insight": {
                         "identifier": {
