@@ -2641,7 +2641,8 @@
                 "from": "-1",
                 "to": "-1",
                 "granularity": "GDC.time.month",
-                "type": "relative"
+                "type": "relative",
+                "localIdentifier": "0_dateFilter"
               }
             },
             {
@@ -2707,7 +2708,8 @@
                 "type": "relative",
                 "granularity": "GDC.time.month",
                 "from": 0,
-                "to": 0
+                "to": 0,
+                "localIdentifier": "0_dateFilter"
               }
             }
           ],
@@ -2725,7 +2727,8 @@
                 "from": "-1",
                 "to": "-1",
                 "granularity": "GDC.time.month",
-                "type": "relative"
+                "type": "relative",
+                "localIdentifier": "0_dateFilter"
               }
             },
             {
@@ -2775,7 +2778,8 @@
                 "from": "-1",
                 "to": "-1",
                 "granularity": "GDC.time.month",
-                "type": "relative"
+                "type": "relative",
+                "localIdentifier": "0_dateFilter"
               }
             },
             {
@@ -2825,7 +2829,8 @@
                 "from": -29,
                 "to": 0,
                 "granularity": "GDC.time.date",
-                "type": "relative"
+                "type": "relative",
+                "localIdentifier": "0_dateFilter"
               }
             }
           ],
@@ -3507,10 +3512,7 @@
                   }
                 },
                 "notIn": {
-                  "values": [
-                    "Processed",
-                    "Canceled"
-                  ]
+                  "values": ["Processed", "Canceled"]
                 }
               }
             }
@@ -4180,9 +4182,7 @@
               "secondaryChartType": "line",
               "secondary_yaxis": {
                 "format": "inherit",
-                "measures": [
-                  "455307b5590a49b28fafa89999446b15"
-                ],
+                "measures": ["455307b5590a49b28fafa89999446b15"],
                 "name": {
                   "visible": false
                 }
@@ -6306,10 +6306,7 @@
                   }
                 },
                 "notIn": {
-                  "values": [
-                    "Processed",
-                    "Canceled"
-                  ]
+                  "values": ["Processed", "Canceled"]
                 }
               }
             }
@@ -7342,10 +7339,7 @@
                                 }
                               },
                               "notIn": {
-                                "values": [
-                                  "Canceled",
-                                  "In Cart"
-                                ]
+                                "values": ["Canceled", "In Cart"]
                               }
                             }
                           }
@@ -7782,10 +7776,7 @@
                   }
                 },
                 "notIn": {
-                  "values": [
-                    "Processed",
-                    "Canceled"
-                  ]
+                  "values": ["Processed", "Canceled"]
                 }
               }
             }
@@ -7875,9 +7866,7 @@
                 "id": "geo__customer_city__city_pushpin_latitude",
                 "sourceColumn": "geo__customer_city__city_pushpin_latitude",
                 "sourceColumnDataType": "STRING",
-                "tags": [
-                  "Customer"
-                ],
+                "tags": ["Customer"],
                 "title": "City pushpin latitude"
               },
               {
@@ -7885,17 +7874,13 @@
                 "id": "geo__customer_city__city_pushpin_longitude",
                 "sourceColumn": "geo__customer_city__city_pushpin_longitude",
                 "sourceColumnDataType": "STRING",
-                "tags": [
-                  "Customer"
-                ],
+                "tags": ["Customer"],
                 "title": "City pushpin longitude"
               }
             ],
             "sourceColumn": "customer_city",
             "sourceColumnDataType": "STRING",
-            "tags": [
-              "Customer"
-            ],
+            "tags": ["Customer"],
             "title": "Customer city"
           },
           {
@@ -7904,9 +7889,7 @@
             "labels": [],
             "sourceColumn": "customer_country",
             "sourceColumnDataType": "STRING",
-            "tags": [
-              "Customer"
-            ],
+            "tags": ["Customer"],
             "title": "Customer country"
           },
           {
@@ -7915,9 +7898,7 @@
             "labels": [],
             "sourceColumn": "customer_email",
             "sourceColumnDataType": "STRING",
-            "tags": [
-              "Customer"
-            ],
+            "tags": ["Customer"],
             "title": "Customer email"
           },
           {
@@ -7929,17 +7910,13 @@
                 "id": "customer_name",
                 "sourceColumn": "ls__customer_id__customer_name",
                 "sourceColumnDataType": "STRING",
-                "tags": [
-                  "Customer"
-                ],
+                "tags": ["Customer"],
                 "title": "Customer name"
               }
             ],
             "sourceColumn": "customer_id",
             "sourceColumnDataType": "STRING",
-            "tags": [
-              "Customer"
-            ],
+            "tags": ["Customer"],
             "title": "Customer id"
           },
           {
@@ -7948,19 +7925,14 @@
             "labels": [],
             "sourceColumn": "customer_state",
             "sourceColumnDataType": "STRING",
-            "tags": [
-              "Customer"
-            ],
+            "tags": ["Customer"],
             "title": "Customer state"
           }
         ],
         "dataSourceTableId": {
           "dataSourceId": "gdc_demo_9fb818c2-dbb4-4026-aba9-8af5e89d955d",
           "id": "customer",
-          "path": [
-            "ECOMMERCE_DEMO_SCHEMA",
-            "customer"
-          ],
+          "path": ["ECOMMERCE_DEMO_SCHEMA", "customer"],
           "type": "dataSource"
         },
         "description": "Customer",
@@ -7979,17 +7951,11 @@
               "type": "dataset"
             },
             "multivalue": false,
-            "sourceColumnDataTypes": [
-              "DATE"
-            ],
-            "sourceColumns": [
-              "customer_created_date"
-            ]
+            "sourceColumnDataTypes": ["DATE"],
+            "sourceColumns": ["customer_created_date"]
           }
         ],
-        "tags": [
-          "Customer"
-        ],
+        "tags": ["Customer"],
         "title": "Customer",
         "workspaceDataFilterColumns": [
           {
@@ -8006,19 +7972,14 @@
             "labels": [],
             "sourceColumn": "monthly_inventory_id",
             "sourceColumnDataType": "STRING",
-            "tags": [
-              "Monthly inventory"
-            ],
+            "tags": ["Monthly inventory"],
             "title": "Monthly inventory id"
           }
         ],
         "dataSourceTableId": {
           "dataSourceId": "gdc_demo_9fb818c2-dbb4-4026-aba9-8af5e89d955d",
           "id": "monthlyinventory",
-          "path": [
-            "ECOMMERCE_DEMO_SCHEMA",
-            "monthlyinventory"
-          ],
+          "path": ["ECOMMERCE_DEMO_SCHEMA", "monthlyinventory"],
           "type": "dataSource"
         },
         "description": "Monthly inventory",
@@ -8028,9 +7989,7 @@
             "id": "monthly_quantity_bom",
             "sourceColumn": "monthly_quantity_bom",
             "sourceColumnDataType": "NUMERIC",
-            "tags": [
-              "Monthly inventory"
-            ],
+            "tags": ["Monthly inventory"],
             "title": "Monthly quantity bom"
           },
           {
@@ -8038,9 +7997,7 @@
             "id": "monthly_quantity_eom",
             "sourceColumn": "monthly_quantity_eom",
             "sourceColumnDataType": "NUMERIC",
-            "tags": [
-              "Monthly inventory"
-            ],
+            "tags": ["Monthly inventory"],
             "title": "Monthly quantity eom"
           }
         ],
@@ -8058,12 +8015,8 @@
               "type": "dataset"
             },
             "multivalue": false,
-            "sourceColumnDataTypes": [
-              "TIMESTAMP"
-            ],
-            "sourceColumns": [
-              "date"
-            ]
+            "sourceColumnDataTypes": ["TIMESTAMP"],
+            "sourceColumns": ["date"]
           },
           {
             "identifier": {
@@ -8071,12 +8024,8 @@
               "type": "dataset"
             },
             "multivalue": false,
-            "sourceColumnDataTypes": [
-              "DATE"
-            ],
-            "sourceColumns": [
-              "inventory_month"
-            ]
+            "sourceColumnDataTypes": ["DATE"],
+            "sourceColumns": ["inventory_month"]
           },
           {
             "identifier": {
@@ -8084,17 +8033,11 @@
               "type": "dataset"
             },
             "multivalue": false,
-            "sourceColumnDataTypes": [
-              "STRING"
-            ],
-            "sourceColumns": [
-              "product__product_id"
-            ]
+            "sourceColumnDataTypes": ["STRING"],
+            "sourceColumns": ["product__product_id"]
           }
         ],
-        "tags": [
-          "Monthly inventory"
-        ],
+        "tags": ["Monthly inventory"],
         "title": "Monthly inventory",
         "workspaceDataFilterColumns": [
           {
@@ -8111,9 +8054,7 @@
             "labels": [],
             "sourceColumn": "customer_age",
             "sourceColumnDataType": "STRING",
-            "tags": [
-              "Order lines"
-            ],
+            "tags": ["Order lines"],
             "title": "Customer age"
           },
           {
@@ -8122,19 +8063,14 @@
             "labels": [],
             "sourceColumn": "order_line_id",
             "sourceColumnDataType": "STRING",
-            "tags": [
-              "Order lines"
-            ],
+            "tags": ["Order lines"],
             "title": "Order line id"
           }
         ],
         "dataSourceTableId": {
           "dataSourceId": "gdc_demo_9fb818c2-dbb4-4026-aba9-8af5e89d955d",
           "id": "order_lines",
-          "path": [
-            "ECOMMERCE_DEMO_SCHEMA",
-            "order_lines"
-          ],
+          "path": ["ECOMMERCE_DEMO_SCHEMA", "order_lines"],
           "type": "dataSource"
         },
         "description": "Order lines",
@@ -8144,9 +8080,7 @@
             "id": "order_unit_cost",
             "sourceColumn": "order_unit_cost",
             "sourceColumnDataType": "NUMERIC",
-            "tags": [
-              "Order lines"
-            ],
+            "tags": ["Order lines"],
             "title": "Order unit cost"
           },
           {
@@ -8154,9 +8088,7 @@
             "id": "order_unit_discount",
             "sourceColumn": "order_unit_discount",
             "sourceColumnDataType": "NUMERIC",
-            "tags": [
-              "Order lines"
-            ],
+            "tags": ["Order lines"],
             "title": "Order unit discount"
           },
           {
@@ -8164,9 +8096,7 @@
             "id": "order_unit_price",
             "sourceColumn": "order_unit_price",
             "sourceColumnDataType": "NUMERIC",
-            "tags": [
-              "Order lines"
-            ],
+            "tags": ["Order lines"],
             "title": "Order unit price"
           },
           {
@@ -8174,9 +8104,7 @@
             "id": "order_unit_quantity",
             "sourceColumn": "order_unit_quantity",
             "sourceColumnDataType": "NUMERIC",
-            "tags": [
-              "Order lines"
-            ],
+            "tags": ["Order lines"],
             "title": "Order unit quantity"
           }
         ],
@@ -8194,12 +8122,8 @@
               "type": "dataset"
             },
             "multivalue": false,
-            "sourceColumnDataTypes": [
-              "STRING"
-            ],
-            "sourceColumns": [
-              "customer__customer_id"
-            ]
+            "sourceColumnDataTypes": ["STRING"],
+            "sourceColumns": ["customer__customer_id"]
           },
           {
             "identifier": {
@@ -8207,12 +8131,8 @@
               "type": "dataset"
             },
             "multivalue": false,
-            "sourceColumnDataTypes": [
-              "TIMESTAMP"
-            ],
-            "sourceColumns": [
-              "date"
-            ]
+            "sourceColumnDataTypes": ["TIMESTAMP"],
+            "sourceColumns": ["date"]
           },
           {
             "identifier": {
@@ -8220,12 +8140,8 @@
               "type": "dataset"
             },
             "multivalue": false,
-            "sourceColumnDataTypes": [
-              "TIMESTAMP"
-            ],
-            "sourceColumns": [
-              "order_date"
-            ]
+            "sourceColumnDataTypes": ["TIMESTAMP"],
+            "sourceColumns": ["order_date"]
           },
           {
             "identifier": {
@@ -8233,12 +8149,8 @@
               "type": "dataset"
             },
             "multivalue": false,
-            "sourceColumnDataTypes": [
-              "STRING"
-            ],
-            "sourceColumns": [
-              "order__order_id"
-            ]
+            "sourceColumnDataTypes": ["STRING"],
+            "sourceColumns": ["order__order_id"]
           },
           {
             "identifier": {
@@ -8246,17 +8158,11 @@
               "type": "dataset"
             },
             "multivalue": false,
-            "sourceColumnDataTypes": [
-              "STRING"
-            ],
-            "sourceColumns": [
-              "product__product_id"
-            ]
+            "sourceColumnDataTypes": ["STRING"],
+            "sourceColumns": ["product__product_id"]
           }
         ],
-        "tags": [
-          "Order lines"
-        ],
+        "tags": ["Order lines"],
         "title": "Order lines",
         "workspaceDataFilterColumns": [
           {
@@ -8273,9 +8179,7 @@
             "labels": [],
             "sourceColumn": "order_id",
             "sourceColumnDataType": "STRING",
-            "tags": [
-              "Orders"
-            ],
+            "tags": ["Orders"],
             "title": "Order id"
           },
           {
@@ -8284,19 +8188,14 @@
             "labels": [],
             "sourceColumn": "order_status",
             "sourceColumnDataType": "STRING",
-            "tags": [
-              "Orders"
-            ],
+            "tags": ["Orders"],
             "title": "Order status"
           }
         ],
         "dataSourceTableId": {
           "dataSourceId": "gdc_demo_9fb818c2-dbb4-4026-aba9-8af5e89d955d",
           "id": "orders",
-          "path": [
-            "ECOMMERCE_DEMO_SCHEMA",
-            "orders"
-          ],
+          "path": ["ECOMMERCE_DEMO_SCHEMA", "orders"],
           "type": "dataSource"
         },
         "description": "Orders",
@@ -8309,9 +8208,7 @@
         ],
         "id": "orders",
         "references": [],
-        "tags": [
-          "Orders"
-        ],
+        "tags": ["Orders"],
         "title": "Orders",
         "workspaceDataFilterColumns": [
           {
@@ -8328,9 +8225,7 @@
             "labels": [],
             "sourceColumn": "product_brand",
             "sourceColumnDataType": "STRING",
-            "tags": [
-              "Product"
-            ],
+            "tags": ["Product"],
             "title": "Product brand"
           },
           {
@@ -8339,9 +8234,7 @@
             "labels": [],
             "sourceColumn": "product_category",
             "sourceColumnDataType": "STRING",
-            "tags": [
-              "Product"
-            ],
+            "tags": ["Product"],
             "title": "Product category"
           },
           {
@@ -8353,9 +8246,7 @@
                 "id": "product_id_image_web",
                 "sourceColumn": "ls__product_id__product_id_image_web",
                 "sourceColumnDataType": "STRING",
-                "tags": [
-                  "Product"
-                ],
+                "tags": ["Product"],
                 "title": "Product id image web"
               },
               {
@@ -8363,17 +8254,13 @@
                 "id": "product_name",
                 "sourceColumn": "ls__product_id__product_name",
                 "sourceColumnDataType": "STRING",
-                "tags": [
-                  "Product"
-                ],
+                "tags": ["Product"],
                 "title": "Product name"
               }
             ],
             "sourceColumn": "product_id",
             "sourceColumnDataType": "STRING",
-            "tags": [
-              "Product"
-            ],
+            "tags": ["Product"],
             "title": "Product id"
           },
           {
@@ -8385,17 +8272,13 @@
                 "id": "product_image_web",
                 "sourceColumn": "ls__product_image__product_image_web",
                 "sourceColumnDataType": "STRING",
-                "tags": [
-                  "Product"
-                ],
+                "tags": ["Product"],
                 "title": "Product image web"
               }
             ],
             "sourceColumn": "product_image",
             "sourceColumnDataType": "STRING",
-            "tags": [
-              "Product"
-            ],
+            "tags": ["Product"],
             "title": "Product image"
           },
           {
@@ -8404,19 +8287,14 @@
             "labels": [],
             "sourceColumn": "product_rating",
             "sourceColumnDataType": "STRING",
-            "tags": [
-              "Product"
-            ],
+            "tags": ["Product"],
             "title": "Product rating"
           }
         ],
         "dataSourceTableId": {
           "dataSourceId": "gdc_demo_9fb818c2-dbb4-4026-aba9-8af5e89d955d",
           "id": "product",
-          "path": [
-            "ECOMMERCE_DEMO_SCHEMA",
-            "product"
-          ],
+          "path": ["ECOMMERCE_DEMO_SCHEMA", "product"],
           "type": "dataSource"
         },
         "description": "Product",
@@ -8426,9 +8304,7 @@
             "id": "rating",
             "sourceColumn": "rating",
             "sourceColumnDataType": "NUMERIC",
-            "tags": [
-              "Product"
-            ],
+            "tags": ["Product"],
             "title": "Rating"
           }
         ],
@@ -8440,9 +8316,7 @@
         ],
         "id": "product",
         "references": [],
-        "tags": [
-          "Product"
-        ],
+        "tags": ["Product"],
         "title": "Product",
         "workspaceDataFilterColumns": [
           {
@@ -8459,19 +8333,14 @@
             "labels": [],
             "sourceColumn": "return_id",
             "sourceColumnDataType": "STRING",
-            "tags": [
-              "Returns"
-            ],
+            "tags": ["Returns"],
             "title": "Return id"
           }
         ],
         "dataSourceTableId": {
           "dataSourceId": "gdc_demo_9fb818c2-dbb4-4026-aba9-8af5e89d955d",
           "id": "returns",
-          "path": [
-            "ECOMMERCE_DEMO_SCHEMA",
-            "returns"
-          ],
+          "path": ["ECOMMERCE_DEMO_SCHEMA", "returns"],
           "type": "dataSource"
         },
         "description": "Returns",
@@ -8481,9 +8350,7 @@
             "id": "return_unit_cost",
             "sourceColumn": "return_unit_cost",
             "sourceColumnDataType": "NUMERIC",
-            "tags": [
-              "Returns"
-            ],
+            "tags": ["Returns"],
             "title": "Return unit cost"
           },
           {
@@ -8491,9 +8358,7 @@
             "id": "return_unit_paid_amount",
             "sourceColumn": "return_unit_paid_amount",
             "sourceColumnDataType": "NUMERIC",
-            "tags": [
-              "Returns"
-            ],
+            "tags": ["Returns"],
             "title": "Return unit paid amount"
           },
           {
@@ -8501,9 +8366,7 @@
             "id": "return_unit_quantity",
             "sourceColumn": "return_unit_quantity",
             "sourceColumnDataType": "NUMERIC",
-            "tags": [
-              "Returns"
-            ],
+            "tags": ["Returns"],
             "title": "Return unit quantity"
           }
         ],
@@ -8521,12 +8384,8 @@
               "type": "dataset"
             },
             "multivalue": false,
-            "sourceColumnDataTypes": [
-              "STRING"
-            ],
-            "sourceColumns": [
-              "customer__customer_id"
-            ]
+            "sourceColumnDataTypes": ["STRING"],
+            "sourceColumns": ["customer__customer_id"]
           },
           {
             "identifier": {
@@ -8534,12 +8393,8 @@
               "type": "dataset"
             },
             "multivalue": false,
-            "sourceColumnDataTypes": [
-              "TIMESTAMP"
-            ],
-            "sourceColumns": [
-              "date"
-            ]
+            "sourceColumnDataTypes": ["TIMESTAMP"],
+            "sourceColumns": ["date"]
           },
           {
             "identifier": {
@@ -8547,12 +8402,8 @@
               "type": "dataset"
             },
             "multivalue": false,
-            "sourceColumnDataTypes": [
-              "STRING"
-            ],
-            "sourceColumns": [
-              "order__order_id"
-            ]
+            "sourceColumnDataTypes": ["STRING"],
+            "sourceColumns": ["order__order_id"]
           },
           {
             "identifier": {
@@ -8560,12 +8411,8 @@
               "type": "dataset"
             },
             "multivalue": false,
-            "sourceColumnDataTypes": [
-              "STRING"
-            ],
-            "sourceColumns": [
-              "product__product_id"
-            ]
+            "sourceColumnDataTypes": ["STRING"],
+            "sourceColumns": ["product__product_id"]
           },
           {
             "identifier": {
@@ -8573,17 +8420,11 @@
               "type": "dataset"
             },
             "multivalue": false,
-            "sourceColumnDataTypes": [
-              "TIMESTAMP"
-            ],
-            "sourceColumns": [
-              "return_date"
-            ]
+            "sourceColumnDataTypes": ["TIMESTAMP"],
+            "sourceColumns": ["return_date"]
           }
         ],
-        "tags": [
-          "Returns"
-        ],
+        "tags": ["Returns"],
         "title": "Returns",
         "workspaceDataFilterColumns": [
           {
@@ -8618,9 +8459,7 @@
           "titlePattern": "%titleBase - %granularityTitle"
         },
         "id": "customer_created_date",
-        "tags": [
-          "Customer created date"
-        ],
+        "tags": ["Customer created date"],
         "title": "Customer created date"
       },
       {
@@ -8647,9 +8486,7 @@
           "titlePattern": "%titleBase - %granularityTitle"
         },
         "id": "date",
-        "tags": [
-          "Date"
-        ],
+        "tags": ["Date"],
         "title": "Date"
       },
       {
@@ -8676,9 +8513,7 @@
           "titlePattern": "%titleBase - %granularityTitle"
         },
         "id": "inventory_month",
-        "tags": [
-          "Inventory month"
-        ],
+        "tags": ["Inventory month"],
         "title": "Inventory month"
       },
       {
@@ -8705,9 +8540,7 @@
           "titlePattern": "%titleBase - %granularityTitle"
         },
         "id": "order_date",
-        "tags": [
-          "Order date"
-        ],
+        "tags": ["Order date"],
         "title": "Order date"
       },
       {
@@ -8734,9 +8567,7 @@
           "titlePattern": "%titleBase - %granularityTitle"
         },
         "id": "return_date",
-        "tags": [
-          "Return date"
-        ],
+        "tags": ["Return date"],
         "title": "Return date"
       }
     ]
