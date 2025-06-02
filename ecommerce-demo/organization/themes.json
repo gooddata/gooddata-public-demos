@@ -1,43 +1,137 @@
 [
-    {
-    "themeId": "gdc_demo_theme_green_dark",
-    "content": {
-      "palette": {
-        "primary": {
-          "base": "#1DB954"
+  {
+    "themeId": "gdc_demo_theme_pink_light",
+    "type": "theme",
+    "attributes": {
+      "name": "Pink Light",
+      "content": {
+        "palette": {
+          "primary": {
+            "base": "#ED26B7"
+          },
+          "error": {
+            "base": "#e54d42"
+          },
+          "success": {
+            "base": "#00c18d"
+          },
+          "warning": {
+            "base": "#f4d521"
+          }
         },
-        "complementary": {
-          "c0": "#000",
-          "c1": "#262626",
-          "c2": "#323333",
-          "c3": "#3F403F",
-          "c4": "#585958",
-          "c5": "#707370",
-          "c6": "#898C89",
-          "c7": "#A1A6A2",
-          "c8": "#BABFBA",
-          "c9": "#D2D9D3"
+        "typography": {
+          "font": "url(https://fonts.gstatic.com/s/lato/v23/S6uyw4BMUTPHjx4wXiWtFCc.woff2)",
+          "fontBold": "url(https://fonts.gstatic.com/s/lato/v23/S6u9w4BMUTPHh6UVSwiPGQ3q5d0.woff2)"
+        },
+        "button": {
+          "borderRadius": "100",
+          "dropShadow": false
+        },
+        "analyticalDesigner": {
+          "title": {
+            "color": "#1C0D3F"
+          }
+        },
+        "dashboards": {
+          "content": {
+            "kpiWidget": {
+              "title": {
+                "color": "#f2f4f6",
+                "textAlign": "center"
+              },
+              "kpi": {
+                "primaryMeasureColor": "#ffffff",
+                "secondaryInfoColor": "#f2f4f6"
+              },
+              "borderRadius": "6",
+              "borderWidth": "1",
+              "backgroundColor": "#1c0d3f",
+              "dropShadow": false
+            }
+          },
+          "title": {
+            "color": "#1C0D3F",
+            "backgroundColor": "#ffffff",
+            "borderColor": "#DFE4E8"
+          },
+          "navigation": {
+            "backgroundColor": "#1C0D3F",
+            "title": {
+              "color": "#ffffff"
+            },
+            "item": {
+              "color": "#BFC9D1",
+              "hoverColor": "#ffffff",
+              "selectedColor": "#ffffff",
+              "selectedBackgroundColor": "#FFFFFF1A"
+            }
+          },
+          "filterBar": {
+            "filterButton": {
+              "backgroundColor": "#F2F4F6"
+            },
+            "backgroundColor": "#ffffff",
+            "borderColor": "#DFE4E8"
+          },
+          "section": {
+            "title": {
+              "color": "#1c0d3f",
+              "lineColor": "#DFE4E8"
+            }
+          }
         }
-      },
-      "typography": {
-        "font": "url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmSU5fBBc4AMP6lQ.woff2)",
-        "fontBold": "url(https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu4mxKKTU1Kg.woff2)"
-      },
-      "dashboards": {
-        "filterBar": {
-          "borderColor": "#000"
+      }
+    },
+    "links": {
+      "self": "https://sandrasuszterova.demo.cloud.gooddata.com/api/v1/entities/themes/e92f0cce-f298-4036-a2e2-e2c7952aee79"
+    }
+  },
+  {
+    "themeId": "gdc_demo_theme_green_dark",
+    "type": "theme",
+    "attributes": {
+      "name": "Green Dark",
+      "content": {
+        "palette": {
+          "primary": {
+            "base": "#1DB954"
+          },
+          "complementary": {
+            "c0": "#000000",
+            "c1": "#262626",
+            "c2": "#323333",
+            "c3": "#3F403F",
+            "c4": "#585958",
+            "c5": "#707370",
+            "c6": "#898C89",
+            "c7": "#A1A6A2",
+            "c8": "#BABFBA",
+            "c9": "#D2D9D3"
+          }
         },
-        "content": {
-          "kpiWidget": {
-            "borderRadius": "4",
-            "backgroundColor": "#262626"
+        "typography": {
+          "font": "url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmSU5fBBc4AMP6lQ.woff2)",
+          "fontBold": "url(https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu4mxKKTU1Kg.woff2)"
+        },
+        "dashboards": {
+          "filterBar": {
+            "borderColor": "#000000"
+          },
+          "content": {
+            "kpiWidget": {
+              "borderRadius": "4",
+              "backgroundColor": "#262626"
+            }
           }
         }
       }
     }
   },
-    {
-      "themeId": "gdc_demo_theme_blue_light",
+  {
+    "themeId": "gdc_demo_theme_blue_light",
+    "type": "theme",
+    "attributes": {
+      "name": "Blue Light",
       "content": {
         "palette": {
           "primary": {
@@ -92,7 +186,7 @@
               "color": "#413C5E",
               "hoverColor": "#2A80F8",
               "selectedColor": "#2A80F8",
-              "selectedBackgroundColor": "#fff"
+              "selectedBackgroundColor": "#FFFFFF"
             },
             "backgroundColor": "#F4F5FB"
           },
@@ -115,11 +209,11 @@
           "content": {
             "kpiWidget": {
               "title": {
-                "color": "#413c5e",
+                "color": "#413C5E",
                 "textAlign": "center"
               },
               "kpi": {
-                "primaryMeasureColor": "#2a80f8",
+                "primaryMeasureColor": "#2A80F8",
                 "secondaryInfoColor": "#413C5E99"
               },
               "borderColor": "#2168E5",
@@ -142,9 +236,13 @@
           }
         }
       }
-    },
-    {
-      "themeId": "gdc_demo_theme_indigo_dark",
+    }
+  },
+  {
+    "themeId": "gdc_demo_theme_indigo_dark",
+    "type": "theme",
+    "attributes": {
+      "name": "Indigo Dark",
       "content": {
         "palette": {
           "primary": {
@@ -166,4 +264,5 @@
         }
       }
     }
+  }
 ]
