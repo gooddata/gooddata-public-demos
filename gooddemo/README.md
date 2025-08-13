@@ -1,5 +1,7 @@
 # Manual provision
 
+Credentials can be found in our [public documentation](https://www.gooddata.com/docs/cloud/getting-started/connect-data/).
+
 For manual provision, follow this steps:
 
 1. Copy [`http-client.private.json.template`](./http-client.private.json.template) file to [http-client.private.env.json](./http-client.private.env.json).
