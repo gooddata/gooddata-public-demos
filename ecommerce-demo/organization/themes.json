@@ -31,6 +31,7 @@
     },
     "dashboards": {
         "content": {
+            "backgroundColor": "#f2f4f6",
             "kpiWidget": {
                 "title": {
                     "color": "#f2f4f6B2",
