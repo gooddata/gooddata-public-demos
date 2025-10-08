@@ -331,7 +331,7 @@
                                   {
                                     "dateDataSet": {
                                       "identifier": {
-                                        "id": "customer_created_date",
+                                        "id": "date",
                                         "type": "dataset"
                                       }
                                     },
@@ -352,6 +352,23 @@
                                           "identifier": {
                                             "id": "12fa0ef2-676b-41fb-bb91-9e1936097461",
                                             "type": "analyticalDashboard"
+                                          }
+                                        }
+                                      },
+                                      {
+                                        "localIdentifier": "0971d1f481bb4128965f0c02518982c3",
+                                        "transition": "pop-up",
+                                        "origin": {
+                                          "type": "drillFromMeasure",
+                                          "measure": {
+                                            "localIdentifier": "42e90cf4e6574301ac06d8cb16615b76"
+                                          }
+                                        },
+                                        "type": "drillToInsight",
+                                        "target": {
+                                          "identifier": {
+                                            "id": "12b824f3-c529-4f2b-97ea-be2a09537768",
+                                            "type": "visualizationObject"
                                           }
                                         }
                                       }
@@ -616,7 +633,20 @@
                       },
                       "ignoreDashboardFilters": [],
                       "type": "insight",
-                      "description": ""
+                      "description": "",
+                      "ignoredDrillDownHierarchies": [
+                        {
+                          "type": "attributeHierarchyReference",
+                          "attributeHierarchy": "72a9b29c-d982-4a9d-b226-ebcd060801dc",
+                          "attribute": {
+                            "identifier": {
+                              "id": "date.day",
+                              "type": "attribute"
+                            }
+                          }
+                        }
+                      ],
+                      "drillDownIntersectionIgnoredAttributes": []
                     },
                     "size": {
                       "xl": {
@@ -1276,7 +1306,7 @@
                               "type": "IDashboardLayoutItem",
                               "size": {
                                 "xl": {
-                                  "gridHeight": 17,
+                                  "gridHeight": 18,
                                   "gridWidth": 6
                                 }
                               },
@@ -1430,14 +1460,29 @@
                       }
                     },
                     "widget": {
-                      "ignoredDrillDownHierarchies": [],
+                      "ignoredDrillDownHierarchies": [
+                        {
+                          "type": "attributeHierarchyReference",
+                          "attributeHierarchy": "72a9b29c-d982-4a9d-b226-ebcd060801dc",
+                          "attribute": {
+                            "identifier": {
+                              "id": "date.day",
+                              "type": "attribute"
+                            }
+                          }
+                        }
+                      ],
                       "dateDataSet": {
                         "identifier": {
                           "id": "date",
                           "type": "dataset"
                         }
                       },
-                      "properties": {},
+                      "properties": {
+                        "controls": {
+                          "zoomInsight": true
+                        }
+                      },
                       "localIdentifier": "fc5d9a90-4b37-4070-bb6f-e8652854ac85",
                       "configuration": {
                         "hideTitle": false,
@@ -1457,7 +1502,8 @@
                       },
                       "ignoreDashboardFilters": [],
                       "type": "insight",
-                      "description": ""
+                      "description": "",
+                      "drillDownIntersectionIgnoredAttributes": []
                     }
                   }
                 ]
@@ -1485,7 +1531,7 @@
                               "widget": {
                                 "dateDataSet": {
                                   "identifier": {
-                                    "id": "customer_created_date",
+                                    "id": "date",
                                     "type": "dataset"
                                   }
                                 },
@@ -1506,32 +1552,8 @@
                               "size": {
                                 "xl": {
                                   "gridWidth": 6,
-                                  "gridHeight": 19
+                                  "gridHeight": 21
                                 }
-                              }
-                            },
-                            {
-                              "type": "IDashboardLayoutItem",
-                              "size": {
-                                "xl": {
-                                  "gridHeight": 3,
-                                  "gridWidth": 6
-                                }
-                              },
-                              "widget": {
-                                "dateDataSet": {
-                                  "identifier": {
-                                    "id": "customer_created_date",
-                                    "type": "dataset"
-                                  }
-                                },
-                                "localIdentifier": "b5a9eb34-74a9-43db-8f15-37d83e030e66",
-                                "title": "",
-                                "drills": [],
-                                "content": "\uD83D\uDFE3 Frequent Shoppers, \uD83D\uDD35 Occasional Buyers, \uD83D\uDFE2 Growth Customers, ⚫ Premium Customers",
-                                "ignoreDashboardFilters": [],
-                                "type": "richText",
-                                "description": ""
                               }
                             },
                             {
@@ -1560,7 +1582,7 @@
                               "size": {
                                 "xl": {
                                   "gridWidth": 6,
-                                  "gridHeight": 21
+                                  "gridHeight": 22
                                 }
                               }
                             }
@@ -2314,13 +2336,40 @@
                             {
                               "type": "IDashboardLayoutItem",
                               "widget": {
+                                "drillDownIntersectionIgnoredAttributes": [],
+                                "ignoredDrillDownHierarchies": [
+                                  {
+                                    "type": "dateHierarchyReference",
+                                    "dateHierarchyTemplate": "default",
+                                    "dateDatasetAttribute": {
+                                      "identifier": {
+                                        "id": "date.day",
+                                        "type": "attribute"
+                                      }
+                                    }
+                                  },
+                                  {
+                                    "type": "attributeHierarchyReference",
+                                    "attributeHierarchy": "72a9b29c-d982-4a9d-b226-ebcd060801dc",
+                                    "attribute": {
+                                      "identifier": {
+                                        "id": "date.day",
+                                        "type": "attribute"
+                                      }
+                                    }
+                                  }
+                                ],
                                 "dateDataSet": {
                                   "identifier": {
                                     "id": "date",
                                     "type": "dataset"
                                   }
                                 },
-                                "properties": {},
+                                "properties": {
+                                  "controls": {
+                                    "zoomInsight": true
+                                  }
+                                },
                                 "localIdentifier": "bcbb19e6-bd0e-4689-8f47-d3876fcdec3d",
                                 "title": "Overall Revenue Forecast",
                                 "drills": [],
@@ -2369,7 +2418,25 @@
                                     },
                                     "ignoreDashboardFilters": [],
                                     "type": "insight",
-                                    "description": ""
+                                    "description": "",
+                                    "ignoredDrillDownHierarchies": [
+                                      {
+                                        "type": "attributeHierarchyReference",
+                                        "attributeHierarchy": "ad14f0ed-9ba5-44ff-bd35-46ac2775a7ea",
+                                        "attribute": {
+                                          "identifier": {
+                                            "id": "product_category",
+                                            "type": "attribute"
+                                          }
+                                        }
+                                      }
+                                    ],
+                                    "drillDownIntersectionIgnoredAttributes": [],
+                                    "properties": {
+                                      "controls": {
+                                        "zoomInsight": true
+                                      }
+                                    }
                                   },
                                   {
                                     "dateDataSet": {
@@ -2507,7 +2574,12 @@
                           },
                           "ignoreDashboardFilters": [],
                           "type": "insight",
-                          "description": ""
+                          "description": "",
+                          "properties": {
+                            "controls": {
+                              "zoomInsight": true
+                            }
+                          }
                         },
                         {
                           "dateDataSet": {
@@ -2527,7 +2599,12 @@
                           },
                           "ignoreDashboardFilters": [],
                           "type": "insight",
-                          "description": ""
+                          "description": "",
+                          "properties": {
+                            "controls": {
+                              "zoomInsight": true
+                            }
+                          }
                         }
                       ],
                       "localIdentifier": "f295dc5e-7c76-42af-9ad8-369c6c043a36",
@@ -2829,11 +2906,15 @@
                     "widget": {
                       "dateDataSet": {
                         "identifier": {
-                          "id": "customer_created_date",
+                          "id": "date",
                           "type": "dataset"
                         }
                       },
-                      "properties": {},
+                      "properties": {
+                        "controls": {
+                          "zoomInsight": true
+                        }
+                      },
                       "localIdentifier": "71b02a77-47b5-4786-8fea-f49d99ff002f",
                       "title": "From Search to Sale: Active Customers vs. Orders Placed",
                       "drills": [],
@@ -3009,10 +3090,38 @@
                               "widget": {
                                 "visualizations": [
                                   {
+                                    "drillDownIntersectionIgnoredAttributes": [],
+                                    "ignoredDrillDownHierarchies": [
+                                      {
+                                        "type": "dateHierarchyReference",
+                                        "dateHierarchyTemplate": "default",
+                                        "dateDatasetAttribute": {
+                                          "identifier": {
+                                            "id": "date.day",
+                                            "type": "attribute"
+                                          }
+                                        }
+                                      },
+                                      {
+                                        "type": "attributeHierarchyReference",
+                                        "attributeHierarchy": "72a9b29c-d982-4a9d-b226-ebcd060801dc",
+                                        "attribute": {
+                                          "identifier": {
+                                            "id": "date.day",
+                                            "type": "attribute"
+                                          }
+                                        }
+                                      }
+                                    ],
                                     "dateDataSet": {
                                       "identifier": {
                                         "id": "date",
                                         "type": "dataset"
+                                      }
+                                    },
+                                    "properties": {
+                                      "controls": {
+                                        "zoomInsight": true
                                       }
                                     },
                                     "localIdentifier": "992d8121-6a28-4ac9-8995-0f90c5060218",
@@ -3029,10 +3138,28 @@
                                     "description": ""
                                   },
                                   {
+                                    "drillDownIntersectionIgnoredAttributes": [],
+                                    "ignoredDrillDownHierarchies": [
+                                      {
+                                        "type": "attributeHierarchyReference",
+                                        "attributeHierarchy": "ad14f0ed-9ba5-44ff-bd35-46ac2775a7ea",
+                                        "attribute": {
+                                          "identifier": {
+                                            "id": "product_category",
+                                            "type": "attribute"
+                                          }
+                                        }
+                                      }
+                                    ],
                                     "dateDataSet": {
                                       "identifier": {
                                         "id": "date",
                                         "type": "dataset"
+                                      }
+                                    },
+                                    "properties": {
+                                      "controls": {
+                                        "zoomInsight": true
                                       }
                                     },
                                     "localIdentifier": "f262a0bf-11b3-4b41-98a6-b389b1d2f22c",
@@ -3313,7 +3440,8 @@
                                 },
                                 "ignoreDashboardFilters": [],
                                 "type": "insight",
-                                "description": ""
+                                "description": "",
+                                "ignoreCrossFiltering": false
                               },
                               "size": {
                                 "xl": {
@@ -3450,6 +3578,53 @@
           "attributes": [
             {
               "identifier": {
+                "id": "customer_created_date.week",
+                "type": "attribute"
+              }
+            },
+            {
+              "identifier": {
+                "id": "customer_created_date.day",
+                "type": "attribute"
+              }
+            }
+          ]
+        },
+        "description": "",
+        "id": "445a32d8-2f88-4e90-a0fe-28098249d057",
+        "title": "Customer Date Hierarchy"
+      },
+      {
+        "content": {
+          "attributes": [
+            {
+              "identifier": {
+                "id": "date.weekOfYear",
+                "type": "attribute"
+              }
+            },
+            {
+              "identifier": {
+                "id": "date.day",
+                "type": "attribute"
+              }
+            },
+            {
+              "identifier": {
+                "id": "date.hour",
+                "type": "attribute"
+              }
+            }
+          ]
+        },
+        "id": "72a9b29c-d982-4a9d-b226-ebcd060801dc",
+        "title": "Untitled attribute hierarchy"
+      },
+      {
+        "content": {
+          "attributes": [
+            {
+              "identifier": {
                 "id": "product_category",
                 "type": "attribute"
               }
@@ -3468,8 +3643,9 @@
             }
           ]
         },
+        "description": "",
         "id": "ad14f0ed-9ba5-44ff-bd35-46ac2775a7ea",
-        "title": "Untitled attribute hierarchy"
+        "title": "Product attribute hierarchy"
       },
       {
         "content": {
@@ -9004,7 +9180,7 @@
                     ],
                     "width": {
                       "allowGrowToFit": false,
-                      "value": 449
+                      "value": 513
                     }
                   }
                 },
@@ -9141,10 +9317,19 @@
           "properties": {
             "controls": {
               "clustering": {
-                "enabled": true,
+                "enabled": false,
                 "numberOfClusters": "4",
                 "threshold": "0.02"
               },
+              "colorMapping": [
+                {
+                  "color": {
+                    "type": "guid",
+                    "value": "02"
+                  },
+                  "id": "0b7702b91bb74888ae7ca03a99077386"
+                }
+              ],
               "legend": {
                 "enabled": false,
                 "position": "bottom"
@@ -9157,6 +9342,7 @@
           "visualizationUrl": "local:scatter",
           "version": "2"
         },
+
         "description": "Compares Customer Lifetime Value (CLV) with Purchase Frequency. Each dot represents a customer group, helping identify loyal high-value customers and spot behavioral trends.",
         "id": "6c1de2b0-0165-4b3f-8b2b-9122f8f24393",
         "title": "Customer Lifetime Value (CLV) vs. Purchase Frequency"
@@ -12101,6 +12287,15 @@
           ],
           "sorts": [],
           "properties": {
+            "controls": {
+              "comparison": {
+                "enabled": true,
+                "isArrowEnabled": true,
+                "labelConfig": {
+                  "isConditional": true
+                }
+              }
+            }
           },
           "visualizationUrl": "local:headline",
           "version": "2"
