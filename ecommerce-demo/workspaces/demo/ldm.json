@@ -2,196 +2,230 @@
   "ldm": {
     "datasets": [
       {
-        "id": "customer",
-        "title": "Customer",
+        "aggregatedFacts": [],
+        "attributes": [
+          {
+            "description": "City where customer's headquarter is based.",
+            "id": "customer_city",
+            "labels": [
+              {
+                "description": "City pushpin latitude",
+                "id": "geo__customer_city__city_pushpin_latitude",
+                "sourceColumn": "geo__customer_city__city_pushpin_latitude",
+                "sourceColumnDataType": "STRING",
+                "tags": [
+                  "Customer"
+                ],
+                "title": "City pushpin latitude",
+                "valueType": "GEO_LATITUDE"
+              },
+              {
+                "description": "City pushpin longitude",
+                "id": "geo__customer_city__city_pushpin_longitude",
+                "sourceColumn": "geo__customer_city__city_pushpin_longitude",
+                "sourceColumnDataType": "STRING",
+                "tags": [
+                  "Customer"
+                ],
+                "title": "City pushpin longitude",
+                "valueType": "GEO_LONGITUDE"
+              }
+            ],
+            "sourceColumn": "customer_city",
+            "sourceColumnDataType": "STRING",
+            "tags": [
+              "Customer"
+            ],
+            "title": "Customer city"
+          },
+          {
+            "description": "Customer country",
+            "id": "customer_country",
+            "labels": [
+              {
+                "description": "",
+                "geoAreaConfig": {
+                  "collection": {
+                    "id": "countries",
+                    "kind": "STATIC"
+                  }
+                },
+                "id": "customer_country.customer_country_code",
+                "sourceColumn": "customer_country_code",
+                "sourceColumnDataType": "STRING",
+                "tags": [
+                  "Customer"
+                ],
+                "title": "Customer Country Code",
+                "valueType": "GEO_AREA"
+              }
+            ],
+            "sourceColumn": "customer_country",
+            "sourceColumnDataType": "STRING",
+            "tags": [
+              "Customer"
+            ],
+            "title": "Customer country"
+          },
+          {
+            "description": "Customer email",
+            "id": "customer_email",
+            "labels": [],
+            "sourceColumn": "customer_email",
+            "sourceColumnDataType": "STRING",
+            "tags": [
+              "Customer"
+            ],
+            "title": "Customer email"
+          },
+          {
+            "description": "Customer id",
+            "id": "customer_id",
+            "labels": [
+              {
+                "description": "Customer name",
+                "id": "customer_name",
+                "sourceColumn": "ls__customer_id__customer_name",
+                "sourceColumnDataType": "STRING",
+                "tags": [
+                  "Customer"
+                ],
+                "title": "Customer name"
+              }
+            ],
+            "sourceColumn": "customer_id",
+            "sourceColumnDataType": "STRING",
+            "tags": [
+              "Customer"
+            ],
+            "title": "Customer id"
+          },
+          {
+            "description": "Customer state",
+            "id": "customer_state",
+            "labels": [
+              {
+                "description": "",
+                "geoAreaConfig": {
+                  "collection": {
+                    "id": "regions",
+                    "kind": "STATIC"
+                  }
+                },
+                "id": "customer_state.customer_region_code",
+                "sourceColumn": "customer_region_code",
+                "sourceColumnDataType": "STRING",
+                "tags": [
+                  "Customer"
+                ],
+                "title": "Customer Region Code",
+                "valueType": "GEO_AREA"
+              }
+            ],
+            "sourceColumn": "customer_state",
+            "sourceColumnDataType": "STRING",
+            "tags": [
+              "Customer"
+            ],
+            "title": "Customer state"
+          }
+        ],
+        "dataSourceTableId": {
+          "dataSourceId": "gdc_ds_ecommerce_demo",
+          "id": "customer",
+          "path": [
+            "ECOMMERCE_DEMO_SCHEMA",
+            "customer"
+          ],
+          "type": "dataSource"
+        },
         "description": "Customer",
+        "facts": [],
         "grain": [
           {
             "id": "customer_id",
             "type": "attribute"
           }
         ],
-        "attributes": [
-          {
-            "id": "customer_city",
-            "title": "Customer city",
-            "description": "Customer city",
-            "labels": [
-              {
-                "id": "geo__customer_city__city_pushpin_latitude",
-                "title": "City pushpin latitude",
-                "description": "City pushpin latitude",
-                "sourceColumn": "geo__customer_city__city_pushpin_latitude",
-                "sourceColumnDataType": "STRING",
-                "tags": [
-                  "Customer"
-                ],
-                "valueType": "GEO_LATITUDE"
-              },
-              {
-                "id": "geo__customer_city__city_pushpin_longitude",
-                "title": "City pushpin longitude",
-                "description": "City pushpin longitude",
-                "sourceColumn": "geo__customer_city__city_pushpin_longitude",
-                "sourceColumnDataType": "STRING",
-                "tags": [
-                  "Customer"
-                ],
-                "valueType": "GEO_LONGITUDE"
-              }
-            ],
-            "tags": [
-              "Customer"
-            ],
-            "sourceColumn": "customer_city",
-            "sourceColumnDataType": "STRING"
-          },
-          {
-            "id": "customer_country",
-            "title": "Customer country",
-            "description": "Customer country",
-            "labels": [],
-            "tags": [
-              "Customer"
-            ],
-            "sourceColumn": "customer_country",
-            "sourceColumnDataType": "STRING"
-          },
-          {
-            "id": "customer_email",
-            "title": "Customer email",
-            "description": "Customer email",
-            "labels": [],
-            "tags": [
-              "Customer"
-            ],
-            "sourceColumn": "customer_email",
-            "sourceColumnDataType": "STRING"
-          },
-          {
-            "id": "customer_id",
-            "title": "Customer id",
-            "description": "Customer id",
-            "labels": [
-              {
-                "id": "customer_name",
-                "title": "Customer name",
-                "description": "Customer name",
-                "sourceColumn": "ls__customer_id__customer_name",
-                "sourceColumnDataType": "STRING",
-                "tags": [
-                  "Customer"
-                ]
-              }
-            ],
-            "tags": [
-              "Customer"
-            ],
-            "sourceColumn": "customer_id",
-            "sourceColumnDataType": "STRING"
-          },
-          {
-            "id": "customer_state",
-            "title": "Customer state",
-            "description": "Customer state",
-            "labels": [],
-            "tags": [
-              "Customer"
-            ],
-            "sourceColumn": "customer_state",
-            "sourceColumnDataType": "STRING"
-          }
-        ],
-        "facts": [],
+        "id": "customer",
         "references": [
           {
             "identifier": {
-              "id": "customer_created_date",
+              "id": "user_created_date",
               "type": "dataset"
             },
             "multivalue": false,
-            "sourceColumns": [
-              "customer_created_date"
-            ],
-            "sourceColumnDataTypes": [
-              "DATE"
+            "sources": [
+              {
+                "column": "customer_created_date",
+                "dataType": "DATE",
+                "target": {
+                  "id": "user_created_date",
+                  "type": "date"
+                }
+              }
             ]
           }
         ],
         "tags": [
           "Customer"
         ],
-        "workspaceDataFilterReferences": [
+        "title": "Customer"
+      },
+      {
+        "aggregatedFacts": [],
+        "attributes": [
           {
-            "filterId": {
-              "id": "WDF__CLIENT_ID",
-              "type": "workspaceDataFilter"
-            },
-            "filterColumn": "wdf__client_id",
-            "filterColumnDataType": "STRING"
+            "description": "Monthly inventory id",
+            "id": "monthly_inventory_id",
+            "labels": [],
+            "sourceColumn": "monthly_inventory_id",
+            "sourceColumnDataType": "STRING",
+            "tags": [
+              "Monthly inventory"
+            ],
+            "title": "Monthly inventory id"
           }
         ],
         "dataSourceTableId": {
-          "id": "customer",
           "dataSourceId": "gdc_ds_ecommerce_demo",
-          "type": "dataSource",
+          "id": "monthlyinventory",
           "path": [
             "ECOMMERCE_DEMO_SCHEMA",
-            "customer"
-          ]
+            "monthlyinventory"
+          ],
+          "type": "dataSource"
         },
-        "workspaceDataFilterColumns": [
+        "description": "Monthly inventory snapshot by product, tracking quantity at beginning of month (BOM) and end of month (EOM) for stock and turnover analysis.",
+        "facts": [
           {
-            "name": "wdf__client_id",
-            "dataType": "STRING"
+            "description": "Monthly quantity bom",
+            "id": "monthly_quantity_bom",
+            "sourceColumn": "monthly_quantity_bom",
+            "sourceColumnDataType": "NUMERIC",
+            "tags": [
+              "Monthly inventory"
+            ],
+            "title": "Monthly quantity bom"
+          },
+          {
+            "description": "Monthly quantity eom",
+            "id": "monthly_quantity_eom",
+            "sourceColumn": "monthly_quantity_eom",
+            "sourceColumnDataType": "NUMERIC",
+            "tags": [
+              "Monthly inventory"
+            ],
+            "title": "Monthly quantity eom"
           }
-        ]
-      },
-      {
-        "id": "monthlyinventory",
-        "title": "Monthly inventory",
-        "description": "Monthly inventory",
+        ],
         "grain": [
           {
             "id": "monthly_inventory_id",
             "type": "attribute"
           }
         ],
-        "attributes": [
-          {
-            "id": "monthly_inventory_id",
-            "title": "Monthly inventory id",
-            "description": "Monthly inventory id",
-            "labels": [],
-            "tags": [
-              "Monthly inventory"
-            ],
-            "sourceColumn": "monthly_inventory_id",
-            "sourceColumnDataType": "STRING"
-          }
-        ],
-        "facts": [
-          {
-            "id": "monthly_quantity_bom",
-            "title": "Monthly quantity bom",
-            "description": "Monthly quantity bom",
-            "sourceColumn": "monthly_quantity_bom",
-            "sourceColumnDataType": "NUMERIC",
-            "tags": [
-              "Monthly inventory"
-            ]
-          },
-          {
-            "id": "monthly_quantity_eom",
-            "title": "Monthly quantity eom",
-            "description": "Monthly quantity eom",
-            "sourceColumn": "monthly_quantity_eom",
-            "sourceColumnDataType": "NUMERIC",
-            "tags": [
-              "Monthly inventory"
-            ]
-          }
-        ],
+        "id": "monthlyinventory",
         "references": [
           {
             "identifier": {
@@ -199,11 +233,15 @@
               "type": "dataset"
             },
             "multivalue": false,
-            "sourceColumns": [
-              "date"
-            ],
-            "sourceColumnDataTypes": [
-              "TIMESTAMP"
+            "sources": [
+              {
+                "column": "date",
+                "dataType": "TIMESTAMP",
+                "target": {
+                  "id": "date",
+                  "type": "date"
+                }
+              }
             ]
           },
           {
@@ -212,11 +250,15 @@
               "type": "dataset"
             },
             "multivalue": false,
-            "sourceColumns": [
-              "inventory_month"
-            ],
-            "sourceColumnDataTypes": [
-              "DATE"
+            "sources": [
+              {
+                "column": "inventory_month",
+                "dataType": "DATE",
+                "target": {
+                  "id": "inventory_month",
+                  "type": "date"
+                }
+              }
             ]
           },
           {
@@ -225,119 +267,97 @@
               "type": "dataset"
             },
             "multivalue": false,
-            "sourceColumns": [
-              "product__product_id"
-            ],
-            "sourceColumnDataTypes": [
-              "STRING"
+            "sources": [
+              {
+                "column": "product__product_id",
+                "dataType": "STRING",
+                "target": {
+                  "id": "product_id",
+                  "type": "attribute"
+                }
+              }
             ]
           }
         ],
         "tags": [
           "Monthly inventory"
         ],
-        "workspaceDataFilterReferences": [
+        "title": "Monthly inventory"
+      },
+      {
+        "aggregatedFacts": [],
+        "attributes": [
           {
-            "filterId": {
-              "id": "WDF__CLIENT_ID",
-              "type": "workspaceDataFilter"
-            },
-            "filterColumn": "wdf__client_id",
-            "filterColumnDataType": "STRING"
+            "description": "Order line id",
+            "id": "order_line_id",
+            "labels": [],
+            "sourceColumn": "order_line_id",
+            "sourceColumnDataType": "STRING",
+            "tags": [
+              "Order lines"
+            ],
+            "title": "Order line id"
           }
         ],
         "dataSourceTableId": {
-          "id": "monthlyinventory",
           "dataSourceId": "gdc_ds_ecommerce_demo",
-          "type": "dataSource",
+          "id": "order_lines",
           "path": [
             "ECOMMERCE_DEMO_SCHEMA",
-            "monthlyinventory"
-          ]
+            "order_lines"
+          ],
+          "type": "dataSource"
         },
-        "workspaceDataFilterColumns": [
-          {
-            "name": "wdf__client_id",
-            "dataType": "STRING"
-          }
-        ]
-      },
-      {
-        "id": "order_lines",
-        "title": "Order lines",
         "description": "Order lines",
+        "facts": [
+          {
+            "description": "Cost per unit for the order line (cost of goods sold per unit), used for margin and profitability analysis.",
+            "id": "order_unit_cost",
+            "sourceColumn": "order_unit_cost",
+            "sourceColumnDataType": "NUMERIC",
+            "tags": [
+              "Order lines"
+            ],
+            "title": "Unit cost"
+          },
+          {
+            "description": "Order unit discount",
+            "id": "order_unit_discount",
+            "sourceColumn": "order_unit_discount",
+            "sourceColumnDataType": "NUMERIC",
+            "tags": [
+              "Order lines"
+            ],
+            "title": "Order unit discount"
+          },
+          {
+            "description": "Selling price per unit for the order line before discounts, used for revenue and pricing analysis.",
+            "id": "order_unit_price",
+            "sourceColumn": "order_unit_price",
+            "sourceColumnDataType": "NUMERIC",
+            "tags": [
+              "Order lines"
+            ],
+            "title": "Unit price"
+          },
+          {
+            "description": "Order unit quantity",
+            "id": "order_unit_quantity",
+            "sourceColumn": "order_unit_quantity",
+            "sourceColumnDataType": "NUMERIC",
+            "tags": [
+              "Order lines"
+            ],
+            "title": "Order unit quantity"
+          }
+        ],
         "grain": [
           {
             "id": "order_line_id",
             "type": "attribute"
           }
         ],
-        "attributes": [
-          {
-            "id": "customer_age",
-            "title": "Customer age",
-            "description": "Customer age",
-            "labels": [],
-            "tags": [
-              "Order lines"
-            ],
-            "sourceColumn": "customer_age",
-            "sourceColumnDataType": "STRING"
-          },
-          {
-            "id": "order_line_id",
-            "title": "Order line id",
-            "description": "Order line id",
-            "labels": [],
-            "tags": [
-              "Order lines"
-            ],
-            "sourceColumn": "order_line_id",
-            "sourceColumnDataType": "STRING"
-          }
-        ],
-        "facts": [
-          {
-            "id": "order_unit_cost",
-            "title": "Order unit cost",
-            "description": "Order unit cost",
-            "sourceColumn": "order_unit_cost",
-            "sourceColumnDataType": "NUMERIC",
-            "tags": [
-              "Order lines"
-            ]
-          },
-          {
-            "id": "order_unit_discount",
-            "title": "Order unit discount",
-            "description": "Order unit discount",
-            "sourceColumn": "order_unit_discount",
-            "sourceColumnDataType": "NUMERIC",
-            "tags": [
-              "Order lines"
-            ]
-          },
-          {
-            "id": "order_unit_price",
-            "title": "Order unit price",
-            "description": "Order unit price",
-            "sourceColumn": "order_unit_price",
-            "sourceColumnDataType": "NUMERIC",
-            "tags": [
-              "Order lines"
-            ]
-          },
-          {
-            "id": "order_unit_quantity",
-            "title": "Order unit quantity",
-            "description": "Order unit quantity",
-            "sourceColumn": "order_unit_quantity",
-            "sourceColumnDataType": "NUMERIC",
-            "tags": [
-              "Order lines"
-            ]
-          }
-        ],
+        "id": "order_lines",
         "references": [
           {
             "identifier": {
@@ -345,11 +365,15 @@
               "type": "dataset"
             },
             "multivalue": false,
-            "sourceColumns": [
-              "customer__customer_id"
-            ],
-            "sourceColumnDataTypes": [
-              "STRING"
+            "sources": [
+              {
+                "column": "customer__customer_id",
+                "dataType": "STRING",
+                "target": {
+                  "id": "customer_id",
+                  "type": "attribute"
+                }
+              }
             ]
           },
           {
@@ -358,11 +382,15 @@
               "type": "dataset"
             },
             "multivalue": false,
-            "sourceColumns": [
-              "date"
-            ],
-            "sourceColumnDataTypes": [
-              "TIMESTAMP"
+            "sources": [
+              {
+                "column": "date",
+                "dataType": "TIMESTAMP",
+                "target": {
+                  "id": "date",
+                  "type": "date"
+                }
+              }
             ]
           },
           {
@@ -371,11 +399,15 @@
               "type": "dataset"
             },
             "multivalue": false,
-            "sourceColumns": [
-              "order_date"
-            ],
-            "sourceColumnDataTypes": [
-              "TIMESTAMP"
+            "sources": [
+              {
+                "column": "order_date",
+                "dataType": "TIMESTAMP",
+                "target": {
+                  "id": "order_date",
+                  "type": "date"
+                }
+              }
             ]
           },
           {
@@ -384,11 +416,15 @@
               "type": "dataset"
             },
             "multivalue": false,
-            "sourceColumns": [
-              "order__order_id"
-            ],
-            "sourceColumnDataTypes": [
-              "STRING"
+            "sources": [
+              {
+                "column": "order__order_id",
+                "dataType": "STRING",
+                "target": {
+                  "id": "order_id",
+                  "type": "attribute"
+                }
+              }
             ]
           },
           {
@@ -397,304 +433,264 @@
               "type": "dataset"
             },
             "multivalue": false,
-            "sourceColumns": [
-              "product__product_id"
-            ],
-            "sourceColumnDataTypes": [
-              "STRING"
+            "sources": [
+              {
+                "column": "product__product_id",
+                "dataType": "STRING",
+                "target": {
+                  "id": "product_id",
+                  "type": "attribute"
+                }
+              }
             ]
           }
         ],
         "tags": [
           "Order lines"
         ],
-        "workspaceDataFilterReferences": [
+        "title": "Order lines"
+      },
+      {
+        "aggregatedFacts": [],
+        "attributes": [
           {
-            "filterId": {
-              "id": "WDF__CLIENT_ID",
-              "type": "workspaceDataFilter"
-            },
-            "filterColumn": "wdf__client_id",
-            "filterColumnDataType": "STRING"
+            "description": "Order id",
+            "id": "order_id",
+            "labels": [],
+            "sourceColumn": "order_id",
+            "sourceColumnDataType": "STRING",
+            "tags": [
+              "Orders"
+            ],
+            "title": "Order id"
+          },
+          {
+            "description": "Order status",
+            "id": "order_status",
+            "labels": [],
+            "sourceColumn": "order_status",
+            "sourceColumnDataType": "STRING",
+            "tags": [
+              "Orders"
+            ],
+            "title": "Order status"
           }
         ],
         "dataSourceTableId": {
-          "id": "order_lines",
           "dataSourceId": "gdc_ds_ecommerce_demo",
-          "type": "dataSource",
+          "id": "orders",
           "path": [
             "ECOMMERCE_DEMO_SCHEMA",
-            "order_lines"
-          ]
+            "orders"
+          ],
+          "type": "dataSource"
         },
-        "workspaceDataFilterColumns": [
-          {
-            "name": "wdf__client_id",
-            "dataType": "STRING"
-          }
-        ]
-      },
-      {
-        "id": "orders",
-        "title": "Orders",
         "description": "Orders",
+        "facts": [],
         "grain": [
           {
             "id": "order_id",
             "type": "attribute"
           }
         ],
-        "attributes": [
-          {
-            "id": "order_id",
-            "title": "Order id",
-            "description": "Order id",
-            "labels": [],
-            "tags": [
-              "Orders"
-            ],
-            "sourceColumn": "order_id",
-            "sourceColumnDataType": "STRING"
-          },
-          {
-            "id": "order_status",
-            "title": "Order status",
-            "description": "Order status",
-            "labels": [],
-            "tags": [
-              "Orders"
-            ],
-            "sourceColumn": "order_status",
-            "sourceColumnDataType": "STRING"
-          }
-        ],
-        "facts": [],
+        "id": "orders",
         "references": [],
         "tags": [
           "Orders"
         ],
-        "workspaceDataFilterReferences": [
-          {
-            "filterId": {
-              "id": "WDF__CLIENT_ID",
-              "type": "workspaceDataFilter"
-            },
-            "filterColumn": "wdf__client_id",
-            "filterColumnDataType": "STRING"
-          }
-        ],
-        "dataSourceTableId": {
-          "id": "orders",
-          "dataSourceId": "gdc_ds_ecommerce_demo",
-          "type": "dataSource",
-          "path": [
-            "ECOMMERCE_DEMO_SCHEMA",
-            "orders"
-          ]
-        },
-        "workspaceDataFilterColumns": [
-          {
-            "name": "wdf__client_id",
-            "dataType": "STRING"
-          }
-        ]
+        "title": "Orders"
       },
       {
-        "id": "product",
-        "title": "Product",
-        "description": "Product",
-        "grain": [
-          {
-            "id": "product_id",
-            "type": "attribute"
-          }
-        ],
+        "aggregatedFacts": [],
         "attributes": [
           {
-            "id": "product_brand",
-            "title": "Product brand",
             "description": "Product brand",
+            "id": "product_brand",
             "labels": [],
-            "tags": [
-              "Product"
-            ],
             "sourceColumn": "product_brand",
-            "sourceColumnDataType": "STRING"
-          },
-          {
-            "id": "product_category",
-            "title": "Product category",
-            "description": "Product category",
-            "labels": [],
+            "sourceColumnDataType": "STRING",
             "tags": [
               "Product"
             ],
-            "sourceColumn": "product_category",
-            "sourceColumnDataType": "STRING"
+            "title": "Product brand"
           },
           {
-            "id": "product_id",
-            "title": "Product id",
+            "description": "Product category",
+            "id": "product_category",
+            "labels": [],
+            "sourceColumn": "product_category",
+            "sourceColumnDataType": "STRING",
+            "tags": [
+              "Product"
+            ],
+            "title": "Product category"
+          },
+          {
             "description": "Product id",
+            "id": "product_id",
             "labels": [
               {
-                "id": "product_id_image_web",
-                "title": "Product id image web",
                 "description": "Product id image web",
+                "id": "product_id_image_web",
                 "sourceColumn": "ls__product_id__product_id_image_web",
                 "sourceColumnDataType": "STRING",
                 "tags": [
                   "Product"
-                ]
+                ],
+                "title": "Product id image web",
+                "valueType": "IMAGE"
               },
               {
-                "id": "product_name",
-                "title": "Product name",
                 "description": "Product name",
+                "id": "product_name",
                 "sourceColumn": "ls__product_id__product_name",
                 "sourceColumnDataType": "STRING",
                 "tags": [
                   "Product"
-                ]
+                ],
+                "title": "Product name"
               }
             ],
+            "sourceColumn": "product_id",
+            "sourceColumnDataType": "STRING",
             "tags": [
               "Product"
             ],
-            "sourceColumn": "product_id",
-            "sourceColumnDataType": "STRING"
+            "title": "Product id"
           },
           {
-            "id": "product_image",
-            "title": "Product image",
             "description": "Product image",
+            "id": "product_image",
             "labels": [
               {
-                "id": "product_image_web",
-                "title": "Product image web",
                 "description": "Product image web",
+                "id": "product_image_web",
                 "sourceColumn": "ls__product_image__product_image_web",
                 "sourceColumnDataType": "STRING",
                 "tags": [
                   "Product"
-                ]
+                ],
+                "title": "Product image web"
               }
             ],
+            "sourceColumn": "product_image",
+            "sourceColumnDataType": "STRING",
             "tags": [
               "Product"
             ],
-            "sourceColumn": "product_image",
-            "sourceColumnDataType": "STRING"
+            "title": "Product image"
           },
           {
+            "description": "Rating category or label for the product (dimension for filtering and grouping).",
             "id": "product_rating",
-            "title": "Product rating",
-            "description": "Product rating",
             "labels": [],
+            "sourceColumn": "product_rating",
+            "sourceColumnDataType": "STRING",
             "tags": [
               "Product"
             ],
-            "sourceColumn": "product_rating",
-            "sourceColumnDataType": "STRING"
+            "title": "Product rating"
           }
         ],
+        "dataSourceTableId": {
+          "dataSourceId": "gdc_ds_ecommerce_demo",
+          "id": "product",
+          "path": [
+            "ECOMMERCE_DEMO_SCHEMA",
+            "product"
+          ],
+          "type": "dataSource"
+        },
+        "description": "Product",
         "facts": [
           {
-            "id": "rating",
-            "title": "Rating",
             "description": "Rating",
+            "id": "rating",
             "sourceColumn": "rating",
             "sourceColumnDataType": "NUMERIC",
             "tags": [
               "Product"
-            ]
+            ],
+            "title": "Rating"
           }
         ],
+        "grain": [
+          {
+            "id": "product_id",
+            "type": "attribute"
+          }
+        ],
+        "id": "product",
         "references": [],
         "tags": [
           "Product"
         ],
-        "workspaceDataFilterReferences": [
+        "title": "Product"
+      },
+      {
+        "aggregatedFacts": [],
+        "attributes": [
           {
-            "filterId": {
-              "id": "WDF__PRODUCT_CATEGORY",
-              "type": "workspaceDataFilter"
-            },
-            "filterColumn": "wdf__product_category",
-            "filterColumnDataType": "STRING"
+            "description": "Return id",
+            "id": "return_id",
+            "labels": [],
+            "sourceColumn": "return_id",
+            "sourceColumnDataType": "STRING",
+            "tags": [
+              "Returns"
+            ],
+            "title": "Return id"
           }
         ],
         "dataSourceTableId": {
-          "id": "product",
           "dataSourceId": "gdc_ds_ecommerce_demo",
-          "type": "dataSource",
+          "id": "returns",
           "path": [
             "ECOMMERCE_DEMO_SCHEMA",
-            "product"
-          ]
+            "returns"
+          ],
+          "type": "dataSource"
         },
-        "workspaceDataFilterColumns": [
-          {
-            "name": "wdf__product_category",
-            "dataType": "STRING"
-          }
-        ]
-      },
-      {
-        "id": "returns",
-        "title": "Returns",
         "description": "Returns",
+        "facts": [
+          {
+            "description": "Return unit cost",
+            "id": "return_unit_cost",
+            "sourceColumn": "return_unit_cost",
+            "sourceColumnDataType": "NUMERIC",
+            "tags": [
+              "Returns"
+            ],
+            "title": "Return unit cost"
+          },
+          {
+            "description": "Return unit paid amount",
+            "id": "return_unit_paid_amount",
+            "sourceColumn": "return_unit_paid_amount",
+            "sourceColumnDataType": "NUMERIC",
+            "tags": [
+              "Returns"
+            ],
+            "title": "Return unit paid amount"
+          },
+          {
+            "description": "Return unit quantity",
+            "id": "return_unit_quantity",
+            "sourceColumn": "return_unit_quantity",
+            "sourceColumnDataType": "NUMERIC",
+            "tags": [
+              "Returns"
+            ],
+            "title": "Return unit quantity"
+          }
+        ],
         "grain": [
           {
             "id": "return_id",
             "type": "attribute"
           }
         ],
-        "attributes": [
-          {
-            "id": "return_id",
-            "title": "Return id",
-            "description": "Return id",
-            "labels": [],
-            "tags": [
-              "Returns"
-            ],
-            "sourceColumn": "return_id",
-            "sourceColumnDataType": "STRING"
-          }
-        ],
-        "facts": [
-          {
-            "id": "return_unit_cost",
-            "title": "Return unit cost",
-            "description": "Return unit cost",
-            "sourceColumn": "return_unit_cost",
-            "sourceColumnDataType": "NUMERIC",
-            "tags": [
-              "Returns"
-            ]
-          },
-          {
-            "id": "return_unit_paid_amount",
-            "title": "Return unit paid amount",
-            "description": "Return unit paid amount",
-            "sourceColumn": "return_unit_paid_amount",
-            "sourceColumnDataType": "NUMERIC",
-            "tags": [
-              "Returns"
-            ]
-          },
-          {
-            "id": "return_unit_quantity",
-            "title": "Return unit quantity",
-            "description": "Return unit quantity",
-            "sourceColumn": "return_unit_quantity",
-            "sourceColumnDataType": "NUMERIC",
-            "tags": [
-              "Returns"
-            ]
-          }
-        ],
+        "id": "returns",
         "references": [
           {
             "identifier": {
@@ -702,11 +698,15 @@
               "type": "dataset"
             },
             "multivalue": false,
-            "sourceColumns": [
-              "customer__customer_id"
-            ],
-            "sourceColumnDataTypes": [
-              "STRING"
+            "sources": [
+              {
+                "column": "customer__customer_id",
+                "dataType": "STRING",
+                "target": {
+                  "id": "customer_id",
+                  "type": "attribute"
+                }
+              }
             ]
           },
           {
@@ -715,11 +715,15 @@
               "type": "dataset"
             },
             "multivalue": false,
-            "sourceColumns": [
-              "date"
-            ],
-            "sourceColumnDataTypes": [
-              "TIMESTAMP"
+            "sources": [
+              {
+                "column": "date",
+                "dataType": "TIMESTAMP",
+                "target": {
+                  "id": "date",
+                  "type": "date"
+                }
+              }
             ]
           },
           {
@@ -728,11 +732,15 @@
               "type": "dataset"
             },
             "multivalue": false,
-            "sourceColumns": [
-              "order__order_id"
-            ],
-            "sourceColumnDataTypes": [
-              "STRING"
+            "sources": [
+              {
+                "column": "order__order_id",
+                "dataType": "STRING",
+                "target": {
+                  "id": "order_id",
+                  "type": "attribute"
+                }
+              }
             ]
           },
           {
@@ -741,11 +749,15 @@
               "type": "dataset"
             },
             "multivalue": false,
-            "sourceColumns": [
-              "product__product_id"
-            ],
-            "sourceColumnDataTypes": [
-              "STRING"
+            "sources": [
+              {
+                "column": "product__product_id",
+                "dataType": "STRING",
+                "target": {
+                  "id": "product_id",
+                  "type": "attribute"
+                }
+              }
             ]
           },
           {
@@ -754,49 +766,27 @@
               "type": "dataset"
             },
             "multivalue": false,
-            "sourceColumns": [
-              "return_date"
-            ],
-            "sourceColumnDataTypes": [
-              "TIMESTAMP"
+            "sources": [
+              {
+                "column": "return_date",
+                "dataType": "TIMESTAMP",
+                "target": {
+                  "id": "return_date",
+                  "type": "date"
+                }
+              }
             ]
           }
         ],
         "tags": [
           "Returns"
         ],
-        "workspaceDataFilterReferences": [
-          {
-            "filterId": {
-              "id": "WDF__CLIENT_ID",
-              "type": "workspaceDataFilter"
-            },
-            "filterColumn": "wdf__client_id",
-            "filterColumnDataType": "STRING"
-          }
-        ],
-        "dataSourceTableId": {
-          "id": "returns",
-          "dataSourceId": "gdc_ds_ecommerce_demo",
-          "type": "dataSource",
-          "path": [
-            "ECOMMERCE_DEMO_SCHEMA",
-            "returns"
-          ]
-        },
-        "workspaceDataFilterColumns": [
-          {
-            "name": "wdf__client_id",
-            "dataType": "STRING"
-          }
-        ]
+        "title": "Returns"
       }
     ],
     "dateInstances": [
       {
-        "id": "customer_created_date",
-        "title": "Customer created date",
-        "description": "",
+        "description": "Date dimension. Granularity attribute definitions:\nDay of Year = ordinal day in year, 1–366; Hour of Day = hour of day, 0–23;\nMinute of Hour = minute within hour, 0–59; Week/Year = week number in year;\nDay of Month = day of month, 1–31; Week of Year = week of year, 1–53.",
         "granularities": [
           "MINUTE",
           "HOUR",
@@ -818,43 +808,14 @@
           "titleBase": "",
           "titlePattern": "%titleBase - %granularityTitle"
         },
-        "tags": [
-          "Customer created date"
-        ]
-      },
-      {
         "id": "date",
-        "title": "Date",
-        "description": "",
-        "granularities": [
-          "MINUTE",
-          "HOUR",
-          "DAY",
-          "WEEK",
-          "MONTH",
-          "QUARTER",
-          "YEAR",
-          "MINUTE_OF_HOUR",
-          "HOUR_OF_DAY",
-          "DAY_OF_WEEK",
-          "DAY_OF_MONTH",
-          "DAY_OF_YEAR",
-          "WEEK_OF_YEAR",
-          "MONTH_OF_YEAR",
-          "QUARTER_OF_YEAR"
-        ],
-        "granularitiesFormatting": {
-          "titleBase": "",
-          "titlePattern": "%titleBase - %granularityTitle"
-        },
         "tags": [
           "Date"
-        ]
+        ],
+        "title": "Date"
       },
       {
-        "id": "inventory_month",
-        "title": "Inventory month",
-        "description": "",
+        "description": "Inventory month dimension. Granularity attribute definitions:\nDay of Year = ordinal day in year, 1–366; Hour of Day  = hour of day, 0–23;\nMinute of Hour = minute within hour, 0–59; Week/Year = week number in year;\nDay of Month = day of month, 1–31; Week of Year  = week of year, 1–53.",
         "granularities": [
           "MINUTE",
           "HOUR",
@@ -876,14 +837,14 @@
           "titleBase": "",
           "titlePattern": "%titleBase - %granularityTitle"
         },
+        "id": "inventory_month",
         "tags": [
           "Inventory month"
-        ]
+        ],
+        "title": "Inventory month"
       },
       {
-        "id": "order_date",
-        "title": "Order date",
-        "description": "",
+        "description": "Order date dimension. Granularity attribute definitions:\nDay of Year = ordinal day in year, 1–366; Hour of Day = hour of day, 0–23; Minute of Hour = minute within hour, 0–59; Week/Year = week number in year;\nDay of Month = day of month, 1–31; Week of Year = week of year, 1–53.",
         "granularities": [
           "MINUTE",
           "HOUR",
@@ -905,14 +866,14 @@
           "titleBase": "",
           "titlePattern": "%titleBase - %granularityTitle"
         },
+        "id": "order_date",
         "tags": [
           "Order date"
-        ]
+        ],
+        "title": "Order date"
       },
       {
-        "id": "return_date",
-        "title": "Return date",
-        "description": "",
+        "description": "Return date dimension. Granularity attribute definitions:\nInventory month dimension. Granularity attribute definitions:\nDay of Year = ordinal day in year, 1–366; Hour of Day  = hour of day, 0–23;\nMinute of Hour = minute within hour, 0–59; Week/Year = week number in year;\nDay of Month = day of month, 1–31; Week of Year  = week of year, 1–53.",
         "granularities": [
           "MINUTE",
           "HOUR",
@@ -934,112 +895,30 @@
           "titleBase": "",
           "titlePattern": "%titleBase - %granularityTitle"
         },
+        "id": "return_date",
         "tags": [
           "Return date"
-        ]
-      }
-    ]
-  },
-  "layout": {
-    "objects": [
-      {
-        "identifier": {
-          "id": "customer",
-          "type": "dataset"
-        },
-        "collapse": false,
-        "x": 844,
-        "y": 310.5
+        ],
+        "title": "Return date"
       },
       {
-        "identifier": {
-          "id": "monthlyinventory",
-          "type": "dataset"
+        "description": "User created date dimension. Granularity attribute definitions:\nDay of Year = ordinal day in year, 1–366; Hour of Day  = hour of day, 0–23;\nMinute of Hour = minute within hour, 0–59; Week/Year = week number in year;\nDay of Month = day of month, 1–31; Week of Year  = week of year, 1–53..",
+        "granularities": [
+          "DAY",
+          "WEEK",
+          "MONTH",
+          "QUARTER",
+          "YEAR"
+        ],
+        "granularitiesFormatting": {
+          "titleBase": "",
+          "titlePattern": "%titleBase - %granularityTitle"
         },
-        "collapse": false,
-        "x": 1344,
-        "y": 1627
-      },
-      {
-        "identifier": {
-          "id": "order_lines",
-          "type": "dataset"
-        },
-        "collapse": false,
-        "x": 1344,
-        "y": 206.5
-      },
-      {
-        "identifier": {
-          "id": "orders",
-          "type": "dataset"
-        },
-        "collapse": false,
-        "x": 844,
-        "y": 637.5
-      },
-      {
-        "identifier": {
-          "id": "product",
-          "type": "dataset"
-        },
-        "collapse": false,
-        "x": 844,
-        "y": 1220
-      },
-      {
-        "identifier": {
-          "id": "returns",
-          "type": "dataset"
-        },
-        "collapse": false,
-        "x": 1344,
-        "y": 868
-      },
-      {
-        "identifier": {
-          "id": "customer_created_date",
-          "type": "templateDataset"
-        },
-        "collapse": true,
-        "x": 366.5,
-        "y": 310.5
-      },
-      {
-        "identifier": {
-          "id": "date",
-          "type": "templateDataset"
-        },
-        "collapse": true,
-        "x": 844,
-        "y": 847.5
-      },
-      {
-        "identifier": {
-          "id": "inventory_month",
-          "type": "templateDataset"
-        },
-        "collapse": true,
-        "x": 844,
-        "y": 1627
-      },
-      {
-        "identifier": {
-          "id": "order_date",
-          "type": "templateDataset"
-        },
-        "collapse": true,
-        "x": 844,
-        "y": 48.5
-      },
-      {
-        "identifier": {
-          "id": "return_date",
-          "type": "templateDataset"
-        },
-        "collapse": true,
-        "x": 844,
-        "y": 1482
+        "id": "user_created_date",
+        "tags": [
+          "Date 1"
+        ],
+        "title": "User created date"
       }
     ]
   }

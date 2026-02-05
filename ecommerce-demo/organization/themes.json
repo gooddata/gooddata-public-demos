@@ -1,250 +1,331 @@
 [
   {
-    "themeId": "gdc_demo_theme_pink_light",
+    "themeId": "gdc_demo_theme_lime",
     "content": {
-      "palette": {
-        "primary": {
-            "base": "#ED26B7"
-        },
-        "error": {
-            "base": "#e54d42"
-        },
-        "success": {
-            "base": "#00c18d"
-        },
-        "warning": {
-            "base": "#f4d521"
-        }
-    },
-    "typography": {
-        "font": "url(https://fonts.gstatic.com/s/lato/v23/S6uyw4BMUTPHjx4wXiWtFCc.woff2)",
-        "fontBold": "url(https://fonts.gstatic.com/s/lato/v23/S6u9w4BMUTPHh6UVSwiPGQ3q5d0.woff2)"
-    },
-    "button": {
-        "borderRadius": "100",
-        "dropShadow": false
-    },
-    "analyticalDesigner": {
-        "title": {
-            "color": "#1C0D3F"
-        }
-    },
-    "dashboards": {
-        "content": {
-            "backgroundColor": "#f2f4f6",
-            "kpiWidget": {
-                "title": {
-                    "color": "#f2f4f6B2",
-                    "textAlign": "center"
-                },
-                "kpi": {
-                    "primaryMeasureColor": "#fff",
-                    "secondaryInfoColor": "#f2f4f6B2"
-                },
-                "borderRadius": "6",
-                "borderWidth": "1",
-                "backgroundColor": "#1c0d3f",
-                "dropShadow": false
-            }
-        },
-        "title": {
-            "color": "#1C0D3F",
-            "backgroundColor": "#fff",
-            "borderColor": "#DFE4E8"
-        },
-        "navigation": {
-            "backgroundColor": "#1C0D3F",
-            "title": {
-                "color": "#fff"
-            },
-            "item": {
-                "color": "#BFC9D1",
-                "hoverColor": "#fff",
-                "selectedColor": "#fff",
-                "selectedBackgroundColor": "#FFFFFF1A"
-            }
-        },
-        "filterBar": {
-            "filterButton": {
-                "backgroundColor": "#F2F4F6"
-            },
-            "backgroundColor": "#fff",
-            "borderColor": "#DFE4E8"
-        },
-        "section": {
-            "title": {
-                "color": "#1c0d3f",
-                "lineColor": "#DFE4E8"
-            }
-        }
-    }
-    }
-  }, 
-  {
-    "themeId": "gdc_demo_theme_green_dark",
-    "content": {
-      "palette": {
-        "primary": {
-          "base": "#1DB954"
-        },
-        "complementary": {
-          "c0": "#000",
-          "c1": "#262626",
-          "c2": "#323333",
-          "c3": "#3F403F",
-          "c4": "#585958",
-          "c5": "#707370",
-          "c6": "#898C89",
-          "c7": "#A1A6A2",
-          "c8": "#BABFBA",
-          "c9": "#D2D9D3"
-        }
-      },
-      "typography": {
-        "font": "url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmSU5fBBc4AMP6lQ.woff2)",
-        "fontBold": "url(https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu4mxKKTU1Kg.woff2)"
-      },
-      "dashboards": {
-        "filterBar": {
-          "borderColor": "#000"
-        },
-        "content": {
-          "kpiWidget": {
-            "borderRadius": "4",
-            "backgroundColor": "#262626"
-          }
-        }
-      }
-    }
-  },
-    {
-      "themeId": "gdc_demo_theme_blue_light",
-      "content": {
-        "palette": {
+    "palette": {
           "primary": {
-            "base": "#347EFF"
+              "base": "#14b2e2"
           },
           "error": {
-            "base": "#d13049"
+              "base": "#e54d42"
           },
           "success": {
-            "base": "#25a953"
+              "base": "#00c18d"
           },
           "warning": {
-            "base": "#FF9546"
+              "base": "#f4d521"
           }
-        },
-        "button": {
-          "borderRadius": "2",
-          "dropShadow": true
-        },
-        "modal": {
+      },
+      "typography": {
+          "font": "url(https://fonts.gstatic.com/s/lato/v23/S6uyw4BMUTPHjx4wXiWtFCc.woff2)",
+          "fontBold": "url(https://fonts.gstatic.com/s/lato/v23/S6u9w4BMUTPHh6UVSwiPGQ3q5d0.woff2)"
+      },
+      "button": {
+          "borderRadius": "100",
+          "dropShadow": false
+      },
+      "analyticalDesigner": {
           "title": {
-            "color": "#413C5E",
-            "lineColor": "#DFE0E5"
+              "color": "#14b2e2"
+          }
+      },
+      "dashboards": {
+          "content": {
+              "backgroundColor": "#f9f9f9",
+              "kpiWidget": {
+                  "title": {
+                      "color": "#464e56",
+                      "textAlign": "center"
+                  },
+                  "kpi": {
+                      "primaryMeasureColor": "#303442",
+                      "secondaryInfoColor": "#778491"
+                  },
+                  "borderRadius": "6",
+                  "borderWidth": "1",
+                  "backgroundColor": "#DDEFFB",
+                  "dropShadow": false
+              }
           },
-          "borderColor": "#ffffff",
-          "borderRadius": "6",
-          "borderWidth": "2",
-          "dropShadow": true,
-          "outsideBackgroundColor": "#DFE0E5"
-        },
-        "tooltip": {
-          "color": "#FFFFFFCC",
-          "backgroundColor": "#413C5E"
-        },
-        "analyticalDesigner": {
           "title": {
-            "color": "#413C5E"
-          }
-        },
-        "dashboards": {
-          "title": {
-            "color": "#413C5E",
-            "backgroundColor": "#FFFFFF",
-            "borderColor": "#BFC4E0"
+              "color": "#1C0D3F",
+              "backgroundColor": "#fff",
+              "borderColor": "#DFE4E8"
           },
           "navigation": {
-            "title": {
-              "color": "#413C5E"
-            },
-            "borderColor": "#BFC4E0",
-            "item": {
-              "color": "#413C5E",
-              "hoverColor": "#2A80F8",
-              "selectedColor": "#2A80F8",
-              "selectedBackgroundColor": "#fff"
-            },
-            "backgroundColor": "#F4F5FB"
+              "backgroundColor": "#303442",
+              "title": {
+                  "color": "#fff"
+              },
+              "item": {
+                  "color": "#BFC9D1",
+                  "hoverColor": "#fff",
+                  "selectedColor": "#fff",
+                  "selectedBackgroundColor": "#FFFFFF1A"
+              }
           },
           "filterBar": {
-            "filterButton": {
-              "backgroundColor": "#FFFFFF"
-            },
-            "backgroundColor": "#FFFFFF",
-            "borderColor": "#BFC4E0"
+              "filterButton": {
+                  "backgroundColor": "#F2F4F6"
+              },
+              "backgroundColor": "#fff",
+              "borderColor": "#DFE4E8"
           },
           "section": {
-            "title": {
-              "color": "#413C5E",
-              "lineColor": "#FFFFFF"
-            },
-            "description": {
-              "color": "#999EA5"
-            }
+              "title": {
+                  "color": "#1c0d3f",
+                  "lineColor": "#DFE4E8"
+              }
+          }
+      }
+  }
+  }, 
+    {
+      "themeId": "gdc_demo_theme_pink_light",
+      "content": {
+        "palette": {
+          "primary": {
+              "base": "#ED26B7"
+          },
+          "error": {
+              "base": "#e54d42"
+          },
+          "success": {
+              "base": "#00c18d"
+          },
+          "warning": {
+              "base": "#f4d521"
+          }
+      },
+      "typography": {
+          "font": "url(https://fonts.gstatic.com/s/lato/v23/S6uyw4BMUTPHjx4wXiWtFCc.woff2)",
+          "fontBold": "url(https://fonts.gstatic.com/s/lato/v23/S6u9w4BMUTPHh6UVSwiPGQ3q5d0.woff2)"
+      },
+      "button": {
+          "borderRadius": "100",
+          "dropShadow": false
+      },
+      "analyticalDesigner": {
+          "title": {
+              "color": "#1C0D3F"
+          }
+      },
+      "dashboards": {
+          "content": {
+              "backgroundColor": "#f2f4f6",
+              "kpiWidget": {
+                  "title": {
+                      "color": "#f2f4f6B2",
+                      "textAlign": "center"
+                  },
+                  "kpi": {
+                      "primaryMeasureColor": "#fff",
+                      "secondaryInfoColor": "#f2f4f6B2"
+                  },
+                  "borderRadius": "6",
+                  "borderWidth": "1",
+                  "backgroundColor": "#1c0d3f",
+                  "dropShadow": false
+              }
+          },
+          "title": {
+              "color": "#1C0D3F",
+              "backgroundColor": "#fff",
+              "borderColor": "#DFE4E8"
+          },
+          "navigation": {
+              "backgroundColor": "#1C0D3F",
+              "title": {
+                  "color": "#fff"
+              },
+              "item": {
+                  "color": "#BFC9D1",
+                  "hoverColor": "#fff",
+                  "selectedColor": "#fff",
+                  "selectedBackgroundColor": "#FFFFFF1A"
+              }
+          },
+          "filterBar": {
+              "filterButton": {
+                  "backgroundColor": "#F2F4F6"
+              },
+              "backgroundColor": "#fff",
+              "borderColor": "#DFE4E8"
+          },
+          "section": {
+              "title": {
+                  "color": "#1c0d3f",
+                  "lineColor": "#DFE4E8"
+              }
+          }
+      }
+      }
+    }, 
+    {
+      "themeId": "gdc_demo_theme_green_dark",
+      "content": {
+        "palette": {
+          "primary": {
+            "base": "#1DB954"
+          },
+          "complementary": {
+            "c0": "#000",
+            "c1": "#262626",
+            "c2": "#323333",
+            "c3": "#3F403F",
+            "c4": "#585958",
+            "c5": "#707370",
+            "c6": "#898C89",
+            "c7": "#A1A6A2",
+            "c8": "#BABFBA",
+            "c9": "#D2D9D3"
+          }
+        },
+        "typography": {
+          "font": "url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmSU5fBBc4AMP6lQ.woff2)",
+          "fontBold": "url(https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu4mxKKTU1Kg.woff2)"
+        },
+        "dashboards": {
+          "filterBar": {
+            "borderColor": "#000"
           },
           "content": {
             "kpiWidget": {
-              "title": {
-                "color": "#413c5e",
-                "textAlign": "center"
-              },
-              "kpi": {
-                "primaryMeasureColor": "#2a80f8",
-                "secondaryInfoColor": "#413C5E99"
-              },
-              "borderColor": "#2168E5",
-              "borderRadius": "6",
-              "borderWidth": "0",
-              "backgroundColor": "#F4F5FB",
-              "dropShadow": false
-            },
-            "widget": {
-              "title": {
-                "color": "#101010",
-                "textAlign": "center"
-              },
-              "borderColor": "#ffffff",
-              "borderRadius": "6",
-              "borderWidth": "2",
-              "dropShadow": false
-            },
-            "backgroundColor": "#FFFFFF"
+              "borderRadius": "4",
+              "backgroundColor": "#262626"
+            }
           }
         }
       }
     },
-    {
-      "themeId": "gdc_demo_theme_indigo_dark",
-      "content": {
-        "palette": {
-          "primary": {
-            "base": "#14B2E2"
+      {
+        "themeId": "gdc_demo_theme_blue_light",
+        "content": {
+          "palette": {
+            "primary": {
+              "base": "#347EFF"
+            },
+            "error": {
+              "base": "#d13049"
+            },
+            "success": {
+              "base": "#25a953"
+            },
+            "warning": {
+              "base": "#FF9546"
+            }
           },
-          "complementary": {
-            "c0": "#09131B",
-            "c1": "#122330",
-            "c5": "#4A6C89",
-            "c9": "#F0F8FF"
+          "button": {
+            "borderRadius": "2",
+            "dropShadow": true
+          },
+          "modal": {
+            "title": {
+              "color": "#413C5E",
+              "lineColor": "#DFE0E5"
+            },
+            "borderColor": "#ffffff",
+            "borderRadius": "6",
+            "borderWidth": "2",
+            "dropShadow": true,
+            "outsideBackgroundColor": "#DFE0E5"
+          },
+          "tooltip": {
+            "color": "#FFFFFFCC",
+            "backgroundColor": "#413C5E"
+          },
+          "analyticalDesigner": {
+            "title": {
+              "color": "#413C5E"
+            }
+          },
+          "dashboards": {
+            "title": {
+              "color": "#413C5E",
+              "backgroundColor": "#FFFFFF",
+              "borderColor": "#BFC4E0"
+            },
+            "navigation": {
+              "title": {
+                "color": "#413C5E"
+              },
+              "borderColor": "#BFC4E0",
+              "item": {
+                "color": "#413C5E",
+                "hoverColor": "#2A80F8",
+                "selectedColor": "#2A80F8",
+                "selectedBackgroundColor": "#fff"
+              },
+              "backgroundColor": "#F4F5FB"
+            },
+            "filterBar": {
+              "filterButton": {
+                "backgroundColor": "#FFFFFF"
+              },
+              "backgroundColor": "#FFFFFF",
+              "borderColor": "#BFC4E0"
+            },
+            "section": {
+              "title": {
+                "color": "#413C5E",
+                "lineColor": "#FFFFFF"
+              },
+              "description": {
+                "color": "#999EA5"
+              }
+            },
+            "content": {
+              "kpiWidget": {
+                "title": {
+                  "color": "#413c5e",
+                  "textAlign": "center"
+                },
+                "kpi": {
+                  "primaryMeasureColor": "#2a80f8",
+                  "secondaryInfoColor": "#413C5E99"
+                },
+                "borderColor": "#2168E5",
+                "borderRadius": "6",
+                "borderWidth": "0",
+                "backgroundColor": "#F4F5FB",
+                "dropShadow": false
+              },
+              "widget": {
+                "title": {
+                  "color": "#101010",
+                  "textAlign": "center"
+                },
+                "borderColor": "#ffffff",
+                "borderRadius": "6",
+                "borderWidth": "2",
+                "dropShadow": false
+              },
+              "backgroundColor": "#FFFFFF"
+            }
           }
-        },
-        "dashboards": {
-          "content": {
-            "widget": {
-              "backgroundColor": "#122330"
+        }
+      },
+      {
+        "themeId": "gdc_demo_theme_indigo_dark",
+        "content": {
+          "palette": {
+            "primary": {
+              "base": "#14B2E2"
+            },
+            "complementary": {
+              "c0": "#09131B",
+              "c1": "#122330",
+              "c5": "#4A6C89",
+              "c9": "#F0F8FF"
+            }
+          },
+          "dashboards": {
+            "content": {
+              "widget": {
+                "backgroundColor": "#122330"
+              }
             }
           }
         }
       }
-    }
-]
+  ]
