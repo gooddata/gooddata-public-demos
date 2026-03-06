@@ -1,5 +1,90 @@
 [
     {
+        "colorPaletteId": "gdc_demo_colorPalette_lime",
+        "attributes": [
+            {
+                "guid": "01",
+                "fill": {
+                    "r": 33,
+                    "g": 52,
+                    "b": 118
+                }
+            },
+            {
+                "guid": "02",
+                "fill": {
+                    "r": 101,
+                    "g": 123,
+                    "b": 199
+                }
+            },
+            {
+                "guid": "03",
+                "fill": {
+                    "r": 146,
+                    "g": 199,
+                    "b": 21
+                }
+            },
+            {
+                "guid": "04",
+                "fill": {
+                    "r": 206,
+                    "g": 206,
+                    "b": 206
+                }
+            },
+            {
+                "guid": "05",
+                "fill": {
+                    "r": 40,
+                    "g": 93,
+                    "b": 146
+                }
+            },
+            {
+                "guid": "06",
+                "fill": {
+                    "r": 120,
+                    "g": 150,
+                    "b": 210
+                }
+            },
+            {
+                "guid": "07",
+                "fill": {
+                    "r": 60,
+                    "g": 80,
+                    "b": 150
+                }
+            },
+            {
+                "guid": "08",
+                "fill": {
+                    "r": 167,
+                    "g": 210,
+                    "b": 67
+                }
+            },
+            {
+                "guid": "09",
+                "fill": {
+                    "r": 242,
+                    "g": 242,
+                    "b": 242
+                }
+            },
+            {
+                "guid": "10",
+                "fill": {
+                    "r": 205,
+                    "g": 226,
+                    "b": 247
+                }
+            }
+        ]
+      },
+    {
       "colorPaletteId": "gdc_demo_colorPalette_contrast",
       "attributes": [
         {

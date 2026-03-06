@@ -1,8 +1,8 @@
 {
-  "colorPalette": {
-    "colorPaletteId": "gdc_demo_colorPalette_modern"
-  },
-  "theme": {
-    "themeId": "gdc_demo_theme_pink_light"
+    "colorPalette": {
+      "colorPaletteId": "gdc_demo_colorPalette_lime"
+    },
+    "theme": {
+      "themeId": "dc_demo_theme_lime"
+    }
   }
-}
