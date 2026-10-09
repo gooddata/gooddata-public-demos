@@ -1,0 +1,14 @@
+ecommerce-demo/workspaces/demo/workspaceAnalytics_aio.json
+  h_eecc74926a9b46 2915,2917,2919
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "7dbd572f5ecdd09aed7c1acea15e06a1ee4baa8a",
+  "prompts": {},
+  "humans": {
+    "h_eecc74926a9b46": {
+      "author": "Jan Tychtl <jan.tychtl@gooddata.com>"
+    }
+  }
+}
