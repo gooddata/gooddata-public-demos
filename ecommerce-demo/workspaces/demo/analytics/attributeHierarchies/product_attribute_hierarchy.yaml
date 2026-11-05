@@ -1,0 +1,15 @@
+# The attribute hierarchy is a user-defined list of attributes. This list determines the order 
+# in which subsequent attributes are revealed in a visualization during the drill-down process. 
+# Attributes lower in this hierarchy are automatically filtered based on the values selected from the higher-level attributes.
+# Read more about attribute hierarchies:
+# https://www.gooddata.com/docs/cloud/create-dashboards/drilling-in-dashboards/set-drill-down/
+
+type: attribute_hierarchy
+id: ad14f0ed-9ba5-44ff-bd35-46ac2775a7ea
+
+title: Product attribute hierarchy
+
+attributes:
+  - attribute/product_category
+  - attribute/product_brand
+  - attribute/product_id

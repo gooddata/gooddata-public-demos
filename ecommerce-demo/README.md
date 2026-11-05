@@ -14,3 +14,39 @@ For manual provision, follow this steps:
 Make sure to not commit your changes to `http-client.private.env.json` to Git, as it holds your API Token.
 
 To run the same in VS Code you can use `httpYac` extension.
+
+# Analytics as code
+
+[`workspaces/demo/analytics`](./workspaces/demo/analytics) holds the logical data model and the analytics of the `demo`
+workspace as analytics as code (AaC) YAML, one file per object. It is the source of the sample data in the GoodData
+organization UI ("Sample data" on the Home page). The UI build reads these files, not `ldm.json` and
+`workspaceAnalytics.json`.
+
+## Edit the demo
+
+Use the [`gd` CLI](https://www.npmjs.com/package/@gooddata/code-cli) or the GoodData VS Code extension.
+
+1. Install the CLI: `npm install -g @gooddata/code-cli`.
+2. Create the data source and the workspace with the first requests of [upload.http](./upload.http), up to
+   "Create workspace".
+3. In `workspaces/demo/analytics`, set the environment variables that [`gooddata.yaml`](./workspaces/demo/analytics/gooddata.yaml) reads:
+   ```
+   export GOODDATA_HOST="<your host>"
+   export GOODDATA_API_TOKEN="<your API token>"
+   export GOODDATA_WORKSPACE_ID="<your workspace id>"
+   export GOODDATA_DATA_SOURCE_ID="gdc_ds_ecommerce_demo"
+   ```
+4. Run `gd deploy` to put the YAML into the workspace.
+5. Change the workspace in the UI.
+6. Run `gd clone` to write the workspace back to the YAML files.
+7. Review the diff, and commit only the changes that you made on purpose.
+
+Run `gd validate` before you commit. A deploy replaces the whole workspace, so an object that is missing from the YAML
+is missing from the demo.
+
+## Files that the UI does not read
+
+- `workspaces/demo/ldm.json` and `workspaces/demo/workspaceAnalytics.json` are for the manual provision in
+  [upload.http](./upload.http). A change in the YAML does not update them.
+- `workspaces/demo/ldm_v2.5.0.json` and `workspaces/demo/workspaceAnalytics_aio.json` are deprecated. Other GoodData
+  deployments still read them. Do not use them for new work.

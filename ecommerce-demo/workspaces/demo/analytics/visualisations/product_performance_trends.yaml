@@ -1,0 +1,71 @@
+# A visualization is a visual representation of a user's analytical view of the data.
+# You build visualizations from metrics, attributes, and optionally filters that are combined in a way to visualize a particular aspect of your data.
+# The visualizations are executed over and over as fresh data gets loaded.
+# Interpreting the content of a visualization is up to the user (the consumer of the visualization).
+# Read more about visualisations:
+# https://www.gooddata.com/developers/cloud-native/doc/cloud/create-visualizations/concepts/visualization/
+
+type: repeater_chart
+id: product_performance_trends
+
+title: Product Performance Trends
+description: Repeater chart presenting each product as a card with image, weekly net sales trend line, average unit price and cost, and product rating. Supports analysis of product performance over time, comparison of pricing and costs per product, and a compact product overview with key metrics in one view.
+
+query:
+  fields:
+    c6c6b3011854486fb06429f3594d9321:
+      title: Product
+      using: label/product_id_image_web
+    c6c6b3011854486fb06429f3594d9321_cloned:
+      title: Product
+      using: label/product_id_image_web
+    0f108ae173d34845815110fd35746ff9:
+      title: Order Unit Price
+      aggregation: AVG
+      using: fact/order_unit_price
+    852579952ba949678674dc117e15c40b:
+      title: Order Unit Cost
+      aggregation: AVG
+      using: fact/order_unit_cost
+    0850722fad1949dda1a0b10da6c4906d:
+      title: Total Net Sales Over Time
+      using: metric/net_sales
+    67ef39115aae473988c22155e49cb893: metric/product_rating
+    48a592bf411440459ef1256c2930b6ac: label/date.week
+
+metrics:
+  - c6c6b3011854486fb06429f3594d9321_cloned
+  - field: 0f108ae173d34845815110fd35746ff9
+    format: $#,##0.00
+  - field: 852579952ba949678674dc117e15c40b
+    format: $#,##0.00
+  - field: 0850722fad1949dda1a0b10da6c4906d
+    display_as: line
+  - 67ef39115aae473988c22155e49cb893
+
+view_by:
+  - 48a592bf411440459ef1256c2930b6ac
+
+segment_by:
+  - c6c6b3011854486fb06429f3594d9321
+
+config:
+  widths:
+    - value: 130
+      allowGrowToFit: false
+      using:
+        - c6c6b3011854486fb06429f3594d9321_cloned
+    - value: 513
+      allowGrowToFit: false
+      using:
+        - 0850722fad1949dda1a0b10da6c4906d
+    - value: 123
+      allowGrowToFit: false
+    - value: 124
+      allowGrowToFit: false
+    - value: 104
+      allowGrowToFit: false
+      using:
+        - 67ef39115aae473988c22155e49cb893
+  row_height: large
+  cell_vertical_align: middle

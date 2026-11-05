@@ -1,0 +1,74 @@
+# A visualization is a visual representation of a user's analytical view of the data.
+# You build visualizations from metrics, attributes, and optionally filters that are combined in a way to visualize a particular aspect of your data.
+# The visualizations are executed over and over as fresh data gets loaded.
+# Interpreting the content of a visualization is up to the user (the consumer of the visualization).
+# Read more about visualisations:
+# https://www.gooddata.com/developers/cloud-native/doc/cloud/create-visualizations/concepts/visualization/
+
+type: table
+id: product_details
+
+title: Product Details
+description: Tabular view of products with columns for net sales, order count, average unit price, unit cost, and profit per unit. Sortable by net sales to rank products. Supports detailed product-level analysis, product list review with key sales and cost metrics, and product performance comparison in table format.
+
+query:
+  fields:
+    1c4d84d9ffbd4afba4100087c0832b3d: metric/net_sales
+    2e29fcf184504383bd33e34fa8d3072b: metric/number_of_orders
+    8114d0d6ce604c66ad2d52472855ffa7:
+      title: Unit Price
+      aggregation: AVG
+      using: fact/order_unit_price
+    f6a3b950b16f45c7a101e2c3afe306b1:
+      title: Unit Cost
+      aggregation: AVG
+      using: fact/order_unit_cost
+    818aa146985b48ef8f52b324a8419fc4:
+      title: Profit per Unit
+      operator: DIFFERENCE
+      using:
+        - 8114d0d6ce604c66ad2d52472855ffa7
+        - f6a3b950b16f45c7a101e2c3afe306b1
+    1c90af2684b146afaa95cc9fd244a030_cloned:
+      title: Product ID
+      using: label/product_id
+
+  sort_by:
+    - type: metric_sort
+      direction: DESC
+      metrics:
+        - 1c4d84d9ffbd4afba4100087c0832b3d
+
+metrics:
+  - 1c4d84d9ffbd4afba4100087c0832b3d
+  - 2e29fcf184504383bd33e34fa8d3072b
+  - field: 8114d0d6ce604c66ad2d52472855ffa7
+    format: $#,##0.00
+  - field: f6a3b950b16f45c7a101e2c3afe306b1
+    format: $#,##0.00
+  - field: 818aa146985b48ef8f52b324a8419fc4
+    format: $#,###.##
+
+view_by:
+  - field: 1c90af2684b146afaa95cc9fd244a030_cloned
+    totals:
+      - type: SUM
+        using: 1c4d84d9ffbd4afba4100087c0832b3d
+      - type: SUM
+        using: 2e29fcf184504383bd33e34fa8d3072b
+      - type: SUM
+        using: 818aa146985b48ef8f52b324a8419fc4
+      - type: AVG
+        using: 8114d0d6ce604c66ad2d52472855ffa7
+      - type: AVG
+        using: f6a3b950b16f45c7a101e2c3afe306b1
+      - type: AVG
+        using: 818aa146985b48ef8f52b324a8419fc4
+
+config:
+  widths:
+    - value: 115
+      using:
+        - 1c4d84d9ffbd4afba4100087c0832b3d
+  pagination: true
+  page_size: 20

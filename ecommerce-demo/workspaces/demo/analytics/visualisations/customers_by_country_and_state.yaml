@@ -1,0 +1,30 @@
+# A visualization is a visual representation of a user's analytical view of the data.
+# You build visualizations from metrics, attributes, and optionally filters that are combined in a way to visualize a particular aspect of your data.
+# The visualizations are executed over and over as fresh data gets loaded.
+# Interpreting the content of a visualization is up to the user (the consumer of the visualization).
+# Read more about visualisations:
+# https://www.gooddata.com/developers/cloud-native/doc/cloud/create-visualizations/concepts/visualization/
+
+type: geo_chart
+id: customers_by_country_and_state
+
+title: Customers by Country and State
+description: Displays the distribution of active customers by country and state, allowing quick identification of key markets and regions with the highest customer concentration
+
+query:
+  fields:
+    a1c553902ecb4ab7b2b08ebe81062c7e: attribute/customer_city
+    c9c1a6a146a244f695ad1b52733b283f: metric/active_customers
+    358f10b4220f4b708a14843e333b24b8: label/customer_country
+
+metrics:
+  - c9c1a6a146a244f695ad1b52733b283f
+
+view_by:
+  - a1c553902ecb4ab7b2b08ebe81062c7e
+
+segment_by:
+  - 358f10b4220f4b708a14843e333b24b8
+
+config:
+  group_nearby_points: false
