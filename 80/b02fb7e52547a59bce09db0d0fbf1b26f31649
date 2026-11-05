@@ -1,0 +1,273 @@
+ecommerce-demo/README.md
+  s_e4ff97e1ba3470::t_cd2e702c10a540 17-52
+ecommerce-demo/workspaces/demo/analytics/attributeHierarchies/customer_date_hierarchy.yaml
+  s_e4ff97e1ba3470::t_2cc5ec0761b92d 1-14
+ecommerce-demo/workspaces/demo/analytics/attributeHierarchies/location_hierarchy.yaml
+  s_e4ff97e1ba3470::t_9bcf5b1ab80205 1-15
+ecommerce-demo/workspaces/demo/analytics/attributeHierarchies/product_attribute_hierarchy.yaml
+  s_e4ff97e1ba3470::t_df7c40350f93c6 1-15
+ecommerce-demo/workspaces/demo/analytics/attributeHierarchies/untitled_attribute_hierarchy.yaml
+  s_e4ff97e1ba3470::t_b2ea634ce1cf25 1-15
+ecommerce-demo/workspaces/demo/analytics/attributeHierarchies/untitled_attribute_hierarchy1.yaml
+  s_e4ff97e1ba3470::t_ec9237ac1762eb 1-14
+ecommerce-demo/workspaces/demo/analytics/dashboards/customers.yaml
+  s_e4ff97e1ba3470::t_3850f5316ed2ea 1-190
+ecommerce-demo/workspaces/demo/analytics/dashboards/overview.yaml
+  s_e4ff97e1ba3470::t_e30f8923997586 1-568
+ecommerce-demo/workspaces/demo/analytics/dashboards/products.yaml
+  s_e4ff97e1ba3470::t_d92ac0154e51a6 1-231
+ecommerce-demo/workspaces/demo/analytics/dashboards/sales.yaml
+  s_e4ff97e1ba3470::t_066c1d15ba1377 1-170
+ecommerce-demo/workspaces/demo/analytics/datasets/customer.yaml
+  s_e4ff97e1ba3470::t_d80808559d8140 1-114
+ecommerce-demo/workspaces/demo/analytics/datasets/date.yaml
+  s_e4ff97e1ba3470::t_ea213ef9b44eef 1-36
+ecommerce-demo/workspaces/demo/analytics/datasets/inventory_month.yaml
+  s_e4ff97e1ba3470::t_1fcafa7c85ecb6 1-36
+ecommerce-demo/workspaces/demo/analytics/datasets/monthlyinventory.yaml
+  s_e4ff97e1ba3470::t_2b636db8ff49fe 1-59
+ecommerce-demo/workspaces/demo/analytics/datasets/order_date.yaml
+  s_e4ff97e1ba3470::t_482c24dc3f80f3 1-35
+ecommerce-demo/workspaces/demo/analytics/datasets/order_lines.yaml
+  s_e4ff97e1ba3470::t_dfb35c066422c4 1-85
+ecommerce-demo/workspaces/demo/analytics/datasets/orders.yaml
+  s_e4ff97e1ba3470::t_f90c3c57345fa9 1-34
+ecommerce-demo/workspaces/demo/analytics/datasets/product.yaml
+  s_e4ff97e1ba3470::t_956959f6d37cce 1-90
+ecommerce-demo/workspaces/demo/analytics/datasets/return_date.yaml
+  s_e4ff97e1ba3470::t_5b232d6fd7c3d1 1-37
+ecommerce-demo/workspaces/demo/analytics/datasets/returns.yaml
+  s_e4ff97e1ba3470::t_df0c1a0aa8ba72 1-77
+ecommerce-demo/workspaces/demo/analytics/datasets/user_created_date.yaml
+  s_e4ff97e1ba3470::t_d14627ea62819b 1-26
+ecommerce-demo/workspaces/demo/analytics/gooddata.yaml
+  s_e4ff97e1ba3470::t_9613e6d4d466ed 1-8
+ecommerce-demo/workspaces/demo/analytics/metrics/active_customers.yaml
+  s_e4ff97e1ba3470::t_10025128574c46 1-13
+ecommerce-demo/workspaces/demo/analytics/metrics/all_time_average_order_volume.yaml
+  s_e4ff97e1ba3470::t_365efce81d78ff 1-13
+ecommerce-demo/workspaces/demo/analytics/metrics/arpu.yaml
+  s_e4ff97e1ba3470::t_e3ae4b8960bb57 1-23
+ecommerce-demo/workspaces/demo/analytics/metrics/average_order_volume.yaml
+  s_e4ff97e1ba3470::t_60902476901125 1-13
+ecommerce-demo/workspaces/demo/analytics/metrics/average_product_price.yaml
+  s_e4ff97e1ba3470::t_85d8982ef57da1 1-13
+ecommerce-demo/workspaces/demo/analytics/metrics/average_sales.yaml
+  s_e4ff97e1ba3470::t_0809167305aa49 1-13
+ecommerce-demo/workspaces/demo/analytics/metrics/cogs.yaml
+  s_e4ff97e1ba3470::t_6235d38a54fc7c 1-13
+ecommerce-demo/workspaces/demo/analytics/metrics/cogs_n.yaml
+  s_e4ff97e1ba3470::t_8cf1f74b0ef6af 1-13
+ecommerce-demo/workspaces/demo/analytics/metrics/cogs_orders.yaml
+  s_e4ff97e1ba3470::t_975ce99db52173 1-13
+ecommerce-demo/workspaces/demo/analytics/metrics/cogs_returns.yaml
+  s_e4ff97e1ba3470::t_c354a5d83186b6 1-13
+ecommerce-demo/workspaces/demo/analytics/metrics/cost_vs_selling_price.yaml
+  s_e4ff97e1ba3470::t_076855cb6383eb 1-13
+ecommerce-demo/workspaces/demo/analytics/metrics/customer_lifetime_value_clv.yaml
+  s_e4ff97e1ba3470::t_6ee339047b079e 1-13
+ecommerce-demo/workspaces/demo/analytics/metrics/customer_retention_rate.yaml
+  s_e4ff97e1ba3470::t_1567dbd029a34d 1-13
+ecommerce-demo/workspaces/demo/analytics/metrics/customers_with_multiple_orders.yaml
+  s_e4ff97e1ba3470::t_0746caeea90ce2 1-18
+ecommerce-demo/workspaces/demo/analytics/metrics/customers_with_single_order.yaml
+  s_e4ff97e1ba3470::t_a2d3df8c0328ea 1-18
+ecommerce-demo/workspaces/demo/analytics/metrics/desired_product_rating.yaml
+  s_e4ff97e1ba3470::t_959b4326dc106e 1-13
+ecommerce-demo/workspaces/demo/analytics/metrics/discount_rate.yaml
+  s_e4ff97e1ba3470::t_0cf504e77ecb80 1-13
+ecommerce-demo/workspaces/demo/analytics/metrics/gross_profit.yaml
+  s_e4ff97e1ba3470::t_1fbac6ab03756d 1-23
+ecommerce-demo/workspaces/demo/analytics/metrics/gross_profit_margin.yaml
+  s_e4ff97e1ba3470::t_31e107c2b5d31d 1-13
+ecommerce-demo/workspaces/demo/analytics/metrics/inventory_turnover_rate.yaml
+  s_e4ff97e1ba3470::t_0bcdfb96a2c8a1 1-13
+ecommerce-demo/workspaces/demo/analytics/metrics/markup_percentage.yaml
+  s_e4ff97e1ba3470::t_88936eeb37ba6a 1-13
+ecommerce-demo/workspaces/demo/analytics/metrics/net_delivered_orders.yaml
+  s_e4ff97e1ba3470::t_22fdf13d1be5e3 1-13
+ecommerce-demo/workspaces/demo/analytics/metrics/net_orders.yaml
+  s_e4ff97e1ba3470::t_0f872c9497e1c9 1-13
+ecommerce-demo/workspaces/demo/analytics/metrics/net_sales.yaml
+  s_e4ff97e1ba3470::t_9ace18468dcb18 1-25
+ecommerce-demo/workspaces/demo/analytics/metrics/net_sales_goal.yaml
+  s_e4ff97e1ba3470::t_41333dbc9babfd 1-23
+ecommerce-demo/workspaces/demo/analytics/metrics/new_customers.yaml
+  s_e4ff97e1ba3470::t_75ed6b37cce484 1-15
+ecommerce-demo/workspaces/demo/analytics/metrics/number_of_orders.yaml
+  s_e4ff97e1ba3470::t_5510b38f4d31c9 1-13
+ecommerce-demo/workspaces/demo/analytics/metrics/order_amount.yaml
+  s_e4ff97e1ba3470::t_67d8a2105133e4 1-23
+ecommerce-demo/workspaces/demo/analytics/metrics/price_elasticity_of_demand.yaml
+  s_e4ff97e1ba3470::t_1224fdcc7cf8d6 1-13
+ecommerce-demo/workspaces/demo/analytics/metrics/product_rating.yaml
+  s_e4ff97e1ba3470::t_695d306ab4a972 1-13
+ecommerce-demo/workspaces/demo/analytics/metrics/purchase_frequency_per_customer.yaml
+  s_e4ff97e1ba3470::t_33032ad83cce6b 1-14
+ecommerce-demo/workspaces/demo/analytics/metrics/quantity_bom_by_year.yaml
+  s_e4ff97e1ba3470::t_0419a14f7ce57e 1-13
+ecommerce-demo/workspaces/demo/analytics/metrics/return_customers.yaml
+  s_e4ff97e1ba3470::t_269464b4da7a55 1-13
+ecommerce-demo/workspaces/demo/analytics/metrics/revenue_by_product.yaml
+  s_e4ff97e1ba3470::t_9113134f42ddbd 1-14
+ecommerce-demo/workspaces/demo/analytics/metrics/sales_conversion_rate.yaml
+  s_e4ff97e1ba3470::t_5f185329da5769 1-13
+ecommerce-demo/workspaces/demo/analytics/metrics/top_products.yaml
+  s_e4ff97e1ba3470::t_83a7a256cc5131 1-13
+ecommerce-demo/workspaces/demo/analytics/metrics/total_customers.yaml
+  s_e4ff97e1ba3470::t_65cc50a86adaeb 1-13
+ecommerce-demo/workspaces/demo/analytics/metrics/total_discounts.yaml
+  s_e4ff97e1ba3470::t_08308347df7ea0 1-13
+ecommerce-demo/workspaces/demo/analytics/metrics/total_discounts_n.yaml
+  s_e4ff97e1ba3470::t_5cd6c27a1210e2 1-13
+ecommerce-demo/workspaces/demo/analytics/metrics/total_product_costs.yaml
+  s_e4ff97e1ba3470::t_fa816511380175 1-23
+ecommerce-demo/workspaces/demo/analytics/metrics/total_returns.yaml
+  s_e4ff97e1ba3470::t_5ae82527092ca3 1-13
+ecommerce-demo/workspaces/demo/analytics/metrics/total_returns_n.yaml
+  s_e4ff97e1ba3470::t_e80d4a7d0196e3 1-13
+ecommerce-demo/workspaces/demo/analytics/metrics/total_sales.yaml
+  s_e4ff97e1ba3470::t_89c891aef0ae64 1-23
+ecommerce-demo/workspaces/demo/analytics/metrics/unit_elastic.yaml
+  s_e4ff97e1ba3470::t_226916395e261f 1-13
+ecommerce-demo/workspaces/demo/analytics/visualisations/active_customers_and_orders_by_location.yaml
+  s_e4ff97e1ba3470::t_732454cb23ef1a 1-54
+ecommerce-demo/workspaces/demo/analytics/visualisations/active_customers_by_country.yaml
+  s_e4ff97e1ba3470::t_0ce725a254b713 1-36
+ecommerce-demo/workspaces/demo/analytics/visualisations/active_customers_by_location_cities.yaml
+  s_e4ff97e1ba3470::t_f6ac11d2b422e4 1-29
+ecommerce-demo/workspaces/demo/analytics/visualisations/active_customers_by_location_geo.yaml
+  s_e4ff97e1ba3470::t_32970a185b3abb 1-29
+ecommerce-demo/workspaces/demo/analytics/visualisations/active_customers_headline.yaml
+  s_e4ff97e1ba3470::t_4be3f1d3f50ab1 1-41
+ecommerce-demo/workspaces/demo/analytics/visualisations/average_orders_breakdown.yaml
+  s_e4ff97e1ba3470::t_1d6b6201bf525c 1-31
+ecommerce-demo/workspaces/demo/analytics/visualisations/average_sales_per_customer.yaml
+  s_e4ff97e1ba3470::t_ec98b7c7b4d8f3 1-39
+ecommerce-demo/workspaces/demo/analytics/visualisations/best_selling_product_brands.yaml
+  s_e4ff97e1ba3470::t_aa3230bc69f4cf 1-71
+ecommerce-demo/workspaces/demo/analytics/visualisations/bottom_10_customers_by_revenue.yaml
+  s_e4ff97e1ba3470::t_4347a51e09feff 1-40
+ecommerce-demo/workspaces/demo/analytics/visualisations/bottom_10_customers_by_revenue_details.yaml
+  s_e4ff97e1ba3470::t_86ce6ab484f3c3 1-74
+ecommerce-demo/workspaces/demo/analytics/visualisations/brand_performance_segments_sales_vs_orders.yaml
+  s_e4ff97e1ba3470::t_6267295836d2e2 1-32
+ecommerce-demo/workspaces/demo/analytics/visualisations/brand_profitability_by_price_and_order_volume.yaml
+  s_e4ff97e1ba3470::t_e517556028ad0e 1-34
+ecommerce-demo/workspaces/demo/analytics/visualisations/completed_vs_canceled_orders_trend.yaml
+  s_e4ff97e1ba3470::t_61cc7bfd117ec0 1-55
+ecommerce-demo/workspaces/demo/analytics/visualisations/customer_activity_by_hour.yaml
+  s_e4ff97e1ba3470::t_838b103ca0843c 1-28
+ecommerce-demo/workspaces/demo/analytics/visualisations/customer_activity_over_time.yaml
+  s_e4ff97e1ba3470::t_e9c47107af85af 1-36
+ecommerce-demo/workspaces/demo/analytics/visualisations/customer_lifetime_value_clv_vs_purchase.yaml
+  s_e4ff97e1ba3470::t_59188e54c8636c 1-32
+ecommerce-demo/workspaces/demo/analytics/visualisations/customer_orders_and_sales_details.yaml
+  s_e4ff97e1ba3470::t_0f3f4e44e5bbc4 1-38
+ecommerce-demo/workspaces/demo/analytics/visualisations/customer_retention_rate.yaml
+  s_e4ff97e1ba3470::t_6c75327145b2ae 1-33
+ecommerce-demo/workspaces/demo/analytics/visualisations/customer_retention_rate_forecast.yaml
+  s_e4ff97e1ba3470::t_8946e367657c3d 1-30
+ecommerce-demo/workspaces/demo/analytics/visualisations/customers_breakdown.yaml
+  s_e4ff97e1ba3470::t_de3281f6321505 1-35
+ecommerce-demo/workspaces/demo/analytics/visualisations/customers_by_country_and_state.yaml
+  s_e4ff97e1ba3470::t_b14a3c474a4b30 1-30
+ecommerce-demo/workspaces/demo/analytics/visualisations/customers_with_multiple_orders.yaml
+  s_e4ff97e1ba3470::t_3f26c4f5437922 1-33
+ecommerce-demo/workspaces/demo/analytics/visualisations/from_search_to_sale_active_customers_vs_orders.yaml
+  s_e4ff97e1ba3470::t_4e7479296a18f5 1-50
+ecommerce-demo/workspaces/demo/analytics/visualisations/gross_profit_by_product_category.yaml
+  s_e4ff97e1ba3470::t_9d6eb29876016b 1-26
+ecommerce-demo/workspaces/demo/analytics/visualisations/gross_profit_headline.yaml
+  s_e4ff97e1ba3470::t_73eb6444501f6d 1-37
+ecommerce-demo/workspaces/demo/analytics/visualisations/gross_profit_trend.yaml
+  s_e4ff97e1ba3470::t_66d13850e11c0c 1-29
+ecommerce-demo/workspaces/demo/analytics/visualisations/net_sales_breakdown.yaml
+  s_e4ff97e1ba3470::t_c006d74047ed88 1-53
+ecommerce-demo/workspaces/demo/analytics/visualisations/net_sales_by_product_category.yaml
+  s_e4ff97e1ba3470::t_ad4bf56d4ddc26 1-30
+ecommerce-demo/workspaces/demo/analytics/visualisations/net_sales_goal.yaml
+  s_e4ff97e1ba3470::t_7435b0f5c28d4a 1-29
+ecommerce-demo/workspaces/demo/analytics/visualisations/net_sales_headline.yaml
+  s_e4ff97e1ba3470::t_6617dc2d3217da 1-39
+ecommerce-demo/workspaces/demo/analytics/visualisations/net_sales_share_by_top_5_city.yaml
+  s_e4ff97e1ba3470::t_e4cc1a740d45e6 1-42
+ecommerce-demo/workspaces/demo/analytics/visualisations/order_details.yaml
+  s_e4ff97e1ba3470::t_2e7319c0c5eae2 1-44
+ecommerce-demo/workspaces/demo/analytics/visualisations/order_fulfillment_funnel.yaml
+  s_e4ff97e1ba3470::t_0ae6da6af48e6f 1-40
+ecommerce-demo/workspaces/demo/analytics/visualisations/order_status_breakdown.yaml
+  s_e4ff97e1ba3470::t_30b929701bd500 1-34
+ecommerce-demo/workspaces/demo/analytics/visualisations/order_value_by_category_and_customer_rating.yaml
+  s_e4ff97e1ba3470::t_49ea68d9e38038 1-25
+ecommerce-demo/workspaces/demo/analytics/visualisations/order_volume_over_time.yaml
+  s_e4ff97e1ba3470::t_5046ed32f801fc 1-31
+ecommerce-demo/workspaces/demo/analytics/visualisations/orders_by_location_area_map.yaml
+  s_e4ff97e1ba3470::t_c3e644e3467be6 1-26
+ecommerce-demo/workspaces/demo/analytics/visualisations/orders_by_product_category.yaml
+  s_e4ff97e1ba3470::t_8fa6857492c937 1-30
+ecommerce-demo/workspaces/demo/analytics/visualisations/orders_by_status_over_time.yaml
+  s_e4ff97e1ba3470::t_ab89c28020cb9a 1-34
+ecommerce-demo/workspaces/demo/analytics/visualisations/orders_processed_headline.yaml
+  s_e4ff97e1ba3470::t_7ef7dcfca0e94d 1-39
+ecommerce-demo/workspaces/demo/analytics/visualisations/overall_revenue_forecast.yaml
+  s_e4ff97e1ba3470::t_08ea02b867d045 1-28
+ecommerce-demo/workspaces/demo/analytics/visualisations/price_elasticity_by_product_brand.yaml
+  s_e4ff97e1ba3470::t_c295b379ad157a 1-39
+ecommerce-demo/workspaces/demo/analytics/visualisations/product_details.yaml
+  s_e4ff97e1ba3470::t_dbfb62a335251c 1-74
+ecommerce-demo/workspaces/demo/analytics/visualisations/product_details_by_categories_and_brands.yaml
+  s_e4ff97e1ba3470::t_18c214223c8712 1-86
+ecommerce-demo/workspaces/demo/analytics/visualisations/product_performance_by_orders_and_returns.yaml
+  s_e4ff97e1ba3470::t_cf841205e39f21 1-69
+ecommerce-demo/workspaces/demo/analytics/visualisations/product_performance_trends.yaml
+  s_e4ff97e1ba3470::t_621f5c45d3eb63 1-71
+ecommerce-demo/workspaces/demo/analytics/visualisations/product_preferences_by_customers.yaml
+  s_e4ff97e1ba3470::t_65262a23022a24 1-25
+ecommerce-demo/workspaces/demo/analytics/visualisations/product_pricing_breakdown.yaml
+  s_e4ff97e1ba3470::t_06dc45c0834879 1-39
+ecommerce-demo/workspaces/demo/analytics/visualisations/returning_customers.yaml
+  s_e4ff97e1ba3470::t_56a8f5efbdf967 1-37
+ecommerce-demo/workspaces/demo/analytics/visualisations/revenue_trend_over_time.yaml
+  s_e4ff97e1ba3470::t_32b66b49fecafa 1-43
+ecommerce-demo/workspaces/demo/analytics/visualisations/sales_conversion_rate.yaml
+  s_e4ff97e1ba3470::t_f974ff6b17ad83 1-37
+ecommerce-demo/workspaces/demo/analytics/visualisations/sales_details.yaml
+  s_e4ff97e1ba3470::t_367671b0854ba4 1-39
+ecommerce-demo/workspaces/demo/analytics/visualisations/sales_performance_by_product_category_over_time.yaml
+  s_e4ff97e1ba3470::t_ae5eb777c72483 1-40
+ecommerce-demo/workspaces/demo/analytics/visualisations/sales_to_net_revenue_breakdown.yaml
+  s_e4ff97e1ba3470::t_0be772946a1883 1-54
+ecommerce-demo/workspaces/demo/analytics/visualisations/top_10_customers_by_revenue.yaml
+  s_e4ff97e1ba3470::t_d9f9e182d6bc17 1-40
+ecommerce-demo/workspaces/demo/analytics/visualisations/top_10_customers_by_revenue_details.yaml
+  s_e4ff97e1ba3470::t_8c45da18e32d59 1-78
+ecommerce-demo/workspaces/demo/analytics/visualisations/top_5_states_by_number_of_orders.yaml
+  s_e4ff97e1ba3470::t_11269527568b6e 1-42
+ecommerce-demo/workspaces/demo/analytics/visualisations/top_products_by_gross_profit.yaml
+  s_e4ff97e1ba3470::t_9e1e7e6684f646 1-35
+ecommerce-demo/workspaces/demo/analytics/visualisations/top_sold_products.yaml
+  s_e4ff97e1ba3470::t_3079c43fc5ef43 1-35
+ecommerce-demo/workspaces/demo/analytics/visualisations/total_net_sales_current_vs_last_year.yaml
+  s_e4ff97e1ba3470::t_805714c6ed66d1 1-54
+ecommerce-demo/workspaces/demo/analytics/visualisations/total_sales_breakdown.yaml
+  s_e4ff97e1ba3470::t_1a9b470d214411 1-66
+ecommerce-demo/workspaces/demo/analytics/visualisations/total_sales_over_time.yaml
+  s_e4ff97e1ba3470::t_3346359d0d3dc8 1-37
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "80b02fb7e52547a59bce09db0d0fbf1b26f31649",
+  "prompts": {},
+  "sessions": {
+    "s_e4ff97e1ba3470": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "27b85418-6546-4687-99c6-812ea3d750b0",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "xMort <petr.dolejsi@gooddata.com>"
+    }
+  }
+}
