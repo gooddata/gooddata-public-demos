@@ -1,0 +1,15 @@
+# The attribute hierarchy is a user-defined list of attributes. This list determines the order 
+# in which subsequent attributes are revealed in a visualization during the drill-down process. 
+# Attributes lower in this hierarchy are automatically filtered based on the values selected from the higher-level attributes.
+# Read more about attribute hierarchies:
+# https://www.gooddata.com/docs/cloud/create-dashboards/drilling-in-dashboards/set-drill-down/
+
+type: attribute_hierarchy
+id: 58c19264-1352-49e1-85bc-6802cf3b8dc3
+
+title: Location Hierarchy
+
+attributes:
+  - attribute/customer_country
+  - attribute/customer_state
+  - attribute/customer_city

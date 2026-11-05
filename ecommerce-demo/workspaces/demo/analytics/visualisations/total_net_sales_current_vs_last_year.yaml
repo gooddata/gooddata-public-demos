@@ -1,0 +1,54 @@
+# A visualization is a visual representation of a user's analytical view of the data.
+# You build visualizations from metrics, attributes, and optionally filters that are combined in a way to visualize a particular aspect of your data.
+# The visualizations are executed over and over as fresh data gets loaded.
+# Interpreting the content of a visualization is up to the user (the consumer of the visualization).
+# Read more about visualisations:
+# https://www.gooddata.com/developers/cloud-native/doc/cloud/create-visualizations/concepts/visualization/
+
+type: column_chart
+id: total_net_sales_current_vs_last_year
+
+title: "Total Net Sales: Current vs. Last Year"
+description: Tracks daily net sales over the past 12 months and compares them to the same period in the previous year, helping identify growth patterns, seasonal shifts, and performance trends.
+
+query:
+  fields:
+    442792c638df4c0283af94d95a1d3612_pop:
+      title: Previous period
+      type: PREVIOUS_YEAR
+      date_filter: date
+      using: 442792c638df4c0283af94d95a1d3612
+    442792c638df4c0283af94d95a1d3612:
+      title: Current period
+      using: metric/net_sales
+    bbc213b8c5c643e5a31a69143280f16c:
+      title: Difference between periods
+      operator: DIFFERENCE
+      using:
+        - 442792c638df4c0283af94d95a1d3612
+        - 442792c638df4c0283af94d95a1d3612_pop
+    1b9548824b3d4ade9666659cf8cda074: label/date.weekOfYear
+
+  filter_by:
+    date_month:
+      type: date_filter
+      granularity: MONTH
+      from: -11
+      to: 0
+      using: date
+
+metrics:
+  - 442792c638df4c0283af94d95a1d3612_pop
+  - 442792c638df4c0283af94d95a1d3612
+  - field: bbc213b8c5c643e5a31a69143280f16c
+    format: "#,##0.00"
+
+view_by:
+  - 1b9548824b3d4ade9666659cf8cda074
+
+config:
+  colors:
+    442792c638df4c0283af94d95a1d3612: 6
+    bbc213b8c5c643e5a31a69143280f16c: 1
+  xaxis_rotation: "0"
+  xaxis_visible: true

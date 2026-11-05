@@ -1,0 +1,33 @@
+# A visualization is a visual representation of a user's analytical view of the data.
+# You build visualizations from metrics, attributes, and optionally filters that are combined in a way to visualize a particular aspect of your data.
+# The visualizations are executed over and over as fresh data gets loaded.
+# Interpreting the content of a visualization is up to the user (the consumer of the visualization).
+# Read more about visualisations:
+# https://www.gooddata.com/developers/cloud-native/doc/cloud/create-visualizations/concepts/visualization/
+
+type: headline_chart
+id: customer_retention_rate
+
+title: Customer Retention Rate
+description: Shows the monthly customer retention rate compared to the previous period, highlighting performance changes over time
+
+query:
+  fields:
+    0b28ab87a0b947ba840501b2874dbde4: metric/customer_retention_rate
+    0b28ab87a0b947ba840501b2874dbde4_previous_period:
+      title: Previous period
+      type: PREVIOUS_PERIOD
+      date_filter: date
+      using: 0b28ab87a0b947ba840501b2874dbde4
+
+  filter_by:
+    date_month:
+      type: date_filter
+      granularity: MONTH
+      from: 0
+      to: 0
+      using: date
+
+metrics:
+  - 0b28ab87a0b947ba840501b2874dbde4
+  - 0b28ab87a0b947ba840501b2874dbde4_previous_period

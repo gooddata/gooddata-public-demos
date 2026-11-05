@@ -1,0 +1,39 @@
+# A visualization is a visual representation of a user's analytical view of the data.
+# You build visualizations from metrics, attributes, and optionally filters that are combined in a way to visualize a particular aspect of your data.
+# The visualizations are executed over and over as fresh data gets loaded.
+# Interpreting the content of a visualization is up to the user (the consumer of the visualization).
+# Read more about visualisations:
+# https://www.gooddata.com/developers/cloud-native/doc/cloud/create-visualizations/concepts/visualization/
+
+type: headline_chart
+id: average_sales_per_customer
+
+title: Average Sales per Customer
+description: Tracks the average revenue generated per customer this period, with comparison to the previous period to monitor growth in customer value.
+
+query:
+  fields:
+    5d0ce2b953c9471199c8293770cc19db:
+      title: Sales per customer
+      using: metric/arpu
+    5d0ce2b953c9471199c8293770cc19db_previous_period:
+      title: Previous period
+      type: PREVIOUS_PERIOD
+      date_filter: date
+      using: 5d0ce2b953c9471199c8293770cc19db
+
+  filter_by:
+    date_month:
+      type: date_filter
+      granularity: MONTH
+      from: 0
+      to: 0
+      using: date
+
+metrics:
+  - 5d0ce2b953c9471199c8293770cc19db
+  - 5d0ce2b953c9471199c8293770cc19db_previous_period
+
+config:
+  indicator_arrow: true
+  label_conditional: true

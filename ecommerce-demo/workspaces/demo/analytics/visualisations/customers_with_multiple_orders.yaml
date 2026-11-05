@@ -1,0 +1,33 @@
+# A visualization is a visual representation of a user's analytical view of the data.
+# You build visualizations from metrics, attributes, and optionally filters that are combined in a way to visualize a particular aspect of your data.
+# The visualizations are executed over and over as fresh data gets loaded.
+# Interpreting the content of a visualization is up to the user (the consumer of the visualization).
+# Read more about visualisations:
+# https://www.gooddata.com/developers/cloud-native/doc/cloud/create-visualizations/concepts/visualization/
+
+type: headline_chart
+id: customers_with_multiple_orders
+
+title: Customers with Multiple Orders
+description: Headline that shows the number of customers with more than one order in the current quarter and in the previous quarter. Supports analysis of repeat customer count, identification of loyal or multi-order customers, and quarter-over-quarter comparison of customer loyalty metrics.
+
+query:
+  fields:
+    d5c013a351ca42318c1d9d81a81d32ff: metric/customers_with_multiple_orders
+    d5c013a351ca42318c1d9d81a81d32ff_previous_period:
+      title: Previous period
+      type: PREVIOUS_PERIOD
+      date_filter: date
+      using: d5c013a351ca42318c1d9d81a81d32ff
+
+  filter_by:
+    date_quarter:
+      type: date_filter
+      granularity: QUARTER
+      from: -1
+      to: -1
+      using: date
+
+metrics:
+  - d5c013a351ca42318c1d9d81a81d32ff
+  - d5c013a351ca42318c1d9d81a81d32ff_previous_period

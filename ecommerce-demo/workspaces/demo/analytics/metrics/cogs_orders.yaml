@@ -1,0 +1,13 @@
+# A metric is a computational expression of numerical data (facts or other metrics).
+# Use MAQL to create reusable multidimensional queries that combine multiple facts and attributes.
+# Read more about MAQL:
+# https://www.gooddata.com/developers/cloud-native/doc/cloud/create-metrics/maql/
+
+type: metric
+id: cogs_orders
+
+title: COGS for Processed Orders
+description: Calculates total cost of goods sold for processed orders, aiding in pricing strategies and profit analysis.
+
+maql: SELECT SUM({fact/order_unit_cost}*{fact/order_unit_quantity}) WHERE {label/order_status} = "Processed"
+format: $#,##0.00

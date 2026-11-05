@@ -1,0 +1,36 @@
+# A visualization is a visual representation of a user's analytical view of the data.
+# You build visualizations from metrics, attributes, and optionally filters that are combined in a way to visualize a particular aspect of your data.
+# The visualizations are executed over and over as fresh data gets loaded.
+# Interpreting the content of a visualization is up to the user (the consumer of the visualization).
+# Read more about visualisations:
+# https://www.gooddata.com/developers/cloud-native/doc/cloud/create-visualizations/concepts/visualization/
+
+type: column_chart
+id: customer_activity_over_time
+
+title: Customer Activity Over Time
+description: Shows daily counts of new vs. returning customers over time. It highlights customer acquisition and retention trends, helping evaluate the balance between attracting new users and maintaining loyalty among existing one
+
+query:
+  fields:
+    7ce40a8c66e64268820ef5d67ece0a46: metric/active_customers
+    f14775c542ee4341aad961ed334eabf7: metric/number_of_orders
+    3904fc7f78874c279559ccf0e09a171f:
+      title: "# of Returns"
+      aggregation: SUM
+      using: fact/return_unit_quantity
+    eebed04fe2054d109c35bc4c34609a56:
+      title: Date
+      using: label/date.week
+
+metrics:
+  - 7ce40a8c66e64268820ef5d67ece0a46
+  - f14775c542ee4341aad961ed334eabf7
+  - field: 3904fc7f78874c279559ccf0e09a171f
+    format: "#,##0"
+
+view_by:
+  - eebed04fe2054d109c35bc4c34609a56
+
+config:
+  xaxis_name_visible: false

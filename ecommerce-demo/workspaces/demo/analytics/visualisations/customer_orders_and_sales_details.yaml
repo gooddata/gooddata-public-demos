@@ -1,0 +1,38 @@
+# A visualization is a visual representation of a user's analytical view of the data.
+# You build visualizations from metrics, attributes, and optionally filters that are combined in a way to visualize a particular aspect of your data.
+# The visualizations are executed over and over as fresh data gets loaded.
+# Interpreting the content of a visualization is up to the user (the consumer of the visualization).
+# Read more about visualisations:
+# https://www.gooddata.com/developers/cloud-native/doc/cloud/create-visualizations/concepts/visualization/
+
+type: table
+id: customer_orders_and_sales_details
+
+title: Customer Orders and Sales Details
+description: Displays customer order counts and total sales amounts, organized by country, state, and city, providing detailed insights into customer activity and revenue contributions by region.
+
+query:
+  fields:
+    74047aaaa1904be3a0f08d6cf46606b2: metric/number_of_orders
+    0442893010af41168bebbd2b18dd1b30: metric/order_amount
+    b6e6b9cd507a433997f3da4dd929cb2e: label/customer_country
+    619a8767a0624c9da9411cbdc73cd239: label/customer_state
+    a3521bb3c9584e9491cd70c0f99e4886: label/customer_city
+    f8f9f6b624cc4abeac89a060667159c2:
+      title: Customer
+      using: label/customer_name
+
+  sort_by:
+    - type: attribute_sort
+      by: b6e6b9cd507a433997f3da4dd929cb2e
+      direction: ASC
+
+metrics:
+  - 74047aaaa1904be3a0f08d6cf46606b2
+  - 0442893010af41168bebbd2b18dd1b30
+
+view_by:
+  - b6e6b9cd507a433997f3da4dd929cb2e
+  - 619a8767a0624c9da9411cbdc73cd239
+  - a3521bb3c9584e9491cd70c0f99e4886
+  - f8f9f6b624cc4abeac89a060667159c2

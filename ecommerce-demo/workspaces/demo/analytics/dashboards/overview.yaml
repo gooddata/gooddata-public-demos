@@ -1,0 +1,568 @@
+# A dashboard is a collection of visualizations that are organized into sections.
+# Because they allow filtering and other adjustments, they function as a dynamic presentation layer for your data analytics.
+# Read more about dashboards:
+# https://www.gooddata.com/docs/cloud/create-dashboards/concepts/dashboard/
+
+type: dashboard
+id: overview
+
+version: "2"
+
+title: 1. Overview
+description: Main executive dashboard with KPIs such as net sales, orders, active customers, and gross profit. Includes customer and sales insights by country and location, order fulfillment, revenue trend, and brand and product category breakdown. Organized in tabs for All Countries, US, and Canada. Suitable for high-level overview, main dashboard view, and executive summary of business performance.
+
+tabs:
+  - id: overview_tab
+    title: All Countries
+    filters:
+      0_dateFilter:
+        type: date_filter
+        granularity: QUARTER
+        from: -1
+        to: -1
+      customer_country_filter:
+        type: attribute_filter
+        using: label/customer_country
+      customer_state_filter:
+        type: attribute_filter
+        using: label/customer_state
+        parents:
+          - customer_country_filter
+      product_category_filter:
+        type: attribute_filter
+        using: label/product_category
+    sections:
+      - title: Main KPIs Overview
+        description: Highlighting overall business performance compared to the previous period.
+        widgets:
+          - id: widget_net_sales
+            visualization: net_sales_headline
+            title: Net Sales
+            columns: 3
+            rows: 10
+            date: date
+            interactions:
+              - click_on: 759c22e84d114c55aa40707b16d79d1d
+                open_visualization: sales_details
+          - id: widget_orders
+            visualization: orders_processed_headline
+            title: Orders
+            columns: 3
+            rows: 10
+            date: date
+            interactions:
+              - click_on: eb334cab51954b9f83184eead11308bc
+                open_visualization: completed_vs_canceled_orders_trend
+          - id: widget_active_customers
+            visualization: active_customers_headline
+            title: Active Customers
+            columns: 3
+            rows: 11
+            date: date
+            interactions:
+              - click_on: 13f2358c2d2040fe8849757b2a5ddddf
+                open_visualization: active_customers_by_location_geo
+              - click_on: 13f2358c2d2040fe8849757b2a5ddddf
+                open_dashboard: customers
+          - id: widget_gross_profit
+            visualization: gross_profit_headline
+            title: Gross Profit
+            columns: 3
+            rows: 10
+            date: date
+            interactions:
+              - click_on: e406fb1d6f5c472687b65b28eac4a4cb
+                open_visualization: gross_profit_trend
+              - click_on: e406fb1d6f5c472687b65b28eac4a4cb
+                open_dashboard: sales
+      - title: Customer and Sales Insights
+        description: High-level view of where orders originate, how sales and order volumes evolve over time, and the performance of customer segments and fulfillment stages.
+        widgets:
+          - container: container_customer_sales_insights
+            columns: 6
+            rows: 39
+            layout_direction: column
+            enable_section_headers: false
+            sections:
+              - widgets:
+                  - id: widget_active_customers_by_country
+                    visualization: active_customers_by_country
+                    title: Active Customers by Country
+                    columns: 6
+                    rows: 10
+                    date: date
+                    ignored_cross_filtering: true
+                  - id: widget_location_maps
+                    visualizations:
+                      - id: widget_active_customers_by_location
+                        visualization: active_customers_by_location_cities
+                        title: Active Customers by Location
+                        date: date
+                      - id: widget_orders_by_location
+                        visualization: orders_by_location_area_map
+                        title: Orders by Location (Area map)
+                        date: date
+                      - id: widget_active_customers_orders_location
+                        visualization: active_customers_and_orders_by_location
+                        title: Active Customers & Placed Orders by Location
+                        date: user_created_date
+                    columns: 6
+                    rows: 28
+          - container: container_search_to_sale
+            columns: 6
+            rows: 39
+            layout_direction: column
+            enable_section_headers: false
+            sections:
+              - widgets:
+                  - id: widget_from_search_to_sale
+                    visualization: from_search_to_sale_active_customers_vs_orders
+                    title: "From Search to Sale: Active Customers vs. Orders Placed"
+                    columns: 6
+                    rows: 18
+                    date: date
+                    zoom_data: true
+                  - container: container_net_sales_customer_breakdown
+                    columns: 6
+                    rows: 20
+                    layout_direction: row
+                    enable_section_headers: false
+                    sections:
+                      - widgets:
+                          - id: widget_net_sales_share_top_5_city
+                            visualization: net_sales_share_by_top_5_city
+                            title: Net Sales Share by Top 5 City
+                            columns: 3
+                            rows: 20
+                            date: date
+                          - id: widget_customer_breakdown
+                            visualization: customers_breakdown
+                            title: Customer Breakdown
+                            columns: 3
+                            rows: 20
+                            date: date
+      - title: Orders Breakdown
+        description: Shows the order fulfillment flow and revenue trends over time.
+        widgets:
+          - id: widget_order_fulfillment_funnel
+            visualization: order_fulfillment_funnel
+            title: Order Fulfillment Funnel
+            columns: 3
+            rows: 17
+            date: date
+          - id: widget_revenue_trend
+            visualization: revenue_trend_over_time
+            title: Revenue Trend Over Time
+            columns: 9
+            rows: 20
+            date: date
+            zoom_data: true
+            ignored_drill_downs:
+              - hierarchy: 72a9b29c-d982-4a9d-b226-ebcd060801dc
+                on: attribute/date.day
+      - widgets:
+          - id: widget_brand_performance
+            visualization: brand_performance_segments_sales_vs_orders
+            title: "Brand Performance Segments: Sales vs. Orders"
+            columns: 7
+            rows: 20
+            date: date
+            zoom_data: true
+          - id: widget_brand_breakdown_content
+            content: |-
+              ### Brand Breakdown ###
+              ---
+
+              **🟢 Leaders**
+
+              >> Brands with outstanding sales and order volumes — clear market leaders.
+              ---
+              **⚫ Challengers**
+
+              >> Brands with solid sales and orders, showing strong momentum and potential to move into leadership.
+              ---
+              **⚪ Emerging Players**
+
+              >> Brands with moderate performance, steadily growing but not yet top-tier.
+              ---
+              **🔵 Niche Brands**
+
+              >> Brands with relatively low sales and order counts, often focused on specific audiences or product niches.
+            columns: 5
+            rows: 20
+      - widgets:
+          - container: container_product_category_breakdown
+            columns: 4
+            rows: 47
+            layout_direction: column
+            enable_section_headers: true
+            sections:
+              - title: Product Category Breakdown
+                description: Surfaces the most popular product categories by order volume and net sales, enabling comparison of category performance and identification of leading categories.
+                widgets:
+                  - id: widget_order_volume_category_rating
+                    visualization: order_value_by_category_and_customer_rating
+                    title: Order Volume by Category and Rating
+                    columns: 4
+                    rows: 20
+                    date: date
+                    interactions:
+                      - click_on: bdfd0781ec444582a8fe10ce3414b097
+                        open_dashboard: products
+                  - id: widget_net_sales_by_category
+                    visualization: net_sales_by_product_category
+                    title: Net Sales by Product Category
+                    columns: 4
+                    rows: 22
+                    date: date
+                    interactions:
+                      - click_on: 100691d163aa4d53be0fc7e1a048190b
+                        open_dashboard: products
+          - container: container_product_breakdown
+            columns: 8
+            rows: 47
+            layout_direction: column
+            enable_section_headers: true
+            sections:
+              - title: Product Breakdown
+                description: Identifies the best-selling products and brands by net sales and order volume, supporting product performance comparison and top-seller analysis.
+                widgets:
+                  - id: widget_best_selling_brands
+                    visualization: best_selling_product_brands
+                    title: Best-selling Product Brands
+                    columns: 8
+                    rows: 20
+                    date: date
+                    zoom_data: true
+                  - id: widget_product_details
+                    visualization: product_details
+                    title: Product Details
+                    columns: 8
+                    rows: 22
+                    date: date
+                    interactions:
+                      - click_on: 1c4d84d9ffbd4afba4100087c0832b3d
+                        open_dashboard: sales
+  - id: us_tab
+    title: US
+    filters:
+      0_dateFilter:
+        type: date_filter
+        granularity: QUARTER
+        from: -1
+        to: -1
+      customer_country_1_attributeFilter:
+        type: attribute_filter
+        using: label/customer_country
+        state:
+          include:
+            - United States
+        mode: hidden
+      customer_state_2_attributeFilter:
+        type: attribute_filter
+        using: label/customer_state
+        parents:
+          - customer_country_1_attributeFilter
+      product_category_3_attributeFilter:
+        type: attribute_filter
+        using: label/product_category
+      product_brand_4_attributeFilter:
+        type: attribute_filter
+        using: label/product_brand
+        parents:
+          - product_category_3_attributeFilter
+    sections:
+      - widgets:
+          - container: container_us_kpis
+            columns: 6
+            rows: 23
+            layout_direction: row
+            enable_section_headers: true
+            sections:
+              - title: Main KPIs Overview
+                description: Highlighting overall business performance compared to the previous period.
+                widgets:
+                  - id: widget_us_net_sales
+                    visualization: net_sales_headline
+                    title: Net Sales
+                    columns: 3
+                    rows: 11
+                    date: date
+                    interactions:
+                      - click_on: 759c22e84d114c55aa40707b16d79d1d
+                        open_visualization: overall_revenue_forecast
+                  - id: widget_us_orders
+                    visualization: orders_processed_headline
+                    title: Orders
+                    columns: 3
+                    rows: 11
+                    date: date
+                    interactions:
+                      - click_on: eb334cab51954b9f83184eead11308bc
+                        open_visualization: order_details
+                  - id: widget_us_gross_profit
+                    visualization: gross_profit_headline
+                    title: Gross Profit
+                    columns: 3
+                    rows: 11
+                    date: date
+                    interactions:
+                      - click_on: e406fb1d6f5c472687b65b28eac4a4cb
+                        open_visualization: top_products_by_gross_profit
+                  - id: widget_us_avg_sales_per_customer
+                    visualization: average_sales_per_customer
+                    title: Average Sales per Customer
+                    columns: 3
+                    rows: 11
+                    date: date
+                    interactions:
+                      - click_on: 5d0ce2b953c9471199c8293770cc19db
+                        open_visualization: customer_orders_and_sales_details
+          - container: container_us_sales_breakdown
+            columns: 6
+            rows: 23
+            layout_direction: column
+            enable_section_headers: true
+            sections:
+              - title: Sales Breakdown
+                description: Analyze sales performance in general.
+                widgets:
+                  - id: widget_us_sales_goal
+                    visualization: net_sales_goal
+                    title: false
+                    columns: 6
+                    rows: 6
+                    date: date
+                  - id: widget_us_revenue_trend
+                    visualization: revenue_trend_over_time
+                    title: Revenue Trend Over Time
+                    columns: 6
+                    rows: 17
+                    date: date
+      - title: Product Breakdown
+        description: Provides detailed insights into product-level performance, including pricing, costs, sales trends, ratings, and category-level profitability over time.
+        widgets:
+          - container: container_us_product_category
+            columns: 4
+            rows: 44
+            layout_direction: row
+            enable_section_headers: false
+            sections:
+              - widgets:
+                  - id: widget_us_order_volume_category
+                    visualization: order_value_by_category_and_customer_rating
+                    title: Order Volume by Category and Rating
+                    columns: 4
+                    rows: 22
+                    date: date
+                  - id: widget_us_net_sales_gross_profit_tabs
+                    visualizations:
+                      - id: widget_us_net_sales_by_category_tab
+                        visualization: net_sales_by_product_category
+                        title: Net Sales by Product Category
+                        date: date
+                      - id: widget_us_gross_profit_by_category_tab
+                        visualization: gross_profit_by_product_category
+                        title: Gross Profit by Product Category
+                        date: date
+                    columns: 4
+                    rows: 22
+          - container: container_us_product_location
+            columns: 8
+            rows: 44
+            layout_direction: row
+            enable_section_headers: false
+            sections:
+              - widgets:
+                  - id: widget_us_net_sales_share_city
+                    visualization: net_sales_share_by_top_5_city
+                    title: Net Sales Share by Top 5 City
+                    columns: 2
+                    rows: 22
+                    date: date
+                  - id: widget_us_orders_by_location
+                    visualization: orders_by_location_area_map
+                    title: Orders by Location (Area map)
+                    columns: 6
+                    rows: 22
+                    date: date
+                  - id: widget_us_order_volume_over_time
+                    visualization: order_volume_over_time
+                    title: Order Volume Over Time
+                    columns: 8
+                    rows: 22
+                    date: date
+      - title: Sales Details
+        widgets:
+          - id: widget_us_product_details_categories
+            visualization: product_details_by_categories_and_brands
+            title: Product Details by Product Categories & Brands
+            columns: 7
+            rows: 28
+            date: date
+          - id: widget_us_product_performance_trends
+            visualization: product_performance_trends
+            title: Product Performance Trends
+            columns: 5
+            rows: 28
+            date: date
+  - id: canada_tab
+    title: Canada
+    filters:
+      0_dateFilter:
+        type: date_filter
+        granularity: QUARTER
+        from: -1
+        to: -1
+      customer_country_1_attributeFilter:
+        type: attribute_filter
+        using: label/customer_country
+        state:
+          include:
+            - Canada
+        mode: hidden
+      product_category_2_attributeFilter:
+        type: attribute_filter
+        using: label/product_category
+      product_brand_3_attributeFilter:
+        type: attribute_filter
+        using: label/product_brand
+        parents:
+          - product_category_2_attributeFilter
+    sections:
+      - widgets:
+          - container: container_canada_kpis
+            columns: 6
+            rows: 24
+            layout_direction: row
+            enable_section_headers: true
+            sections:
+              - title: Main KPI Overview
+                description: Highlighting overall business performance compared to the previous period.
+                widgets:
+                  - id: widget_canada_net_sales
+                    visualization: net_sales_headline
+                    title: Net Sales
+                    columns: 3
+                    rows: 11
+                    date: date
+                    interactions:
+                      - click_on: 759c22e84d114c55aa40707b16d79d1d
+                        open_visualization: overall_revenue_forecast
+                  - id: widget_canada_orders
+                    visualization: orders_processed_headline
+                    title: Orders
+                    columns: 3
+                    rows: 11
+                    date: date
+                    interactions:
+                      - click_on: eb334cab51954b9f83184eead11308bc
+                        open_visualization: order_details
+                  - id: widget_canada_gross_profit
+                    visualization: gross_profit_headline
+                    title: Gross Profit
+                    columns: 3
+                    rows: 11
+                    date: date
+                    interactions:
+                      - click_on: e406fb1d6f5c472687b65b28eac4a4cb
+                        open_visualization: top_products_by_gross_profit
+                  - id: widget_canada_avg_sales_per_customer
+                    visualization: average_sales_per_customer
+                    title: Average Sales per Customer
+                    columns: 3
+                    rows: 11
+                    date: date
+                    interactions:
+                      - click_on: 5d0ce2b953c9471199c8293770cc19db
+                        open_visualization: customer_orders_and_sales_details
+          - container: container_canada_sales_breakdown
+            columns: 6
+            rows: 24
+            layout_direction: column
+            enable_section_headers: true
+            sections:
+              - title: Sales Breakdown
+                description: |+
+                  Analyze sales performance in general.
+
+                widgets:
+                  - id: widget_canada_sales_goal
+                    visualization: net_sales_goal
+                    title: false
+                    columns: 6
+                    rows: 6
+                    date: date
+                  - id: widget_canada_revenue_trend
+                    visualization: revenue_trend_over_time
+                    title: Revenue Trend Over Time
+                    columns: 6
+                    rows: 16
+                    date: date
+      - title: Product Breakdown
+        description: Provides detailed insights into product-level performance, including pricing, costs, sales trends, ratings, and category-level profitability over time.
+        widgets:
+          - container: container_canada_product_category
+            columns: 4
+            rows: 44
+            layout_direction: column
+            enable_section_headers: false
+            sections:
+              - widgets:
+                  - id: widget_canada_order_volume_category
+                    visualization: order_value_by_category_and_customer_rating
+                    title: Order Volume by Category and Rating
+                    columns: 4
+                    rows: 22
+                    date: date
+                  - id: widget_canada_net_sales_gross_profit_tabs
+                    visualizations:
+                      - id: widget_canada_net_sales_by_category_tab
+                        visualization: net_sales_by_product_category
+                        title: Net Sales by Product Category
+                        date: date
+                      - id: widget_canada_gross_profit_by_category_tab
+                        visualization: gross_profit_by_product_category
+                        title: Gross Profit by Product Category
+                        date: date
+                    columns: 4
+                    rows: 22
+          - container: container_canada_product_location
+            columns: 8
+            rows: 44
+            layout_direction: row
+            enable_section_headers: false
+            sections:
+              - widgets:
+                  - id: widget_canada_net_sales_share_city
+                    visualization: net_sales_share_by_top_5_city
+                    title: Net Sales Share by Top 5 City
+                    columns: 2
+                    rows: 22
+                    date: date
+                  - id: widget_canada_orders_by_location
+                    visualization: orders_by_location_area_map
+                    title: Orders by Location (Area map)
+                    columns: 6
+                    rows: 22
+                    date: date
+                  - id: widget_canada_order_volume_over_time
+                    visualization: order_volume_over_time
+                    title: Order Volume Over Time
+                    columns: 8
+                    rows: 22
+                    date: date
+      - title: Sales Details
+        widgets:
+          - id: widget_canada_product_details_categories
+            visualization: product_details_by_categories_and_brands
+            title: Product Details by Product Categories & Brands
+            columns: 6
+            rows: 26
+            date: date
+          - id: widget_canada_product_performance_trends
+            visualization: product_performance_trends
+            title: Product Performance Trends
+            columns: 6
+            rows: 17
+            date: date

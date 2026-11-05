@@ -1,0 +1,28 @@
+# A visualization is a visual representation of a user's analytical view of the data.
+# You build visualizations from metrics, attributes, and optionally filters that are combined in a way to visualize a particular aspect of your data.
+# The visualizations are executed over and over as fresh data gets loaded.
+# Interpreting the content of a visualization is up to the user (the consumer of the visualization).
+# Read more about visualisations:
+# https://www.gooddata.com/developers/cloud-native/doc/cloud/create-visualizations/concepts/visualization/
+
+type: line_chart
+id: overall_revenue_forecast
+
+title: Overall Revenue Forecast
+description: Line chart of daily net sales over time with a 7-day forecast extension. Shows historical net sales trend and projected values for the next week. Supports revenue forecasting, net sales trend and projection analysis, and short-term sales projection for planning.
+
+query:
+  fields:
+    0282c89727d946a5894408ff0ec5d08a: metric/net_sales
+    201cb9fad4504784abd75c9e60198a3f: label/date.day
+
+metrics:
+  - 0282c89727d946a5894408ff0ec5d08a
+
+view_by:
+  - 201cb9fad4504784abd75c9e60198a3f
+
+config:
+  forecast_enabled: true
+  forecast_confidence: 0.7
+  forecast_period: 7

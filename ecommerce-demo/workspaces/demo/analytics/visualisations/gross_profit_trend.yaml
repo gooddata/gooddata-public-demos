@@ -1,0 +1,29 @@
+# A visualization is a visual representation of a user's analytical view of the data.
+# You build visualizations from metrics, attributes, and optionally filters that are combined in a way to visualize a particular aspect of your data.
+# The visualizations are executed over and over as fresh data gets loaded.
+# Interpreting the content of a visualization is up to the user (the consumer of the visualization).
+# Read more about visualisations:
+# https://www.gooddata.com/developers/cloud-native/doc/cloud/create-visualizations/concepts/visualization/
+
+type: line_chart
+id: gross_profit_trend
+
+title: Gross Profit Trend
+description: Displays the daily gross profit values over the past month.
+
+query:
+  fields:
+    157e5232d0014c65ad3be170c2fea0e6: metric/gross_profit
+    e5d6cafa6615451e87a42133eef8050f:
+      title: Date
+      using: label/date.week
+
+metrics:
+  - 157e5232d0014c65ad3be170c2fea0e6
+
+view_by:
+  - e5d6cafa6615451e87a42133eef8050f
+
+config:
+  forecast_enabled: true
+  forecast_period: 5
