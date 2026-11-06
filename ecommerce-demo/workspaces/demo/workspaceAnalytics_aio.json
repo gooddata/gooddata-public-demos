@@ -2912,11 +2912,11 @@
       {
         "content": {
           "format": "#,##0",
-          "maql": "SELECT {metric/active_customers} - {metric/return_customers_monthly}"
+          "maql": "SELECT {metric/active_customers} - IFNULL({metric/return_customers_monthly},0)"
         },
-        "description": "Number of new customers. Needs to be broken down by date Month/Year",
+        "description": "Customers whose first order falls in the month. Valid only when broken down by Date - Month/Year; not by Customer created date.",
         "id": "new_customers_monthly",
-        "title": "New Customers Monthly"
+        "title": "New Customers by Order Month"
       },
       {
         "content": {
