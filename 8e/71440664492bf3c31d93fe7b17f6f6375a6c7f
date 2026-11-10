@@ -1,0 +1,31 @@
+ecommerce-demo/workspaces/demo/analytics/visualisations/bottom_10_customers_by_revenue_details.yaml
+  s_e4ff97e1ba3470::t_61b442fe769937 12
+ecommerce-demo/workspaces/demo/analytics/visualisations/completed_vs_canceled_orders_trend.yaml
+  s_e4ff97e1ba3470::t_0be3527e8d5609 12
+ecommerce-demo/workspaces/demo/analytics/visualisations/gross_profit_trend.yaml
+  s_e4ff97e1ba3470::t_1cca1bf4dc8547 12
+ecommerce-demo/workspaces/demo/analytics/visualisations/orders_by_location_area_map.yaml
+  s_e4ff97e1ba3470::t_8f36ca4e5aa228 12
+ecommerce-demo/workspaces/demo/analytics/visualisations/top_10_customers_by_revenue_details.yaml
+  s_e4ff97e1ba3470::t_b4023c71481c2d 12
+ecommerce-demo/workspaces/demo/analytics/visualisations/total_net_sales_current_vs_last_year.yaml
+  s_e4ff97e1ba3470::t_750e7ddadc897b 12
+ecommerce-demo/workspaces/demo/workspaceAnalytics.json
+  s_e4ff97e1ba3470::t_ca6712505ff0e9 9733,10067,11145,12066,14235,14604
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "8e71440664492bf3c31d93fe7b17f6f6375a6c7f",
+  "prompts": {},
+  "sessions": {
+    "s_e4ff97e1ba3470": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "27b85418-6546-4687-99c6-812ea3d750b0",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "xMort <petr.dolejsi@gooddata.com>"
+    }
+  }
+}
