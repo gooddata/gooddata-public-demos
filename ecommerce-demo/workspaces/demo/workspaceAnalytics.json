@@ -9730,7 +9730,7 @@
           ],
           "properties": {}
         },
-        "description": "Highlights the bottom 10 customers ranked by total net sales, offering a clear view into the least valuable buyers by revenue contribution.",
+        "description": "Lists the bottom 10 customers ranked by total sales in the previous quarter, with their orders and the change against the period before.",
         "id": "bottom_10_customers_by_revenue_details",
         "title": "Bottom 10 Customers by Revenue (Details)"
       },
@@ -10064,7 +10064,7 @@
             }
           }
         },
-        "description": "Tracks the monthly trend of completed (processed) vs. canceled orders. It helps identify fluctuations in order fulfillment and highlights periods of increased cancellations or consistent completions.",
+        "description": "Tracks the weekly trend of completed (processed) vs. canceled orders. It helps identify fluctuations in order fulfillment and highlights periods of increased cancellations or consistent completions.",
         "id": "completed_vs_canceled_orders_trend",
         "title": "Completed vs. Canceled Orders Trend"
       },
@@ -11142,7 +11142,7 @@
             }
           }
         },
-        "description": "Displays the daily gross profit values over the past month.",
+        "description": "Displays weekly gross profit values with a five-week forecast.",
         "id": "gross_profit_trend",
         "title": "Gross Profit Trend"
       },
@@ -12063,7 +12063,7 @@
             }
           }
         },
-        "description": "Displays the distribution of active customers by country and state, allowing quick identification of key markets and regions with the highest customer concentration",
+        "description": "Displays the distribution of orders by state, allowing quick identification of key markets and regions with the highest order volume.",
         "id": "orders_by_location_area_map",
         "title": "Orders by Location (Area map)"
       },
@@ -14232,7 +14232,7 @@
             }
           }
         },
-        "description": "Highlights the top 10 customers ranked by total net sales, offering a clear view into the most valuable buyers by revenue contribution.",
+        "description": "Lists the top 10 customers ranked by total sales in the previous quarter, with their orders and the change against the period before.",
         "id": "top_10_customers_by_revenue_details",
         "title": "Top 10 Customers by Revenue (Details)"
       },
@@ -14601,7 +14601,7 @@
             }
           }
         },
-        "description": "Tracks daily net sales over the past 12 months and compares them to the same period in the previous year, helping identify growth patterns, seasonal shifts, and performance trends.",
+        "description": "Tracks weekly net sales over the past 12 months and compares them to the same period in the previous year, helping identify growth patterns, seasonal shifts, and performance trends.",
         "id": "total_net_sales_current_vs_last_year",
         "title": "Total Net Sales: Current vs. Last Year"
       },
