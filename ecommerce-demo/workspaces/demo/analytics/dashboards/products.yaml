@@ -1,0 +1,231 @@
+# A dashboard is a collection of visualizations that are organized into sections.
+# Because they allow filtering and other adjustments, they function as a dynamic presentation layer for your data analytics.
+# Read more about dashboards:
+# https://www.gooddata.com/docs/cloud/create-dashboards/concepts/dashboard/
+
+type: dashboard
+id: products
+
+version: "2"
+
+title: 4. Products
+description: Dashboard focused on product analytics, including net sales, orders, gross profit, and revenue per customer. Provides sales-to-net-revenue breakdown, order volume over time, brand profitability, product performance trends, revenue forecast, gross profit by category, top products, pricing breakdown, and price elasticity by brand. Suitable for products overview, product analytics, and product performance analysis.
+
+filter_views: false
+
+sections:
+  - title: Main Product KPIs
+    description: Track key product performance KPIs by comparing the current period with the previous one.
+    widgets:
+      - id: widget_net_sales
+        visualization: net_sales_headline
+        title: Net Sales
+        columns: 3
+        rows: 10
+        date: date
+        interactions:
+          - click_on: 759c22e84d114c55aa40707b16d79d1d
+            open_visualization: sales_details
+      - id: widget_net_orders
+        visualization: orders_processed_headline
+        title: Net Orders
+        columns: 3
+        rows: 10
+        date: date
+        interactions:
+          - click_on: eb334cab51954b9f83184eead11308bc
+            open_visualization: order_details
+      - id: widget_gross_profit
+        visualization: gross_profit_headline
+        title: Gross Profit
+        columns: 3
+        rows: 10
+        date: date
+        interactions:
+          - click_on: e406fb1d6f5c472687b65b28eac4a4cb
+            open_visualization: gross_profit_trend
+      - id: widget_revenue_per_customer
+        visualization: average_sales_per_customer
+        title: Revenue per Customer
+        columns: 3
+        rows: 10
+        date: date
+        interactions:
+          - click_on: 5d0ce2b953c9471199c8293770cc19db
+            open_visualization: customer_orders_and_sales_details
+  - title: Sales, Customers & Profitability
+    description: Provides a consolidated view of key sales, customer, and profitability metrics to track performance, identify trends, and support decision-making.
+    widgets:
+      - id: widget_sales_to_net_revenue
+        visualization: sales_to_net_revenue_breakdown
+        title: Sales to Net Revenue Breakdown
+        columns: 5
+        rows: 20
+        date: date
+      - id: widget_from_search_to_sale
+        visualization: from_search_to_sale_active_customers_vs_orders
+        title: "From Search to Sale: Active Customers vs. Orders Placed"
+        columns: 7
+        rows: 17
+        date: date
+        zoom_data: true
+      - id: widget_order_volume_over_time
+        visualization: order_volume_over_time
+        title: Order Volume Over Time
+        columns: 7
+        rows: 20
+        date: date
+      - id: widget_brand_profitability
+        visualization: brand_profitability_by_price_and_order_volume
+        title: Brand Profitability by Price and Order Volume
+        columns: 5
+        rows: 22
+        date: date
+        zoom_data: true
+        interactions:
+          - click_on: 458f2a55e1ca457883ff36141c84dc48
+            open_visualization: product_details_by_categories_and_brands
+  - title: Product Performance Overview
+    description: Provides detailed insights into product-level performance, including pricing, costs, sales trends, ratings, and category-level profitability over time.
+    widgets:
+      - id: widget_product_performance_trends
+        visualization: product_performance_trends
+        title: Product Performance Trends
+        columns: 6
+        rows: 50
+        date: date
+      - container: container_product_performance
+        columns: 6
+        rows: 52
+        layout_direction: column
+        enable_section_headers: false
+        sections:
+          - widgets:
+              - id: widget_revenue_forecast_tabs
+                visualizations:
+                  - id: widget_overall_revenue_forecast_tab
+                    visualization: overall_revenue_forecast
+                    title: Overall Revenue Forecast
+                    date: date
+                    zoom_data: true
+                    ignored_drill_downs:
+                      - template: default
+                        on: attribute/date.day
+                      - hierarchy: 72a9b29c-d982-4a9d-b226-ebcd060801dc
+                        on: attribute/date.day
+                  - id: widget_sales_performance_tab
+                    visualization: sales_performance_by_product_category_over_time
+                    title: Sales Performance by Product Category Over Time
+                    date: date
+                    zoom_data: true
+                    ignored_drill_downs:
+                      - hierarchy: ad14f0ed-9ba5-44ff-bd35-46ac2775a7ea
+                        on: attribute/product_category
+                columns: 6
+                rows: 19
+              - id: widget_gross_profit_by_category
+                visualization: gross_profit_by_product_category
+                title: Gross Profit by Product Category
+                columns: 6
+                rows: 14
+                date: date
+                interactions:
+                  - click_on: 3e7c2309e28c4d4aba6ef58eff63b8b1
+                    open_visualization: product_details_by_categories_and_brands
+              - id: widget_top_products_tabs
+                visualizations:
+                  - id: widget_top_sold_products_tab
+                    visualization: top_sold_products
+                    title: Top Sold Products
+                    date: date
+                  - id: widget_top_products_gross_profit_tab
+                    visualization: top_products_by_gross_profit
+                    title: Top Products by Gross Profit
+                    date: date
+                columns: 6
+                rows: 19
+  - title: Product Pricing & Demand Sensitivity
+    description: Analyzes product pricing structures and price elasticity of demand by brand, highlighting cost–price relationships and customer responsiveness to price changes.
+    widgets:
+      - container: container_product_pricing
+        columns: 5
+        rows: 32
+        layout_direction: column
+        enable_section_headers: false
+        sections:
+          - widgets:
+              - id: widget_product_pricing_breakdown
+                visualization: product_pricing_breakdown
+                title: Product Pricing Breakdown
+                columns: 5
+                rows: 28
+                date: date
+              - id: widget_pricing_legend
+                content: 🟣 Premium Margin Products, 🔵 Core Products, 🟢 High-End Products, ⚫ Budget Products
+                columns: 5
+                rows: 4
+      - container: container_price_elasticity
+        columns: 7
+        rows: 32
+        layout_direction: column
+        enable_section_headers: false
+        sections:
+          - widgets:
+              - id: widget_price_elasticity_by_brand
+                visualization: price_elasticity_by_product_brand
+                title: Price Elasticity by Product Brand
+                columns: 7
+                rows: 21
+                date: date
+                zoom_data: true
+              - id: widget_elasticity_legend
+                content: |-
+                  ### Price Elasticity of Demand (PED) Breakdown
+                  ---
+                  **Perfectly Inelastic (=0)**: Demand does not change at all with price
+
+                  ---
+                  **Inelastic (0<PED<1)**: Demand changes less than price; customers are not very sensitive to price
+
+                  ---
+                  **Unit Elastic (=1)**: Demand changes proportionally with price
+
+                  ---
+                  **Elastic  (1<PED<∞)**: Demand changes more than price; customers are price-sensitive
+
+                  ---
+                  **Perfectly Elastic (= ∞)**: Even tiny price changes cause demand to drop to zero
+                columns: 7
+                rows: 11
+  - title: Product Details
+    widgets:
+      - id: widget_product_details_tabs
+        visualizations:
+          - id: widget_product_performance_returns_tab
+            visualization: product_performance_by_orders_and_returns
+            title: Product Performance by Orders & Returns
+            date: date
+          - id: widget_product_details_categories_tab
+            visualization: product_details_by_categories_and_brands
+            title: Product Details by Product Categories & Brands
+            date: date
+        columns: 12
+        rows: 22
+
+filters:
+  0_dateFilter:
+    type: date_filter
+    granularity: QUARTER
+    from: -1
+    to: -1
+  product_category_filter:
+    type: attribute_filter
+    using: label/product_category
+  product_brand_filter:
+    type: attribute_filter
+    using: label/product_brand
+    parents:
+      - product_category_filter
+  product_rating_filter:
+    type: attribute_filter
+    using: label/product_rating

@@ -1,0 +1,39 @@
+# A visualization is a visual representation of a user's analytical view of the data.
+# You build visualizations from metrics, attributes, and optionally filters that are combined in a way to visualize a particular aspect of your data.
+# The visualizations are executed over and over as fresh data gets loaded.
+# Interpreting the content of a visualization is up to the user (the consumer of the visualization).
+# Read more about visualisations:
+# https://www.gooddata.com/developers/cloud-native/doc/cloud/create-visualizations/concepts/visualization/
+
+type: table
+id: sales_details
+
+title: Sales Details
+description: Breaks down sales and profit metrics by country and product category for comparative analysis.
+
+query:
+  fields:
+    d612ec37e5a04727bb20def0935e4fab: metric/net_sales
+    ff456d9200d34b0aa1e2bd5e8bff6b99: metric/gross_profit
+    28cee096bf4141a29ffe0bc41806e4c3: metric/gross_profit_margin
+    525c659241bb4d6fbe2ab74aa37150f1: label/customer_country
+    a6b19dd405cb4c1da462426af2f298ba: label/product_category
+
+  sort_by:
+    - type: attribute_sort
+      by: 525c659241bb4d6fbe2ab74aa37150f1
+      direction: ASC
+
+metrics:
+  - d612ec37e5a04727bb20def0935e4fab
+  - ff456d9200d34b0aa1e2bd5e8bff6b99
+  - 28cee096bf4141a29ffe0bc41806e4c3
+
+view_by:
+  - 525c659241bb4d6fbe2ab74aa37150f1
+  - field: a6b19dd405cb4c1da462426af2f298ba
+    totals:
+      - type: SUM
+        using: d612ec37e5a04727bb20def0935e4fab
+      - type: SUM
+        using: ff456d9200d34b0aa1e2bd5e8bff6b99

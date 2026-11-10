@@ -1,0 +1,55 @@
+# A visualization is a visual representation of a user's analytical view of the data.
+# You build visualizations from metrics, attributes, and optionally filters that are combined in a way to visualize a particular aspect of your data.
+# The visualizations are executed over and over as fresh data gets loaded.
+# Interpreting the content of a visualization is up to the user (the consumer of the visualization).
+# Read more about visualisations:
+# https://www.gooddata.com/developers/cloud-native/doc/cloud/create-visualizations/concepts/visualization/
+
+type: combo_chart
+id: completed_vs_canceled_orders_trend
+
+title: Completed vs. Canceled Orders Trend
+description: Tracks the monthly trend of completed (processed) vs. canceled orders. It helps identify fluctuations in order fulfillment and highlights periods of increased cancellations or consistent completions.
+
+query:
+  fields:
+    03f2ab0030e24e438cd6e0294fcb650c:
+      title: "# of Processed Orders"
+      using: metric/number_of_orders
+      filter_by:
+        order_status_filter:
+          type: attribute_filter
+          using: label/order_status
+          state:
+            exclude:
+              - In Cart
+              - Canceled
+    f917ac33c3f240498d42572f9b6926e8:
+      title: "# of Canceled Orders"
+      using: metric/number_of_orders
+      filter_by:
+        order_status_filter:
+          type: attribute_filter
+          using: label/order_status
+          state:
+            include:
+              - Canceled
+    487a6cb19b6940c6befa2961a557a246:
+      title: Week/Year
+      using: label/date.week
+
+metrics:
+  - field: 03f2ab0030e24e438cd6e0294fcb650c
+    axis: primary
+  - field: f917ac33c3f240498d42572f9b6926e8
+    axis: secondary
+
+view_by:
+  - 487a6cb19b6940c6befa2961a557a246
+
+config:
+  colors:
+    f917ac33c3f240498d42572f9b6926e8: 3
+    03f2ab0030e24e438cd6e0294fcb650c: 1
+  legend_position: top
+  xaxis_rotation: "30"

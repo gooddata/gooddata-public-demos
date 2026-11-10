@@ -1,0 +1,39 @@
+# A visualization is a visual representation of a user's analytical view of the data.
+# You build visualizations from metrics, attributes, and optionally filters that are combined in a way to visualize a particular aspect of your data.
+# The visualizations are executed over and over as fresh data gets loaded.
+# Interpreting the content of a visualization is up to the user (the consumer of the visualization).
+# Read more about visualisations:
+# https://www.gooddata.com/developers/cloud-native/doc/cloud/create-visualizations/concepts/visualization/
+
+type: scatter_chart
+id: product_pricing_breakdown
+
+title: Product Pricing Breakdown
+description: Compares average unit cost vs. average unit price across products, segmented by clusters to identify pricing patterns.
+
+query:
+  fields:
+    bb011d8f97f34ae189c5fa335cd3922b:
+      title: Average Unit Cost
+      aggregation: AVG
+      using: fact/order_unit_cost
+    45a9eefd26614bf5a3a99c38f6425d5f:
+      title: Average Unit Price
+      aggregation: AVG
+      using: fact/order_unit_price
+    29b4d4fd443547f1952b8ffea87a2118: label/product_id
+
+metrics:
+  - field: bb011d8f97f34ae189c5fa335cd3922b
+    format: "#,##0.00"
+  - field: 45a9eefd26614bf5a3a99c38f6425d5f
+    format: "#,##0.00"
+
+view_by:
+  - 29b4d4fd443547f1952b8ffea87a2118
+
+config:
+  clustering_enabled: true
+  clustering_amount: 4
+  clustering_threshold: 0.1
+  legend_enabled: false

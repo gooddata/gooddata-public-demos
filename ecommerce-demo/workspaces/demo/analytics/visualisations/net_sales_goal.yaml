@@ -1,0 +1,29 @@
+# A visualization is a visual representation of a user's analytical view of the data.
+# You build visualizations from metrics, attributes, and optionally filters that are combined in a way to visualize a particular aspect of your data.
+# The visualizations are executed over and over as fresh data gets loaded.
+# Interpreting the content of a visualization is up to the user (the consumer of the visualization).
+# Read more about visualisations:
+# https://www.gooddata.com/developers/cloud-native/doc/cloud/create-visualizations/concepts/visualization/
+
+type: bullet_chart
+id: net_sales_goal
+
+title: Net Sales Goal
+description: Monitors real-time achievement of net sales goals to support revenue planning and accountability.
+
+query:
+  fields:
+    7d80d30b6bd64fd69d975ad8e234f6d0: metric/net_sales
+    3b80e29c47d04facae0f9cf2584559bb: metric/net_sales_goal
+
+metrics:
+  - 7d80d30b6bd64fd69d975ad8e234f6d0
+  - 3b80e29c47d04facae0f9cf2584559bb
+
+config:
+  colors:
+    7d80d30b6bd64fd69d975ad8e234f6d0: 2
+    3b80e29c47d04facae0f9cf2584559bb: 3
+  legend_position: top
+  xaxis_visible: true
+  yaxis_visible: true

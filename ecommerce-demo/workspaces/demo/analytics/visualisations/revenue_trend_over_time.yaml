@@ -1,0 +1,43 @@
+# A visualization is a visual representation of a user's analytical view of the data.
+# You build visualizations from metrics, attributes, and optionally filters that are combined in a way to visualize a particular aspect of your data.
+# The visualizations are executed over and over as fresh data gets loaded.
+# Interpreting the content of a visualization is up to the user (the consumer of the visualization).
+# Read more about visualisations:
+# https://www.gooddata.com/developers/cloud-native/doc/cloud/create-visualizations/concepts/visualization/
+
+type: combo_chart
+id: revenue_trend_over_time
+
+title: Revenue Trend Over Time
+description: Tracks the daily trend of total net sales (columns) alongside net orders (line) for the entire market, providing insights into revenue patterns and fluctuations in customer purchasing activity over time.
+
+query:
+  fields:
+    8d5b4da63d5342bfb99062bcfd3d48cf:
+      title: Net Sales
+      using: metric/net_sales
+    455307b5590a49b28fafa89999446b15: metric/net_orders
+    f37382df24334dd5ae7756dbd9cc9137:
+      title: Date
+      using: label/date.day
+
+  filter_by:
+    customer_country_filter:
+      type: attribute_filter
+      using: label/customer_country
+
+metrics:
+  - field: 8d5b4da63d5342bfb99062bcfd3d48cf
+    axis: primary
+  - field: 455307b5590a49b28fafa89999446b15
+    axis: secondary
+
+view_by:
+  - f37382df24334dd5ae7756dbd9cc9137
+
+config:
+  legend_position: top
+  xaxis_name_visible: false
+  xaxis_rotation: "30"
+  yaxis_secondary_format: inherit
+  yaxis_secondary_labels: false

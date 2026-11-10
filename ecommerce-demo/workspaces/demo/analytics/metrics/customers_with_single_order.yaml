@@ -1,0 +1,18 @@
+# A metric is a computational expression of numerical data (facts or other metrics).
+# Use MAQL to create reusable multidimensional queries that combine multiple facts and attributes.
+# Read more about MAQL:
+# https://www.gooddata.com/developers/cloud-native/doc/cloud/create-metrics/maql/
+
+type: metric
+id: customers_with_single_order
+
+title: Customers with Single Order
+description: Count of distinct customers who have placed exactly one order in the context period. Supports identification of one-time buyers, analysis of customers with a single order, and segmentation of one-time customers for retention or follow-up.
+
+maql: |
+  SELECT COUNT({label/customer_id})
+  WHERE (
+      SELECT COUNT({label/order_id})
+      BY {label/customer_id}
+  ) = 1
+format: "#,##0.00"

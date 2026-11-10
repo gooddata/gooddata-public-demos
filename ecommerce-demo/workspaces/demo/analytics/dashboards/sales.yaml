@@ -1,0 +1,170 @@
+# A dashboard is a collection of visualizations that are organized into sections.
+# Because they allow filtering and other adjustments, they function as a dynamic presentation layer for your data analytics.
+# Read more about dashboards:
+# https://www.gooddata.com/docs/cloud/create-dashboards/concepts/dashboard/
+
+type: dashboard
+id: sales
+
+version: "2"
+
+title: 2. Sales
+description: Dashboard focused on sales performance, including net sales, orders paid, gross profit, and sales conversion rate. Provides net sales breakdown and goal versus actual, revenue forecast and trends by category, order status breakdown with completed and canceled orders, and orders by status over time. Suitable for sales overview, sales performance monitoring, and revenue and order analysis.
+
+cross_filtering: false
+
+sections:
+  - title: Sales Performance Overview
+    description: Monitor overall sales performance through key sales performance indicators
+    widgets:
+      - id: widget_net_sales
+        visualization: net_sales_headline
+        title: Net Sales
+        columns: 3
+        rows: 10
+        date: date
+        interactions:
+          - click_on: 759c22e84d114c55aa40707b16d79d1d
+            open_visualization: sales_details
+      - id: widget_orders_paid
+        visualization: orders_processed_headline
+        title: Orders Paid
+        columns: 3
+        rows: 10
+        date: date
+        interactions:
+          - click_on: eb334cab51954b9f83184eead11308bc
+            open_visualization: sales_details
+      - id: widget_gross_profit
+        visualization: gross_profit_headline
+        title: Gross Profit
+        columns: 3
+        rows: 10
+        date: date
+        interactions:
+          - click_on: e406fb1d6f5c472687b65b28eac4a4cb
+            open_visualization: gross_profit_trend
+      - id: widget_sales_conversion_rate
+        visualization: sales_conversion_rate
+        title: Sales Conversion Rate (%)
+        columns: 3
+        rows: 11
+        date: date
+  - title: Sales Breakdown
+    description: Analyze sales performance in detail with a breakdown of revenue, costs, discounts, and returns. Track progress against sales goals and compare current net sales with last year to uncover growth patterns.
+    widgets:
+      - container: container_sales_breakdown
+        columns: 4
+        rows: 36
+        layout_direction: column
+        enable_section_headers: false
+        sections:
+          - widgets:
+              - id: widget_sales_goal
+                visualization: net_sales_goal
+                title: Sales Goal
+                columns: 4
+                rows: 15
+                date: date
+                interactions:
+                  - click_on: 7d80d30b6bd64fd69d975ad8e234f6d0
+                    open_visualization: total_sales_over_time
+              - id: widget_net_total_sales_breakdown
+                visualizations:
+                  - id: widget_net_sales_breakdown_tab
+                    visualization: net_sales_breakdown
+                    title: Net Sales Breakdown
+                    date: date
+                  - id: widget_total_sales_breakdown_tab
+                    visualization: total_sales_breakdown
+                    title: Total Sales Breakdown
+                    date: date
+                columns: 4
+                rows: 21
+      - container: container_revenue_forecast
+        columns: 8
+        rows: 36
+        layout_direction: column
+        enable_section_headers: false
+        sections:
+          - widgets:
+              - id: widget_overall_revenue_forecast
+                visualization: overall_revenue_forecast
+                title: Overall Revenue Forecast
+                columns: 8
+                rows: 15
+                date: date
+                zoom_data: true
+                ignored_drill_downs:
+                  - template: default
+                    on: attribute/date.day
+                  - hierarchy: 72a9b29c-d982-4a9d-b226-ebcd060801dc
+                    on: attribute/date.day
+              - id: widget_sales_trends_tabs
+                visualizations:
+                  - id: widget_sales_performance_tab
+                    visualization: sales_performance_by_product_category_over_time
+                    title: Sales Performance by Product Category Over Time
+                    date: date
+                    ignored_drill_downs:
+                      - hierarchy: ad14f0ed-9ba5-44ff-bd35-46ac2775a7ea
+                        on: attribute/product_category
+                  - id: widget_total_net_sales_tab
+                    visualization: total_net_sales_current_vs_last_year
+                    title: "Total Net Sales: Current vs. Last Year"
+                    date: date
+                  - id: widget_average_orders_tab
+                    visualization: average_orders_breakdown
+                    title: Average Orders Breakdown
+                    date: date
+                columns: 8
+                rows: 21
+  - title: Order Breakdown
+    description: View order distribution across processed, in-cart, and canceled statuses, and track trends
+    widgets:
+      - id: widget_order_status_breakdown
+        visualization: order_status_breakdown
+        title: Order Status Breakdown
+        columns: 4
+        rows: 20
+        date: date
+        interactions:
+          - click_on: 8c7d1a1164ab4bdb870e49e26bbfd72d
+            open_visualization: order_details
+      - id: widget_orders_trend_tabs
+        visualizations:
+          - id: widget_completed_canceled_tab
+            visualization: completed_vs_canceled_orders_trend
+            title: Completed vs. Canceled Orders Trend
+            date: date
+            zoom_data: true
+          - id: widget_orders_by_status_tab
+            visualization: orders_by_status_over_time
+            title: Orders by Status Over Time
+            date: date
+            zoom_data: true
+        columns: 8
+        rows: 20
+
+filters:
+  date_quarter:
+    type: date_filter
+    granularity: QUARTER
+    from: -1
+    to: -1
+  product_category_filter:
+    type: attribute_filter
+    using: label/product_category
+  product_brand_filter:
+    type: attribute_filter
+    using: label/product_brand
+    parents:
+      - product_category_filter
+  customer_country_filter:
+    type: attribute_filter
+    using: label/customer_country
+  customer_city_filter:
+    type: attribute_filter
+    using: label/customer_city
+    parents:
+      - customer_country_filter

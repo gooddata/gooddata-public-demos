@@ -1,0 +1,78 @@
+# A visualization is a visual representation of a user's analytical view of the data.
+# You build visualizations from metrics, attributes, and optionally filters that are combined in a way to visualize a particular aspect of your data.
+# The visualizations are executed over and over as fresh data gets loaded.
+# Interpreting the content of a visualization is up to the user (the consumer of the visualization).
+# Read more about visualisations:
+# https://www.gooddata.com/developers/cloud-native/doc/cloud/create-visualizations/concepts/visualization/
+
+type: table
+id: top_10_customers_by_revenue_details
+
+title: Top 10 Customers by Revenue (Details)
+description: Highlights the top 10 customers ranked by total net sales, offering a clear view into the most valuable buyers by revenue contribution.
+
+query:
+  fields:
+    50c4eb1f32f3435bba53634aa5203ad8_previous_period:
+      type: PREVIOUS_PERIOD
+      date_filter: date
+      using: 50c4eb1f32f3435bba53634aa5203ad8
+    50c4eb1f32f3435bba53634aa5203ad8: metric/total_sales
+    002b4e50878a444ea0fd40c8ef131426:
+      title: Total Sales Δ%
+      operator: CHANGE
+      using:
+        - 50c4eb1f32f3435bba53634aa5203ad8
+        - 50c4eb1f32f3435bba53634aa5203ad8_previous_period
+    26d6bd85379443619d6109592e42a575_previous_period:
+      type: PREVIOUS_PERIOD
+      date_filter: date
+      using: 26d6bd85379443619d6109592e42a575
+    26d6bd85379443619d6109592e42a575: metric/number_of_orders
+    0144a27623e44d79acfba3facfc43274:
+      title: Orders Δ%
+      operator: CHANGE
+      using:
+        - 26d6bd85379443619d6109592e42a575
+        - 26d6bd85379443619d6109592e42a575_previous_period
+    0b6cc41384054a5496ab4d40962a62fb:
+      title: Customer
+      using: label/customer_name
+
+  filter_by:
+    50c4eb1f32f3435bba53634aa5203ad8_filter:
+      type: ranking_filter
+      using: 50c4eb1f32f3435bba53634aa5203ad8
+      top: 10
+    date_quarter:
+      type: date_filter
+      granularity: QUARTER
+      from: -1
+      to: -1
+      using: date
+
+  sort_by:
+    - type: attribute_sort
+      by: 0b6cc41384054a5496ab4d40962a62fb
+      direction: ASC
+
+metrics:
+  - 50c4eb1f32f3435bba53634aa5203ad8_previous_period
+  - 50c4eb1f32f3435bba53634aa5203ad8
+  - field: 002b4e50878a444ea0fd40c8ef131426
+    format: |-
+      [<0][red]↓#,##0.00%;
+      [>0][green]↑#,##0.00%
+  - 26d6bd85379443619d6109592e42a575_previous_period
+  - 26d6bd85379443619d6109592e42a575
+  - field: 0144a27623e44d79acfba3facfc43274
+    format: |-
+      [<0][red]↓#,##0.00%;
+      [>0][green]↑#,##0.00%
+
+view_by:
+  - 0b6cc41384054a5496ab4d40962a62fb
+
+config:
+  widths:
+    - value: 112

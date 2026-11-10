@@ -1,0 +1,42 @@
+# A visualization is a visual representation of a user's analytical view of the data.
+# You build visualizations from metrics, attributes, and optionally filters that are combined in a way to visualize a particular aspect of your data.
+# The visualizations are executed over and over as fresh data gets loaded.
+# Interpreting the content of a visualization is up to the user (the consumer of the visualization).
+# Read more about visualisations:
+# https://www.gooddata.com/developers/cloud-native/doc/cloud/create-visualizations/concepts/visualization/
+
+type: column_chart
+id: top_5_states_by_number_of_orders
+
+title: Top 5 States by Number of Orders
+description: Column chart of the top 5 states ranked by order count, with cities as segments within each state. Supports identification of top states by orders, which states have the most orders, and order volume comparison by state and city.
+
+query:
+  fields:
+    98a708e621154c42904f6ab93d2d0dc5: metric/number_of_orders
+    f039f95866b843c58eae59a486aee43a: label/customer_state
+    e374a2ffae42463c9d971c666062c816: label/customer_city
+
+  filter_by:
+    98a708e621154c42904f6ab93d2d0dc5_filter:
+      type: ranking_filter
+      using: 98a708e621154c42904f6ab93d2d0dc5
+      top: 5
+
+  sort_by:
+    - type: attribute_sort
+      by: f039f95866b843c58eae59a486aee43a
+      direction: DESC
+      aggregation: SUM
+
+metrics:
+  - 98a708e621154c42904f6ab93d2d0dc5
+
+view_by:
+  - f039f95866b843c58eae59a486aee43a
+
+segment_by:
+  - e374a2ffae42463c9d971c666062c816
+
+config:
+  legend_position: top
