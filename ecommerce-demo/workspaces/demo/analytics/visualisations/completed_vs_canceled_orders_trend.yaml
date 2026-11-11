@@ -9,7 +9,7 @@ type: combo_chart
 id: completed_vs_canceled_orders_trend
 
 title: Completed vs. Canceled Orders Trend
-description: Tracks the monthly trend of completed (processed) vs. canceled orders. It helps identify fluctuations in order fulfillment and highlights periods of increased cancellations or consistent completions.
+description: Tracks the weekly trend of completed (processed) vs. canceled orders. It helps identify fluctuations in order fulfillment and highlights periods of increased cancellations or consistent completions.
 
 query:
   fields:

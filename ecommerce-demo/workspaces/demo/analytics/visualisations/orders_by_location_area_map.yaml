@@ -9,7 +9,7 @@ type: geo_area_chart
 id: orders_by_location_area_map
 
 title: Orders by Location (Area map)
-description: Displays the distribution of active customers by country and state, allowing quick identification of key markets and regions with the highest customer concentration
+description: Displays the distribution of orders by state, allowing quick identification of key markets and regions with the highest order volume.
 
 query:
   fields:

@@ -9,7 +9,7 @@ type: line_chart
 id: gross_profit_trend
 
 title: Gross Profit Trend
-description: Displays the daily gross profit values over the past month.
+description: Displays weekly gross profit values with a five-week forecast.
 
 query:
   fields:

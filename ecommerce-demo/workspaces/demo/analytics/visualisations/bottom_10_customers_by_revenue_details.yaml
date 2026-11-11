@@ -9,7 +9,7 @@ type: table
 id: bottom_10_customers_by_revenue_details
 
 title: Bottom 10 Customers by Revenue (Details)
-description: Highlights the bottom 10 customers ranked by total net sales, offering a clear view into the least valuable buyers by revenue contribution.
+description: Lists the bottom 10 customers ranked by total sales in the previous quarter, with their orders and the change against the period before.
 
 query:
   fields:
