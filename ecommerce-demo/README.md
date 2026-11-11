@@ -44,6 +44,19 @@ Use the [`gd` CLI](https://www.npmjs.com/package/@gooddata/code-cli) or the Good
 Run `gd validate` before you commit. A deploy replaces the whole workspace, so an object that is missing from the YAML
 is missing from the demo.
 
+## Ship a change to the UI
+
+The UI build does not read `master`. It reads this repository at a pinned commit, set by `DEMO_RESOURCES_GIT_REVISION`
+in `modules/gdc-home-ui/module/scripts/fetch-demo-resources.sh` in the GoodData UI repository (`gdc-ui`, internal).
+A merge to `master` does not change the demo in the UI.
+
+1. Merge the change in this repository.
+2. In `gdc-ui`, set `DEMO_RESOURCES_GIT_REVISION` to the merge commit, and open a pull request.
+
+The build bundles every `.yaml` and `.yml` file in `workspaces/<workspace>/analytics`, except `gooddata.yaml`. The
+build fails if a file has a YAML error, if a document has no `id` or `type`, if the UI cannot convert a document, or
+if two objects of the same kind have the same `id`.
+
 ## Files that the UI does not read
 
 - `workspaces/demo/ldm.json` and `workspaces/demo/workspaceAnalytics.json` are for the manual provision in
