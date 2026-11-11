@@ -1,0 +1,19 @@
+ecommerce-demo/README.md
+  s_e4ff97e1ba3470::t_391631b3bae4b1 47-59
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "7654136a1504a73d5dbc7c5876ab94348cefe401",
+  "prompts": {},
+  "sessions": {
+    "s_e4ff97e1ba3470": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "27b85418-6546-4687-99c6-812ea3d750b0",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "xMort <petr.dolejsi@gooddata.com>"
+    }
+  }
+}
