@@ -14601,7 +14601,7 @@
             }
           }
         },
-        "description": "Tracks weekly net sales over the past 12 months and compares them to the same period in the previous year, helping identify growth patterns, seasonal shifts, and performance trends.",
+        "description": "Tracks net sales by week of the year over the past 12 months and compares them to the same period in the previous year, helping identify growth patterns, seasonal shifts, and performance trends.",
         "id": "total_net_sales_current_vs_last_year",
         "title": "Total Net Sales: Current vs. Last Year"
       },
