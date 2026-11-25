@@ -1,0 +1,25 @@
+# A visualization is a visual representation of a user's analytical view of the data.
+# You build visualizations from metrics, attributes, and optionally filters that are combined in a way to visualize a particular aspect of your data.
+# The visualizations are executed over and over as fresh data gets loaded.
+# Interpreting the content of a visualization is up to the user (the consumer of the visualization).
+# Read more about visualisations:
+# https://www.gooddata.com/developers/cloud-native/doc/cloud/create-visualizations/concepts/visualization/
+
+type: sankey_chart
+id: product_preferences_by_customers
+
+title: Product Preferences by Customers
+description: Sankey diagram that visualizes the flow from active customers by country to product category, showing how many customers in each country buy in each category. Supports analysis of product preferences by customer geography, customer-to-category flow, and which categories customers buy by region.
+
+query:
+  fields:
+    96cf2381dc54457fbb278acb94406c52: metric/active_customers
+    85d4f56c08ea4781b1306373f0f9d5e3: label/customer_country
+    66056e683e634e92a3fb6110ec17a98c: label/product_category
+
+metrics:
+  - 96cf2381dc54457fbb278acb94406c52
+
+view_by:
+  - 85d4f56c08ea4781b1306373f0f9d5e3
+  - 66056e683e634e92a3fb6110ec17a98c

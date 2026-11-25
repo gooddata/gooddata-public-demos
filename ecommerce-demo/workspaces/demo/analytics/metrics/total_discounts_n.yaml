@@ -1,0 +1,13 @@
+# A metric is a computational expression of numerical data (facts or other metrics).
+# Use MAQL to create reusable multidimensional queries that combine multiple facts and attributes.
+# Read more about MAQL:
+# https://www.gooddata.com/developers/cloud-native/doc/cloud/create-metrics/maql/
+
+type: metric
+id: total_discounts_n
+
+title: Total Discounts (Negative)
+description: Measures the total discounts applied on processed orders, highlighting sales effectiveness and customer engagement (in negative value).
+
+maql: SELECT -1 * {metric/total_discounts}
+format: $#,##0.00

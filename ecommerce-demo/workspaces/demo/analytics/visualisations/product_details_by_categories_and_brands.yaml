@@ -1,0 +1,86 @@
+# A visualization is a visual representation of a user's analytical view of the data.
+# You build visualizations from metrics, attributes, and optionally filters that are combined in a way to visualize a particular aspect of your data.
+# The visualizations are executed over and over as fresh data gets loaded.
+# Interpreting the content of a visualization is up to the user (the consumer of the visualization).
+# Read more about visualisations:
+# https://www.gooddata.com/developers/cloud-native/doc/cloud/create-visualizations/concepts/visualization/
+
+type: table
+id: product_details_by_categories_and_brands
+
+title: Product Details by Product Categories & Brands
+description: Displays detailed metrics for individual products, including product ID, name, rating, total net sales, returns, and discounts, enabling analysis of sales effectiveness and customer satisfaction at the SKU level.
+
+query:
+  fields:
+    f7c65b77a50a4f999aee269b8e6ee40d: metric/net_sales
+    9bbd3123e2a84bc094fc581ac91ec0a8: metric/total_returns
+    182783e3b51249d1b54c56cddf7e0a2f: metric/total_discounts
+    8fa7e8326ba845e7a61e96581d5b6db5:
+      title: Product Category
+      using: label/product_category
+    b3f0eb5fd4c84faa8aa3fb0b9863281a:
+      title: Product Brand
+      using: label/product_brand
+    73d5f54c4e3844adb8b6109118c30dca:
+      title: Product Name
+      using: label/product_name
+
+  sort_by:
+    - type: attribute_sort
+      by: 8fa7e8326ba845e7a61e96581d5b6db5
+      direction: ASC
+
+metrics:
+  - f7c65b77a50a4f999aee269b8e6ee40d
+  - field: 9bbd3123e2a84bc094fc581ac91ec0a8
+    format: |-
+      [>=1000000000000]$#,,,,.0 T;
+      [>=1000000000]$#,,,.0 B;
+      [>=1000000]$#,,.0 M;
+      [>=1000]$#,.0 K;
+      [>=0]$#,##0;
+      [<=-1000000000000]-$#,,,,.0 T;
+      [<=-1000000000]-$#,,,.0 B;
+      [<=-1000000]-$#,,.0 M;
+      [<=-1000]-$#,.0 K;
+      [<0]-$#,##0
+  - field: 182783e3b51249d1b54c56cddf7e0a2f
+    format: |-
+      [>=1000000000000]$#,,,,.0 T;
+      [>=1000000000]$#,,,.0 B;
+      [>=1000000]$#,,.0 M;
+      [>=1000]$#,.0 K;
+      [>=0]$#,##0;
+      [<=-1000000000000]-$#,,,,.0 T;
+      [<=-1000000000]-$#,,,.0 B;
+      [<=-1000000]-$#,,.0 M;
+      [<=-1000]-$#,.0 K;
+      [<0]-$#,##0
+
+view_by:
+  - field: 8fa7e8326ba845e7a61e96581d5b6db5
+    totals:
+      - type: SUM
+        using: f7c65b77a50a4f999aee269b8e6ee40d
+      - type: SUM
+        using: 9bbd3123e2a84bc094fc581ac91ec0a8
+      - type: SUM
+        using: 182783e3b51249d1b54c56cddf7e0a2f
+  - field: b3f0eb5fd4c84faa8aa3fb0b9863281a
+    totals:
+      - type: SUM
+        using: f7c65b77a50a4f999aee269b8e6ee40d
+      - type: SUM
+        using: 9bbd3123e2a84bc094fc581ac91ec0a8
+      - type: SUM
+        using: 182783e3b51249d1b54c56cddf7e0a2f
+  - 73d5f54c4e3844adb8b6109118c30dca
+
+config:
+  widths:
+    - value: 316
+      using:
+        - 73d5f54c4e3844adb8b6109118c30dca
+  pagination: true
+  page_size: 20

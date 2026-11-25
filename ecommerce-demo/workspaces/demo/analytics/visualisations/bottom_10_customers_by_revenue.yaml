@@ -1,0 +1,40 @@
+# A visualization is a visual representation of a user's analytical view of the data.
+# You build visualizations from metrics, attributes, and optionally filters that are combined in a way to visualize a particular aspect of your data.
+# The visualizations are executed over and over as fresh data gets loaded.
+# Interpreting the content of a visualization is up to the user (the consumer of the visualization).
+# Read more about visualisations:
+# https://www.gooddata.com/developers/cloud-native/doc/cloud/create-visualizations/concepts/visualization/
+
+type: bar_chart
+id: bottom_10_customers_by_revenue
+
+title: Bottom 10 Customers by Revenue
+description: Highlights the bottom 10 customers ranked by total net sales, offering a clear view into the least valuable buyers by revenue contribution.
+
+query:
+  fields:
+    09d1a954b824448dabccc750d223c519: metric/net_sales
+    0b6cc41384054a5496ab4d40962a62fb:
+      title: Customer
+      using: label/customer_name
+
+  filter_by:
+    customer_id_filter:
+      type: attribute_filter
+      using: label/customer_id
+    09d1a954b824448dabccc750d223c519_filter:
+      type: ranking_filter
+      using: 09d1a954b824448dabccc750d223c519
+      bottom: 10
+
+metrics:
+  - 09d1a954b824448dabccc750d223c519
+
+view_by:
+  - 0b6cc41384054a5496ab4d40962a62fb
+
+config:
+  colors:
+    09d1a954b824448dabccc750d223c519: 3
+  xaxis_name_visible: false
+  yaxis_name_visible: false

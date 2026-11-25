@@ -1,0 +1,13 @@
+# A metric is a computational expression of numerical data (facts or other metrics).
+# Use MAQL to create reusable multidimensional queries that combine multiple facts and attributes.
+# Read more about MAQL:
+# https://www.gooddata.com/developers/cloud-native/doc/cloud/create-metrics/maql/
+
+type: metric
+id: inventory_turnover_rate
+
+title: Inventory Turnover Rate
+description: Measures how many times inventory is sold and replaced over a specific period.
+
+maql: SELECT {metric/cogs} / {metric/quantity_bom_by_year}
+format: "#,##0.00"

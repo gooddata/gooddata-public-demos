@@ -1,0 +1,50 @@
+# A visualization is a visual representation of a user's analytical view of the data.
+# You build visualizations from metrics, attributes, and optionally filters that are combined in a way to visualize a particular aspect of your data.
+# The visualizations are executed over and over as fresh data gets loaded.
+# Interpreting the content of a visualization is up to the user (the consumer of the visualization).
+# Read more about visualisations:
+# https://www.gooddata.com/developers/cloud-native/doc/cloud/create-visualizations/concepts/visualization/
+
+type: combo_chart
+id: from_search_to_sale_active_customers_vs_orders
+
+title: "From Search to Sale: Active Customers vs. Orders Placed"
+description: Shows the relationship between active website customers and the number of successfully processed orders
+
+query:
+  fields:
+    3534dfb21fb34190bac813f353450d91: metric/active_customers
+    0d17b3c6e1b847eb8a03a605808a26fa:
+      title: Placed Orders
+      using: metric/number_of_orders
+    b9f507c72faa4e3e840d2050f18de1c7:
+      title: Week/Year
+      using: label/date.week
+
+  filter_by:
+    date_quarter:
+      type: date_filter
+      granularity: QUARTER
+      from: -1
+      to: -1
+      using: date
+
+metrics:
+  - field: 3534dfb21fb34190bac813f353450d91
+    axis: primary
+  - field: 0d17b3c6e1b847eb8a03a605808a26fa
+    axis: secondary
+
+view_by:
+  - b9f507c72faa4e3e840d2050f18de1c7
+
+config:
+  data_points: false
+  data_labels: false
+  legend_position: top
+  xaxis_rotation: "30"
+  yaxis_primary_type: line
+  yaxis_primary_rotation: "90"
+  yaxis_secondary_type: column
+  yaxis_secondary_name_position: middle
+  yaxis_secondary_rotation: "90"

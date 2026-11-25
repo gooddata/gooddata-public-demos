@@ -1,0 +1,39 @@
+# A visualization is a visual representation of a user's analytical view of the data.
+# You build visualizations from metrics, attributes, and optionally filters that are combined in a way to visualize a particular aspect of your data.
+# The visualizations are executed over and over as fresh data gets loaded.
+# Interpreting the content of a visualization is up to the user (the consumer of the visualization).
+# Read more about visualisations:
+# https://www.gooddata.com/developers/cloud-native/doc/cloud/create-visualizations/concepts/visualization/
+
+type: line_chart
+id: price_elasticity_by_product_brand
+
+title: Price Elasticity by Product Brand
+description: Price Elasticity of Demand (PED) measures how sensitive demand is to price changes.
+
+query:
+  fields:
+    10dab8bc72474a2880322b6fc9093a62: metric/price_elasticity_of_demand
+    08f557ed1cf644409bd08a6a475e0e63: metric/unit_elastic
+    77716b50fd2f4922a9cb0a53f2d30399: label/product_brand
+
+  filter_by:
+    date_quarter:
+      type: date_filter
+      granularity: QUARTER
+      from: -1
+      to: -1
+      using: date
+
+metrics:
+  - 10dab8bc72474a2880322b6fc9093a62
+  - 08f557ed1cf644409bd08a6a475e0e63
+
+view_by:
+  - 77716b50fd2f4922a9cb0a53f2d30399
+
+config:
+  xaxis_name_visible: false
+  xaxis_rotation: "30"
+  yaxis_max: 0.25
+  yaxis_min: -0.5

@@ -1,0 +1,8 @@
+profiles:
+  default:
+    host: $GOODDATA_HOST
+    token: $GOODDATA_API_TOKEN
+    workspace_id: $GOODDATA_WORKSPACE_ID
+    data_source: $GOODDATA_DATA_SOURCE_ID
+default_profile: default
+source_dir: ./

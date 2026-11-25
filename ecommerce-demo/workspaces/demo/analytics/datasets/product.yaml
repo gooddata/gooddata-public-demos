@@ -1,0 +1,90 @@
+# A dataset is a logical object that represents a set of related facts, attributes, and attribute labels.
+# Datasets are basic organization units of a logical data model.
+# Read more about Datasets:
+# https://www.gooddata.com/developers/cloud-native/doc/cloud/model-data/concepts/dataset/
+
+type: dataset
+id: product
+
+table_path: ECOMMERCE_DEMO_SCHEMA/product
+
+title: Product
+description: Product
+tags:
+  - Product
+
+primary_key: product_id
+
+fields:
+  product_brand:
+    type: attribute
+    source_column: product_brand
+    data_type: STRING
+    title: Product brand
+    description: Product brand
+    tags:
+      - Product
+  product_category:
+    type: attribute
+    source_column: product_category
+    data_type: STRING
+    title: Product category
+    description: Product category
+    tags:
+      - Product
+  product_id:
+    type: attribute
+    source_column: product_id
+    data_type: STRING
+    title: Product id
+    description: Product id
+    tags:
+      - Product
+    labels:
+      product_id_image_web:
+        source_column: ls__product_id__product_id_image_web
+        data_type: STRING
+        title: Product id image web
+        description: Product id image web
+        tags:
+          - Product
+        value_type: IMAGE
+      product_name:
+        source_column: ls__product_id__product_name
+        data_type: STRING
+        title: Product name
+        description: Product name
+        tags:
+          - Product
+  product_image:
+    type: attribute
+    source_column: product_image
+    data_type: STRING
+    title: Product image
+    description: Product image
+    tags:
+      - Product
+    labels:
+      product_image_web:
+        source_column: ls__product_image__product_image_web
+        data_type: STRING
+        title: Product image web
+        description: Product image web
+        tags:
+          - Product
+  product_rating:
+    type: attribute
+    source_column: product_rating
+    data_type: STRING
+    title: Product rating
+    description: Rating category or label for the product (dimension for filtering and grouping).
+    tags:
+      - Product
+  rating:
+    type: fact
+    source_column: rating
+    data_type: NUMERIC
+    title: Rating
+    description: Rating
+    tags:
+      - Product

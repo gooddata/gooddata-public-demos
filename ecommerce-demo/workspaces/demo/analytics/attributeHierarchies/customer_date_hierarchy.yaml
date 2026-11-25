@@ -1,0 +1,14 @@
+# The attribute hierarchy is a user-defined list of attributes. This list determines the order 
+# in which subsequent attributes are revealed in a visualization during the drill-down process. 
+# Attributes lower in this hierarchy are automatically filtered based on the values selected from the higher-level attributes.
+# Read more about attribute hierarchies:
+# https://www.gooddata.com/docs/cloud/create-dashboards/drilling-in-dashboards/set-drill-down/
+
+type: attribute_hierarchy
+id: 445a32d8-2f88-4e90-a0fe-28098249d057
+
+title: Customer Date Hierarchy
+
+attributes:
+  - attribute/user_created_date.week
+  - attribute/user_created_date.day

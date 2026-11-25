@@ -1,0 +1,40 @@
+# A visualization is a visual representation of a user's analytical view of the data.
+# You build visualizations from metrics, attributes, and optionally filters that are combined in a way to visualize a particular aspect of your data.
+# The visualizations are executed over and over as fresh data gets loaded.
+# Interpreting the content of a visualization is up to the user (the consumer of the visualization).
+# Read more about visualisations:
+# https://www.gooddata.com/developers/cloud-native/doc/cloud/create-visualizations/concepts/visualization/
+
+type: area_chart
+id: sales_performance_by_product_category_over_time
+
+title: Sales Performance by Product Category Over Time
+description: Visualizes how net sales fluctuate across different product categories over time, helping uncover seasonal patterns, peak-selling periods, and category-specific trends.
+
+query:
+  fields:
+    026ea78496f142d2b5037a6f066156e7: metric/net_sales
+    32a5035c52194cf59413f3b18feef281:
+      title: Week/Year
+      using: label/date.week
+    4aec3042fbc2497ca400a0b3ab1f8a0b: label/product_category
+
+  filter_by:
+    date_year:
+      type: date_filter
+      using: date
+
+metrics:
+  - 026ea78496f142d2b5037a6f066156e7
+
+view_by:
+  - 32a5035c52194cf59413f3b18feef281
+
+segment_by:
+  - 4aec3042fbc2497ca400a0b3ab1f8a0b
+
+config:
+  chart_fill:
+    type: outline
+  legend_position: top
+  xaxis_rotation: "45"

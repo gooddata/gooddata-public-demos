@@ -1,0 +1,25 @@
+# A visualization is a visual representation of a user's analytical view of the data.
+# You build visualizations from metrics, attributes, and optionally filters that are combined in a way to visualize a particular aspect of your data.
+# The visualizations are executed over and over as fresh data gets loaded.
+# Interpreting the content of a visualization is up to the user (the consumer of the visualization).
+# Read more about visualisations:
+# https://www.gooddata.com/developers/cloud-native/doc/cloud/create-visualizations/concepts/visualization/
+
+type: dependency_wheel_chart
+id: order_value_by_category_and_customer_rating
+
+title: Order Value by Category and Customer Rating
+description: Shows how sales are distributed between categories and product ratings.
+
+query:
+  fields:
+    77f3cf0ebdd149978563dedb7aaa9b59: metric/order_amount
+    bdfd0781ec444582a8fe10ce3414b097: label/product_category
+    8c6b7d7db00b44ea92e7b1e86c3d665e: label/product_rating
+
+metrics:
+  - 77f3cf0ebdd149978563dedb7aaa9b59
+
+view_by:
+  - bdfd0781ec444582a8fe10ce3414b097
+  - 8c6b7d7db00b44ea92e7b1e86c3d665e

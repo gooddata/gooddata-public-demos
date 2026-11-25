@@ -1,0 +1,23 @@
+# A metric is a computational expression of numerical data (facts or other metrics).
+# Use MAQL to create reusable multidimensional queries that combine multiple facts and attributes.
+# Read more about MAQL:
+# https://www.gooddata.com/developers/cloud-native/doc/cloud/create-metrics/maql/
+
+type: metric
+id: total_product_costs
+
+title: Total Product Costs
+description: Sum of cost across all order line items, computed as unit cost times quantity per line, stored as a negative number for reporting. Supports cost analysis, cost of goods sold (COGS) reporting, and understanding total product costs or cost of orders.
+
+maql: select sum({fact/order_unit_cost}*{fact/order_unit_quantity})*(-1)
+format: |-
+  [>=1000000000000]$#,,,,.0 T;
+  [>=1000000000]$#,,,.0 B;
+  [>=1000000]$#,,.0 M;
+  [>=1000]$#,.0 K;
+  [>=0]$#,##0;
+  [<=-1000000000000]-$#,,,,.0 T;
+  [<=-1000000000]-$#,,,.0 B;
+  [<=-1000000]-$#,,.0 M;
+  [<=-1000]-$#,.0 K;
+  [<0]-$#,##0

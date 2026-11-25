@@ -1,0 +1,54 @@
+# A visualization is a visual representation of a user's analytical view of the data.
+# You build visualizations from metrics, attributes, and optionally filters that are combined in a way to visualize a particular aspect of your data.
+# The visualizations are executed over and over as fresh data gets loaded.
+# Interpreting the content of a visualization is up to the user (the consumer of the visualization).
+# Read more about visualisations:
+# https://www.gooddata.com/developers/cloud-native/doc/cloud/create-visualizations/concepts/visualization/
+
+type: waterfall_chart
+id: sales_to_net_revenue_breakdown
+
+title: Sales to Net Revenue Breakdown
+description: Illustrates how total sales are reduced by product costs, discounts, and returns to arrive at net revenue, highlighting key profit drivers and deductions.
+
+query:
+  fields:
+    71c50d511eee498cbaed10aa030c17a2: metric/total_sales
+    4760531054d64a4987f787c638541958: metric/total_product_costs
+    970df249ea064ac2a8a3cd3fb85da491:
+      title: Total Discounts
+      using: metric/total_discounts_n
+    f20087ee71f5459b8b5d9a341731f1fc:
+      title: Total Returns
+      using: metric/total_returns_n
+
+metrics:
+  - 71c50d511eee498cbaed10aa030c17a2
+  - 4760531054d64a4987f787c638541958
+  - field: 970df249ea064ac2a8a3cd3fb85da491
+    format: |-
+      [>=1000000000000]$#,,,,.0 T;
+      [>=1000000000]$#,,,.0 B;
+      [>=1000000]$#,,.0 M;
+      [>=1000]$#,.0 K;
+      [>=0]$#,##0;
+      [<=-1000000000000]-$#,,,,.0 T;
+      [<=-1000000000]-$#,,,.0 B;
+      [<=-1000000]-$#,,.0 M;
+      [<=-1000]-$#,.0 K;
+      [<0]-$#,##0
+  - field: f20087ee71f5459b8b5d9a341731f1fc
+    format: |-
+      [>=1000000000000]$#,,,,.0 T;
+      [>=1000000000]$#,,,.0 B;
+      [>=1000000]$#,,.0 M;
+      [>=1000]$#,.0 K;
+      [>=0]$#,##0;
+      [<=-1000000000000]-$#,,,,.0 T;
+      [<=-1000000000]-$#,,,.0 B;
+      [<=-1000000]-$#,,.0 M;
+      [<=-1000]-$#,.0 K;
+      [<0]-$#,##0
+
+config:
+  total_name: Total

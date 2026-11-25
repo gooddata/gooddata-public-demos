@@ -1,0 +1,37 @@
+# A visualization is a visual representation of a user's analytical view of the data.
+# You build visualizations from metrics, attributes, and optionally filters that are combined in a way to visualize a particular aspect of your data.
+# The visualizations are executed over and over as fresh data gets loaded.
+# Interpreting the content of a visualization is up to the user (the consumer of the visualization).
+# Read more about visualisations:
+# https://www.gooddata.com/developers/cloud-native/doc/cloud/create-visualizations/concepts/visualization/
+
+type: column_chart
+id: total_sales_over_time
+
+title: Total Sales Over Time
+description: Tracks monthly trends in Gross Profit, COGS, Discounts, and Returns to show how each component contributes to total sales.
+
+query:
+  fields:
+    43d47ba6d22c4447ab42f0c6dd779531: metric/gross_profit
+    68d98accca8341409b32d7cb867997d4: metric/total_discounts
+    85fc5c81563548dda143affb4a4fd1bd: metric/total_returns
+    e35dbadd507744e98c0219fc53ff3887: metric/cogs
+    47169ff5ce3b4193922b4f9b41199a2a: label/date.month
+
+metrics:
+  - 43d47ba6d22c4447ab42f0c6dd779531
+  - 68d98accca8341409b32d7cb867997d4
+  - 85fc5c81563548dda143affb4a4fd1bd
+  - e35dbadd507744e98c0219fc53ff3887
+
+view_by:
+  - 47169ff5ce3b4193922b4f9b41199a2a
+
+config:
+  colors:
+    43d47ba6d22c4447ab42f0c6dd779531: 2
+    68d98accca8341409b32d7cb867997d4: 1
+    85fc5c81563548dda143affb4a4fd1bd: 4
+    e35dbadd507744e98c0219fc53ff3887: 3
+  stack_measures: true

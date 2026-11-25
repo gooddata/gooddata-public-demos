@@ -1,0 +1,85 @@
+# A dataset is a logical object that represents a set of related facts, attributes, and attribute labels.
+# Datasets are basic organization units of a logical data model.
+# Read more about Datasets:
+# https://www.gooddata.com/developers/cloud-native/doc/cloud/model-data/concepts/dataset/
+
+type: dataset
+id: order_lines
+
+table_path: ECOMMERCE_DEMO_SCHEMA/order_lines
+
+title: Order lines
+description: Order lines
+tags:
+  - Order lines
+
+primary_key: order_line_id
+
+fields:
+  order_line_id:
+    type: attribute
+    source_column: order_line_id
+    data_type: STRING
+    title: Order line id
+    description: Order line id
+    tags:
+      - Order lines
+  order_unit_cost:
+    type: fact
+    source_column: order_unit_cost
+    data_type: NUMERIC
+    title: Unit cost
+    description: Cost per unit for the order line (cost of goods sold per unit), used for margin and profitability analysis.
+    tags:
+      - Order lines
+  order_unit_discount:
+    type: fact
+    source_column: order_unit_discount
+    data_type: NUMERIC
+    title: Order unit discount
+    description: Order unit discount
+    tags:
+      - Order lines
+  order_unit_price:
+    type: fact
+    source_column: order_unit_price
+    data_type: NUMERIC
+    title: Unit price
+    description: Selling price per unit for the order line before discounts, used for revenue and pricing analysis.
+    tags:
+      - Order lines
+  order_unit_quantity:
+    type: fact
+    source_column: order_unit_quantity
+    data_type: NUMERIC
+    title: Order unit quantity
+    description: Order unit quantity
+    tags:
+      - Order lines
+
+references:
+  - dataset: customer
+    sources:
+      - source_column: customer__customer_id
+        data_type: STRING
+        target: customer_id
+  - dataset: date
+    sources:
+      - source_column: date
+        data_type: TIMESTAMP
+        target: date
+  - dataset: order_date
+    sources:
+      - source_column: order_date
+        data_type: TIMESTAMP
+        target: order_date
+  - dataset: orders
+    sources:
+      - source_column: order__order_id
+        data_type: STRING
+        target: order_id
+  - dataset: product
+    sources:
+      - source_column: product__product_id
+        data_type: STRING
+        target: product_id

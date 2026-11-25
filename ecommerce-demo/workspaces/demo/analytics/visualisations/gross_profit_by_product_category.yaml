@@ -1,0 +1,26 @@
+# A visualization is a visual representation of a user's analytical view of the data.
+# You build visualizations from metrics, attributes, and optionally filters that are combined in a way to visualize a particular aspect of your data.
+# The visualizations are executed over and over as fresh data gets loaded.
+# Interpreting the content of a visualization is up to the user (the consumer of the visualization).
+# Read more about visualisations:
+# https://www.gooddata.com/developers/cloud-native/doc/cloud/create-visualizations/concepts/visualization/
+
+type: pyramid_chart
+id: gross_profit_by_product_category
+
+title: Gross Profit by Product Category
+description: Displays the total gross profit contribution of each product category in descending order, helping identify which categories drive the most profitability.
+
+query:
+  fields:
+    e7d52caea0e54f6db68aeccd8f1c9058: metric/gross_profit
+    3e7c2309e28c4d4aba6ef58eff63b8b1: label/product_category
+
+metrics:
+  - e7d52caea0e54f6db68aeccd8f1c9058
+
+view_by:
+  - 3e7c2309e28c4d4aba6ef58eff63b8b1
+
+config:
+  legend_position: top

@@ -1,0 +1,36 @@
+# A Date dataset is a dataset in the logical data model(LDM)
+# that represents DATE / TIMESTAMP columns in your database.
+# Read more about date instances:
+# https://www.gooddata.com/developers/cloud-native/doc/cloud/model-data/concepts/dataset/#date-datasets
+
+type: date
+id: date
+
+title: Date
+description: |-
+  Date dimension. Granularity attribute definitions:
+  Day of Year = ordinal day in year, 1–366; Hour of Day = hour of day, 0–23;
+  Minute of Hour = minute within hour, 0–59; Week/Year = week number in year;
+  Day of Month = day of month, 1–31; Week of Year = week of year, 1–53.
+tags:
+  - Date
+
+granularities:
+  - MINUTE
+  - HOUR
+  - DAY
+  - WEEK
+  - MONTH
+  - QUARTER
+  - YEAR
+  - MINUTE_OF_HOUR
+  - HOUR_OF_DAY
+  - DAY_OF_WEEK
+  - DAY_OF_MONTH
+  - DAY_OF_YEAR
+  - WEEK_OF_YEAR
+  - MONTH_OF_YEAR
+  - QUARTER_OF_YEAR
+
+title_base: ""
+title_pattern: "%titleBase - %granularityTitle"

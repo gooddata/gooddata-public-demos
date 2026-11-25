@@ -1,0 +1,13 @@
+# A metric is a computational expression of numerical data (facts or other metrics).
+# Use MAQL to create reusable multidimensional queries that combine multiple facts and attributes.
+# Read more about MAQL:
+# https://www.gooddata.com/developers/cloud-native/doc/cloud/create-metrics/maql/
+
+type: metric
+id: average_order_volume
+
+title: Order Volume per Order (Period)
+description: Measures the average quantity of items or units purchased per order within the selected time range or filters, helping assess customer purchasing behavior and sales performance for the analyzed period.
+
+maql: SELECT {metric/net_sales} / {metric/number_of_orders}
+format: "#,##0.00"

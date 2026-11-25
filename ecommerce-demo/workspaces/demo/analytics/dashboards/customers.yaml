@@ -1,0 +1,190 @@
+# A dashboard is a collection of visualizations that are organized into sections.
+# Because they allow filtering and other adjustments, they function as a dynamic presentation layer for your data analytics.
+# Read more about dashboards:
+# https://www.gooddata.com/docs/cloud/create-dashboards/concepts/dashboard/
+
+type: dashboard
+id: customers
+
+version: "2"
+
+title: 3. Customers
+description: Dashboard focused on customer analytics, including repeat versus one-time customers, returning customers, average sales per customer, and retention rate. Provides breakdown by country and state, location maps, top and bottom customers by revenue, customer lifetime value (CLV) versus purchase frequency, and activity by hour. Suitable for customers overview, customer analytics, and customer insights.
+
+cross_filtering: false
+
+sections:
+  - widgets:
+      - id: widget_customers_multiple_orders
+        visualization: customers_with_multiple_orders
+        title: Customers with Multiple Orders
+        columns: 3
+        rows: 11
+        date: date
+        interactions:
+          - click_on: d5c013a351ca42318c1d9d81a81d32ff
+            open_visualization: order_details
+      - id: widget_returning_customers
+        visualization: returning_customers
+        title: Returning Customers
+        columns: 3
+        rows: 10
+        date: date
+        interactions:
+          - click_on: 1df9a9af3c734b5da9f719b62d1b06c3
+            open_visualization: customer_activity_over_time
+      - id: widget_avg_sales_per_customer
+        visualization: average_sales_per_customer
+        title: Average Sales per Customer
+        columns: 3
+        rows: 10
+        date: date
+        interactions:
+          - click_on: 5d0ce2b953c9471199c8293770cc19db
+            open_visualization: customer_orders_and_sales_details
+      - id: widget_customer_retention_rate
+        visualization: customer_retention_rate
+        title: Customer Retention Rate
+        columns: 3
+        rows: 11
+        date: date
+        interactions:
+          - click_on: 0b28ab87a0b947ba840501b2874dbde4
+            open_visualization: customer_retention_rate_forecast
+  - title: Customer Breakdown
+    description: Visualize where customers are located and how their orders and product preferences vary by region.
+    widgets:
+      - id: widget_customers_location_tabs
+        visualizations:
+          - id: widget_customers_by_country_state_tab
+            visualization: customers_by_country_and_state
+            title: Customers by Country and State
+          - id: widget_orders_by_location_tab
+            visualization: orders_by_location_area_map
+            title: Orders by Location (Area map)
+            date: date
+        columns: 6
+        rows: 34
+      - container: container_customer_breakdown
+        columns: 6
+        rows: 34
+        layout_direction: column
+        enable_section_headers: false
+        sections:
+          - widgets:
+              - id: widget_top_5_states
+                visualization: top_5_states_by_number_of_orders
+                title: Top 5 States by Number of Orders
+                columns: 6
+                rows: 16
+                date: date
+                ignored_cross_filtering: true
+              - container: container_product_preferences
+                columns: 6
+                rows: 18
+                layout_direction: row
+                enable_section_headers: false
+                sections:
+                  - widgets:
+                      - id: widget_product_preferences
+                        visualization: product_preferences_by_customers
+                        title: Product Preferences by Customers
+                        columns: 3
+                        rows: 18
+                        date: date
+                      - id: widget_orders_by_category
+                        visualization: orders_by_product_category
+                        title: Orders by Product Category
+                        columns: 3
+                        rows: 18
+                        date: date
+  - title: Customer Retention Trends
+    description: Tracks customer mix over time, showing how many are first-time buyers versus repeat customers.
+    widgets:
+      - id: widget_customers_breakdown
+        visualization: customers_breakdown
+        title: Customers Breakdown
+        columns: 4
+        rows: 20
+        date: date
+      - id: widget_customer_activity_over_time
+        visualization: customer_activity_over_time
+        title: Customer Activity Over Time
+        columns: 8
+        rows: 20
+        date: date
+        zoom_data: true
+  - widgets:
+      - container: container_customer_preferences
+        columns: 6
+        rows: 45
+        layout_direction: column
+        enable_section_headers: true
+        sections:
+          - title: Customer Preferences
+            description: Analyze customer behavior by segment, comparing lifetime value and purchase frequency to identify loyal, high-value, and growth customers.
+            widgets:
+              - id: widget_customer_lifetime_value
+                visualization: customer_lifetime_value_clv_vs_purchase
+                title: Customer Lifetime Value (CLV) vs. Purchase Frequency
+                columns: 6
+                rows: 21
+                date: date
+              - id: widget_customer_activity_by_hour
+                visualization: customer_activity_by_hour
+                title: Customer Activity by Hour
+                columns: 6
+                rows: 22
+                date: date
+      - container: container_customer_revenue_rankings
+        columns: 6
+        rows: 45
+        layout_direction: column
+        enable_section_headers: true
+        sections:
+          - title: Customer Revenue Rankings
+            description: Ranks customers by revenue contribution.
+            widgets:
+              - id: widget_top_bottom_customers_tabs
+                visualizations:
+                  - id: widget_top_10_customers_tab
+                    visualization: top_10_customers_by_revenue
+                    title: Top 10 Customers by Revenue
+                    date: date
+                  - id: widget_top_10_details_tab
+                    visualization: top_10_customers_by_revenue_details
+                    title: Top 10 Customers by Revenue (Details)
+                    date: date
+                columns: 6
+                rows: 22
+              - id: widget_bottom_10_tabs
+                visualizations:
+                  - id: widget_bottom_10_details_tab
+                    visualization: bottom_10_customers_by_revenue_details
+                    title: Bottom 10 Customers by Revenue (Details)
+                    date: date
+                  - id: widget_bottom_10_revenue_tab
+                    visualization: bottom_10_customers_by_revenue
+                    title: Bottom 10 Customers by Revenue
+                    date: date
+                columns: 6
+                rows: 22
+
+filters:
+  date_quarter:
+    type: date_filter
+    granularity: QUARTER
+    from: -1
+    to: -1
+  customer_country_filter:
+    type: attribute_filter
+    using: label/customer_country
+  customer_state_filter:
+    type: attribute_filter
+    using: label/customer_state
+    parents:
+      - customer_country_filter
+
+permissions:
+  VIEW:
+    all: true

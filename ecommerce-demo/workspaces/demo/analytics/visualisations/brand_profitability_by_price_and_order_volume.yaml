@@ -1,0 +1,34 @@
+# A visualization is a visual representation of a user's analytical view of the data.
+# You build visualizations from metrics, attributes, and optionally filters that are combined in a way to visualize a particular aspect of your data.
+# The visualizations are executed over and over as fresh data gets loaded.
+# Interpreting the content of a visualization is up to the user (the consumer of the visualization).
+# Read more about visualisations:
+# https://www.gooddata.com/developers/cloud-native/doc/cloud/create-visualizations/concepts/visualization/
+
+type: bubble_chart
+id: brand_profitability_by_price_and_order_volume
+
+title: Brand Profitability by Price and Order Volume
+description: Compares brands based on their average product price, gross profit, and order volume to highlight overall performance.
+
+query:
+  fields:
+    0f489725fe26493fb5fdc3d2367c21ed: metric/average_product_price
+    a279058ddf724659b6b7cad14bd63404: metric/gross_profit
+    7e4fe02cd17d4da38ec6d464646bbbb1: metric/order_amount
+    458f2a55e1ca457883ff36141c84dc48: label/product_brand
+
+metrics:
+  - 0f489725fe26493fb5fdc3d2367c21ed
+  - a279058ddf724659b6b7cad14bd63404
+
+view_by:
+  - 458f2a55e1ca457883ff36141c84dc48
+
+segment_by:
+  - 7e4fe02cd17d4da38ec6d464646bbbb1
+
+config:
+  legend_enabled: false
+  legend_position: right
+  yaxis_min: 0

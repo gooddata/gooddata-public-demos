@@ -1,0 +1,54 @@
+# A visualization is a visual representation of a user's analytical view of the data.
+# You build visualizations from metrics, attributes, and optionally filters that are combined in a way to visualize a particular aspect of your data.
+# The visualizations are executed over and over as fresh data gets loaded.
+# Interpreting the content of a visualization is up to the user (the consumer of the visualization).
+# Read more about visualisations:
+# https://www.gooddata.com/developers/cloud-native/doc/cloud/create-visualizations/concepts/visualization/
+
+type: table
+id: active_customers_and_orders_by_location
+
+title: Active Customers & Placed Orders by Location
+description: Displays the geographic distribution of active customers, helping identify key markets, regional engagement patterns, and areas of customer concentration.
+
+query:
+  fields:
+    42e90cf4e6574301ac06d8cb16615b76: metric/active_customers
+    384d4e26f35248f989d3670b1e31eca0: metric/number_of_orders
+    1a8313218d6649ee8fd80905618bdeea:
+      title: Country
+      using: label/customer_country
+    b1267f58d8444a569cbd9a6cee60fe2e:
+      title: State
+      using: label/customer_state
+    074a7c97193e4b78af97d6b8c1166d76:
+      title: City
+      using: label/customer_city
+
+  sort_by:
+    - type: attribute_sort
+      by: 1a8313218d6649ee8fd80905618bdeea
+      direction: ASC
+
+metrics:
+  - 42e90cf4e6574301ac06d8cb16615b76
+  - 384d4e26f35248f989d3670b1e31eca0
+
+view_by:
+  - 1a8313218d6649ee8fd80905618bdeea
+  - b1267f58d8444a569cbd9a6cee60fe2e
+  - field: 074a7c97193e4b78af97d6b8c1166d76
+    totals:
+      - type: SUM
+        using: 42e90cf4e6574301ac06d8cb16615b76
+      - type: SUM
+        using: 384d4e26f35248f989d3670b1e31eca0
+
+config:
+  widths:
+    - value: 110
+      using:
+        - b1267f58d8444a569cbd9a6cee60fe2e
+    - value: 86
+      using:
+        - 1a8313218d6649ee8fd80905618bdeea

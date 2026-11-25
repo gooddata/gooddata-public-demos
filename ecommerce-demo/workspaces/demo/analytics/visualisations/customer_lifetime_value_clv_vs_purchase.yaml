@@ -1,0 +1,32 @@
+# A visualization is a visual representation of a user's analytical view of the data.
+# You build visualizations from metrics, attributes, and optionally filters that are combined in a way to visualize a particular aspect of your data.
+# The visualizations are executed over and over as fresh data gets loaded.
+# Interpreting the content of a visualization is up to the user (the consumer of the visualization).
+# Read more about visualisations:
+# https://www.gooddata.com/developers/cloud-native/doc/cloud/create-visualizations/concepts/visualization/
+
+type: scatter_chart
+id: customer_lifetime_value_clv_vs_purchase
+
+title: Customer Lifetime Value (CLV) vs. Purchase Frequency
+description: Compares Customer Lifetime Value (CLV) with Purchase Frequency. Each dot represents a customer group, helping identify loyal high-value customers and spot behavioral trends.
+
+query:
+  fields:
+    0b7702b91bb74888ae7ca03a99077386: metric/customer_lifetime_value_clv
+    0f215a98445f4adea20e7c4f7c91dfd2: metric/purchase_frequency_per_customer
+    c302d0db67ef43a8900b8f8044d18079: label/date.day
+
+metrics:
+  - 0b7702b91bb74888ae7ca03a99077386
+  - 0f215a98445f4adea20e7c4f7c91dfd2
+
+view_by:
+  - c302d0db67ef43a8900b8f8044d18079
+
+config:
+  colors:
+    0b7702b91bb74888ae7ca03a99077386: 2
+  xaxis_min: 0
+  clustering_amount: 4
+  clustering_threshold: 0.02

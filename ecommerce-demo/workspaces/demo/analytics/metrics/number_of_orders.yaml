@@ -1,0 +1,13 @@
+# A metric is a computational expression of numerical data (facts or other metrics).
+# Use MAQL to create reusable multidimensional queries that combine multiple facts and attributes.
+# Read more about MAQL:
+# https://www.gooddata.com/developers/cloud-native/doc/cloud/create-metrics/maql/
+
+type: metric
+id: number_of_orders
+
+title: "# of Orders"
+description: Measures total orders placed, providing insight into sales volume and customer engagement over time.
+
+maql: SELECT COUNT({label/order_id},{label/order_line_id})
+format: "#,##0"

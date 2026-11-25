@@ -1,0 +1,30 @@
+# A visualization is a visual representation of a user's analytical view of the data.
+# You build visualizations from metrics, attributes, and optionally filters that are combined in a way to visualize a particular aspect of your data.
+# The visualizations are executed over and over as fresh data gets loaded.
+# Interpreting the content of a visualization is up to the user (the consumer of the visualization).
+# Read more about visualisations:
+# https://www.gooddata.com/developers/cloud-native/doc/cloud/create-visualizations/concepts/visualization/
+
+type: treemap_chart
+id: orders_by_product_category
+
+title: Orders by Product Category
+description: Treemap showing the share of total order count per product category as a percentage. Supports analysis of orders by category, order mix by category, and identification of which categories have the most orders.
+
+query:
+  fields:
+    465daea3cdf1469998dfa09abc12353a:
+      compute_ratio: true
+      using: metric/number_of_orders
+    6f33093f7f6646de99a5f8942d533d83: label/product_category
+
+metrics:
+  - field: 465daea3cdf1469998dfa09abc12353a
+    format: "#,##0.00%"
+
+view_by:
+  - 6f33093f7f6646de99a5f8942d533d83
+
+config:
+  data_labels: true
+  legend_position: top

@@ -1,0 +1,37 @@
+# A visualization is a visual representation of a user's analytical view of the data.
+# You build visualizations from metrics, attributes, and optionally filters that are combined in a way to visualize a particular aspect of your data.
+# The visualizations are executed over and over as fresh data gets loaded.
+# Interpreting the content of a visualization is up to the user (the consumer of the visualization).
+# Read more about visualisations:
+# https://www.gooddata.com/developers/cloud-native/doc/cloud/create-visualizations/concepts/visualization/
+
+type: headline_chart
+id: returning_customers
+
+title: Returning Customers
+description: Headline that displays the count of customers who made at least one repeat purchase in the current period, alongside the same measure for the previous period. Enables comparison of repeat-buyer volume period over period and supports assessment of customer retention and loyalty trends.
+
+query:
+  fields:
+    1df9a9af3c734b5da9f719b62d1b06c3: metric/return_customers
+    1df9a9af3c734b5da9f719b62d1b06c3_previous_period:
+      title: Previous period
+      type: PREVIOUS_PERIOD
+      date_filter: date
+      using: 1df9a9af3c734b5da9f719b62d1b06c3
+
+  filter_by:
+    date_month:
+      type: date_filter
+      granularity: MONTH
+      from: 0
+      to: 0
+      using: date
+
+metrics:
+  - 1df9a9af3c734b5da9f719b62d1b06c3
+  - 1df9a9af3c734b5da9f719b62d1b06c3_previous_period
+
+config:
+  indicator_arrow: true
+  label_conditional: true

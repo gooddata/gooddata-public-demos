@@ -1,0 +1,31 @@
+# A visualization is a visual representation of a user's analytical view of the data.
+# You build visualizations from metrics, attributes, and optionally filters that are combined in a way to visualize a particular aspect of your data.
+# The visualizations are executed over and over as fresh data gets loaded.
+# Interpreting the content of a visualization is up to the user (the consumer of the visualization).
+# Read more about visualisations:
+# https://www.gooddata.com/developers/cloud-native/doc/cloud/create-visualizations/concepts/visualization/
+
+type: line_chart
+id: order_volume_over_time
+
+title: Order Volume Over Time
+description: Tracks weekly order volumes against the long-term average to highlight fluctuations, trends, and seasonality in customer demand.
+
+query:
+  fields:
+    e61e012299884d7895ce4eb7b7534b2a: metric/average_order_volume
+    49aa540cfc6e41e28e144b2f93f95599: metric/all_time_average_order_volume
+    ff83dc9b5919406796393eb75c4142ed: label/date.week
+
+metrics:
+  - field: e61e012299884d7895ce4eb7b7534b2a
+    format: "#,##0"
+  - field: 49aa540cfc6e41e28e144b2f93f95599
+    format: "#,##0"
+
+view_by:
+  - ff83dc9b5919406796393eb75c4142ed
+
+config:
+  data_labels: auto
+  xaxis_rotation: "30"

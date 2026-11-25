@@ -1,0 +1,44 @@
+# A visualization is a visual representation of a user's analytical view of the data.
+# You build visualizations from metrics, attributes, and optionally filters that are combined in a way to visualize a particular aspect of your data.
+# The visualizations are executed over and over as fresh data gets loaded.
+# Interpreting the content of a visualization is up to the user (the consumer of the visualization).
+# Read more about visualisations:
+# https://www.gooddata.com/developers/cloud-native/doc/cloud/create-visualizations/concepts/visualization/
+
+type: table
+id: order_details
+
+title: Order Details
+description: Displays order line data including quantities, prices, status, and product info.
+
+query:
+  fields:
+    467a516bc9b14c0598a77281b7576809:
+      title: "# of Units"
+      aggregation: SUM
+      using: fact/order_unit_quantity
+    73d90f0963f947b5b625bce12838092e:
+      title: Per unit price
+      aggregation: SUM
+      using: fact/order_unit_price
+    c2cec2a421094d98aacdd2dcdd249b79: label/order_id
+    2b0cc07c4b48482189b8f0af4693714a: label/order_line_id
+    094b21053a194b8f92e0be5ee9b6d43e: label/order_status
+    37d54a9da27d4038a1a7178820ce1a69: label/product_name
+
+  sort_by:
+    - type: attribute_sort
+      by: c2cec2a421094d98aacdd2dcdd249b79
+      direction: ASC
+
+metrics:
+  - field: 467a516bc9b14c0598a77281b7576809
+    format: "#,##0.00"
+  - field: 73d90f0963f947b5b625bce12838092e
+    format: "#,##0.00"
+
+view_by:
+  - c2cec2a421094d98aacdd2dcdd249b79
+  - 2b0cc07c4b48482189b8f0af4693714a
+  - 094b21053a194b8f92e0be5ee9b6d43e
+  - 37d54a9da27d4038a1a7178820ce1a69

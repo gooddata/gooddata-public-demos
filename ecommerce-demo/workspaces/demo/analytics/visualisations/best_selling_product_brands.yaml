@@ -1,0 +1,71 @@
+# A visualization is a visual representation of a user's analytical view of the data.
+# You build visualizations from metrics, attributes, and optionally filters that are combined in a way to visualize a particular aspect of your data.
+# The visualizations are executed over and over as fresh data gets loaded.
+# Interpreting the content of a visualization is up to the user (the consumer of the visualization).
+# Read more about visualisations:
+# https://www.gooddata.com/developers/cloud-native/doc/cloud/create-visualizations/concepts/visualization/
+
+type: column_chart
+id: best_selling_product_brands
+
+title: Best-selling Product Brands
+description: Column chart of the top 10 brands ranked by net sales, with current period, previous period, and period-over-period difference. Supports identification of best-selling brands, ranking of brands by sales, and brand sales comparison across periods.
+
+query:
+  fields:
+    df56dd6bf27543438288fd4bbee1bf84:
+      title: Total Net Sales - current period
+      using: metric/net_sales
+    df56dd6bf27543438288fd4bbee1bf84_previous_period:
+      title: Total Net Sales - previous period
+      type: PREVIOUS_PERIOD
+      date_filter: date
+      using: df56dd6bf27543438288fd4bbee1bf84
+    188041b8ba9c4a21a36cd24ad656bfd5:
+      title: Difference between periods
+      operator: DIFFERENCE
+      using:
+        - df56dd6bf27543438288fd4bbee1bf84
+        - df56dd6bf27543438288fd4bbee1bf84_previous_period
+    321468cc87124a9e810c18655595ff76: label/product_brand
+
+  filter_by:
+    product_brand_filter:
+      type: attribute_filter
+      using: label/product_brand
+    df56dd6bf27543438288fd4bbee1bf84_filter:
+      type: ranking_filter
+      using: df56dd6bf27543438288fd4bbee1bf84
+      top: 10
+    date_quarter:
+      type: date_filter
+      granularity: QUARTER
+      from: -1
+      to: -1
+      using: date
+
+metrics:
+  - df56dd6bf27543438288fd4bbee1bf84
+  - df56dd6bf27543438288fd4bbee1bf84_previous_period
+  - field: 188041b8ba9c4a21a36cd24ad656bfd5
+    format: |-
+      [>=1000000000000]$#,,,,.0 T;
+      [>=1000000000]$#,,,.0 B;
+      [>=1000000]$#,,.0 M;
+      [>=1000]$#,.0 K;
+      [>=0]$#,##0;
+      [<=-1000000000000]-$#,,,,.0 T;
+      [<=-1000000000]-$#,,,.0 B;
+      [<=-1000000]-$#,,.0 M;
+      [<=-1000]-$#,.0 K;
+      [<0]-$#,##0
+
+view_by:
+  - 321468cc87124a9e810c18655595ff76
+
+config:
+  colors:
+    df56dd6bf27543438288fd4bbee1bf84: 6
+    188041b8ba9c4a21a36cd24ad656bfd5: 3
+  xaxis_name_visible: false
+  xaxis_rotation: "30"

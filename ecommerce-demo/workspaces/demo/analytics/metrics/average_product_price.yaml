@@ -1,0 +1,13 @@
+# A metric is a computational expression of numerical data (facts or other metrics).
+# Use MAQL to create reusable multidimensional queries that combine multiple facts and attributes.
+# Read more about MAQL:
+# https://www.gooddata.com/developers/cloud-native/doc/cloud/create-metrics/maql/
+
+type: metric
+id: average_product_price
+
+title: Average Product Price
+description: Measures the average cost per unit of products, aiding in pricing strategy and enhancing profitability analysis.
+
+maql: SELECT AVG({fact/order_unit_price})
+format: $#,##0.00
